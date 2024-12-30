@@ -1,0 +1,7 @@
+
+State Machine - |RandomCounter|state
+Name state.FIVE state.THREE state.SEVEN state.ONE 
+state.ONE 0 0 0 0 
+state.SEVEN 0 0 1 1 
+state.THREE 0 1 0 1 
+state.FIVE 1 0 0 1 

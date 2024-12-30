@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'controller:M2|state[0]'
+Slack : -5.294
+TNS   : -34.412
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -3.872
+TNS   : -113.919
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'controller:M2|state[0]'
+Slack : 0.619
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -17.076
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controller:M2|state[0]'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'controller:M2|state[0]'
+Slack : -5.293
+TNS   : -34.301
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -3.563
+TNS   : -105.093
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'controller:M2|state[0]'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -18.189
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controller:M2|state[0]'
+Slack : 0.303
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.711
+TNS   : -75.121
+
+Type  : Fast 1100mV 85C Model Setup 'controller:M2|state[0]'
+Slack : -2.595
+TNS   : -16.378
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'controller:M2|state[0]'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.081
+TNS   : -2.523
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'controller:M2|state[0]'
+Slack : 0.474
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'controller:M2|state[0]'
+Slack : -2.404
+TNS   : -15.194
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.083
+TNS   : -57.554
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'controller:M2|state[0]'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.080
+TNS   : -2.494
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'controller:M2|state[0]'
+Slack : 0.458
+TNS   : 0.000
+
+------------------------------------------------------------

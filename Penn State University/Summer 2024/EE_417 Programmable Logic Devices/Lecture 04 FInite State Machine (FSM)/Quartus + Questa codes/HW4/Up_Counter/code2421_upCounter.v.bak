@@ -1,0 +1,11 @@
+/*---------------------------------------------------------------------------------
+Name Lamin Jammeh
+CLass: EE417 Summer 2024
+Lesson 04 HW Question 4 Part 2
+Group: Ron Kalin/ Lamin Jammeh
+Project Description: This portion takes use the output of the code2421_downCounter
+and inverts it to form an up counter. this is possible because of the complementary
+characteristics of 2421 code
+------------------------------------------------------------------------------------*/
+
+module code2421_upCounter (

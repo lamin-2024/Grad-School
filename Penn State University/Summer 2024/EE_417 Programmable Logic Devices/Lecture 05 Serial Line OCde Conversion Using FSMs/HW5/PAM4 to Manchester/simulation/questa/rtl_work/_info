@@ -1,0 +1,118 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/simulation/questa
+T_opt
+!s110 1718479306
+VOJ8z:egPRfk2D>acZ^IZG0
+04 21 4 work PAM4_to_Manchester_TB fast 0
+=1-54bf64139d28-666de9ca-7d-7534
+!s124 OEM10U4 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vNRZ_to_Manchester
+Z2 !s110 1718479305
+!i10b 1
+!s100 LK^P?KzJD2Po>YEPa4PTW3
+Ica:8l;QI7?1iJQ1:g3[0A1
+R0
+w1718460179
+8C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part2 NRZ to Manchester/NRZ_to_Manchester.v
+FC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part2 NRZ to Manchester/NRZ_to_Manchester.v
+!i122 0
+Z3 L0 1 50
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1718479305.000000
+!s107 C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part2 NRZ to Manchester/NRZ_to_Manchester.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part2 NRZ to Manchester|C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part2 NRZ to Manchester/NRZ_to_Manchester.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work {+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part2 NRZ to Manchester} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@n@r@z_to_@manchester
+vPAM4_to_Manchester
+R2
+!i10b 1
+!s100 bER@a4`hB8RKoN:WV7`Qi2
+IzkI=D7o4Y=IMQEOkz?jJD1
+R0
+w1718468877
+8C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester.v
+FC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester.v
+!i122 2
+L0 1 31
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester|C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester.v|
+!i113 0
+R7
+Z8 !s92 -vlog01compat -work work {+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@p@a@m4_to_@manchester
+vPAM4_to_Manchester_TB
+R2
+!i10b 1
+!s100 obB88]2RBMOE_JSNjE<@<3
+IeBWF1kZU>X?KB[dYb;3m;0
+R0
+w1718478968
+8C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester_TB.v
+FC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester_TB.v
+!i122 3
+R3
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester|C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to Manchester/PAM4_to_Manchester_TB.v|
+!i113 0
+R7
+R8
+R1
+n@p@a@m4_to_@manchester_@t@b
+vPAM4_to_NRZ
+R2
+!i10b 1
+!s100 Pc<S==0fkd3>c:Bf[k3271
+Ij>dLh[n^Y8IAKi@?B]hAT0
+R0
+w1718461241
+8C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part1 PAM4 to NRZ/PAM4_to_NRZ.v
+FC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part1 PAM4 to NRZ/PAM4_to_NRZ.v
+!i122 1
+L0 10 36
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part1 PAM4 to NRZ/PAM4_to_NRZ.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part1 PAM4 to NRZ|C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part1 PAM4 to NRZ/PAM4_to_NRZ.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work {+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Part1 PAM4 to NRZ} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@p@a@m4_to_@n@r@z

@@ -1,0 +1,5 @@
+NEWTON := proc (f, df, p0, tol, max1) local k, dfVal; P(1) := p0; for k from 2
+to max1 do dfVal := evalf(subs(x = P(k-1),df)); if abs(dfVal) < 1/100000 then 
+error "Small derivative"; end if; P(k) := evalf(P(k-1)-subs(x = P(k-1),f)/dfVal
+); printf("P(%d) = %f\n",k,P(k)); if abs(P(k)-P(k-1)) <= tol*abs(P(k)) then 
+return P(k); end if; end do; error "Did not coverage"; end proc;

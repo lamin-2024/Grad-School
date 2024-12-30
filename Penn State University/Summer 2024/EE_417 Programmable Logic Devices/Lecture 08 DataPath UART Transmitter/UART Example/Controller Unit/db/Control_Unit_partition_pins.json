@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Load_XMT_DR",
+					"strict" : false
+				},
+				{
+					"name" : "Load_XMT_shftreg",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "shift",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "Load_XMT_datareg",
+					"strict" : false
+				},
+				{
+					"name" : "Byte_ready",
+					"strict" : false
+				},
+				{
+					"name" : "T_byte",
+					"strict" : false
+				},
+				{
+					"name" : "BC_lt_BCmax",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "rst_b",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

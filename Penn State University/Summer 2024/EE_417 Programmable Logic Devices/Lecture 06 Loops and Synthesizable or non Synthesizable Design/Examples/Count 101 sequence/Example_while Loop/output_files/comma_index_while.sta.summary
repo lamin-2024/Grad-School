@@ -1,0 +1,21 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'trigger'
+Slack : -0.724
+TNS   : -4.434
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'trigger'
+Slack : -0.724
+TNS   : -4.454
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'trigger'
+Slack : -0.086
+TNS   : -0.335
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'trigger'
+Slack : -0.085
+TNS   : -0.334
+
+------------------------------------------------------------

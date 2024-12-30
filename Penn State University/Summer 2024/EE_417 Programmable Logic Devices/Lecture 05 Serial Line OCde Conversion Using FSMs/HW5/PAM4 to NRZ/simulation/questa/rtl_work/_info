@@ -1,0 +1,68 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/simulation/questa
+T_opt
+!s110 1718413065
+VWZcMC5WRzn_EJN]Bk<CGP2
+04 14 4 work tb_pam4_to_nrz fast 0
+=1-e00af6affa29-666ce708-29a-6130
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vpam4_to_nrz
+Z2 !s110 1718413064
+!i10b 1
+!s100 `<jMZ8gMm0kBk:Hho>C4M3
+I=RNK?HkQ>ZEC=a5CECjnU2
+R0
+w1718412819
+8C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/pam4_to_nrz.v
+FC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/pam4_to_nrz.v
+!i122 0
+L0 1 30
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1718413063.000000
+!s107 C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/pam4_to_nrz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ|C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/pam4_to_nrz.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb_pam4_to_nrz
+R2
+!i10b 1
+!s100 H;G5`mLzJDMIdPG1;k4ML1
+IU3mEA8JeOT6LmoD2>T83b0
+R0
+w1718412864
+8C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/tb_pam4_to_nrz.v
+FC:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/tb_pam4_to_nrz.v
+!i122 1
+L0 1 46
+R3
+R4
+r1
+!s85 0
+31
+!s108 1718413064.000000
+!s107 C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/tb_pam4_to_nrz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ|C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/PAM4 to NRZ/tb_pam4_to_nrz.v|
+!i113 0
+R5
+R6
+R1

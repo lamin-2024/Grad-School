@@ -1,0 +1,44 @@
+module PAM4_to_NRZ_TB ();
+
+//define the registers and wires
+reg clk, reset;
+reg [1:0] pam4;
+wire nrz;
+
+//define the unit under test UUT
+PAM4_to_NRZ UUT (
+					  .nrz(nrz),
+					  .pam4(pam4),
+					  .clk(clk),
+					  .reset(reset)
+				  	  );
+					  
+//instantiate the clk signal
+initial
+	begin
+		clk = 1'b0;
+		forever #5 clk = ~clk		//10ns clk period
+	end
+
+//instantiate the reset signal
+initial
+	begin
+		     reset = 1'b1;		 //togel the reset signal on
+		#100 reset = 1'b0;		//toggle the reset signal off
+	end
+	
+//instantiate all the posibble states for PAM4 with time intervals
+initial
+	begin
+		pam4 = S0; #15;
+		pam4 = S1; #15;
+		pam4 = S2; #15;
+		pam4 = S3; #15;
+	end
+	
+//display the results
+initial begin //monitor counter value				
+  $display("PAM4---Binary/NRZ");				
+  $monitor("%b		%b ",pam4, nrz);							
+ end				
+endmod

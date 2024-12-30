@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2 {C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v}
+

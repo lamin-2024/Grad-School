@@ -1,0 +1,30 @@
+|code2421_upCounter
+upcount[0] << code2421_downCounter:UDM_downCount.count
+upcount[1] << code2421_downCounter:UDM_downCount.count
+upcount[2] << code2421_downCounter:UDM_downCount.count
+upcount[3] << code2421_downCounter:UDM_downCount.count
+clk => clk.IN1
+reset => reset.IN1
+enable => enable.IN1
+
+
+|code2421_upCounter|code2421_downCounter:UDM_downCount
+count[0] <= count[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => state~12.DATAIN
+reset => state~14.DATAIN
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+
+

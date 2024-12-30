@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Serial_out",
+					"strict" : false
+				},
+				{
+					"name" : "T_byte",
+					"strict" : false
+				},
+				{
+					"name" : "Load_XMT_datareg",
+					"strict" : false
+				},
+				{
+					"name" : "Byte_ready",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "rst_b",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Data_Bus[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

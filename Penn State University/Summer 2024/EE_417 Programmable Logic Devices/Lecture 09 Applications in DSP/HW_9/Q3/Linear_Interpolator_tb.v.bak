@@ -1,0 +1,57 @@
+
+module Differentiator_tb ();
+
+//define the registers and wire for the signals to monitor
+reg		   clock, reset;
+reg	[7:0] Data_in;
+wire  [7:0]	buffer;
+wire	[7:0]	Data_out;
+
+//Instantiate the unit under test UUT
+Differentiator #(8)	UUT (
+						       .Data_out(Data_out),
+								 .buffer(buffer),
+						       .Data_in(Data_in),
+						       .clock(clock),
+						       .reset(reset)
+						       );
+						  
+//instantiate the clock cycle
+always
+	begin
+		clock = 0;
+		forever #10 clock = ~clock;
+	end
+	
+
+initial 
+	begin
+		//Initialize all the inputs
+		Data_in = 8'b00101011;
+		reset = 0;
+		
+		//toggle to reset to see the buffer and Data_out behavior
+		#100 reset = 1;
+      #50 reset = 0;
+		
+		//multiple Data_in samples and observe the buffer and Data_out
+			  Data_in = 8'b10101010;
+		#200 Data_in = 8'b00101001;
+		
+		//take everything back Data_out back to zero by setting reset to high
+		#100 reset = 1;
+		#50  reset = 0;
+		
+		// Final test case to ensure the interpolator works correctly after reset
+		     Data_in = 8'b00001001;
+		#100 Data_in = 8'b01101011;
+		#200 Data_in = 8'b11101011;
+		#300 Data_in = 8'b11101111;
+		
+		
+		//display the results
+			begin
+			$monitor ($time ,, "Data_in = %d	Buffer = %d Data_out = %d", Data_in, buffer, Data_out);
+		end
+	end
+endmodule

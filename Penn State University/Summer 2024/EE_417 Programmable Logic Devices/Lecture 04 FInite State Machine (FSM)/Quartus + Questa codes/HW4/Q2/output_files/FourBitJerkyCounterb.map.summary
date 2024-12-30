@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sun Jun  9 18:06:13 2024
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : FourBitJerkyCounterb
+Top-level Entity Name : FourBitJerkyCounterb
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 14
+Total pins : 10
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

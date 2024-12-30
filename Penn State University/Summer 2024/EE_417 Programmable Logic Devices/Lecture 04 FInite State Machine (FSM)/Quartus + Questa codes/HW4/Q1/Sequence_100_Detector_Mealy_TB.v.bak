@@ -1,0 +1,23 @@
+/*-------------------------------------------------------------
+Test Bench for Sequence_100_Detector_Mealy Finite State Machine
+CLass: EE417 Summer 2024
+Lesson 04 HW Question 1
+Group: Ron Kalin/ Lamin Jammeh
+---------------------------------------------------------------*/
+
+module Sequence_100_Detector_Mealy_TB ();
+
+//define the input and outputs as wires and registers
+wire	z2, z1;
+reg	clk, reset;
+reg	x_in;
+
+//define the internal probes as wires
+wire	[2:0]	present_state, next_state;
+
+//define the unit under test (UUT)
+Sequence_100_Detector_Mealy UUT (z2, z1, clk, reset, x_in);
+
+//internal probes to make it easy to track the logic and for troubleshooting
+assign present_state = UUT.present_state;
+assign next_state = UUT.next_state;

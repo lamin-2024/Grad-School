@@ -1,0 +1,39 @@
+|count_0s
+data_in[0] => Add0.IN2
+data_in[0] => total_zeros.DATAA
+data_in[1] => total_zeros.OUTPUTSELECT
+data_in[1] => total_zeros.OUTPUTSELECT
+data_in[2] => total_zeros.OUTPUTSELECT
+data_in[2] => total_zeros.OUTPUTSELECT
+data_in[2] => total_zeros.OUTPUTSELECT
+data_in[3] => total_zeros.OUTPUTSELECT
+data_in[3] => total_zeros.OUTPUTSELECT
+data_in[3] => total_zeros.OUTPUTSELECT
+data_in[3] => total_zeros.OUTPUTSELECT
+data_in[4] => total_zeros.OUTPUTSELECT
+data_in[4] => total_zeros.OUTPUTSELECT
+data_in[4] => total_zeros.OUTPUTSELECT
+data_in[4] => total_zeros.OUTPUTSELECT
+data_in[4] => total_zeros.OUTPUTSELECT
+data_in[5] => total_zeros.OUTPUTSELECT
+data_in[5] => total_zeros.OUTPUTSELECT
+data_in[5] => total_zeros.OUTPUTSELECT
+data_in[5] => total_zeros.OUTPUTSELECT
+data_in[5] => total_zeros.OUTPUTSELECT
+data_in[6] => total_zeros.OUTPUTSELECT
+data_in[6] => total_zeros.OUTPUTSELECT
+data_in[6] => total_zeros.OUTPUTSELECT
+data_in[6] => total_zeros.OUTPUTSELECT
+data_in[6] => total_zeros.OUTPUTSELECT
+data_in[7] => total_zeros.OUTPUTSELECT
+data_in[7] => total_zeros.OUTPUTSELECT
+data_in[7] => total_zeros.OUTPUTSELECT
+data_in[7] => total_zeros.OUTPUTSELECT
+data_in[7] => total_zeros.OUTPUTSELECT
+total_zeros[0] <= total_zeros.DB_MAX_OUTPUT_PORT_TYPE
+total_zeros[1] <= total_zeros.DB_MAX_OUTPUT_PORT_TYPE
+total_zeros[2] <= total_zeros.DB_MAX_OUTPUT_PORT_TYPE
+total_zeros[3] <= total_zeros.DB_MAX_OUTPUT_PORT_TYPE
+total_zeros[4] <= total_zeros.DB_MAX_OUTPUT_PORT_TYPE
+
+

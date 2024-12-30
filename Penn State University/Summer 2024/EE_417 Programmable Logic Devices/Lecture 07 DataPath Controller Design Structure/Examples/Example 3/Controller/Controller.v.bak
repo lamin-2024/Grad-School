@@ -1,0 +1,57 @@
+module Controller (
+    input clk,
+    input reset,
+    input done,
+    output reg shift_en,
+    output reg load
+);
+
+typedef enum reg [1:0] {
+    IDLE = 2'b00,
+    LOAD = 2'b01,
+    SHIFT = 2'b10,
+    DONE = 2'b11
+} state_t;
+
+state_t state, next_state;
+
+// State transition logic
+always @ (posedge clk or posedge reset) begin
+    if (reset)
+        state <= IDLE;
+    else
+        state <= next_state;
+end
+
+// Next state logic
+always @ (*) begin
+    case (state)
+        IDLE: next_state = LOAD;
+        LOAD: next_state = SHIFT;
+        SHIFT: next_state = done ? DONE : SHIFT;
+        DONE: next_state = IDLE;
+        default: next_state = IDLE;
+    endcase
+end
+
+// Output logic
+always @ (*) begin
+    shift_en = 0;
+    load = 0;
+    case (state)
+        IDLE: begin
+            load = 1;
+        end
+        LOAD: begin
+            shift_en = 1;
+        end
+        SHIFT: begin
+            shift_en = 1;
+        end
+        DONE: begin
+            // No control signals
+        end
+    endcase
+end
+
+endmodule

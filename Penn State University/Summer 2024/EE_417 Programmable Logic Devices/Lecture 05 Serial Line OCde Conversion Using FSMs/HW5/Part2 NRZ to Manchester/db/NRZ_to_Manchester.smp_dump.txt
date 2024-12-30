@@ -1,0 +1,6 @@
+
+State Machine - |NRZ_to_Manchester|state
+Name state.Sx state.S1 state.S0 
+state.Sx 0 0 0 
+state.S0 1 0 1 
+state.S1 1 1 0 

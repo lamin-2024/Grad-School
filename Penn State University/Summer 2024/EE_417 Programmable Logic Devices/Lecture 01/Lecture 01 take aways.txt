@@ -1,0 +1,25 @@
+Lecture 01 Take awayss
+Read about the use of Pull-up and pull down resistors/diodes
+Read about BJTs and MOSFETS
+										MOSFET
+MOSFET (Metal Oxide Semiconductor Field Effect Transistor)
+	Has 3 terminals Source-Gate-Drain
+		Source and Drain has extra electrons as majority cariers
+		Gate has an Oxide below it 
+		Source and Gate are in a substrate which has electrons as Minority cariers as in P-Type substrate (not enough electrons in the substrate)
+		When positive charge is applied to Gate elctrons field the gap between the Source and the Drain therby connectine the 2 and if positive charge is remove the electrons leave and the 2 get disconnected										
+										BJT
+BJT (Bipolar Junction Transistor)	
+	Has 3 Terminals Collector-Base-Emiiter
+										ROM
+How ROM (Read Only Memory) is build: Note the input is usually and AND-Plane and product line feeds into the OR-Plane feeds the Output display
+16X8 ROM = will have 4 inputs 16 outputs and each outputs will have 8 bits.  Input:n=4  Output: 2^(n) Thers is Chip Select function (C_S bar) to activate the chip 
+										PROM (Programmable Read Only Memory)
+Works the same as the ROM but has a BJT with Fusible Link (programmable)
+Output has a Pull-Down resistor and a Inverter
+										EEPROM (Electrically Erasable Programmable Read Only Memory)
+Is a type of PROM that can be electrically erased becase it has a floating Gate Transistor
+The transistor has 2 Gates one is floating and the other is connected to terminal that can be activate by positive charge
+When Gate is active with enough Positve charge electrons can tunnel through because the oxide layer between the floating Gatte and the P-Type substrate is thin gut wide with the 2 Gates, 
+Eleectrons get trap at the floating Gate with enough positive charge
+To empty the floating gate apply enough a Positive charge at the Drain then the elctrons will leave the floating Gate 

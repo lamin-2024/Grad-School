@@ -1,0 +1,190 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/MyDocuments/college/ee417/projects/lesson10_A2/simulation/questa
+T_opt
+!s110 1721511882
+VW3j46b3kWo@Ng_oN92eHo1
+04 15 4 work Pipeline_FIR_tb fast 0
+=1-2c3b70d30e8f-669c2fc8-392-1bac
+!s124 OEM10U13 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vMAC
+Z2 !s110 1721511878
+!i10b 1
+!s100 T[>gMYhYTF9DZEU0<:G]?0
+I4]CM:C>81bz0Qz^DA]Q`N1
+R0
+Z3 w1721511670
+Z4 8C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v
+Z5 FC:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v
+!i122 0
+L0 32 9
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z8 !s108 1721511878.000000
+Z9 !s107 C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2|C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v|
+!i113 0
+Z11 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -vlog01compat -work work +incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@m@a@c
+vnoPipeline_FIR
+R2
+!i10b 1
+!s100 M@X^c<>Xh]jL84bQS><8R1
+IMVc5k0eV0EEzB[PLJ3]S42
+R0
+R3
+R4
+R5
+!i122 0
+L0 43 62
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+nno@pipeline_@f@i@r
+vPipeline_FIR
+R2
+!i10b 1
+!s100 hcOzz4k7;=<3`WmKE7@2F0
+I2eRX=j_Kf2=ET6?d@0N2I1
+R0
+R3
+R4
+R5
+!i122 0
+L0 6 24
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@pipeline_@f@i@r
+vPipeline_FIR_a
+R2
+!i10b 1
+!s100 o9SmSkLP^1EJEYc[VnO]d1
+IkSWM@:;Lib:7JBUU;lk743
+R0
+R3
+R4
+R5
+!i122 0
+L0 108 57
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@pipeline_@f@i@r_a
+vPipeline_FIR_b
+R2
+!i10b 1
+!s100 oTPCc_Nc_T7;_UKAa@5a>1
+IQNVSl>YB?1A:BL]DZBEmK2
+R0
+R3
+R4
+R5
+!i122 0
+L0 169 108
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@pipeline_@f@i@r_b
+vPipeline_FIR_c
+R2
+!i10b 1
+!s100 cIagF]Ghm4[z70fEKbOIU3
+ITeB;:FnXGZL<?PBkN7fN81
+R0
+R3
+R4
+R5
+!i122 0
+L0 280 90
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@pipeline_@f@i@r_c
+vPipeline_FIR_tb
+!s110 1721511879
+!i10b 1
+!s100 ;?K14K@m2U9XUX0F5HZ<R0
+I;2DB5<6deWIH8ohOIEAMl1
+R0
+w1721511671
+8C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v
+FC:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v
+!i122 1
+L0 5 121
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2|C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v|
+!i113 0
+R11
+R12
+R1
+n@pipeline_@f@i@r_tb

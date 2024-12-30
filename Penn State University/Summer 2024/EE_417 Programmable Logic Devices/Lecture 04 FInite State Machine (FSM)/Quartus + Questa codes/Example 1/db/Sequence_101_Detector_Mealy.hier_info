@@ -1,0 +1,12 @@
+|Sequence_101_Detector_Mealy
+z_out <= z_out.DB_MAX_OUTPUT_PORT_TYPE
+clk => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+x_in => state.DATAA
+x_in => z_out.DATAB
+x_in => next_state.s10.DATAB
+x_in => Selector0.IN1
+
+

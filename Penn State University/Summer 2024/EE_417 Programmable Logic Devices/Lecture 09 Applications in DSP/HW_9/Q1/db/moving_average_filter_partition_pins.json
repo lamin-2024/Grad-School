@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "filtered_sample[0]",
+					"strict" : false
+				},
+				{
+					"name" : "filtered_sample[1]",
+					"strict" : false
+				},
+				{
+					"name" : "filtered_sample[2]",
+					"strict" : false
+				},
+				{
+					"name" : "filtered_sample[3]",
+					"strict" : false
+				},
+				{
+					"name" : "filtered_sample[4]",
+					"strict" : false
+				},
+				{
+					"name" : "filtered_sample[5]",
+					"strict" : false
+				},
+				{
+					"name" : "filtered_sample[6]",
+					"strict" : false
+				},
+				{
+					"name" : "filtered_sample[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

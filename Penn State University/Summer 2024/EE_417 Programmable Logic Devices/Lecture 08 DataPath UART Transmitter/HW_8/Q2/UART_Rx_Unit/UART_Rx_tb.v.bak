@@ -1,0 +1,33 @@
+/*--------------------------------------------
+Name Lamin Jammeh
+CLass: EE417 Summer 2024
+Lesson 08 HW Question 2 
+Group: Ron Kalin/ Lamin Jammeh
+Project Description: TestBench for teh UART_Rx
+-----------------------------------------------*/
+
+module UART_Rx_tb ();
+
+//define the registers and wires
+reg	Serial_in, read_not_ready_in, Sample_clk, rst_b;
+reg	[7:0] 	Rx_datareg;
+reg	read_not_ready_out;
+reg	Error1, Error2;
+
+//define the unit under test UUT
+UART_Rx #(8, 4) UUT (
+							.Rx_datareg(Rx_datareg),
+						   .read_not_ready_out(read_not_ready_out),
+						   .Error1(Error1),
+						   .Error2(Error2),
+						
+						   .Serial_in(Serial_in),
+						   .read_not_ready_in(read_not_ready_in),
+						   .Sample_clk(Sample_clk),
+						   .rst_b(rst_b)
+							);
+							
+//monitor the internal probes
+assign Ser_in_0   = UUT.Datapath_Unit_Rx.Ser_in_0;
+assign SC_eq_3    = UUT.Control_Unit_Rx.SC_eq_3;
+assign SC_lt_7    = UUT.Control_Unit_Rx.SC_lt_7;

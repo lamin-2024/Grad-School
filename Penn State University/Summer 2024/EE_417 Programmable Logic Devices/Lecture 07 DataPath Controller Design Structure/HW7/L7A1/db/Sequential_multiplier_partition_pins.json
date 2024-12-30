@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "product[0]",
+					"strict" : false
+				},
+				{
+					"name" : "product[1]",
+					"strict" : false
+				},
+				{
+					"name" : "product[2]",
+					"strict" : false
+				},
+				{
+					"name" : "product[3]",
+					"strict" : false
+				},
+				{
+					"name" : "product[4]",
+					"strict" : false
+				},
+				{
+					"name" : "product[5]",
+					"strict" : false
+				},
+				{
+					"name" : "product[6]",
+					"strict" : false
+				},
+				{
+					"name" : "product[7]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[0]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[1]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[2]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[3]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[4]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[5]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[6]",
+					"strict" : false
+				},
+				{
+					"name" : "final_product[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Ready",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "word1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "word2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "word2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "word2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "word2[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at moving_average_filter.v(22): always construct contains both blocking and non-blocking assignments File: C:/MyDocuments/college/ee417/projects/lesson09_A1/moving_average_filter.v Line: 22

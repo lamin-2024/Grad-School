@@ -1,0 +1,100 @@
+|SevenSegDisplay2Digits
+d1[0] << Seven_Seg_Disp:SEV1.port0
+d1[1] << Seven_Seg_Disp:SEV1.port0
+d1[2] << Seven_Seg_Disp:SEV1.port0
+d1[3] << Seven_Seg_Disp:SEV1.port0
+d1[4] << Seven_Seg_Disp:SEV1.port0
+d1[5] << Seven_Seg_Disp:SEV1.port0
+d1[6] << Seven_Seg_Disp:SEV1.port0
+d0[0] << Seven_Seg_Disp:SEV0.port0
+d0[1] << Seven_Seg_Disp:SEV0.port0
+d0[2] << Seven_Seg_Disp:SEV0.port0
+d0[3] << Seven_Seg_Disp:SEV0.port0
+d0[4] << Seven_Seg_Disp:SEV0.port0
+d0[5] << Seven_Seg_Disp:SEV0.port0
+d0[6] << Seven_Seg_Disp:SEV0.port0
+V[0] => V[0].IN3
+V[1] => V[1].IN3
+V[2] => V[2].IN3
+V[3] => V[3].IN3
+
+
+|SevenSegDisplay2Digits|comp4bit:COMP9
+b[0] <= b[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+b[1] <= b[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= b[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+b[3] <= b[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => LessThan0.IN8
+a[0] => b[0]$latch.DATAIN
+a[1] => LessThan0.IN7
+a[1] => b[1]$latch.DATAIN
+a[2] => LessThan0.IN6
+a[2] => b[2]$latch.DATAIN
+a[3] => LessThan0.IN5
+a[3] => b[3]$latch.DATAIN
+gr <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenSegDisplay2Digits|CircuitA:CIRA
+V[0] => Decoder2.IN3
+V[1] => Decoder0.IN2
+V[1] => Decoder1.IN1
+V[1] => Decoder2.IN2
+V[2] => Decoder0.IN1
+V[2] => Decoder2.IN1
+V[3] => Decoder0.IN0
+V[3] => Decoder1.IN0
+V[3] => Decoder2.IN0
+A[0] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenSegDisplay2Digits|mux2to1_4bit:MUX
+data0[0] => out.DATAA
+data0[1] => out.DATAA
+data0[2] => out.DATAA
+data0[3] => out.DATAA
+data1[0] => out.DATAB
+data1[1] => out.DATAB
+data1[2] => out.DATAB
+data1[3] => out.DATAB
+select => out.OUTPUTSELECT
+select => out.OUTPUTSELECT
+select => out.OUTPUTSELECT
+select => out.OUTPUTSELECT
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenSegDisplay2Digits|Seven_Seg_Disp:SEV1
+Disp[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Disp[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Disp[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Disp[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Disp[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Disp[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Disp[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+BCD[0] => Decoder0.IN3
+BCD[1] => Decoder0.IN2
+BCD[2] => Decoder0.IN1
+BCD[3] => Decoder0.IN0
+
+
+|SevenSegDisplay2Digits|Seven_Seg_Disp:SEV0
+Disp[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Disp[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Disp[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Disp[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Disp[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Disp[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Disp[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+BCD[0] => Decoder0.IN3
+BCD[1] => Decoder0.IN2
+BCD[2] => Decoder0.IN1
+BCD[3] => Decoder0.IN0
+
+

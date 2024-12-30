@@ -1,0 +1,6 @@
+Best Practices for Verilog FPGA Design
+To achieve optimal results in Verilog FPGA design, it is important to follow best practices.
+	Divide your design into smallers modules with well-defined inputs and outputs. Use hierarchical de to create a clear and organized structure for your overall design.
+	Use test Benches to create comprehensive simulation environments and thoroughly test your design. Testing is essential to debug your design and to validate the functionality of your design. Test your submodues before connecting them in the top module.
+	DOcumenting your Verilog FPGA design is vital for future refrence and collaboration. Document the purpose, functionality, and assumptions of each module in your design. include comments in your code to explain the reasoning behind certain design decisions and steps
+	

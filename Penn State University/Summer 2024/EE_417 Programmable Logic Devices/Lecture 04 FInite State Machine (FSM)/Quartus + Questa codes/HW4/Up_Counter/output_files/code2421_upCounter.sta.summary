@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : -5.570
+TNS   : -21.488
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -2.612
+TNS   : -3.374
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.267
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 3.730
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -5.874
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : -5.716
+TNS   : -21.987
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -2.247
+TNS   : -2.896
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.069
+TNS   : -0.069
+
+Type  : Slow 1100mV 0C Model Hold 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 3.721
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -6.262
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : -2.773
+TNS   : -10.552
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.319
+TNS   : -2.319
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 2.300
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.080
+TNS   : -0.873
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : -2.660
+TNS   : -10.186
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.744
+TNS   : -1.744
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 2.235
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.079
+TNS   : -0.861
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'code2421_downCounter:UDM_downCount|state.1111'
+Slack : 0.460
+TNS   : 0.000
+
+------------------------------------------------------------

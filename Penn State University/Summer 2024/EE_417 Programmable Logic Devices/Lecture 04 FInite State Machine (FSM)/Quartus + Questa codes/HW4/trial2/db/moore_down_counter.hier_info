@@ -1,0 +1,31 @@
+|moore_down_counter
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+clk => current_state[0].CLK
+clk => current_state[1].CLK
+clk => current_state[2].CLK
+reset => count[0]~reg0.PRESET
+reset => count[1]~reg0.PRESET
+reset => count[2]~reg0.PRESET
+reset => count[3]~reg0.PRESET
+reset => current_state[0].PRESET
+reset => current_state[1].PRESET
+reset => current_state[2].PRESET
+enable => Mux1.IN6
+enable => Mux0.IN5
+enable => Mux0.IN6
+enable => Mux3.IN7
+enable => Mux1.IN7
+enable => Mux0.IN7
+enable => Mux1.IN2
+enable => Mux3.IN3
+enable => Mux0.IN0
+enable => Mux0.IN1
+count[0] << count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] << count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] << count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] << count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,51 @@
+|PAM8_Datapath_controller
+data_in => data_in.IN1
+data_out[0] << PAM8_Datapath:m1.port0
+data_out[1] << PAM8_Datapath:m1.port0
+data_out[2] << PAM8_Datapath:m1.port0
+reset => reset.IN2
+clock => clock.IN2
+enable => enable.IN1
+
+
+|PAM8_Datapath_controller|PAM8_Datapath:m1
+data_out[0] <= out_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= out_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= out_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+data_in => shft_reg.DATAA
+clock => out_reg[0].CLK
+clock => out_reg[1].CLK
+clock => out_reg[2].CLK
+clock => shft_reg[0].CLK
+clock => shft_reg[1].CLK
+clock => shft_reg[2].CLK
+reset => shft_reg.OUTPUTSELECT
+reset => shft_reg.OUTPUTSELECT
+reset => shft_reg.OUTPUTSELECT
+reset => out_reg.OUTPUTSELECT
+reset => out_reg.OUTPUTSELECT
+reset => out_reg.OUTPUTSELECT
+start => shft_reg.OUTPUTSELECT
+start => shft_reg.OUTPUTSELECT
+start => out_reg.OUTPUTSELECT
+start => out_reg.OUTPUTSELECT
+start => out_reg.OUTPUTSELECT
+load => out_reg.OUTPUTSELECT
+load => out_reg.OUTPUTSELECT
+load => out_reg.OUTPUTSELECT
+
+
+|PAM8_Datapath_controller|PAM8_Controller:m2
+start <= start.DB_MAX_OUTPUT_PORT_TYPE
+load <= load.DB_MAX_OUTPUT_PORT_TYPE
+enable => next_state.starting.DATAB
+enable => Selector1.IN3
+enable => Selector0.IN1
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+clock => state~1.DATAIN
+
+

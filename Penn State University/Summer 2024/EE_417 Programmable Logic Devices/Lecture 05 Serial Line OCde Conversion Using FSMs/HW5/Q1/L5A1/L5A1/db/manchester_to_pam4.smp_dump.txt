@@ -1,0 +1,15 @@
+
+State Machine - |manchester_to_pam4|NRZ_to_PAM_Mealy_case_nonglitchy:M2|state
+Name state.S1 state.S0 state.S11 state.S10 state.S01 state.S00 
+state.S00 0 0 0 0 0 0 
+state.S01 0 0 0 0 1 1 
+state.S10 0 0 0 1 0 1 
+state.S11 0 0 1 0 0 1 
+state.S0 0 1 0 0 0 1 
+state.S1 1 0 0 0 0 1 
+
+State Machine - |manchester_to_pam4|manchester_to_NRZ_Mealy_case_nonglitchy:M1|state
+Name state.Sx state.S1 state.S0 
+state.Sx 0 0 0 
+state.S0 1 0 1 
+state.S1 1 1 0 

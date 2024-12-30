@@ -1,0 +1,21 @@
+|code2421_downCounter
+count[0] << count[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+count[1] << count[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+count[2] << count[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+count[3] << count[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+clk => state~13.DATAIN
+reset => state~15.DATAIN
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+enable => state.OUTPUTSELECT
+
+

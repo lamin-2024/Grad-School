@@ -1,0 +1,1068 @@
+Analysis & Synthesis report for Pipeline_FIR
+Sat Jul 20 17:41:48 2024
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |Pipeline_FIR
+ 13. Parameter Settings for User Entity Instance: noPipeline_FIR:M1
+ 14. Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M0
+ 15. Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M1
+ 16. Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M2
+ 17. Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M3
+ 18. Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M4
+ 19. Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M5
+ 20. Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M6
+ 21. Parameter Settings for User Entity Instance: Pipeline_FIR_a:M2
+ 22. Parameter Settings for User Entity Instance: Pipeline_FIR_b:M3
+ 23. Parameter Settings for User Entity Instance: Pipeline_FIR_c:M4
+ 24. Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M6"
+ 25. Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M5"
+ 26. Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M4"
+ 27. Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M3"
+ 28. Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M2"
+ 29. Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M1"
+ 30. Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M0"
+ 31. Port Connectivity Checks: "noPipeline_FIR:M1"
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Jul 20 17:41:48 2024          ;
+; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                   ; Pipeline_FIR                                   ;
+; Top-level Entity Name           ; Pipeline_FIR                                   ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 230                                            ;
+; Total pins                      ; 54                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 7                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; Pipeline_FIR       ; Pipeline_FIR       ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+; Pipeline_FIR.v                   ; yes             ; User Verilog HDL File  ; C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 125         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 183         ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 17          ;
+;     -- <=3 input functions                  ; 166         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 230         ;
+;                                             ;             ;
+; I/O pins                                    ; 54          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 7           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 230         ;
+; Total fan-out                               ; 1318        ;
+; Average fan-out                             ; 2.50        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                          ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+----------------+--------------+
+; |Pipeline_FIR              ; 183 (0)             ; 230 (0)                   ; 0                 ; 7          ; 54   ; 0            ; |Pipeline_FIR                          ; Pipeline_FIR   ; work         ;
+;    |Pipeline_FIR_a:M2|     ; 73 (73)             ; 66 (66)                   ; 0                 ; 0          ; 0    ; 0            ; |Pipeline_FIR|Pipeline_FIR_a:M2        ; Pipeline_FIR_a ; work         ;
+;    |Pipeline_FIR_b:M3|     ; 44 (44)             ; 127 (127)                 ; 0                 ; 0          ; 0    ; 0            ; |Pipeline_FIR|Pipeline_FIR_b:M3        ; Pipeline_FIR_b ; work         ;
+;    |Pipeline_FIR_c:M4|     ; 45 (45)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |Pipeline_FIR|Pipeline_FIR_c:M4        ; Pipeline_FIR_c ; work         ;
+;    |noPipeline_FIR:M1|     ; 21 (0)              ; 9 (9)                     ; 0                 ; 7          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1        ; noPipeline_FIR ; work         ;
+;       |MAC:M0|             ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1|MAC:M0 ; MAC            ; work         ;
+;       |MAC:M1|             ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1|MAC:M1 ; MAC            ; work         ;
+;       |MAC:M2|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1|MAC:M2 ; MAC            ; work         ;
+;       |MAC:M3|             ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1|MAC:M3 ; MAC            ; work         ;
+;       |MAC:M4|             ; 8 (8)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1|MAC:M4 ; MAC            ; work         ;
+;       |MAC:M5|             ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1|MAC:M5 ; MAC            ; work         ;
+;       |MAC:M6|             ; 9 (9)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |Pipeline_FIR|noPipeline_FIR:M1|MAC:M6 ; MAC            ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 9x9                 ; 6           ;
+; Two Independent 18x18           ; 1           ;
+; Total number of DSP blocks      ; 7           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 7           ;
++---------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                         ;
++-----------------------------------------+--------------------------------------------------+
+; Register name                           ; Reason for Removal                               ;
++-----------------------------------------+--------------------------------------------------+
+; Pipeline_FIR_c:M4|PR0[0][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[0][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[0][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[0][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[0][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[1][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[1][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[2][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[3][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[4][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR0[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|FIR_out[11]           ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[0][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[0][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[0][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[0][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[0][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[1][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[1][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[2][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[3][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[4][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR0[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|FIR_out[10,11]        ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[1][7]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[2][8]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[3][0]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[4][8]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[5][8]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[5][7]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[6][8]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[6][7]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[6][6]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[6][5]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[6][0]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[1][8]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[0][0]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[0][5]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[0][6]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[0][7]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|PR[0][8]              ; Stuck at GND due to stuck port data_in           ;
+; noPipeline_FIR:M1|FIR_out_MAC[9..11]    ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[3][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[4][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR1[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[2][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[3][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[4][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR2[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR2[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR2[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR2[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR2[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR2[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|PR2[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[3][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[4][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[4][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR3[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR4[5][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR4[5][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR4[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR4[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR4[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR4[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR4[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR5[6][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR5[6][7]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR5[6][6]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR5[6][5]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR5[6][0]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[1][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_c:M4|FIR_out[10]           ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|FIR_out_pipeline[11]  ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_a:M2|Sample_Array[3][0]    ; Merged with Pipeline_FIR_a:M2|PR[2][0]           ;
+; Pipeline_FIR_b:M3|PR0[2][0]             ; Merged with Pipeline_FIR_a:M2|PR[2][0]           ;
+; Pipeline_FIR_b:M3|PR1[1][0]             ; Merged with Pipeline_FIR_a:M2|PR[2][0]           ;
+; Pipeline_FIR_b:M3|Sample_Array[3][0]    ; Merged with Pipeline_FIR_a:M2|PR[2][0]           ;
+; Pipeline_FIR_c:M4|PR0[2][0]             ; Merged with Pipeline_FIR_a:M2|PR[2][0]           ;
+; Pipeline_FIR_c:M4|Sample_Array[3][0]    ; Merged with Pipeline_FIR_a:M2|PR[2][0]           ;
+; noPipeline_FIR:M1|Sample_Array[3][0]    ; Merged with Pipeline_FIR_a:M2|PR[2][0]           ;
+; Pipeline_FIR_a:M2|Sample_Array[2][0]    ; Merged with Pipeline_FIR_a:M2|PR[1][0]           ;
+; Pipeline_FIR_b:M3|PR0[1][0]             ; Merged with Pipeline_FIR_a:M2|PR[1][0]           ;
+; Pipeline_FIR_b:M3|Sample_Array[2][0]    ; Merged with Pipeline_FIR_a:M2|PR[1][0]           ;
+; Pipeline_FIR_c:M4|PR0[1][0]             ; Merged with Pipeline_FIR_a:M2|PR[1][0]           ;
+; Pipeline_FIR_c:M4|Sample_Array[2][0]    ; Merged with Pipeline_FIR_a:M2|PR[1][0]           ;
+; noPipeline_FIR:M1|Sample_Array[2][0]    ; Merged with Pipeline_FIR_a:M2|PR[1][0]           ;
+; Pipeline_FIR_a:M2|Sample_Array[1][0]    ; Merged with Pipeline_FIR_a:M2|PR[0][1]           ;
+; Pipeline_FIR_b:M3|PR0[0][1]             ; Merged with Pipeline_FIR_a:M2|PR[0][1]           ;
+; Pipeline_FIR_b:M3|Sample_Array[1][0]    ; Merged with Pipeline_FIR_a:M2|PR[0][1]           ;
+; Pipeline_FIR_c:M4|PR0[0][1]             ; Merged with Pipeline_FIR_a:M2|PR[0][1]           ;
+; Pipeline_FIR_c:M4|Sample_Array[1][0]    ; Merged with Pipeline_FIR_a:M2|PR[0][1]           ;
+; noPipeline_FIR:M1|Sample_Array[1][0]    ; Merged with Pipeline_FIR_a:M2|PR[0][1]           ;
+; Pipeline_FIR_a:M2|Sample_Array[2][1]    ; Merged with Pipeline_FIR_a:M2|PR[1][1]           ;
+; Pipeline_FIR_b:M3|PR0[1][1]             ; Merged with Pipeline_FIR_a:M2|PR[1][1]           ;
+; Pipeline_FIR_b:M3|Sample_Array[2][1]    ; Merged with Pipeline_FIR_a:M2|PR[1][1]           ;
+; Pipeline_FIR_c:M4|PR0[1][1]             ; Merged with Pipeline_FIR_a:M2|PR[1][1]           ;
+; Pipeline_FIR_c:M4|Sample_Array[2][1]    ; Merged with Pipeline_FIR_a:M2|PR[1][1]           ;
+; noPipeline_FIR:M1|Sample_Array[2][1]    ; Merged with Pipeline_FIR_a:M2|PR[1][1]           ;
+; Pipeline_FIR_a:M2|Sample_Array[1][1]    ; Merged with Pipeline_FIR_a:M2|PR[0][2]           ;
+; Pipeline_FIR_b:M3|PR0[0][2]             ; Merged with Pipeline_FIR_a:M2|PR[0][2]           ;
+; Pipeline_FIR_b:M3|Sample_Array[1][1]    ; Merged with Pipeline_FIR_a:M2|PR[0][2]           ;
+; Pipeline_FIR_c:M4|PR0[0][2]             ; Merged with Pipeline_FIR_a:M2|PR[0][2]           ;
+; Pipeline_FIR_c:M4|Sample_Array[1][1]    ; Merged with Pipeline_FIR_a:M2|PR[0][2]           ;
+; noPipeline_FIR:M1|Sample_Array[1][1]    ; Merged with Pipeline_FIR_a:M2|PR[0][2]           ;
+; Pipeline_FIR_b:M3|PR0[1][2]             ; Merged with Pipeline_FIR_a:M2|PR[1][2]           ;
+; Pipeline_FIR_c:M4|PR0[1][2]             ; Merged with Pipeline_FIR_a:M2|PR[1][2]           ;
+; Pipeline_FIR_a:M2|Sample_Array[1][2]    ; Merged with Pipeline_FIR_a:M2|PR[0][3]           ;
+; Pipeline_FIR_b:M3|PR0[0][3]             ; Merged with Pipeline_FIR_a:M2|PR[0][3]           ;
+; Pipeline_FIR_b:M3|Sample_Array[1][2]    ; Merged with Pipeline_FIR_a:M2|PR[0][3]           ;
+; Pipeline_FIR_c:M4|PR0[0][3]             ; Merged with Pipeline_FIR_a:M2|PR[0][3]           ;
+; Pipeline_FIR_c:M4|Sample_Array[1][2]    ; Merged with Pipeline_FIR_a:M2|PR[0][3]           ;
+; noPipeline_FIR:M1|Sample_Array[1][2]    ; Merged with Pipeline_FIR_a:M2|PR[0][3]           ;
+; Pipeline_FIR_b:M3|PR0[1][3]             ; Merged with Pipeline_FIR_a:M2|PR[1][3]           ;
+; Pipeline_FIR_c:M4|PR0[1][3]             ; Merged with Pipeline_FIR_a:M2|PR[1][3]           ;
+; Pipeline_FIR_a:M2|Sample_Array[1][3]    ; Merged with Pipeline_FIR_a:M2|PR[0][4]           ;
+; Pipeline_FIR_b:M3|PR0[0][4]             ; Merged with Pipeline_FIR_a:M2|PR[0][4]           ;
+; Pipeline_FIR_b:M3|Sample_Array[1][3]    ; Merged with Pipeline_FIR_a:M2|PR[0][4]           ;
+; Pipeline_FIR_c:M4|PR0[0][4]             ; Merged with Pipeline_FIR_a:M2|PR[0][4]           ;
+; Pipeline_FIR_c:M4|Sample_Array[1][3]    ; Merged with Pipeline_FIR_a:M2|PR[0][4]           ;
+; noPipeline_FIR:M1|Sample_Array[1][3]    ; Merged with Pipeline_FIR_a:M2|PR[0][4]           ;
+; Pipeline_FIR_b:M3|PR0[1][4]             ; Merged with Pipeline_FIR_a:M2|PR[1][4]           ;
+; Pipeline_FIR_c:M4|PR0[1][4]             ; Merged with Pipeline_FIR_a:M2|PR[1][4]           ;
+; Pipeline_FIR_b:M3|PR0[1][5]             ; Merged with Pipeline_FIR_a:M2|PR[1][5]           ;
+; Pipeline_FIR_c:M4|PR0[1][5]             ; Merged with Pipeline_FIR_a:M2|PR[1][5]           ;
+; Pipeline_FIR_b:M3|PR0[1][6]             ; Merged with Pipeline_FIR_a:M2|PR[1][6]           ;
+; Pipeline_FIR_c:M4|PR0[1][6]             ; Merged with Pipeline_FIR_a:M2|PR[1][6]           ;
+; Pipeline_FIR_a:M2|Sample_Array[3][1]    ; Merged with Pipeline_FIR_a:M2|PR[2][1]           ;
+; Pipeline_FIR_b:M3|PR0[2][1]             ; Merged with Pipeline_FIR_a:M2|PR[2][1]           ;
+; Pipeline_FIR_b:M3|Sample_Array[3][1]    ; Merged with Pipeline_FIR_a:M2|PR[2][1]           ;
+; Pipeline_FIR_c:M4|PR0[2][1]             ; Merged with Pipeline_FIR_a:M2|PR[2][1]           ;
+; Pipeline_FIR_c:M4|Sample_Array[3][1]    ; Merged with Pipeline_FIR_a:M2|PR[2][1]           ;
+; noPipeline_FIR:M1|Sample_Array[3][1]    ; Merged with Pipeline_FIR_a:M2|PR[2][1]           ;
+; Pipeline_FIR_a:M2|Sample_Array[3][2]    ; Merged with Pipeline_FIR_a:M2|PR[2][2]           ;
+; Pipeline_FIR_b:M3|PR0[2][2]             ; Merged with Pipeline_FIR_a:M2|PR[2][2]           ;
+; Pipeline_FIR_b:M3|Sample_Array[3][2]    ; Merged with Pipeline_FIR_a:M2|PR[2][2]           ;
+; Pipeline_FIR_c:M4|PR0[2][2]             ; Merged with Pipeline_FIR_a:M2|PR[2][2]           ;
+; Pipeline_FIR_c:M4|Sample_Array[3][2]    ; Merged with Pipeline_FIR_a:M2|PR[2][2]           ;
+; noPipeline_FIR:M1|Sample_Array[3][2]    ; Merged with Pipeline_FIR_a:M2|PR[2][2]           ;
+; Pipeline_FIR_b:M3|PR0[2][3]             ; Merged with Pipeline_FIR_a:M2|PR[2][3]           ;
+; Pipeline_FIR_c:M4|PR0[2][3]             ; Merged with Pipeline_FIR_a:M2|PR[2][3]           ;
+; Pipeline_FIR_b:M3|PR0[2][4]             ; Merged with Pipeline_FIR_a:M2|PR[2][4]           ;
+; Pipeline_FIR_c:M4|PR0[2][4]             ; Merged with Pipeline_FIR_a:M2|PR[2][4]           ;
+; Pipeline_FIR_b:M3|PR0[2][5]             ; Merged with Pipeline_FIR_a:M2|PR[2][5]           ;
+; Pipeline_FIR_c:M4|PR0[2][5]             ; Merged with Pipeline_FIR_a:M2|PR[2][5]           ;
+; Pipeline_FIR_b:M3|PR0[2][6]             ; Merged with Pipeline_FIR_a:M2|PR[2][6]           ;
+; Pipeline_FIR_c:M4|PR0[2][6]             ; Merged with Pipeline_FIR_a:M2|PR[2][6]           ;
+; Pipeline_FIR_b:M3|PR0[2][7]             ; Merged with Pipeline_FIR_a:M2|PR[2][7]           ;
+; Pipeline_FIR_c:M4|PR0[2][7]             ; Merged with Pipeline_FIR_a:M2|PR[2][7]           ;
+; Pipeline_FIR_a:M2|Sample_Array[5][0]    ; Merged with Pipeline_FIR_a:M2|PR[4][0]           ;
+; Pipeline_FIR_b:M3|PR0[4][0]             ; Merged with Pipeline_FIR_a:M2|PR[4][0]           ;
+; Pipeline_FIR_b:M3|Sample_Array[5][0]    ; Merged with Pipeline_FIR_a:M2|PR[4][0]           ;
+; Pipeline_FIR_c:M4|PR0[4][0]             ; Merged with Pipeline_FIR_a:M2|PR[4][0]           ;
+; Pipeline_FIR_c:M4|Sample_Array[5][0]    ; Merged with Pipeline_FIR_a:M2|PR[4][0]           ;
+; noPipeline_FIR:M1|Sample_Array[5][0]    ; Merged with Pipeline_FIR_a:M2|PR[4][0]           ;
+; Pipeline_FIR_b:M3|PR0[3][1]             ; Merged with Pipeline_FIR_a:M2|PR[3][1]           ;
+; Pipeline_FIR_c:M4|PR0[3][1]             ; Merged with Pipeline_FIR_a:M2|PR[3][1]           ;
+; Pipeline_FIR_b:M3|PR0[3][2]             ; Merged with Pipeline_FIR_a:M2|PR[3][2]           ;
+; Pipeline_FIR_c:M4|PR0[3][2]             ; Merged with Pipeline_FIR_a:M2|PR[3][2]           ;
+; Pipeline_FIR_b:M3|PR0[3][3]             ; Merged with Pipeline_FIR_a:M2|PR[3][3]           ;
+; Pipeline_FIR_c:M4|PR0[3][3]             ; Merged with Pipeline_FIR_a:M2|PR[3][3]           ;
+; Pipeline_FIR_b:M3|PR0[3][4]             ; Merged with Pipeline_FIR_a:M2|PR[3][4]           ;
+; Pipeline_FIR_c:M4|PR0[3][4]             ; Merged with Pipeline_FIR_a:M2|PR[3][4]           ;
+; Pipeline_FIR_b:M3|PR0[3][5]             ; Merged with Pipeline_FIR_a:M2|PR[3][5]           ;
+; Pipeline_FIR_c:M4|PR0[3][5]             ; Merged with Pipeline_FIR_a:M2|PR[3][5]           ;
+; Pipeline_FIR_b:M3|PR0[3][6]             ; Merged with Pipeline_FIR_a:M2|PR[3][6]           ;
+; Pipeline_FIR_c:M4|PR0[3][6]             ; Merged with Pipeline_FIR_a:M2|PR[3][6]           ;
+; Pipeline_FIR_b:M3|PR0[3][7]             ; Merged with Pipeline_FIR_a:M2|PR[3][7]           ;
+; Pipeline_FIR_c:M4|PR0[3][7]             ; Merged with Pipeline_FIR_a:M2|PR[3][7]           ;
+; Pipeline_FIR_b:M3|PR0[3][8]             ; Merged with Pipeline_FIR_a:M2|PR[3][8]           ;
+; Pipeline_FIR_c:M4|PR0[3][8]             ; Merged with Pipeline_FIR_a:M2|PR[3][8]           ;
+; Pipeline_FIR_a:M2|Sample_Array[5][1]    ; Merged with Pipeline_FIR_a:M2|PR[4][1]           ;
+; Pipeline_FIR_b:M3|PR0[4][1]             ; Merged with Pipeline_FIR_a:M2|PR[4][1]           ;
+; Pipeline_FIR_b:M3|Sample_Array[5][1]    ; Merged with Pipeline_FIR_a:M2|PR[4][1]           ;
+; Pipeline_FIR_c:M4|PR0[4][1]             ; Merged with Pipeline_FIR_a:M2|PR[4][1]           ;
+; Pipeline_FIR_c:M4|Sample_Array[5][1]    ; Merged with Pipeline_FIR_a:M2|PR[4][1]           ;
+; noPipeline_FIR:M1|Sample_Array[5][1]    ; Merged with Pipeline_FIR_a:M2|PR[4][1]           ;
+; Pipeline_FIR_a:M2|Sample_Array[5][2]    ; Merged with Pipeline_FIR_a:M2|PR[4][2]           ;
+; Pipeline_FIR_b:M3|PR0[4][2]             ; Merged with Pipeline_FIR_a:M2|PR[4][2]           ;
+; Pipeline_FIR_b:M3|Sample_Array[5][2]    ; Merged with Pipeline_FIR_a:M2|PR[4][2]           ;
+; Pipeline_FIR_c:M4|PR0[4][2]             ; Merged with Pipeline_FIR_a:M2|PR[4][2]           ;
+; Pipeline_FIR_c:M4|Sample_Array[5][2]    ; Merged with Pipeline_FIR_a:M2|PR[4][2]           ;
+; noPipeline_FIR:M1|Sample_Array[5][2]    ; Merged with Pipeline_FIR_a:M2|PR[4][2]           ;
+; Pipeline_FIR_b:M3|PR0[4][3]             ; Merged with Pipeline_FIR_a:M2|PR[4][3]           ;
+; Pipeline_FIR_c:M4|PR0[4][3]             ; Merged with Pipeline_FIR_a:M2|PR[4][3]           ;
+; Pipeline_FIR_b:M3|PR0[4][4]             ; Merged with Pipeline_FIR_a:M2|PR[4][4]           ;
+; Pipeline_FIR_c:M4|PR0[4][4]             ; Merged with Pipeline_FIR_a:M2|PR[4][4]           ;
+; Pipeline_FIR_b:M3|PR0[4][5]             ; Merged with Pipeline_FIR_a:M2|PR[4][5]           ;
+; Pipeline_FIR_c:M4|PR0[4][5]             ; Merged with Pipeline_FIR_a:M2|PR[4][5]           ;
+; Pipeline_FIR_b:M3|PR0[4][6]             ; Merged with Pipeline_FIR_a:M2|PR[4][6]           ;
+; Pipeline_FIR_c:M4|PR0[4][6]             ; Merged with Pipeline_FIR_a:M2|PR[4][6]           ;
+; Pipeline_FIR_b:M3|PR0[4][7]             ; Merged with Pipeline_FIR_a:M2|PR[4][7]           ;
+; Pipeline_FIR_c:M4|PR0[4][7]             ; Merged with Pipeline_FIR_a:M2|PR[4][7]           ;
+; Pipeline_FIR_a:M2|Sample_Array[6][0]    ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; Pipeline_FIR_b:M3|PR0[5][0]             ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; Pipeline_FIR_b:M3|PR1[4][0]             ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; Pipeline_FIR_b:M3|Sample_Array[6][0]    ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; Pipeline_FIR_c:M4|PR0[5][0]             ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; Pipeline_FIR_c:M4|PR1[4][0]             ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; Pipeline_FIR_c:M4|Sample_Array[6][0]    ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; noPipeline_FIR:M1|Sample_Array[6][0]    ; Merged with Pipeline_FIR_a:M2|PR[5][0]           ;
+; Pipeline_FIR_a:M2|Sample_Array[6][1]    ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; Pipeline_FIR_b:M3|PR0[5][1]             ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; Pipeline_FIR_b:M3|PR1[4][1]             ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; Pipeline_FIR_b:M3|Sample_Array[6][1]    ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; Pipeline_FIR_c:M4|PR0[5][1]             ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; Pipeline_FIR_c:M4|PR1[4][1]             ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; Pipeline_FIR_c:M4|Sample_Array[6][1]    ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; noPipeline_FIR:M1|Sample_Array[6][1]    ; Merged with Pipeline_FIR_a:M2|PR[5][1]           ;
+; Pipeline_FIR_b:M3|PR0[5][2]             ; Merged with Pipeline_FIR_a:M2|PR[5][2]           ;
+; Pipeline_FIR_c:M4|PR0[5][2]             ; Merged with Pipeline_FIR_a:M2|PR[5][2]           ;
+; Pipeline_FIR_b:M3|PR0[5][3]             ; Merged with Pipeline_FIR_a:M2|PR[5][3]           ;
+; Pipeline_FIR_c:M4|PR0[5][3]             ; Merged with Pipeline_FIR_a:M2|PR[5][3]           ;
+; Pipeline_FIR_b:M3|PR0[5][4]             ; Merged with Pipeline_FIR_a:M2|PR[5][4]           ;
+; Pipeline_FIR_c:M4|PR0[5][4]             ; Merged with Pipeline_FIR_a:M2|PR[5][4]           ;
+; Pipeline_FIR_b:M3|PR0[5][5]             ; Merged with Pipeline_FIR_a:M2|PR[5][5]           ;
+; Pipeline_FIR_c:M4|PR0[5][5]             ; Merged with Pipeline_FIR_a:M2|PR[5][5]           ;
+; Pipeline_FIR_b:M3|PR0[5][6]             ; Merged with Pipeline_FIR_a:M2|PR[5][6]           ;
+; Pipeline_FIR_c:M4|PR0[5][6]             ; Merged with Pipeline_FIR_a:M2|PR[5][6]           ;
+; Pipeline_FIR_b:M3|PR0[6][1]             ; Merged with Pipeline_FIR_a:M2|PR[6][1]           ;
+; Pipeline_FIR_b:M3|PR1[5][0]             ; Merged with Pipeline_FIR_a:M2|PR[6][1]           ;
+; Pipeline_FIR_b:M3|PR2[4][0]             ; Merged with Pipeline_FIR_a:M2|PR[6][1]           ;
+; Pipeline_FIR_c:M4|PR0[6][1]             ; Merged with Pipeline_FIR_a:M2|PR[6][1]           ;
+; Pipeline_FIR_c:M4|PR1[5][0]             ; Merged with Pipeline_FIR_a:M2|PR[6][1]           ;
+; Pipeline_FIR_b:M3|PR0[6][2]             ; Merged with Pipeline_FIR_a:M2|PR[6][2]           ;
+; Pipeline_FIR_b:M3|PR1[5][1]             ; Merged with Pipeline_FIR_a:M2|PR[6][2]           ;
+; Pipeline_FIR_b:M3|PR2[4][1]             ; Merged with Pipeline_FIR_a:M2|PR[6][2]           ;
+; Pipeline_FIR_c:M4|PR0[6][2]             ; Merged with Pipeline_FIR_a:M2|PR[6][2]           ;
+; Pipeline_FIR_c:M4|PR1[5][1]             ; Merged with Pipeline_FIR_a:M2|PR[6][2]           ;
+; Pipeline_FIR_b:M3|PR0[6][3]             ; Merged with Pipeline_FIR_a:M2|PR[6][3]           ;
+; Pipeline_FIR_b:M3|PR2[4][2]             ; Merged with Pipeline_FIR_a:M2|PR[6][3]           ;
+; Pipeline_FIR_c:M4|PR0[6][3]             ; Merged with Pipeline_FIR_a:M2|PR[6][3]           ;
+; Pipeline_FIR_b:M3|PR0[6][4]             ; Merged with Pipeline_FIR_a:M2|PR[6][4]           ;
+; Pipeline_FIR_c:M4|PR0[6][4]             ; Merged with Pipeline_FIR_a:M2|PR[6][4]           ;
+; Pipeline_FIR_b:M3|PR2[5][0]             ; Merged with Pipeline_FIR_b:M3|PR1[6][1]          ;
+; Pipeline_FIR_b:M3|PR3[4][0]             ; Merged with Pipeline_FIR_b:M3|PR1[6][1]          ;
+; Pipeline_FIR_c:M4|PR1[6][1]             ; Merged with Pipeline_FIR_b:M3|PR1[6][1]          ;
+; Pipeline_FIR_c:M4|PR2[5][0]             ; Merged with Pipeline_FIR_b:M3|PR1[6][1]          ;
+; Pipeline_FIR_b:M3|PR2[5][1]             ; Merged with Pipeline_FIR_b:M3|PR1[6][2]          ;
+; Pipeline_FIR_b:M3|PR3[4][1]             ; Merged with Pipeline_FIR_b:M3|PR1[6][2]          ;
+; Pipeline_FIR_c:M4|PR1[6][2]             ; Merged with Pipeline_FIR_b:M3|PR1[6][2]          ;
+; Pipeline_FIR_c:M4|PR2[5][1]             ; Merged with Pipeline_FIR_b:M3|PR1[6][2]          ;
+; Pipeline_FIR_c:M4|PR2[5][2]             ; Merged with Pipeline_FIR_b:M3|PR2[5][2]          ;
+; Pipeline_FIR_c:M4|PR2[5][3]             ; Merged with Pipeline_FIR_b:M3|PR2[5][3]          ;
+; Pipeline_FIR_c:M4|PR2[5][4]             ; Merged with Pipeline_FIR_b:M3|PR2[5][4]          ;
+; Pipeline_FIR_c:M4|PR2[5][5]             ; Merged with Pipeline_FIR_b:M3|PR2[5][5]          ;
+; Pipeline_FIR_c:M4|PR2[5][6]             ; Merged with Pipeline_FIR_b:M3|PR2[5][6]          ;
+; Pipeline_FIR_b:M3|PR3[5][0]             ; Merged with Pipeline_FIR_b:M3|PR2[6][1]          ;
+; Pipeline_FIR_c:M4|PR2[6][1]             ; Merged with Pipeline_FIR_b:M3|PR2[6][1]          ;
+; Pipeline_FIR_b:M3|PR3[5][1]             ; Merged with Pipeline_FIR_b:M3|PR2[6][2]          ;
+; Pipeline_FIR_c:M4|PR2[6][2]             ; Merged with Pipeline_FIR_b:M3|PR2[6][2]          ;
+; Pipeline_FIR_c:M4|PR2[6][3]             ; Merged with Pipeline_FIR_b:M3|PR2[6][3]          ;
+; Pipeline_FIR_c:M4|PR2[6][4]             ; Merged with Pipeline_FIR_b:M3|PR2[6][4]          ;
+; Pipeline_FIR_b:M3|Sample_Array[2][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[2][2] ;
+; Pipeline_FIR_c:M4|Sample_Array[2][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[2][2] ;
+; noPipeline_FIR:M1|Sample_Array[2][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[2][2] ;
+; Pipeline_FIR_b:M3|Sample_Array[2][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[2][3] ;
+; Pipeline_FIR_c:M4|Sample_Array[2][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[2][3] ;
+; noPipeline_FIR:M1|Sample_Array[2][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[2][3] ;
+; Pipeline_FIR_b:M3|PR1[2][0]             ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][0] ;
+; Pipeline_FIR_b:M3|Sample_Array[4][0]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][0] ;
+; Pipeline_FIR_c:M4|Sample_Array[4][0]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][0] ;
+; noPipeline_FIR:M1|Sample_Array[4][0]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][0] ;
+; Pipeline_FIR_b:M3|Sample_Array[3][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[3][3] ;
+; Pipeline_FIR_c:M4|Sample_Array[3][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[3][3] ;
+; noPipeline_FIR:M1|Sample_Array[3][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[3][3] ;
+; Pipeline_FIR_b:M3|PR1[2][1]             ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][1] ;
+; Pipeline_FIR_b:M3|Sample_Array[4][1]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][1] ;
+; Pipeline_FIR_c:M4|Sample_Array[4][1]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][1] ;
+; noPipeline_FIR:M1|Sample_Array[4][1]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][1] ;
+; Pipeline_FIR_b:M3|PR1[2][2]             ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][2] ;
+; Pipeline_FIR_b:M3|Sample_Array[4][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][2] ;
+; Pipeline_FIR_c:M4|Sample_Array[4][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][2] ;
+; noPipeline_FIR:M1|Sample_Array[4][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][2] ;
+; Pipeline_FIR_b:M3|Sample_Array[4][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][3] ;
+; Pipeline_FIR_c:M4|Sample_Array[4][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][3] ;
+; noPipeline_FIR:M1|Sample_Array[4][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[4][3] ;
+; Pipeline_FIR_b:M3|Sample_Array[5][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[5][3] ;
+; Pipeline_FIR_c:M4|Sample_Array[5][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[5][3] ;
+; noPipeline_FIR:M1|Sample_Array[5][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[5][3] ;
+; Pipeline_FIR_b:M3|PR1[4][2]             ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][2] ;
+; Pipeline_FIR_b:M3|Sample_Array[6][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][2] ;
+; Pipeline_FIR_c:M4|PR1[4][2]             ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][2] ;
+; Pipeline_FIR_c:M4|Sample_Array[6][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][2] ;
+; noPipeline_FIR:M1|Sample_Array[6][2]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][2] ;
+; Pipeline_FIR_b:M3|Sample_Array[6][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][3] ;
+; Pipeline_FIR_c:M4|Sample_Array[6][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][3] ;
+; noPipeline_FIR:M1|Sample_Array[6][3]    ; Merged with Pipeline_FIR_a:M2|Sample_Array[6][3] ;
+; Pipeline_FIR_c:M4|PR1[4][7]             ; Merged with Pipeline_FIR_b:M3|PR1[4][7]          ;
+; Pipeline_FIR_c:M4|PR1[4][6]             ; Merged with Pipeline_FIR_b:M3|PR1[4][6]          ;
+; Pipeline_FIR_c:M4|PR1[4][5]             ; Merged with Pipeline_FIR_b:M3|PR1[4][5]          ;
+; Pipeline_FIR_c:M4|PR1[4][4]             ; Merged with Pipeline_FIR_b:M3|PR1[4][4]          ;
+; Pipeline_FIR_c:M4|PR1[4][3]             ; Merged with Pipeline_FIR_b:M3|PR1[4][3]          ;
+; Pipeline_FIR_c:M4|PR1[3][8]             ; Merged with Pipeline_FIR_b:M3|PR1[3][8]          ;
+; Pipeline_FIR_c:M4|PR1[3][7]             ; Merged with Pipeline_FIR_b:M3|PR1[3][7]          ;
+; Pipeline_FIR_c:M4|PR1[3][6]             ; Merged with Pipeline_FIR_b:M3|PR1[3][6]          ;
+; Pipeline_FIR_c:M4|PR1[3][5]             ; Merged with Pipeline_FIR_b:M3|PR1[3][5]          ;
+; Pipeline_FIR_c:M4|PR1[3][4]             ; Merged with Pipeline_FIR_b:M3|PR1[3][4]          ;
+; Pipeline_FIR_c:M4|PR1[3][3]             ; Merged with Pipeline_FIR_b:M3|PR1[3][3]          ;
+; Pipeline_FIR_c:M4|PR1[3][2]             ; Merged with Pipeline_FIR_b:M3|PR1[3][2]          ;
+; Pipeline_FIR_c:M4|PR1[3][1]             ; Merged with Pipeline_FIR_b:M3|PR1[3][1]          ;
+; Pipeline_FIR_c:M4|PR1[5][2]             ; Merged with Pipeline_FIR_b:M3|PR1[5][2]          ;
+; Pipeline_FIR_c:M4|PR1[5][3]             ; Merged with Pipeline_FIR_b:M3|PR1[5][3]          ;
+; Pipeline_FIR_c:M4|PR1[5][4]             ; Merged with Pipeline_FIR_b:M3|PR1[5][4]          ;
+; Pipeline_FIR_c:M4|PR1[5][5]             ; Merged with Pipeline_FIR_b:M3|PR1[5][5]          ;
+; Pipeline_FIR_c:M4|PR1[5][6]             ; Merged with Pipeline_FIR_b:M3|PR1[5][6]          ;
+; Pipeline_FIR_b:M3|PR3[4][2]             ; Merged with Pipeline_FIR_b:M3|PR1[6][3]          ;
+; Pipeline_FIR_c:M4|PR1[6][3]             ; Merged with Pipeline_FIR_b:M3|PR1[6][3]          ;
+; Pipeline_FIR_c:M4|PR1[6][4]             ; Merged with Pipeline_FIR_b:M3|PR1[6][4]          ;
+; Pipeline_FIR_b:M3|PR4[5][1]             ; Merged with Pipeline_FIR_b:M3|PR3[6][2]          ;
+; Pipeline_FIR_b:M3|PR4[5][0]             ; Merged with Pipeline_FIR_b:M3|PR3[6][1]          ;
+; Pipeline_FIR_a:M2|PR[3][8]              ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR1[3][8]             ; Stuck at GND due to stuck port data_in           ;
+; Pipeline_FIR_b:M3|PR2[3][8]             ; Stuck at GND due to stuck port data_in           ;
+; Total Number of Removed Registers = 355 ;                                                  ;
++-----------------------------------------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                         ;
++-----------------------------+---------------------------+-----------------------------------------------------------+
+; Register name               ; Reason for Removal        ; Registers Removed due to This Register                    ;
++-----------------------------+---------------------------+-----------------------------------------------------------+
+; Pipeline_FIR_b:M3|PR0[6][8] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[6][8], Pipeline_FIR_b:M3|PR2[6][8], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[6][8], Pipeline_FIR_b:M3|PR4[6][8], ;
+;                             ;                           ; Pipeline_FIR_b:M3|PR5[6][8]                               ;
+; Pipeline_FIR_b:M3|PR0[6][7] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[6][7], Pipeline_FIR_b:M3|PR2[6][7], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[6][7], Pipeline_FIR_b:M3|PR4[6][7], ;
+;                             ;                           ; Pipeline_FIR_b:M3|PR5[6][7]                               ;
+; Pipeline_FIR_b:M3|PR0[6][6] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[6][6], Pipeline_FIR_b:M3|PR2[6][6], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[6][6], Pipeline_FIR_b:M3|PR4[6][6], ;
+;                             ;                           ; Pipeline_FIR_b:M3|PR5[6][6]                               ;
+; Pipeline_FIR_b:M3|PR0[6][5] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[6][5], Pipeline_FIR_b:M3|PR2[6][5], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[6][5], Pipeline_FIR_b:M3|PR4[6][5], ;
+;                             ;                           ; Pipeline_FIR_b:M3|PR5[6][5]                               ;
+; Pipeline_FIR_b:M3|PR0[6][0] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[6][0], Pipeline_FIR_b:M3|PR2[6][0], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[6][0], Pipeline_FIR_b:M3|PR4[6][0], ;
+;                             ;                           ; Pipeline_FIR_b:M3|PR5[6][0]                               ;
+; Pipeline_FIR_b:M3|PR0[5][8] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[5][8], Pipeline_FIR_b:M3|PR2[5][8], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[5][8], Pipeline_FIR_b:M3|PR4[5][8]  ;
+; Pipeline_FIR_b:M3|PR0[5][7] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[5][7], Pipeline_FIR_b:M3|PR2[5][7], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[5][7], Pipeline_FIR_b:M3|PR4[5][7]  ;
+; Pipeline_FIR_b:M3|PR0[4][8] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[4][8], Pipeline_FIR_b:M3|PR2[4][8], ;
+;                             ; due to stuck port data_in ; Pipeline_FIR_b:M3|PR3[4][8]                               ;
+; Pipeline_FIR_c:M4|PR0[5][8] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[5][8], Pipeline_FIR_c:M4|PR2[5][8]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[5][7] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[5][7], Pipeline_FIR_c:M4|PR2[5][7]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[6][8] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[6][8], Pipeline_FIR_c:M4|PR2[6][8]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[6][7] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[6][7], Pipeline_FIR_c:M4|PR2[6][7]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[6][6] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[6][6], Pipeline_FIR_c:M4|PR2[6][6]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[6][5] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[6][5], Pipeline_FIR_c:M4|PR2[6][5]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[6][0] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[6][0], Pipeline_FIR_c:M4|PR2[6][0]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_b:M3|PR0[3][0] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[3][0], Pipeline_FIR_b:M3|PR2[3][0]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_a:M2|PR[3][8]  ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[3][8], Pipeline_FIR_b:M3|PR2[3][8]  ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[3][0] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[3][0]                               ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_c:M4|PR0[4][8] ; Stuck at GND              ; Pipeline_FIR_c:M4|PR1[4][8]                               ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_b:M3|PR0[0][8] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[1][8]                               ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_b:M3|PR0[2][8] ; Stuck at GND              ; Pipeline_FIR_b:M3|PR1[2][8]                               ;
+;                             ; due to stuck port data_in ;                                                           ;
+; Pipeline_FIR_a:M2|PR[1][7]  ; Stuck at GND              ; Pipeline_FIR_a:M2|FIR_out_pipeline[11]                    ;
+;                             ; due to stuck port data_in ;                                                           ;
++-----------------------------+---------------------------+-----------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 230   ;
+; Number of registers using Synchronous Clear  ; 230   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Pipeline_FIR ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; FIR_order      ; 6     ; Signed Integer                                      ;
+; sample_size    ; 4     ; Signed Integer                                      ;
+; weight_size    ; 5     ; Signed Integer                                      ;
+; word_size_out  ; 12    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; FIR_order      ; 6     ; Signed Integer                        ;
+; sample_size    ; 4     ; Signed Integer                        ;
+; weight_size    ; 5     ; Signed Integer                        ;
+; word_size_out  ; 12    ; Signed Integer                        ;
+; b0             ; 0010  ; Unsigned Binary                       ;
+; b1             ; 0101  ; Unsigned Binary                       ;
+; b2             ; 1001  ; Unsigned Binary                       ;
+; b3             ; 1110  ; Unsigned Binary                       ;
+; b4             ; 1001  ; Unsigned Binary                       ;
+; b5             ; 0101  ; Unsigned Binary                       ;
+; b6             ; 0010  ; Unsigned Binary                       ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M0 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; sample_size    ; 4     ; Signed Integer                               ;
+; weight_size    ; 5     ; Signed Integer                               ;
+; word_size_out  ; 12    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; sample_size    ; 4     ; Signed Integer                               ;
+; weight_size    ; 5     ; Signed Integer                               ;
+; word_size_out  ; 12    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M2 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; sample_size    ; 4     ; Signed Integer                               ;
+; weight_size    ; 5     ; Signed Integer                               ;
+; word_size_out  ; 12    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M3 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; sample_size    ; 4     ; Signed Integer                               ;
+; weight_size    ; 5     ; Signed Integer                               ;
+; word_size_out  ; 12    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M4 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; sample_size    ; 4     ; Signed Integer                               ;
+; weight_size    ; 5     ; Signed Integer                               ;
+; word_size_out  ; 12    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M5 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; sample_size    ; 4     ; Signed Integer                               ;
+; weight_size    ; 5     ; Signed Integer                               ;
+; word_size_out  ; 12    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: noPipeline_FIR:M1|MAC:M6 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; sample_size    ; 4     ; Signed Integer                               ;
+; weight_size    ; 5     ; Signed Integer                               ;
+; word_size_out  ; 12    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Pipeline_FIR_a:M2 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; FIR_order      ; 6     ; Signed Integer                        ;
+; sample_size    ; 4     ; Signed Integer                        ;
+; weight_size    ; 5     ; Signed Integer                        ;
+; word_size_out  ; 12    ; Signed Integer                        ;
+; product_size   ; 9     ; Signed Integer                        ;
+; b0             ; 0010  ; Unsigned Binary                       ;
+; b1             ; 0101  ; Unsigned Binary                       ;
+; b2             ; 1001  ; Unsigned Binary                       ;
+; b3             ; 1110  ; Unsigned Binary                       ;
+; b4             ; 1001  ; Unsigned Binary                       ;
+; b5             ; 0101  ; Unsigned Binary                       ;
+; b6             ; 0010  ; Unsigned Binary                       ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Pipeline_FIR_b:M3 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; FIR_order      ; 6     ; Signed Integer                        ;
+; sample_size    ; 4     ; Signed Integer                        ;
+; weight_size    ; 5     ; Signed Integer                        ;
+; word_size_out  ; 12    ; Signed Integer                        ;
+; product_size   ; 9     ; Signed Integer                        ;
+; b0             ; 0010  ; Unsigned Binary                       ;
+; b1             ; 0101  ; Unsigned Binary                       ;
+; b2             ; 1001  ; Unsigned Binary                       ;
+; b3             ; 1110  ; Unsigned Binary                       ;
+; b4             ; 1001  ; Unsigned Binary                       ;
+; b5             ; 0101  ; Unsigned Binary                       ;
+; b6             ; 0010  ; Unsigned Binary                       ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Pipeline_FIR_c:M4 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; FIR_order      ; 6     ; Signed Integer                        ;
+; sample_size    ; 4     ; Signed Integer                        ;
+; weight_size    ; 5     ; Signed Integer                        ;
+; word_size_out  ; 12    ; Signed Integer                        ;
+; product_size   ; 9     ; Signed Integer                        ;
+; b0             ; 0010  ; Unsigned Binary                       ;
+; b1             ; 0101  ; Unsigned Binary                       ;
+; b2             ; 1001  ; Unsigned Binary                       ;
+; b3             ; 1110  ; Unsigned Binary                       ;
+; b4             ; 1001  ; Unsigned Binary                       ;
+; b5             ; 0101  ; Unsigned Binary                       ;
+; b6             ; 0010  ; Unsigned Binary                       ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M6"                                                                                                                                                           ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                           ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b[3..2] ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; b[1]    ; Input ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; b[0]    ; Input ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; Acc_in  ; Input ; Warning  ; Input port expression (12 bits) is wider than the input port (4 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++---------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M5"                                                                                                                                                                   ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                                           ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Acc_out[11..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                               ;
+; b[3]           ; Input  ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; b[2]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; b[1]           ; Input  ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; b[0]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; Acc_in         ; Input  ; Warning  ; Input port expression (12 bits) is wider than the input port (4 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M4"                                                                                                                                                                   ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                                           ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Acc_out[11..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                               ;
+; b[2..1]        ; Input  ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; b[3]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; b[0]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; Acc_in         ; Input  ; Warning  ; Input port expression (12 bits) is wider than the input port (4 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M3"                                                                                                                                                                   ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                                           ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Acc_out[11..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                               ;
+; b[3..1]        ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; b[0]           ; Input  ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; Acc_in         ; Input  ; Warning  ; Input port expression (12 bits) is wider than the input port (4 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M2"                                                                                                                                                                   ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                                           ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Acc_out[11..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                               ;
+; b[2..1]        ; Input  ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; b[3]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; b[0]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; Acc_in         ; Input  ; Warning  ; Input port expression (12 bits) is wider than the input port (4 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M1"                                                                                                                                                                   ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                                           ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Acc_out[11..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                               ;
+; b[3]           ; Input  ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; b[2]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; b[1]           ; Input  ; Info     ; Stuck at GND                                                                                                                                                                      ;
+; b[0]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                      ;
+; Acc_in         ; Input  ; Warning  ; Input port expression (12 bits) is wider than the input port (4 bits) it drives.  The 8 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1|MAC:M0"                                                                                                                                                                    ;
++----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                                            ;
++----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Acc_out[11..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; b[3..2]        ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; b[1]           ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; b[0]           ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; Acc_in         ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Acc_in[3..0]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
++----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "noPipeline_FIR:M1"                                                                            ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; FIR_out_assign ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 230                         ;
+;     SCLR              ; 230                         ;
+; arriav_lcell_comb     ; 184                         ;
+;     arith             ; 138                         ;
+;         0 data inputs ; 8                           ;
+;         1 data inputs ; 31                          ;
+;         2 data inputs ; 99                          ;
+;     normal            ; 27                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 17                          ;
+;     shared            ; 19                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 15                          ;
+; arriav_mac            ; 7                           ;
+; boundary_port         ; 54                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.90                        ;
+; Average LUT depth     ; 2.61                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Sat Jul 20 17:41:12 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pipeline_FIR -c Pipeline_FIR
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 6 design units, including 6 entities, in source file pipeline_fir.v
+    Info (12023): Found entity 1: Pipeline_FIR File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 6
+    Info (12023): Found entity 2: MAC File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 32
+    Info (12023): Found entity 3: noPipeline_FIR File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 43
+    Info (12023): Found entity 4: Pipeline_FIR_a File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 108
+    Info (12023): Found entity 5: Pipeline_FIR_b File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 169
+    Info (12023): Found entity 6: Pipeline_FIR_c File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 280
+Info (12021): Found 1 design units, including 1 entities, in source file pipeline_fir_tb.v
+    Info (12023): Found entity 1: Pipeline_FIR_tb File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v Line: 5
+Info (12127): Elaborating entity "Pipeline_FIR" for the top level hierarchy
+Info (12128): Elaborating entity "noPipeline_FIR" for hierarchy "noPipeline_FIR:M1" File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 24
+Info (12128): Elaborating entity "MAC" for hierarchy "noPipeline_FIR:M1|MAC:M0" File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 73
+Info (12128): Elaborating entity "Pipeline_FIR_a" for hierarchy "Pipeline_FIR_a:M2" File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 25
+Info (12128): Elaborating entity "Pipeline_FIR_b" for hierarchy "Pipeline_FIR_b:M3" File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 26
+Info (12128): Elaborating entity "Pipeline_FIR_c" for hierarchy "Pipeline_FIR_c:M4" File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 27
+Warning (10036): Verilog HDL or VHDL warning at Pipeline_FIR.v(309): object "PR3" assigned a value but never read File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 309
+Warning (10036): Verilog HDL or VHDL warning at Pipeline_FIR.v(310): object "PR4" assigned a value but never read File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 310
+Warning (10036): Verilog HDL or VHDL warning at Pipeline_FIR.v(311): object "PR5" assigned a value but never read File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 311
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "FIR_pipeline_A[11]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 15
+    Warning (13410): Pin "FIR_pipeline_B[10]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 16
+    Warning (13410): Pin "FIR_pipeline_B[11]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 16
+    Warning (13410): Pin "FIR_pipeline_C[10]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 17
+    Warning (13410): Pin "FIR_pipeline_C[11]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 17
+    Warning (13410): Pin "FIR_MAC[9]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 14
+    Warning (13410): Pin "FIR_MAC[10]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 14
+    Warning (13410): Pin "FIR_MAC[11]" is stuck at GND File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 14
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 356 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 48 output pins
+    Info (21061): Implemented 295 logic cells
+    Info (21062): Implemented 7 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4857 megabytes
+    Info: Processing ended: Sat Jul 20 17:41:48 2024
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:28
+
+

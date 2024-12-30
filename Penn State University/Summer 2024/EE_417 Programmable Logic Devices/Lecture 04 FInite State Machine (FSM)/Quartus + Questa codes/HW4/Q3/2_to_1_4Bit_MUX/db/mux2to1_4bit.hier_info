@@ -1,0 +1,19 @@
+|mux2to1_4bit
+data0[0] => muxout.DATAA
+data0[1] => muxout.DATAA
+data0[2] => muxout.DATAA
+data0[3] => muxout.DATAA
+data1[0] => muxout.DATAB
+data1[1] => muxout.DATAB
+data1[2] => muxout.DATAB
+data1[3] => muxout.DATAB
+select => muxout.OUTPUTSELECT
+select => muxout.OUTPUTSELECT
+select => muxout.OUTPUTSELECT
+select => muxout.OUTPUTSELECT
+muxout[0] <= muxout.DB_MAX_OUTPUT_PORT_TYPE
+muxout[1] <= muxout.DB_MAX_OUTPUT_PORT_TYPE
+muxout[2] <= muxout.DB_MAX_OUTPUT_PORT_TYPE
+muxout[3] <= muxout.DB_MAX_OUTPUT_PORT_TYPE
+
+

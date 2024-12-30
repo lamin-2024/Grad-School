@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "FIR_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sample_in[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

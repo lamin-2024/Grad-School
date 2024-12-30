@@ -1,0 +1,49 @@
+/*EE417 Lesson 5 A1 -Manchester code to PAM4 code converter
+Name: Ron Kalin, Date: 6/11/24
+Group: Kalin, Jammeh
+PAM4 combines two NRZ bits, which means 4 Manchester bits.
+Manchester 0101 = 00 NRZ = 0 PAM4
+Manchester 0110 = 01 NRZ = 1 PAM4
+Manchester 1001 = 10 NRZ = 2 PAM4
+Manchester 1010 = 11 NRZ = 3 PAM4
+*/
+module manchester_to_pam4 (  //mealy, top level module
+    input wire clk, // Clock for sampling
+    input wire rst, // Reset
+    input wire [3:0] manchester_in, // Manchester-encoded input
+    output reg [2:0] pam4_out // 3-bit PAM4 output
+);
+    reg [1:0] state; // State machine for decoding
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state <= 2'b00; // Initial state
+            pam4_out <= 3'b000; // Reset output
+        end else begin
+            case (state)
+                2'b00: begin // Waiting for rising edge
+                    if (manchester_in) state <= 2'b01;
+                end
+                2'b01: begin // Rising edge detected
+                    state <= 2'b10;
+                end
+                2'b10: begin // Falling edge detected
+                    state <= 2'b00;
+                    // Map Manchester data to PAM4 levels
+                    case (manchester_in)
+                        1'b0: pam4_out <= 3'b001; // -1
+                        1'b1: pam4_out <= 3'b010; // 0
+                    endcase
+                end
+            endcase
+        end
+    end
+endmodule
+
+module manchester_to_PAM_mealy_glitchy_assign(
+       output PAM_out,
+		 input manchester_in, input clock, input reset);
+//this module will show glitchy mealy FSM conversion from manchester to PAM
+
+reg [
+		 
+

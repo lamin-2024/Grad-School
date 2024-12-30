@@ -1,0 +1,79 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do DataOutput_file_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Grad\ School/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 11/Examples/Saving\ Testbench\ data\ to\ txt\ file {C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 11/Examples/Saving Testbench data to txt file/DataOutput_file.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:45:50 on Jul 31,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 11/Examples/Saving Testbench data to txt file" C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 11/Examples/Saving Testbench data to txt file/DataOutput_file.v 
+# -- Compiling module DataOutput_file
+# 
+# Top level modules:
+# 	DataOutput_file
+# End time: 21:45:50 on Jul 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Grad\ School/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 11/Examples/Saving\ Testbench\ data\ to\ txt\ file {C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 11/Examples/Saving Testbench data to txt file/DataOutput_file_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:45:50 on Jul 31,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 11/Examples/Saving Testbench data to txt file" C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 11/Examples/Saving Testbench data to txt file/DataOutput_file_tb.v 
+# -- Compiling module DataOutput_file_tb
+# 
+# Top level modules:
+# 	DataOutput_file_tb
+# End time: 21:45:50 on Jul 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  DataOutput_file_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" DataOutput_file_tb 
+# Start time: 21:45:50 on Jul 31,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.DataOutput_file_tb(fast)
+# Loading work.DataOutput_file(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# counter 0001
+# counter 0010
+# counter 0011
+# counter 0100
+# counter 0101
+# counter 0110
+# counter 0111
+# counter 1000
+# counter 1001
+# counter 1010
+# counter 1011
+# counter 1100
+# counter 1101
+# counter 1110
+# ** Note: $finish    : C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 11/Examples/Saving Testbench data to txt file/DataOutput_file_tb.v(43)
+#    Time: 165 ps  Iteration: 1  Instance: /DataOutput_file_tb
+# End time: 21:46:55 on Jul 31,2024, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 0

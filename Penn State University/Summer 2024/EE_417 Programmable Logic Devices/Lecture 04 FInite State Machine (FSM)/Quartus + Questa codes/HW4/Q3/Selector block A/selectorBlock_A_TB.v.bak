@@ -1,0 +1,43 @@
+
+module selectorBlock_A_TB ();
+
+    // Inputs
+    reg [1:0] sel;
+    reg clk;
+    reg reset;
+    reg enable;
+
+    // Outputs
+    wire y;
+
+    // Instantiate the selectorBlock_A module
+    selectorBlock_A UUT (
+        .y(y),
+        .sel(sel)
+    );
+
+    // Clock generation (adjust frequency as needed)
+    always #5 clk = ~clk;
+
+    // Initialize signals
+    initial begin
+        clk = 0;
+        reset = 0;
+        enable = 1; // Enable the counter
+
+        // Apply reset
+        #10 reset = 1;
+        #10 reset = 0;
+
+        // Simulate some clock cycles
+        #50;
+
+        // Set different values for sel (test both count and upcount)
+        #10 sel = 2'b00; // Count
+        #10 sel = 2'b01; // Upcount
+
+        // Display output y
+        $display("y = %b", y);
+    end
+
+endmodule

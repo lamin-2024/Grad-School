@@ -1,0 +1,18 @@
+|controller
+hold <= hold.DB_MAX_OUTPUT_PORT_TYPE
+buffer <= buffer.DB_MAX_OUTPUT_PORT_TYPE
+RESET <= RESET.DB_MAX_OUTPUT_PORT_TYPE
+enable => next_state.S_acc1.DATAB
+enable => next_state.S_acc2.DATAB
+enable => next_state.S_acc3.DATAB
+enable => Selector0.IN1
+enable => state.DATAA
+clock => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+
+

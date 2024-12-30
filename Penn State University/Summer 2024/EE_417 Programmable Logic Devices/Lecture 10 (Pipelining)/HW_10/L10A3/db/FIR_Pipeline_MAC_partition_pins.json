@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "FIR_out_pipeline[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[7]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[8]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[9]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[10]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[11]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[12]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[13]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_pipeline[14]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[5]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

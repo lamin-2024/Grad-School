@@ -1,0 +1,6 @@
+
+State Machine - |Control_Unit|state
+Name state.sending state.waiting state.idle 
+state.idle 0 0 0 
+state.waiting 0 1 1 
+state.sending 1 0 1 

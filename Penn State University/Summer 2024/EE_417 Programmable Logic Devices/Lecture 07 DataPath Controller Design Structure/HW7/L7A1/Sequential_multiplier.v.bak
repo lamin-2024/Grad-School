@@ -1,0 +1,28 @@
+// ee417 lesson 7 Assignment 1 L7A1
+// Name: Ron Kalin, Date: 06-25-24  Group: Kalin/Jammeh
+// Design: Sequential_multiplier
+// top level module that raises a ready flag when ready to load new input words
+// user should activate a start input to indicate a new multiplication operation starts
+module Sequential_multiplier (product, final_product,
+                              Ready, start,
+										word1, word2,
+										clk, rst);
+parameter                 L_WORD =4;  //Datapathsize
+output    [2*L_WORD-1: 0] product, final_product;
+output                    Ready;
+input     [L_WORD -1: 0]  word1, word2;
+input                     start, clk, rst;
+
+wire multiplier_LSB, Load_words, shift, Add, latch, zero_flag;
+
+Datapath M1   (product, final_product,
+               multiplier_LSB, zero_flag,
+				   word1, word2,
+				   Load_words, shift, Add, latch,
+				   clk, rst);
+					
+controller M2 (Load_words, shift, Add, latch,
+               Ready, multiplier_LSB, start, zero_flag,
+					clk, rst);
+					
+endmodule

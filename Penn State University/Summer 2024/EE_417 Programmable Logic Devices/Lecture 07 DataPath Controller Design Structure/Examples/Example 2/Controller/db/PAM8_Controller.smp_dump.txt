@@ -1,0 +1,8 @@
+
+State Machine - |PAM8_Controller|state
+Name state.loading state.shift2 state.shift1 state.idle state.starting 
+state.idle 0 0 0 0 0 
+state.shift1 0 0 1 1 0 
+state.shift2 0 1 0 1 0 
+state.loading 1 0 0 1 0 
+state.starting 0 0 0 1 1 

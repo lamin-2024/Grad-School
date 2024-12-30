@@ -1,0 +1,8 @@
+BISECT := proc (f, a, b, tol) local left, right, mid, err; left := a; right :=
+b; if right < left then error "Incorrect interval - left > right"; end if; if 
+evalf(subs(x = left,f(x))*subs(x = right,f(x))) < 0 then err := 1/2*right-1/2*
+left; mid := left+err;  while abs(mid)*tol < abs(err) do if 0 < evalf(subs(x =
+mid,f(x))*subs(x = left,f(x))) then left := mid; else right := mid; end if; err
+:= 1/2*right-1/2*left; mid := left+err; end do; else error 
+"Incorrect interval - f(left) has the same sign as f(right)"; end if; evalf(mid
+); end proc;

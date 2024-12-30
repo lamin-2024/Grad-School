@@ -1,0 +1,94 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do SevenSegDisplay2Digits_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/ee417_L3A3_kalin_jammeh {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 18:37:36 on Jun 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh" C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits.v 
+# -- Compiling module SevenSegDisplay2Digits
+# -- Compiling module comp4bit
+# -- Compiling module mux2to1_4bit
+# -- Compiling module CircuitA
+# -- Compiling module Seven_Seg_Disp
+# 
+# Top level modules:
+# 	SevenSegDisplay2Digits
+# End time: 18:37:37 on Jun 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/ee417_L3A3_kalin_jammeh {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 18:37:37 on Jun 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh" C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits_tb.v 
+# -- Compiling module SevenSegDisplay2Digits_tb
+# 
+# Top level modules:
+# 	SevenSegDisplay2Digits_tb
+# End time: 18:37:37 on Jun 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  SevenSegDisplay2Digits_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" SevenSegDisplay2Digits_tb 
+# Start time: 18:37:37 on Jun 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.SevenSegDisplay2Digits_tb(fast)
+# Loading work.SevenSegDisplay2Digits(fast)
+# Loading work.comp4bit(fast)
+# Loading work.CircuitA(fast)
+# Loading work.mux2to1_4bit(fast)
+# Loading work.Seven_Seg_Disp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'b'. The port definition is at: C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /SevenSegDisplay2Digits_tb/UUT/COMP9 File: C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits.v Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'BCD'. The port definition is at: C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits.v(71).
+#    Time: 0 ps  Iteration: 0  Instance: /SevenSegDisplay2Digits_tb/UUT/SEV1 File: C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/SevenSegDisplay2Digits.v Line: 12
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ________________________________output_didplay = --d1---_--d0---
+# V = 0000: 	Decimal_Input =  0:		Output_Display = xxxxxxx_0000001 
+# V = 0001: 	Decimal_Input =  1:		Output_Display = xxxxxxx_1001111 
+# V = 0010: 	Decimal_Input =  2:		Output_Display = xxxxxxx_0010010 
+# V = 0011: 	Decimal_Input =  3:		Output_Display = xxxxxxx_0000110 
+# V = 0100: 	Decimal_Input =  4:		Output_Display = xxxxxxx_1001100 
+# V = 0101: 	Decimal_Input =  5:		Output_Display = xxxxxxx_0100100 
+# V = 0110: 	Decimal_Input =  6:		Output_Display = xxxxxxx_0100000 
+# V = 0111: 	Decimal_Input =  7:		Output_Display = xxxxxxx_0001111 
+# V = 1000: 	Decimal_Input =  8:		Output_Display = xxxxxxx_0000000 
+# V = 1001: 	Decimal_Input =  9:		Output_Display = xxxxxxx_0000100 
+# V = 1010: 	Decimal_Input = 10:		Output_Display = 1111111_1111111 
+# V = 1011: 	Decimal_Input = 11:		Output_Display = 1111111_1001111 
+# V = 1100: 	Decimal_Input = 12:		Output_Display = 1111111_1111111 
+# V = 1101: 	Decimal_Input = 13:		Output_Display = 1111111_0000110 
+# V = 1110: 	Decimal_Input = 14:		Output_Display = 1111111_1111111 
+# V = 1111: 	Decimal_Input = 15:		Output_Display = 1111111_0100100 
+# Causality operation skipped due to absence of debug database file
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/ee417_L3A3_kalin_jammeh/simulation/questa/wave.do}
+# End time: 18:46:25 on Jun 02,2024, Elapsed time: 0:08:48
+# Errors: 0, Warnings: 2

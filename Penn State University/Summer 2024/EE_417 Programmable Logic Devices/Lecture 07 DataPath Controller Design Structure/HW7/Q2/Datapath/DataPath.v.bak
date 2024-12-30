@@ -1,0 +1,67 @@
+/*------------up/down count------------------------------*/
+module DataPath #(parameter WIDTH = 8, parameter CYCLES = 18) (
+    input clk,
+    input reset,
+    input shift_en,
+    input load,
+    input up, // up/down control signal
+    output reg [WIDTH-1:0] count,
+    output reg done
+);
+
+reg [4:0] shift_reg; // 5-bit counter to count up to 18 CYCLES
+
+always @ (posedge clk or posedge reset) 
+begin
+	 //condition for reset
+    if (reset) 
+	 begin
+        count <= 8'b00000001; // output count at reset is the first state of the counter
+        shift_reg <= 0;
+        done <= 0;
+    end 
+	 //condition to start loading the output
+	 else if (load) 								
+	 begin
+        count <= 8'b00000001; // count is still 1 when load comes on
+        shift_reg <= 1;
+        done <= 0;
+    end 
+	 //condition to shift 1 left and right in count
+	 else if (shift_en) 
+	 begin
+        if (shift_reg == CYCLES) 
+		  begin
+            shift_reg <= 1;
+            count <= 8'b00000001;
+        end 
+		  else begin
+            shift_reg <= shift_reg + 1;				//all start conditions are active, increment shift_reg
+				//define a condition for counting up
+            if (up) 
+				begin
+                if (count[WIDTH-1] == 1) 
+					 begin
+                    count <= 8'b00000001; // Reset to initial value after overflow
+                end else 
+					 begin
+                    count <= count << 1; // Shift left for up count
+                end
+            end 
+				else 
+				begin
+                if (count[0] == 1) 
+					 begin
+                    count <= 8'b10000000; // Reset to the highest bit
+                end 
+					 else 
+					 begin
+                    count <= count >> 1; // Shift right for down count
+                end
+            end
+        end
+        done <= (shift_reg == CYCLES);
+    end
+end
+
+endmodule

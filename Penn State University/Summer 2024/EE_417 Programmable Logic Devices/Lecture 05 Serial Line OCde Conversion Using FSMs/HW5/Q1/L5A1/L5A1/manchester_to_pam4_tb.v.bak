@@ -1,0 +1,79 @@
+//ee417 lesson 5 Assignment 1, L5A1
+// Name: Ron Kalin, Date: 06-13-24  Group: Kalin/Jammeh
+// Testbench for Design: manchester to PAM4 converter using 
+// manchester to NRZ converter then NRZ to PAM4 converter
+//Step1 define test bench name
+module manchester_to_pam4_tb();
+
+/*original module declaration
+module manchester_to_pam4 (  
+    output[2:0] PAM_out, // 3-bit PAM4 output
+	 input clk, // Clock for sampling
+    input rst, // Reset
+    input manchester_in); // Manchester-encoded 1bit serial input*/
+//Step2 define inputs as registers, outputs as wires			
+reg clk, rst,enable, select_up_down, select_code2421_BCD;			
+wire [3:0] count_out;			
+//internal probe wires: observe change in state..this gives Questa error if not enough digits			
+wire [3:0] downCount2421;			
+wire [3:0] upCount2421;			
+wire [3:0] count2421code;			
+wire [3:0] countBCD;			
+//wire [2:0] state, next_state;			
+			
+//Step3 define unit under test			
+BCD_or_2421_up_down_counter UUT (count_out,clk,rst,enable,select_up_down,			
+                                 select_code2421_BCD);			
+			
+//internal probes to track logic and troubleshoot			
+assign downCount2421= UUT.downCount2421;			
+assign upCount2421= UUT.upCount2421;			
+assign count2421code= UUT.count2421code;			
+assign countBCD= UUT.countBCD;			
+//assign next_state= UUT.next_state;			
+			
+//Step4 open initial block, define all possible input combinations			
+// Clock generation (adjust the period as needed)			
+initial begin			
+  clk=0;			
+  forever			
+  #5 clk = ~clk;			
+end			
+			
+initial	//reset is active high, longer time to count when reset is inactive (low)		
+ begin	//4 cases with two selects		
+  rst  = 1'b1;	//reset on		
+  # 10 rst = 1'b0; enable=1'b1; select_up_down=1'b0; select_code2421_BCD=1'b0;			
+  //reset off, enable on, select down, select 2421			
+  #120 rst = 1'b1;  //reset on			
+  # 20 rst = 1'b0; enable=1'b1; //reset off, enable on			
+  # 60 enable=1'b0;  //enable off: freeze count			
+			
+    # 10 rst = 1'b0; enable=1'b1; select_up_down=1'b0; select_code2421_BCD=1'b1;			
+  //reset off, enable on, select down, select BCD			
+  #120 rst = 1'b1;  //reset on			
+  # 20 rst = 1'b0; enable=1'b1; //reset off, enable on			
+  # 60 enable=1'b0;  //enable off: freeze count			
+			
+  # 10 rst = 1'b0; enable=1'b1; select_up_down=1'b1; select_code2421_BCD=1'b0;			
+  //reset off, enable on, select up, select 2421			
+  #120 rst = 1'b1;  //reset on			
+  # 20 rst = 1'b0; enable=1'b1; //reset off, enable on			
+  # 60 enable=1'b0;  //enable off: freeze count			
+  			
+  # 10 rst = 1'b0; enable=1'b1; select_up_down=1'b1; select_code2421_BCD=1'b1;			
+  //reset off, enable on, select up, select BCD			
+  #120 rst = 1'b1;  //reset on			
+  # 20 rst = 1'b0; enable=1'b1; //reset off, enable on			
+  # 60 enable=1'b0;  //enable off: freeze count			
+  			
+  #100 $stop; //close debug window to view waveform viewer			
+ end			
+			
+//Step5 Display the results 			
+initial begin //monitor counter value			
+  $display("________________________________output_count_out = -count-");			
+  $monitor("clk_in = %b: rst_in = %b:  enable_in=%b: select_up_down=%b: select_code2421_BCD=%b: output_count_out = %d ", 			
+  clk, rst, enable, select_up_down, select_code2421_BCD, count_out);			
+ end			
+endmodule			

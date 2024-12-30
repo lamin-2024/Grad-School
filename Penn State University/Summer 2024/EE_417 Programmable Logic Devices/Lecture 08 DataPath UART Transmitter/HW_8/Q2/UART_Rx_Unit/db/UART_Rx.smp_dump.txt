@@ -1,0 +1,11 @@
+
+State Machine - |UART_Rx|Datapath_Unit_Rx:M1|Bit_counter
+Name Bit_counter.word_size 
+Bit_counter.00000 0 
+Bit_counter.word_size 1 
+
+State Machine - |UART_Rx|Control_Unit_Rx:M0|state
+Name state.idle state.receiving state.starting 
+state.idle 0 0 0 
+state.starting 1 0 1 
+state.receiving 1 1 0 

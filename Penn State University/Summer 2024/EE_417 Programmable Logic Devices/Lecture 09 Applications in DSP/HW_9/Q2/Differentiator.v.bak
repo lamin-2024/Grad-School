@@ -1,0 +1,32 @@
+/*----------------------------------------------------------------------------------
+Name Lamin Jammeh
+CLass: EE417 Summer 2024
+Lesson 09 HW Question 2 
+Group: Ron Kalin/ Lamin Jammeh
+Project Description: This module is Differentiator, it finds the difference between
+adjacent sample
+-------------------------------------------------------------------------------------*/
+
+module Differentiator	#(parameter word_length = 8)
+						 (
+						  output reg	[word_length -1:0]	Data_out,
+						  input			[word_length -1:0]	Data_in,
+						  input								hold, clock, reset
+						  );
+
+//internal registers and wires						  
+reg		[word_size -1:0]	buffer;				//use a temp storage (buffer) to hold the previous sample 
+
+//assign a formula for Data_out
+assign	data_out = data_in - buffer;			// Data_out will be the difference between the Data_in and buffer
+
+always @ (posedge clock)
+	begin
+		if (reset) 
+			buffer <= 0;			           //when reset is high, and clock is rising buffer <=0
+		else if (hold)
+			buffer <= buffer;             //when hold is high, reset is low, and  clock is rising buffer <= buffer 
+		else
+			buffer <= data_in;	  //when hold is low, reset is low, and  clock is rising buffer <= data_in 
+	end
+endmodule

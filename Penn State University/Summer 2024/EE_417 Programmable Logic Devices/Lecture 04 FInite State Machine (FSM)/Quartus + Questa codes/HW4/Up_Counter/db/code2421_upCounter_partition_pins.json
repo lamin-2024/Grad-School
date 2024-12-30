@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "upcount[0]",
+					"strict" : false
+				},
+				{
+					"name" : "upcount[1]",
+					"strict" : false
+				},
+				{
+					"name" : "upcount[2]",
+					"strict" : false
+				},
+				{
+					"name" : "upcount[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

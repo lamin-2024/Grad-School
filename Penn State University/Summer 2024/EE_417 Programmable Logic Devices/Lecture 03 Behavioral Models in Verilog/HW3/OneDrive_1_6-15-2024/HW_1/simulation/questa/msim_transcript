@@ -1,0 +1,73 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do BCD_to_Xess3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 03/HW_1 {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 03/HW_1/BCD_to_Xess3.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 01:19:50 on May 31,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 03/HW_1" C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 03/HW_1/BCD_to_Xess3.v 
+# -- Compiling module BCD_to_Xess3
+# 
+# Top level modules:
+# 	BCD_to_Xess3
+# End time: 01:19:50 on May 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 03/HW_1 {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 03/HW_1/BCD_to_Xess3_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 01:19:50 on May 31,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 03/HW_1" C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 03/HW_1/BCD_to_Xess3_tb.v 
+# -- Compiling module BCD_to_Xess3_tb
+# 
+# Top level modules:
+# 	BCD_to_Xess3_tb
+# End time: 01:19:50 on May 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  BCD_to_Xess3_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" BCD_to_Xess3_tb 
+# Start time: 01:19:50 on May 31,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.BCD_to_Xess3_tb(fast)
+# Loading work.BCD_to_Xess3(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# At time                    0, B = 0000, X = 0011
+# At time                  100, B = 0001, X = 0100
+# At time                  200, B = 0010, X = 0101
+# At time                  300, B = 0011, X = 0110
+# At time                  400, B = 0100, X = 0111
+# At time                  500, B = 0101, X = 1000
+# At time                  600, B = 0110, X = 1001
+# At time                  700, B = 1000, X = 1011
+# At time                  800, B = 1001, X = 1100
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 03/HW_1/simulation/questa/wave.do}
+# End time: 15:01:44 on May 31,2024, Elapsed time: 13:41:54
+# Errors: 0, Warnings: 0

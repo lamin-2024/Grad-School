@@ -1,0 +1,13 @@
+module PAM4_to_Manchester (
+									Manchester_out
+									PAM4_in
+									clk,
+									reset
+									);
+									
+//assigen the inputs and outputs as registers and wires
+input wire clk, reset;				//clk and reset signal 
+input wire [1:0] PAM4_in;				//2 bits PAM4_in input signal
+output reg Manchester_out;
+
+

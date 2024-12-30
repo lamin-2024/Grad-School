@@ -1,0 +1,66 @@
+|integrator_DataPath_controller
+data_out[0] << integrator:dataPath.data_out
+data_out[1] << integrator:dataPath.data_out
+data_out[2] << integrator:dataPath.data_out
+data_out[3] << integrator:dataPath.data_out
+data_out[4] << integrator:dataPath.data_out
+data_in[0] => data_in[0].IN1
+data_in[1] => data_in[1].IN1
+data_in[2] => data_in[2].IN1
+clock => clock.IN2
+reset => reset.IN1
+enable => enable.IN1
+
+
+|integrator_DataPath_controller|integrator:dataPath
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_in[0] => Add0.IN10
+data_in[0] => data_out.DATAB
+data_in[1] => Add0.IN9
+data_in[1] => data_out.DATAB
+data_in[2] => Add0.IN8
+data_in[2] => data_out.DATAB
+hold => data_out.OUTPUTSELECT
+hold => data_out.OUTPUTSELECT
+hold => data_out.OUTPUTSELECT
+hold => data_out.OUTPUTSELECT
+hold => data_out.OUTPUTSELECT
+clock => data_out[0]~reg0.CLK
+clock => data_out[1]~reg0.CLK
+clock => data_out[2]~reg0.CLK
+clock => data_out[3]~reg0.CLK
+clock => data_out[4]~reg0.CLK
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+reset => data_out.OUTPUTSELECT
+buffer => data_out.OUTPUTSELECT
+buffer => data_out.OUTPUTSELECT
+buffer => data_out.OUTPUTSELECT
+buffer => data_out.OUTPUTSELECT
+buffer => data_out.OUTPUTSELECT
+
+
+|integrator_DataPath_controller|controller:control_unit
+hold <= hold.DB_MAX_OUTPUT_PORT_TYPE
+buffer <= buffer.DB_MAX_OUTPUT_PORT_TYPE
+RESET <= RESET.DB_MAX_OUTPUT_PORT_TYPE
+enable => next_state.S_acc1.DATAB
+enable => next_state.S_acc2.DATAB
+enable => next_state.S_acc3.DATAB
+enable => Selector0.IN1
+enable => state.DATAA
+clock => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+
+

@@ -1,0 +1,5 @@
+AdamsMoultonRK := proc (f, x0, y0, h, N) local n; x(0) := x0; y(0) := y0; ystar
+(0) := 0; RK(f,x(0),y(0),h,2); for n from 3 to N do x(n+1) := x(n)+h; ystar(n+1
+) := y(n)+1/24*h*(55*f(x(n),y(n))-59*f(x(n-1),y(n-1))+37*f(x(n-2),y(n-2))-9*f(x
+(n-3),y(n-3))); y(n+1) := y(n)+1/24*h*(9*f(x(n+1),ystar(n+1))+19*f(x(n),y(n))-5
+*f(x(n-1),y(n-1))+f(x(n-2),y(n-2))); end do; end proc;

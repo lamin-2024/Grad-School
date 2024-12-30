@@ -1,0 +1,70 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/simulation/questa
+T_opt
+Z1 !s110 1720987243
+VhIMefiz63_o:519f^X3;O1
+04 22 4 work Linear_Interpolator_tb fast 0
+=1-54bf64139d28-66942e6b-148-20a4
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vLinear_Interpolator
+!s110 1720987242
+!i10b 1
+!s100 UeihQ?54kklzggg23JM;23
+IfM:jPB^ieIJ@DRA4GgXST0
+R0
+w1720987013
+8C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator.v
+FC:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator.v
+!i122 0
+L0 10 61
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z5 !s108 1720987242.000000
+!s107 C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3|C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@linear_@interpolator
+vLinear_Interpolator_tb
+R1
+!i10b 1
+!s100 X6]=SikR8@S_Z9^=;R<TL2
+IDlTcbbK=]mbUI7GzUX^J22
+R0
+w1720987005
+8C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator_tb.v
+FC:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator_tb.v
+!i122 1
+L0 8 67
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3|C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 09/HW_9/Q3/Linear_Interpolator_tb.v|
+!i113 0
+R6
+R7
+R2
+n@linear_@interpolator_tb

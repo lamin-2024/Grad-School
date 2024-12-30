@@ -1,0 +1,53 @@
+/*________________________________________________________________________________________
+This Module receives a single bit input x_in. Whenever x_in performs a sequence 101
+the z_out flag is raised high indicating that 101 was detected. The sequences can be 
+over;apping. The design is performed using a Mealy FSM.
+The explanantion of the FSM state diagram is given in video 2 of the class lecture
+__________________________________________________________________________________________*/
+
+module Sequence_101_Detector_Mealy (z_out, clk, reset, x_in);
+//define the inputs and outputs
+output reg z_out;
+input      clk, reset;
+input      x_in;
+
+//define the states
+reg [1:0] state, next_state;
+
+//defie the posible parameter
+parameter snone = 2'b00;      //None of the correct sequence bits received
+parameter s1    = 2'b01;     //A 1 was received
+parameter s10   = 2'b10;     //A 10 sequence was received
+
+//sequenctial logic (flip flop) updating the state register
+always @ (posedge clk)
+	if (reset) state <= snone;
+	else       state <= next_state;
+	
+//combinational logic determining the next_state and the output
+always @ *
+	case (state)
+	snone		: begin z_out = 1'b0;
+						if (x_in) next_state = s1;
+						else       next_state = snone;
+				  end
+	s1 		: begin z_out = 1'b0;
+						if (x_in) next_state = s1;
+						else       next_state = s10;
+				  end
+	s10		: begin 
+						if (x_in) 
+							begin z_out = 1'b1; 
+								next_state = s1;
+							end
+						else  
+							begin z_out = 1'b0; 
+								next_state = snone;
+							end
+				  end
+	default  : begin z_out = 1'b0;
+						next_state = snone;
+				  end
+	endcase
+	
+	endmodule

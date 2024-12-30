@@ -1,0 +1,22 @@
+-----------------------------Pipelining Methodology---------------------------------------------
+*************Strategy******************************
+Focus on Placing attention on placing pipelining registers around the slowest circuit elements (Bottlenecks).
+
+************Step1*************************************
+Draw a line that crosses every output in the circuit, and mark the endpoints as terminal points
+
+************Step2*************************************
+Continue to draw new lines between the terminal points across various circuit connections,
+ensuring that every connection crosses each line in the same direction. These lines demarcate pipeline stages or contour lines
+
+***********step3 or best practice*********************
+look for the slowest register and draw a contour line at the input and output of the slowest register
+make sure the lines are connected to the line that crosses the output endpoints or terminal points
+
+---------------Note----------------
+Adding a pipeline register at every point where a separating line crosses a connection will always generate a valid pipeline
+
+----------Formulars---------------
+through put T = 1/(total time @ all registers)_______Without pipeline
+through put T = 1/(time @slowest register combo between contour lines)_______With pipeline
+Latency L = Number of contour lines * (time @slowest register combo between contour lines)

@@ -1,0 +1,22 @@
+/*----------------------------------------------------------------------------------	
+Name Ron Kalin	
+Class: EE417 Summer 2024	
+Lesson 08 HW Question 02	
+Group: Ron Kalin/ Lamin Jammeh	
+Project Description: test-bench for UART receuver	
+-------------------------------------------------------------------------------------*/	
+module UART_RCVR_tb ();	
+	
+//set the parameters wires and registers	
+parameter	
+parameter      half_cycle = 5; //half cycle time of clock	
+parameter      full_cycle = 10;//full cycle time of clock	
+parameter      cycle_time = 160;//number of cycles before next cycle	
+/*top level module under test original declaration	
+module UART_RCVR #(parameter word_size = 8, half_word = word_size /2)
+(output [word_size -1: 0] RCV_datareg,  
+ output read_not_ready_out, Error1, Error2,  
+ input Serial_in,  read_not_ready_in,  Sample_clk,  rst_b );*/
+
+
+endmodule

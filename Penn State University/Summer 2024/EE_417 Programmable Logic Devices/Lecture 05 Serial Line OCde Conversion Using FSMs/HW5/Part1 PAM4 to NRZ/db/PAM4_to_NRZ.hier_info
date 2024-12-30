@@ -1,0 +1,10 @@
+|PAM4_to_NRZ
+NRZ_out << NRZ_out.DB_MAX_OUTPUT_PORT_TYPE
+PAM4_in[0] => PAM4_in_level[0].DATAIN
+PAM4_in[1] => PAM4_in_level[1].DATAIN
+clk => PAM4_in_level[0].CLK
+clk => PAM4_in_level[1].CLK
+reset => PAM4_in_level[0].ACLR
+reset => PAM4_in_level[1].ACLR
+
+

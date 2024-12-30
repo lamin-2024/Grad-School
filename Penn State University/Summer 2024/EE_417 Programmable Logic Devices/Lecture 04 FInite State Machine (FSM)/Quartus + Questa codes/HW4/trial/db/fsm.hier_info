@@ -1,0 +1,33 @@
+|fsm
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => Selector1.IN5
+X => Selector4.IN4
+X => Selector4.IN5
+X => Selector4.IN6
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => next_state.OUTPUTSELECT
+X => Z1.DATAB
+X => Z2.DATAB
+X => Selector0.IN2
+X => Selector1.IN2
+X => Selector3.IN2
+X => Selector6.IN2
+Z1 <= Z1.DB_MAX_OUTPUT_PORT_TYPE
+Z2 <= Z2.DB_MAX_OUTPUT_PORT_TYPE
+
+

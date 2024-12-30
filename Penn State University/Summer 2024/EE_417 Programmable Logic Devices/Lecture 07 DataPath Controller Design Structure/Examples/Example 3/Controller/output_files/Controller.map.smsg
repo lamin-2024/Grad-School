@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at Controller.v(132): object "load" differs only in case from object "LOAD" in the same scope File: C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 07/Example 3/Controller/Controller.v Line: 132
+Info (10281): Verilog HDL Declaration information at Controller.v(128): object "done" differs only in case from object "DONE" in the same scope File: C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 07/Example 3/Controller/Controller.v Line: 128

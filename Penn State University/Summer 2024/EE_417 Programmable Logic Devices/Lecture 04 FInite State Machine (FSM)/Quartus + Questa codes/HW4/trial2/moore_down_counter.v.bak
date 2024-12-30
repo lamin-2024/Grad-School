@@ -1,0 +1,69 @@
+module moore_down_counter (
+    input wire clk,       // Clock signal
+    input wire reset,     // Reset signal (active low)
+    input wire enable,    // Enable signal
+    output reg [3:0] count // 4-bit count output
+);
+
+// State encoding
+typedef enum logic [3:0] {
+    S1111 = 4'b1111,
+    S1110 = 4'b1110,
+    S1101 = 4'b1101,
+    S1100 = 4'b1100,
+    S1011 = 4'b1011,
+    S1010 = 4'b1010,
+    S1001 = 4'b1001,
+    S1000 = 4'b1000,
+    S0111 = 4'b0111,
+    S0110 = 4'b0110,
+    S0101 = 4'b0101,
+    S0100 = 4'b0100,
+    S0011 = 4'b0011,
+    S0010 = 4'b0010,
+    S0001 = 4'b0001,
+    S0000 = 4'b0000
+} state_t;
+
+state_t current_state, next_state;
+
+// State transition logic
+always @(posedge clk or negedge reset) begin
+    if (!reset)
+        current_state <= S1111; // Initialize state to S1111 when reset is low
+    else
+        current_state <= next_state;
+end
+
+// Next state logic
+always @(*) begin
+    case (current_state)
+        S1111: next_state = (enable) ? S1110 : S1111;
+        S1110: next_state = (enable) ? S1101 : S1110;
+        S1101: next_state = (enable) ? S1100 : S1101;
+        S1100: next_state = (enable) ? S1011 : S1100;
+        S1011: next_state = (enable) ? S1010 : S1011;
+        S1010: next_state = (enable) ? S1001 : S1010;
+        S1001: next_state = (enable) ? S1000 : S1001;
+        S1000: next_state = (enable) ? S0111 : S1000;
+        S0111: next_state = (enable) ? S0110 : S0111;
+        S0110: next_state = (enable) ? S0101 : S0110;
+        S0101: next_state = (enable) ? S0100 : S0101;
+        S0100: next_state = (enable) ? S0011 : S0100;
+        S0011: next_state = (enable) ? S0010 : S0011;
+        S0010: next_state = (enable) ? S0001 : S0010;
+        S0001: next_state = (enable) ? S0000 : S0001;
+        S0000: next_state = (enable) ? S1111 : S0000;
+        default: next_state = S1111;
+    endcase
+end
+
+// Output logic
+always @(posedge clk or negedge reset) begin
+    if (!reset)
+        count <= 4'b1111; // Initialize count to 1111 when reset is low
+    else
+        count <= current_state; // Output the current state as count
+end
+
+endmodule

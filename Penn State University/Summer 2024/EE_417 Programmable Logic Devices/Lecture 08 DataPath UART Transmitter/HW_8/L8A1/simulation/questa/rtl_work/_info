@@ -1,0 +1,118 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/MyDocuments/college/ee417/projects/lesson08_A01/simulation/questa
+T_opt
+!s110 1720282905
+V:eJjn7kj;n:B7Nh8=okza2
+04 12 4 work UART_RCVR_tb fast 0
+=1-2c3b70d30e8f-66896f17-3be-41cc
+!s124 OEM10U4 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vControl_Unit
+Z2 !s110 1720282901
+!i10b 1
+!s100 cA:U;L`lg;oIob_`j4`dK3
+I`gkC4@CX>Um2id;XlU:dl1
+R0
+Z3 w1720231019
+Z4 8C:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR.v
+Z5 FC:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR.v
+!i122 0
+L0 42 68
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z8 !s108 1720282901.000000
+Z9 !s107 C:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/MyDocuments/college/ee417/projects/lesson08_A01|C:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR.v|
+!i113 0
+Z11 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -vlog01compat -work work +incdir+C:/MyDocuments/college/ee417/projects/lesson08_A01 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@control_@unit
+vDatapath_Unit
+R2
+!i10b 1
+!s100 _jib`[@bSLdjH`Cb8UL;b2
+I6LV^P0U2Nn:T62:XmUY?42
+R0
+R3
+R4
+R5
+!i122 0
+L0 111 42
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@datapath_@unit
+vUART_RCVR
+R2
+!i10b 1
+!s100 mzj:d[FkkK2_CbIMkk<Ca2
+IN?`VcM6NI2O83CQ26onfY2
+R0
+R3
+R4
+R5
+!i122 0
+L0 1 40
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@u@a@r@t_@r@c@v@r
+vUART_RCVR_tb
+!s110 1720282902
+!i10b 1
+!s100 :hPXD2Q`BkS^7:ZRiJ[M93
+IY<7K9Y5n0`KDAK_M`:Pk92
+R0
+w1720277567
+8C:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR_tb.v
+FC:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR_tb.v
+!i122 1
+L0 8 113
+R6
+R7
+r1
+!s85 0
+31
+!s108 1720282902.000000
+!s107 C:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/MyDocuments/college/ee417/projects/lesson08_A01|C:/MyDocuments/college/ee417/projects/lesson08_A01/UART_RCVR_tb.v|
+!i113 0
+R11
+R12
+R1
+n@u@a@r@t_@r@c@v@r_tb

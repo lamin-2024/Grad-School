@@ -1,0 +1,22 @@
+/*-----------------------------------------------------------------------------
+Name Lamin Jammeh
+CLass: EE417 Summer 2024
+Lesson 04 HW Question 5 Q2 Part1
+Group: Ron Kalin/ Lamin Jammeh
+Project Description: the portion takes in PAM4 with 2 bits input and 4 different
+levels and converts it to NRZ 
+-------------------------------------------------------------------------------*/
+
+module PAM4_to_NRZ (
+							nrz,
+							pam4,
+							clk,
+							reset
+							);
+//assigen the inputs and putputs as registers and wires
+input wire clk, reset;				//clk and reset signal 
+input wire [1:0] pam4;				//2 bits pam4 input signal
+output reg nrz;
+
+//4 different pam4 levels
+reg [3:0] pam4_level, next_pam4_level;

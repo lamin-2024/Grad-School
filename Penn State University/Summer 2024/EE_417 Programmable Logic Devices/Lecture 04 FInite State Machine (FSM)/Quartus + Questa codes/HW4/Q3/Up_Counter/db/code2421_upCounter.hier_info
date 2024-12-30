@@ -1,0 +1,11 @@
+|code2421_upCounter
+upcount[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+upcount[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+upcount[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+upcount[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+count[0] => upcount[0].DATAIN
+count[1] => upcount[1].DATAIN
+count[2] => upcount[2].DATAIN
+count[3] => upcount[3].DATAIN
+
+

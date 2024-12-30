@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "bcd[0]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[1]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[2]",
+					"strict" : false
+				},
+				{
+					"name" : "bcd[3]",
+					"strict" : false
+				},
+				{
+					"name" : "weighted2421[0]",
+					"strict" : false
+				},
+				{
+					"name" : "weighted2421[1]",
+					"strict" : false
+				},
+				{
+					"name" : "weighted2421[2]",
+					"strict" : false
+				},
+				{
+					"name" : "weighted2421[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

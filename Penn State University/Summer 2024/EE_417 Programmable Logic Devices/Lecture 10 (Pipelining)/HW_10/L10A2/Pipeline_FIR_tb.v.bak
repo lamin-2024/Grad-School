@@ -1,0 +1,70 @@
+module FIR_Pipeline_tb ();
+
+parameter FIR_order    = 6;  // order of the filter
+parameter sample_size  = 4;  // word size of input samples max 15
+parameter weight_size  = 5;  // component of word_size_out max 31
+parameter word_size_out= sample_size + weight_size + 3; // max possible output 15*31*(6+1)= 12digits
+parameter product_size = sample_size + weight_size;
+
+wire  [word_size_out -1: 0] FIR_MAC;       //declare outputs
+wire  [word_size_out -1: 0] FIR_pipeline_A;
+wire  [word_size_out -1: 0] FIR_pipeline_B;
+
+reg   [sample_size -1: 0] sample_in;    //declare inputs
+reg                       clock, reset;
+//instantiate unit under test
+Pipeline_FIR UUT (FIR_pipeline_A, FIR_Pipeline_B, FIR_MAC, Sample_in, clock, reset);
+
+// Probes to observe pipeline register PR0
+wire  [product_size -1: 0] PR00;  assign PR00 = UUT.M3.PR0[0];
+wire  [product_size -1: 0] PR01;  assign PR01 = UUT.M3.PR0[1];
+wire  [product_size -1: 0] PR02;  assign PR02 = UUT.M3.PR0[2];
+wire  [product_size -1: 0] PR03;  assign PR03 = UUT.M3.PR0[3];
+wire  [product_size -1: 0] PR04;  assign PR04 = UUT.M3.PR0[4];
+
+// Probes to observe pipeline register PR1
+wire  [product_size -1: 0] PR11;  assign PR11 = UUT.M3.PR1[1];
+wire  [product_size -1: 0] PR12;  assign PR12 = UUT.M3.PR1[2];
+wire  [product_size -1: 0] PR13;  assign PR13 = UUT.M3.PR1[3];
+wire  [product_size -1: 0] PR14;  assign PR14 = UUT.M3.PR1[4];
+
+// Probes to observe pipeline register PR2
+wire  [product_size -1: 0] PR22;  assign PR22 = UUT.M3.PR2[2];
+wire  [product_size -1: 0] PR23;  assign PR23 = UUT.M3.PR2[3];
+wire  [product_size -1: 0] PR24;  assign PR24 = UUT.M3.PR2[4];
+
+// Probes to observe pipeline register PR3
+wire  [product_size -1: 0] PR33;  assign PR33 = UUT.M3.PR3[3];
+wire  [product_size -1: 0] PR34;  assign PR34 = UUT.M3.PR3[4];
+
+initial
+begin
+clock = 0;
+forever
+#5 clock = ~clock;
+end
+
+initial
+begin
+reset = 1; //reset everything
+#40 reset = 0; //4 clock cycles, allow to run
+end
+
+initial
+begin
+Sample_in = 0;   #100
+Sample_in = 1;   #10   //impulse response
+Sample_in = 0;   #100
+Sample_in = 10;  #50   //same input over 5 clock cycles
+Sample_in = 0;   #100
+Sample_in = 1;   #10
+Sample_in = 2;   #10
+Sample_in = 8;   #10
+Sample_in = 2;   #10
+Sample_in = 1;   #10
+Sample_in = 0;   #100
+Sample_in = 63;  #100
+Sample_in = 0;   
+end
+
+endmodule

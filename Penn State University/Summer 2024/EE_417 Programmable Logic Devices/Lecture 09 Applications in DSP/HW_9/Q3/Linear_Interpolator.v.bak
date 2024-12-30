@@ -1,0 +1,25 @@
+module Linear_Interpoolator #(parameter word_size = 8) 
+							  (
+								output [word_size-1:0] Data_out,
+								output [word_size-1:0] buffer, // expose buffer as an output
+								input  [word_size-1:0] Data_in,
+								input                  clock, reset
+								);
+
+// internal registers and wires
+reg [word_size-1:0] buffer_reg; // internal register for buffer
+
+// assign a formula for Data_out
+assign Data_out = buffer_reg; // Data_out will be the difference between Data_in and buffer
+assign buffer = buffer_reg; // expose the internal buffer
+
+always @ (posedge clock) begin
+    if (reset) 
+        buffer_reg <= 0; // when reset is high, and clock is rising buffer <=0
+    else
+	 //Average of the 2 received samples, use right-ward shifting (>> 1) for avaraging 2 Binary samples  
+        buffer_reg <= (Data_in + buffer_reg) >> 1 ; // when reset is low, and clock is rising buffer_reg <= Average of the 2 Data_in
+    
+end
+
+endmodule

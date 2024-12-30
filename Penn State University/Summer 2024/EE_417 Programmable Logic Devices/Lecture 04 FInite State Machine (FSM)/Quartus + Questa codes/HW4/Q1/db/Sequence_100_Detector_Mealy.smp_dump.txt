@@ -1,0 +1,11 @@
+
+State Machine - |Sequence_100_Detector_Mealy|present_state
+Name present_state.S_111 present_state.S_110 present_state.S_101 present_state.S_100 present_state.S_011 present_state.S_010 present_state.S_001 present_state.S_000 
+present_state.S_000 0 0 0 0 0 0 0 0 
+present_state.S_001 0 0 0 0 0 0 1 1 
+present_state.S_010 0 0 0 0 0 1 0 1 
+present_state.S_011 0 0 0 0 1 0 0 1 
+present_state.S_100 0 0 0 1 0 0 0 1 
+present_state.S_101 0 0 1 0 0 0 0 1 
+present_state.S_110 0 1 0 0 0 0 0 1 
+present_state.S_111 1 0 0 0 0 0 0 1 

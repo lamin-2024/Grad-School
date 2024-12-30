@@ -1,0 +1,84 @@
+/*-----------------------------------------------------------------------------
+Name Lamin Jammeh
+CLass: EE417 Summer 2024
+Lesson 04 HW Question 4 [Down_Counter
+Group: Ron Kalin/ Lamin Jammeh
+Project Description: The desing will count down form 1111 to 0000 in code2421
+this happens when reset is low and enable is high 
+-------------------------------------------------------------------------------*/
+
+module code2421_downCounter (count, clk, reset, enable);
+
+//define the the input and output to the system
+output reg [3:0] count;
+input				  clk, reset, enable;
+
+//intermediate probe or internal wiring
+reg [1:0] state, next_state;
+
+//possible outcomes or parameters
+parameter	S_0 = 3'b0000;
+parameter	S_1 = 3'b0001;
+parameter	S_2 = 3'b0010;
+parameter	S_3 = 3'b0011;
+parameter	S_4 = 3'b0100;
+parameter	S_5 = 3'b1011;
+parameter	S_6 = 3'b1100;
+parameter	S_7 = 3'b1101;
+parameter	S_8 = 3'b1110;
+parameter	S_9 = 3'b1111;
+
+//sequence logic to start the count
+always @ (posedge clk)
+		if (reset) state <= S_9;
+			else	  state <= next_state;
+//combinational logic to find the next_state based on the inputs and the current state:
+always @ *
+case (state)
+	S_9:	 if (enable) next_state = S_8;		
+			 else	 		 next_state = S_9;          //output the current state
+			 
+	S_8:	 if (enable) next_state = S_7;		
+			 else	 		 next_state = S_8;          //output the current state
+			 
+	S_7:	 if (enable) next_state = S_6;		
+			 else	 		 next_state = S_7;          //output the current state
+		
+	S_6:	 if (enable) next_state = S_5;		
+			 else	 		 next_state = S_6;          //output the current state
+			 
+	S_5:	 if (enable) next_state = S_4;		
+			 else	 		 next_state = S_5;          //output the current state
+			 
+	S_4:	 if (enable) next_state = S_3;		
+			 else	 		 next_state = S_4;          //output the current state
+			 
+	S_3:	 if (enable) next_state = S_2;		
+			 else	 		 next_state = S_3;          //output the current state
+			 
+	S_2:	 if (enable) next_state = S_1;		
+			 else	 		 next_state = S_2;          //output the current state
+			 
+	S_1:	 if (enable) next_state = S_0;		
+			 else	 		 next_state = S_1;          //output the current state
+			 
+	S_0:	 if (enable) next_state = S_9;		
+			 else	 		 next_state = S_0;          //output the current state
+endcase
+	
+//combination logic to determine the output based on the current state:
+always @ (state)
+case (state)
+	S_9	: count = 3'b1111;
+	S_8	: count = 3'b1110;
+	S_7	: count = 3'b1101;
+	S_6	: count = 3'b1100;	
+	S_5	: count = 3'b1011;
+	S_4	: count = 3'b0100;
+	S_3	: count = 3'b0011;
+	S_2	: count = 3'b0010;
+	S_1	: count = 3'b0001;
+	S_0	: count = 3'b0000;
+endcase
+
+endmodule

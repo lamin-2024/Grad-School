@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'NRZ_in'
+Slack : -3.772
+TNS   : -10.357
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -1.398
+TNS   : -1.398
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -0.850
+TNS   : -1.680
+
+Type  : Slow 1100mV 85C Model Hold 'NRZ_in'
+Slack : 1.394
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -1.578
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'NRZ_in'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'NRZ_in'
+Slack : -3.813
+TNS   : -10.603
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -1.182
+TNS   : -1.182
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -0.981
+TNS   : -1.934
+
+Type  : Slow 1100mV 0C Model Hold 'NRZ_in'
+Slack : 1.350
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -1.713
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'NRZ_in'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'NRZ_in'
+Slack : -1.704
+TNS   : -4.442
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -1.203
+TNS   : -1.203
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'NRZ_in'
+Slack : 0.789
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.077
+TNS   : -0.229
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'NRZ_in'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'NRZ_in'
+Slack : -1.507
+TNS   : -3.955
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.053
+TNS   : -1.053
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'NRZ_in'
+Slack : 0.708
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.077
+TNS   : -0.229
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'NRZ_in'
+Slack : 0.049
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "FIR_pipeline_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[7]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[8]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_pipeline_C[9]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_MAC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

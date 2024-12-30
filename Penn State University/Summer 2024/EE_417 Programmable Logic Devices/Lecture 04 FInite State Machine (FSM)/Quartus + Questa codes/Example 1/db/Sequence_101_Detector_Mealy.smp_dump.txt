@@ -1,0 +1,6 @@
+
+State Machine - |Sequence_101_Detector_Mealy|state
+Name state.snone state.s10 state.s1 
+state.snone 0 0 0 
+state.s1 1 0 1 
+state.s10 1 1 0 

@@ -1,0 +1,287 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do manchester_to_pam4_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 05/HW5/Q1/L5A1/L5A1 {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1/manchester_to_pam4.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 15:29:43 on Jun 15,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1" C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1/manchester_to_pam4.v 
+# -- Compiling module manchester_to_pam4
+# -- Compiling module manchester_to_NRZ_Mealy_case_nonglitchy
+# -- Compiling module NRZ_to_PAM_Mealy_case_nonglitchy
+# 
+# Top level modules:
+# 	manchester_to_pam4
+# End time: 15:29:43 on Jun 15,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 05/HW5/Q1/L5A1/L5A1 {C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1/manchester_to_pam4_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 15:29:43 on Jun 15,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1" C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1/manchester_to_pam4_tb.v 
+# -- Compiling module manchester_to_pam4_tb
+# 
+# Top level modules:
+# 	manchester_to_pam4_tb
+# End time: 15:29:43 on Jun 15,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  manchester_to_pam4_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" manchester_to_pam4_tb 
+# Start time: 15:29:43 on Jun 15,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "NRZ_to_PAM_Mealy_case_nonglitchy(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "manchester_to_NRZ_Mealy_case_nonglitchy(fast)".
+# Loading work.manchester_to_pam4_tb(fast)
+# Loading work.manchester_to_pam4(fast)
+# Loading work.manchester_to_NRZ_Mealy_case_nonglitchy(fast)
+# Loading work.NRZ_to_PAM_Mealy_case_nonglitchy(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ________________________________output_PAM_out = -PAM4-
+# clk_in = 0: rst_in = 1:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 1:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 1:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 1:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 1:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 1:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 1 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 3 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 2 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 0: rst_in = 0:  output_PAM_out = 0 
+# clk_in = 1: rst_in = 0:  output_PAM_out = 0 
+# ** Note: $stop    : C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1/manchester_to_pam4_tb.v(75)
+#    Time: 1060 ps  Iteration: 0  Instance: /manchester_to_pam4_tb
+# Break in Module manchester_to_pam4_tb at C:/Users/lmnjm/OneDrive/Documents/Summer 2024/EE417 Programmable Logic Devices/Lecture 05/HW5/Q1/L5A1/L5A1/manchester_to_pam4_tb.v line 75
+# Printing not supported.
+# Printing not supported.
+# End time: 15:54:47 on Jun 15,2024, Elapsed time: 0:25:04
+# Errors: 0, Warnings: 0

@@ -1,0 +1,10 @@
+|pam4_to_nrz
+clk => pam4_reg[0].CLK
+clk => pam4_reg[1].CLK
+rst_n => pam4_reg[0].ACLR
+rst_n => pam4_reg[1].ACLR
+pam4_symbol[0] => pam4_reg[0].DATAIN
+pam4_symbol[1] => pam4_reg[1].DATAIN
+nrz_bit <= nrz_bit.DB_MAX_OUTPUT_PORT_TYPE
+
+

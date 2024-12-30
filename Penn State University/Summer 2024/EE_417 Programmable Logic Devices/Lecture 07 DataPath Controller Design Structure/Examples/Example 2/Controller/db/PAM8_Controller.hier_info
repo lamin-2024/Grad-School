@@ -1,0 +1,14 @@
+|PAM8_Controller
+start <= start.DB_MAX_OUTPUT_PORT_TYPE
+load <= load.DB_MAX_OUTPUT_PORT_TYPE
+enable => next_state.starting.DATAB
+enable => Selector1.IN3
+enable => Selector0.IN1
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+clock => state~1.DATAIN
+
+

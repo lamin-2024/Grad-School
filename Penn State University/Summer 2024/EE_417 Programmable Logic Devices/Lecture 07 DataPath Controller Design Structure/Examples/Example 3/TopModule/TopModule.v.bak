@@ -1,0 +1,26 @@
+module TopModule #(parameter WIDTH = 8, parameter CYCLES = 18) (
+    input clk,
+    input reset,
+    output [WIDTH-1:0] count
+);
+
+wire shift_en, load, done;
+
+DataPath #(WIDTH, CYCLES) datapath (
+    .clk(clk),
+    .reset(reset),
+    .shift_en(shift_en),
+    .load(load),
+    .count(count),
+    .done(done)
+);
+
+Controller controller (
+    .clk(clk),
+    .reset(reset),
+    .done(done),
+    .shift_en(shift_en),
+    .load(load)
+);
+
+endmodule

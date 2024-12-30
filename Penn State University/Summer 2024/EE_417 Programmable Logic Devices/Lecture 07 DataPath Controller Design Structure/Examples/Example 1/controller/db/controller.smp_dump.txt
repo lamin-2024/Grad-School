@@ -1,0 +1,9 @@
+
+State Machine - |controller|state
+Name state.S_hold state.S_acc3 state.S_acc2 state.S_acc1 state.S_load state.S_rst 
+state.S_rst 0 0 0 0 0 0 
+state.S_load 0 0 0 0 1 1 
+state.S_acc1 0 0 0 1 0 1 
+state.S_acc2 0 0 1 0 0 1 
+state.S_acc3 0 1 0 0 0 1 
+state.S_hold 1 0 0 0 0 1 

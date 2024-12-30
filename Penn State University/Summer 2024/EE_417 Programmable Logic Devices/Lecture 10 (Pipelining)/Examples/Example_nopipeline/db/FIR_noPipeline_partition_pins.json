@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "FIR_out_assign[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[2]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[3]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[4]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[5]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[7]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[8]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[9]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[10]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[11]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[12]",
+					"strict" : false
+				},
+				{
+					"name" : "FIR_out_assign[13]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_in[5]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

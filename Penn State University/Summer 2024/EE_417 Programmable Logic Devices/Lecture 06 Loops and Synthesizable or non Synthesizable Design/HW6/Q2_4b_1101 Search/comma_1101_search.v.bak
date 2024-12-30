@@ -1,0 +1,36 @@
+/*----------------------------------------------------------------------------------
+Name Lamin Jammeh
+CLass: EE417 Summer 2024
+Lesson 06 HW Question 2
+Group: Ron Kalin/ Lamin Jammeh
+Project Description: This is the main module, it detects a comma symbol 4b'1101 once
+the symbol is detect the index of the MSB of the symbol and send it as an output 
+-------------------------------------------------------------------------------------*/
+module comma_1101_search #(parameter word_size = 32,
+							  index_size = 4)
+				   (output	reg [index_size -1:0]	index_out, 					 //4 bits index [3:0]
+				   input		[word_size - 1:0]   word_in,							//32 bits input [31:0]
+				   input   							trigger);							//triggers the count
+				   reg [word_size - 1:0]	temp_reg;				//Temporary register to locate the comma code
+																//using shifting, we cantest the 3LSB instead
+																//of moving the index
+																//avoid the error that index out is not a constant word
+	always @ (posedge trigger)									 //start the search at posedge of the trigger signal
+			begin: search_code									 // name the begin block as serch_code
+				temp_reg = word_in;								//copying the result into the temporary register
+				index_out = 0;										//start teh index count at the first bit or LSB of input data
+				while (index_out < (word_size))				//keep the loop going as long as index_out is less than 32
+					begin
+						index_out = index_out + 1;									 //increment index_out by 1 for every index change or shift to right
+						if (temp_reg[3:0] == 4'b1101) disable search_code;	//stop the search if temp_reg is 1101
+						else begin
+								temp_reg = temp_reg >> 1;								//shift the temp_reg to the right by 1 if tem_reg is not equal to 1101
+								if ((temp_reg == 0) | (index_out == (word_size - 1))) 	//the temp_reg is all 0s OR 32 bits is achived @index_out
+										 begin 															//then MSB is reached
+										 index_out = 4'b0000;										//THe code was not found
+										 disable search_code;										//stop the search
+										 end
+								end
+						end
+			end
+endmodule

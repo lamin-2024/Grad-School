@@ -1,0 +1,13 @@
+|RandomCounter
+count[0] << <VCC>
+count[1] << count.DB_MAX_OUTPUT_PORT_TYPE
+count[2] << count.DB_MAX_OUTPUT_PORT_TYPE
+clk => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+enable => always1.IN0
+mode => always1.IN1
+
+

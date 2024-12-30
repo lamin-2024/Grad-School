@@ -1,0 +1,9 @@
+// ee417 lesson 10 Assignment 2 L10A2
+// Name: Ron Kalin, Date: 07-18-24  Group: Kalin/Jammeh
+// Design: FIR filter chain of cascaded MACs, given 4-bit coefficients
+// inputs are 4-bit positive values, output register is 11 parallel bits
+// top level module
+module Pipeline_FIR (FIR_pipeline_A, FIR_Pipeline_B, FIR_MAC, Sample_in, clock, reset);
+
+
+endmodule

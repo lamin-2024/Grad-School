@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : -5.360
+TNS   : -12.787
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -2.785
+TNS   : -7.870
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.755
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.917
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -2.098
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : -5.455
+TNS   : -12.900
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -2.455
+TNS   : -6.942
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.779
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -2.336
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : -2.580
+TNS   : -6.410
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.091
+TNS   : -5.902
+
+Type  : Fast 1100mV 85C Model Hold 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.630
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.795
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.074
+TNS   : -0.294
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : -2.432
+TNS   : -5.903
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.522
+TNS   : -4.270
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.483
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.523
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.076
+TNS   : -0.302
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'NRZ_to_Manchester:UDM2|state.Sx'
+Slack : 0.455
+TNS   : 0.000
+
+------------------------------------------------------------

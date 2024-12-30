@@ -1,0 +1,10 @@
+|Controller
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+done => next_state.DONE.DATAB
+done => Selector0.IN2
+shift_left <= shift_left.DB_MAX_OUTPUT_PORT_TYPE
+shift_right <= shift_right.DB_MAX_OUTPUT_PORT_TYPE
+load <= load.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,159 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do Pipeline_FIR_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2 {C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 17:44:38 on Jul 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2" C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v 
+# -- Compiling module Pipeline_FIR
+# -- Compiling module MAC
+# -- Compiling module noPipeline_FIR
+# -- Compiling module Pipeline_FIR_a
+# -- Compiling module Pipeline_FIR_b
+# -- Compiling module Pipeline_FIR_c
+# 
+# Top level modules:
+# 	Pipeline_FIR
+# End time: 17:44:38 on Jul 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2 {C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 17:44:38 on Jul 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/MyDocuments/college/ee417/projects/lesson10_A2" C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v 
+# -- Compiling module Pipeline_FIR_tb
+# 
+# Top level modules:
+# 	Pipeline_FIR_tb
+# End time: 17:44:39 on Jul 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Pipeline_FIR_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Pipeline_FIR_tb 
+# Start time: 17:44:39 on Jul 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.Pipeline_FIR_tb(fast)
+# Loading work.Pipeline_FIR(fast)
+# Loading work.noPipeline_FIR(fast)
+# Loading work.MAC(fast)
+# Loading work.Pipeline_FIR_a(fast)
+# Loading work.Pipeline_FIR_b(fast)
+# Loading work.Pipeline_FIR_c(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'Acc_in'. The port definition is at: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /Pipeline_FIR_tb/UUT/M1/M0 File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 73
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (12) for port 'Acc_in'. The port definition is at: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /Pipeline_FIR_tb/UUT/M1/M1 File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 74
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (12) for port 'Acc_in'. The port definition is at: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /Pipeline_FIR_tb/UUT/M1/M2 File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 75
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (12) for port 'Acc_in'. The port definition is at: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /Pipeline_FIR_tb/UUT/M1/M3 File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 76
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (12) for port 'Acc_in'. The port definition is at: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /Pipeline_FIR_tb/UUT/M1/M4 File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (12) for port 'Acc_in'. The port definition is at: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /Pipeline_FIR_tb/UUT/M1/M5 File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 78
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (12) for port 'Acc_in'. The port definition is at: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /Pipeline_FIR_tb/UUT/M1/M6 File: C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR.v Line: 79
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# FIR_Mac: xxx, FIR_pipeline_A: xxx, FIR_pipeline_B: xxx, FIR_pipeline_C: xxx
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 002, FIR_pipeline_A: 000, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 005, FIR_pipeline_A: 002, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 009, FIR_pipeline_A: 005, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 00e, FIR_pipeline_A: 009, FIR_pipeline_B: 000, FIR_pipeline_C: 002
+# FIR_Mac: 009, FIR_pipeline_A: 00e, FIR_pipeline_B: 000, FIR_pipeline_C: 005
+# FIR_Mac: 005, FIR_pipeline_A: 009, FIR_pipeline_B: 000, FIR_pipeline_C: 009
+# FIR_Mac: 002, FIR_pipeline_A: 005, FIR_pipeline_B: 002, FIR_pipeline_C: 00e
+# FIR_Mac: 000, FIR_pipeline_A: 002, FIR_pipeline_B: 005, FIR_pipeline_C: 009
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 009, FIR_pipeline_C: 005
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 00e, FIR_pipeline_C: 002
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 009, FIR_pipeline_C: 000
+# FIR_Mac: 004, FIR_pipeline_A: 000, FIR_pipeline_B: 005, FIR_pipeline_C: 000
+# FIR_Mac: 006, FIR_pipeline_A: 014, FIR_pipeline_B: 002, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 046, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 00c, FIR_pipeline_A: 0a0, FIR_pipeline_B: 000, FIR_pipeline_C: 014
+# FIR_Mac: 006, FIR_pipeline_A: 12c, FIR_pipeline_B: 000, FIR_pipeline_C: 046
+# FIR_Mac: 004, FIR_pipeline_A: 186, FIR_pipeline_B: 000, FIR_pipeline_C: 0a0
+# FIR_Mac: 016, FIR_pipeline_A: 1a4, FIR_pipeline_B: 014, FIR_pipeline_C: 12c
+# FIR_Mac: 01c, FIR_pipeline_A: 186, FIR_pipeline_B: 046, FIR_pipeline_C: 186
+# FIR_Mac: 020, FIR_pipeline_A: 12c, FIR_pipeline_B: 0a0, FIR_pipeline_C: 1a4
+# FIR_Mac: 016, FIR_pipeline_A: 0a0, FIR_pipeline_B: 12c, FIR_pipeline_C: 186
+# FIR_Mac: 014, FIR_pipeline_A: 046, FIR_pipeline_B: 186, FIR_pipeline_C: 12c
+# FIR_Mac: 000, FIR_pipeline_A: 014, FIR_pipeline_B: 1a4, FIR_pipeline_C: 0a0
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 186, FIR_pipeline_C: 046
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 12c, FIR_pipeline_C: 014
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 0a0, FIR_pipeline_C: 000
+# FIR_Mac: 002, FIR_pipeline_A: 000, FIR_pipeline_B: 046, FIR_pipeline_C: 000
+# FIR_Mac: 009, FIR_pipeline_A: 002, FIR_pipeline_B: 014, FIR_pipeline_C: 000
+# FIR_Mac: 003, FIR_pipeline_A: 009, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 00c, FIR_pipeline_A: 023, FIR_pipeline_B: 000, FIR_pipeline_C: 002
+# FIR_Mac: 009, FIR_pipeline_A: 04c, FIR_pipeline_B: 000, FIR_pipeline_C: 009
+# FIR_Mac: 00e, FIR_pipeline_A: 079, FIR_pipeline_B: 000, FIR_pipeline_C: 023
+# FIR_Mac: 009, FIR_pipeline_A: 09e, FIR_pipeline_B: 002, FIR_pipeline_C: 04c
+# FIR_Mac: 00c, FIR_pipeline_A: 079, FIR_pipeline_B: 009, FIR_pipeline_C: 079
+# FIR_Mac: 013, FIR_pipeline_A: 04c, FIR_pipeline_B: 023, FIR_pipeline_C: 09e
+# FIR_Mac: 009, FIR_pipeline_A: 023, FIR_pipeline_B: 04c, FIR_pipeline_C: 079
+# FIR_Mac: 002, FIR_pipeline_A: 009, FIR_pipeline_B: 079, FIR_pipeline_C: 04c
+# FIR_Mac: 000, FIR_pipeline_A: 002, FIR_pipeline_B: 09e, FIR_pipeline_C: 023
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 079, FIR_pipeline_C: 009
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 04c, FIR_pipeline_C: 002
+# FIR_Mac: 000, FIR_pipeline_A: 000, FIR_pipeline_B: 023, FIR_pipeline_C: 000
+# FIR_Mac: 00e, FIR_pipeline_A: 000, FIR_pipeline_B: 009, FIR_pipeline_C: 000
+# FIR_Mac: 009, FIR_pipeline_A: 01e, FIR_pipeline_B: 002, FIR_pipeline_C: 000
+# FIR_Mac: 000, FIR_pipeline_A: 069, FIR_pipeline_B: 000, FIR_pipeline_C: 000
+# FIR_Mac: 002, FIR_pipeline_A: 0f0, FIR_pipeline_B: 000, FIR_pipeline_C: 01e
+# FIR_Mac: 009, FIR_pipeline_A: 1c2, FIR_pipeline_B: 000, FIR_pipeline_C: 069
+# FIR_Mac: 004, FIR_pipeline_A: 249, FIR_pipeline_B: 000, FIR_pipeline_C: 0f0
+# FIR_Mac: 022, FIR_pipeline_A: 294, FIR_pipeline_B: 01e, FIR_pipeline_C: 1c2
+# FIR_Mac: 022, FIR_pipeline_A: 2b2, FIR_pipeline_B: 069, FIR_pipeline_C: 049
+# FIR_Mac: 022, FIR_pipeline_A: 2b2, FIR_pipeline_B: 0f0, FIR_pipeline_C: 094
+# FIR_Mac: 022, FIR_pipeline_A: 2b2, FIR_pipeline_B: 1c2, FIR_pipeline_C: 0b2
+# FIR_Mac: 024, FIR_pipeline_A: 2b2, FIR_pipeline_B: 049, FIR_pipeline_C: 0b2
+# FIR_Mac: 029, FIR_pipeline_A: 294, FIR_pipeline_B: 094, FIR_pipeline_C: 0b2
+# FIR_Mac: 022, FIR_pipeline_A: 249, FIR_pipeline_B: 0b2, FIR_pipeline_C: 0b2
+# ** Note: $stop    : C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v(113)
+#    Time: 690 ps  Iteration: 0  Instance: /Pipeline_FIR_tb
+# Break in Module Pipeline_FIR_tb at C:/MyDocuments/college/ee417/projects/lesson10_A2/Pipeline_FIR_tb.v line 113
+# End time: 19:38:46 on Jul 20,2024, Elapsed time: 1:54:07
+# Errors: 0, Warnings: 7

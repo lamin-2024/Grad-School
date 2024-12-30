@@ -1,0 +1,22 @@
+|BCD_to_Xess3
+B[0] => X.IN0
+B[0] => X.IN0
+B[0] => X.IN0
+B[0] => X.IN0
+B[0] => X[0].DATAIN
+B[1] => X.IN0
+B[1] => X.IN0
+B[1] => X.IN1
+B[1] => X.IN1
+B[2] => X.IN1
+B[2] => X.IN1
+B[2] => X.IN1
+B[2] => X.IN1
+B[2] => X.IN1
+B[3] => X.IN1
+X[0] <= B[0].DB_MAX_OUTPUT_PORT_TYPE
+X[1] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[2] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[3] <= X.DB_MAX_OUTPUT_PORT_TYPE
+
+

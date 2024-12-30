@@ -1,0 +1,22 @@
+|Control_Unit
+Load_XMT_DR <= Load_XMT_DR.DB_MAX_OUTPUT_PORT_TYPE
+Load_XMT_shftreg <= Load_XMT_shftreg.DB_MAX_OUTPUT_PORT_TYPE
+start <= start.DB_MAX_OUTPUT_PORT_TYPE
+shift <= shift.DB_MAX_OUTPUT_PORT_TYPE
+clear <= clear.DB_MAX_OUTPUT_PORT_TYPE
+Load_XMT_datareg => next_state.OUTPUTSELECT
+Load_XMT_datareg => Load_XMT_shftreg.OUTPUTSELECT
+Load_XMT_datareg => Load_XMT_DR.DATAB
+Byte_ready => Load_XMT_shftreg.DATAA
+Byte_ready => next_state.DATAA
+T_byte => start.DATAB
+T_byte => Selector2.IN1
+T_byte => Selector1.IN2
+BC_lt_BCmax => shift.DATAB
+BC_lt_BCmax => Selector2.IN2
+BC_lt_BCmax => clear.DATAB
+BC_lt_BCmax => Selector0.IN2
+clock => state~1.DATAIN
+rst_b => state~3.DATAIN
+
+

@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Rx_datareg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Rx_datareg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rx_datareg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Rx_datareg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Rx_datareg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Rx_datareg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Rx_datareg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Rx_datareg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Ser_in_0",
+					"strict" : false
+				},
+				{
+					"name" : "SC_eq_3",
+					"strict" : false
+				},
+				{
+					"name" : "SC_lt_7",
+					"strict" : false
+				},
+				{
+					"name" : "Serial_in",
+					"strict" : false
+				},
+				{
+					"name" : "Sample_clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_b",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "clr_Sample_counter",
+					"strict" : false
+				},
+				{
+					"name" : "inc_Sample_counter",
+					"strict" : false
+				},
+				{
+					"name" : "shift",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,5 @@
+
+State Machine - |Datapath_Unit_Rx|Bit_counter
+Name Bit_counter.word_size 
+Bit_counter.00000 0 
+Bit_counter.word_size 1 

@@ -1,0 +1,68 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do FIR_MovingAverage_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Grad\ School/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 12/FinalProj {C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj/FIR_MovingAverage.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:46:57 on Jul 31,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj" C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj/FIR_MovingAverage.v 
+# -- Compiling module FIR_MovingAverage
+# ** Warning: C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj/FIR_MovingAverage.v(26): (vlog-2256) Event expressions should result in a singular type.
+# 
+# Top level modules:
+# 	FIR_MovingAverage
+# End time: 22:46:57 on Jul 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Grad\ School/Summer\ 2024/EE417\ Programmable\ Logic\ Devices/Lecture\ 12/FinalProj {C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj/FIR_MovingAverage_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 22:46:57 on Jul 31,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj" C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj/FIR_MovingAverage_tb.v 
+# -- Compiling module FIR_MovingAverage_tb
+# 
+# Top level modules:
+# 	FIR_MovingAverage_tb
+# End time: 22:46:57 on Jul 31,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FIR_MovingAverage_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FIR_MovingAverage_tb 
+# Start time: 22:46:57 on Jul 31,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.FIR_MovingAverage_tb(fast)
+# Loading work.FIR_MovingAverage(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Filtered Output: b9
+# ** Note: $stop    : C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj/FIR_MovingAverage_tb.v(76)
+#    Time: 510 ps  Iteration: 0  Instance: /FIR_MovingAverage_tb
+# Break in Module FIR_MovingAverage_tb at C:/Users/lmnjm/OneDrive/Documents/Grad School/Summer 2024/EE417 Programmable Logic Devices/Lecture 12/FinalProj/FIR_MovingAverage_tb.v line 76
+# End time: 22:48:33 on Jul 31,2024, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0

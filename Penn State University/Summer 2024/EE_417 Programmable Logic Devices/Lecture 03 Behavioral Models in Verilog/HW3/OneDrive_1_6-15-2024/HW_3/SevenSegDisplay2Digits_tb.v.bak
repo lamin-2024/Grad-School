@@ -1,0 +1,50 @@
+/*-------------------------------------------------------------------------
+Name Lamin Jammeh
+CLass: EE417 Summer 2024
+Lesson 03 HW Question 3 Part1
+Group: Ron Kalin/ Lamin Jammeh
+Main design was done by Ron Kalin
+TestBench was done by Lamin Jammeh
+--------------------------------------------------------------------------*/
+
+//Step1 define a name for the test-bench
+module SevenSegDisplay2Digits_tb;
+
+//Step2 define the inputs as registers and outputs as wires 
+reg [3:0] V;
+wire [3:0] d1, d0;
+
+//Step3 define the Unit under test UUT with all inputs and outputs
+SevenSegDisplay2Digits UUT ( 
+											.d1(d1),
+											.d0(d0),
+											.V(V)
+											);
+
+//Step4 open an initial block and define all the possible input combination for the BCD from 0-15 using 4bits
+initial
+	begin
+		   V = 4'b_0000;  //0
+    #100 V = 4'b_0001;  //1
+    #100 V = 4'b_0010;  //2
+    #100 V = 4'b_0011;  //3
+    #100 V = 4'b_0100;  //4
+    #100 V = 4'b_0101;  //5
+    #100 V = 4'b_0110;  //6
+    #100 V = 4'b_0111;  //7
+    #100 V = 4'b_1000;  //8
+    #100 V = 4'b_1001;  //9
+	 //Needs a second circuit to show the tenth digits
+	 #100 V = 4'b_1100;  //10
+    #100 V = 4'b_1011;  //11
+    #100 V = 4'b_1100;  //12
+    #100 V = 4'b_1101;  //13
+    #100 V = 4'b_1110;  //14
+	 #100 V = 4'b_1111;  //15
+    #100;
+		end
+//Display the results 
+initial begin
+        $monitor("V = %b: 	Decimal_Input = %d:		d1 = %b_%b ", V, V, d1, d0);
+    end
+endmodule
