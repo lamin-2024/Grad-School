@@ -1,0 +1,19 @@
+/*
+Design Process
+	Idea: concieving of an idea
+Implement: find physical manifestation of the idea
+Test: test the idea for viability
+Manufacture: build and create the idea
+
+the design process can be subject to the following
+subject ot iteration (refinement 
+Hopefully converge
+
+Prototype the design: implement the physical, useful to be flexible, see where real world and theoretical differs, modify as needed
+	Breadboards
+	PCBs
+	Vrtual Prototypes
+		Programmable Breadboards
+		Software programmable
+		FPGA eg:Baysys2 using Xilinx Spartan 3E FPGA
+*/

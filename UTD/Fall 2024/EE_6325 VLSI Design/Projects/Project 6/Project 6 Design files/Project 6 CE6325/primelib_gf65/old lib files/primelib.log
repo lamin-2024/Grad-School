@@ -1,0 +1,25 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx03a.utdallas.edu, User: dal852207, PID: 11954 (PPID: 10773)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (167.3 GB free), 4 GB Swap (4.1 GB free)
+System load average: 2.63, 3.29, 3.10 (14412 processes)
+Directory: /home/eng/d/dal852207/cad/gf65/primelib_gf65
+Malibu mode 2 activated
+Thu Nov 28 18:23:21 2024: Establishing connection to license server
+Thu Nov 28 18:23:21 2024: Testing server connection using feature PrimeLib_CHAR
+Thu Nov 28 18:23:21 2024: License server connection established
+Thu Nov 28 18:23:21 2024: Checked out license FEATURE PrimeLib_CHAR v2023.12 on PORT 1700@engdmv.utdallas.edu
+Command-line: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+================================================
+Thu Nov 28 18:24:01 CST 2024: Begin create stage
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/NOR2
+Using existing /home/eng/d/dal852207/cad/gf65/primelib_gf65/NOR2/config/configure.tcl
+Thu Nov 28 18:24:01 CST 2024: Done create stage (Elapsed: 0 seconds | 0.00 hours  Memory: 754.20MB)
+===================================================================================================
+Shutting down modules
+Thu Nov 28 18:25:17 2024: Released license FEATURE PrimeLib_CHAR
+Thu Nov 28 18:25:17 2024: Program time: 116.00 seconds | 1.93 minutes | 0.03 hours
+Maximum virtual memory size: 754.199 MB

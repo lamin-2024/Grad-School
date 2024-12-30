@@ -1,0 +1,12 @@
+# Legend: N(newborn) R(running) F(failed) K(killed) C(complete)
+C leakage_power__ACQ_1 of OAI12 T0 W1
+C delay__VA__lh__OUT__hl__ACQ_1 of OAI12 T1 W1
+C delay__VA__hl__OUT__lh__ACQ_1 of OAI12 T2 W1
+C Cin__VSS__lh__ACQ_1 of OAI12 T3 W1
+C Cin__VSS__hl__ACQ_1 of OAI12 T4 W1
+C delay__VB__lh__OUT__hl__ACQ_1 of OAI12 T5 W1
+C delay__VB__hl__OUT__lh__ACQ_1 of OAI12 T6 W1
+C delay__VC__lh__OUT__hl__ACQ_1 of OAI12 T7 W1
+C delay__VC__hl__OUT__lh__ACQ_1 of OAI12 T8 W1
+C Cin__VDD__lh__ACQ_1 of OAI12 T9 W1
+C Cin__VDD__hl__ACQ_1 of OAI12 T10 W1

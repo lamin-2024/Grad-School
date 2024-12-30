@@ -1,0 +1,68 @@
+How to use terminals (cmd equivalent in windows) on Unix
+
+First check which environment you in
+		echo $SHELL
+
+To check the environment you are in 
+	env 
+
+To check the group use either commands
+	groups
+	groups username
+	
+Check the list of directory in your current shell
+			ls -a
+			
+How to check for the available modules in your current environment
+		module avail
+		
+How to load a module once yor know which module you want
+		module load "name of module without quotes"
+		
+Verify the loaded module: to check which module is currently running in your session
+		module list
+		
+Unload a Module
+		module unload "name of module without quotes"
+		
+Unload all modules or purge all modules
+		module purge
+
+note the following commands		
+module avail          # List available modules
+module load gcc/9.3   # Load a specific module (e.g., GCC version 9.3)
+module list           # List loaded modules
+module unload gcc/9.3 # Unload the module
+module purge          # Unload all modules
+
+***************Accessing library****************************************
+Open a library compiler
+	lc_shell
+	
+Read from a library or lib file
+	read_lib name of library (library.lib)
+note checkk for the message "Technology library 'library' read successfully"
+
+write to a library
+	write_lib_library -format db -output library.db
+	note use command after the library is open
+	
+************************************Basic command meanings***********************************
+cd: change directory (use to change the directory example to go to downloads use [cd Downloads]
+ls: list directory ( use to list the contents of the directory [ls -a] or [ls -ltr] 
+man: used to find the manual of a command example [man ls] will shoow all the ways ls can be used 
+pwd: print working directory 
+
+****************************to extract files from archive tarred and comppressed usinf gzip.******************
+use any of the following commands 
+gzip -d -c <archived filename> | tar xvf -
+tar xvfz <archived filename>
+
+note:	tar = archive
+		x   = extract
+		v   = to visualize the process
+		f   = file
+*******************
+
+eg1: gzip -d -c ~/Downloads/systemc-3.0.0.tar.gz | tar xvf -
+eg2: tar xvfz ~/Downloads/systemc-3.0.0.tar.gz

@@ -1,0 +1,100 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do FIR_Filter_Project1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is lmnjm@KELEFASANNEH.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is lmnjm@KELEFASANNEH.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/22.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Grad\ School/UTD/Fall\ 2024/EEDG\ 6325/Projects/Project\ 2/Project\ Design {C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:53:31 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design" C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v 
+# -- Compiling module FIR_Filter_Project1
+# 
+# Top level modules:
+# 	FIR_Filter_Project1
+# End time: 11:53:31 on Sep 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/lmnjm/OneDrive/Documents/Grad\ School/UTD/Fall\ 2024/EEDG\ 6325/Projects/Project\ 2/Project\ Design {C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:53:31 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design" C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v 
+# -- Compiling module FIR_Filter_Project1_tb
+# 
+# Top level modules:
+# 	FIR_Filter_Project1_tb
+# End time: 11:53:31 on Sep 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FIR_Filter_Project1_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" FIR_Filter_Project1_tb 
+# Start time: 11:53:31 on Sep 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.FIR_Filter_Project1_tb(fast)
+# Loading work.FIR_Filter_Project1(fast)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: lmnjm  Hostname: KELEFASANNEH  ProcessID: 29200
+#           Attempting to use alternate WLF file "./wlftqvkmvv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqvkmvv
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time:    0	 | Data_in: 0	 | Data_out:   x	 | reset: 1
+# Time:    5	 | Data_in: 0	 | Data_out:   0	 | reset: 1
+# Time:   10	 | Data_in: 0	 | Data_out:   0	 | reset: 0
+# Time:  160	 | Data_in: 6	 | Data_out:   0	 | reset: 0
+# Time:  310	 | Data_in: 3	 | Data_out:   0	 | reset: 0
+# Time:  325	 | Data_in: 3	 | Data_out:  42	 | reset: 0
+# Time:  335	 | Data_in: 3	 | Data_out: 720	 | reset: 0
+# Time:  460	 | Data_in: 2	 | Data_out: 720	 | reset: 0
+# Time:  475	 | Data_in: 2	 | Data_out: 699	 | reset: 0
+# Time:  485	 | Data_in: 2	 | Data_out: 360	 | reset: 0
+# Time:  610	 | Data_in: 5	 | Data_out: 360	 | reset: 0
+# Time:  620	 | Data_in: 5	 | Data_out: 360	 | reset: 1
+# Time:  625	 | Data_in: 5	 | Data_out:   0	 | reset: 1
+# Time:  630	 | Data_in: 5	 | Data_out:   0	 | reset: 0
+# Time:  780	 | Data_in: 2	 | Data_out:   0	 | reset: 0
+# Time:  795	 | Data_in: 2	 | Data_out:  35	 | reset: 0
+# Time:  805	 | Data_in: 2	 | Data_out: 600	 | reset: 0
+# Time:  930	 | Data_in: 0	 | Data_out: 600	 | reset: 0
+# Time:  945	 | Data_in: 0	 | Data_out: 579	 | reset: 0
+# Time:  955	 | Data_in: 0	 | Data_out: 240	 | reset: 0
+# Time: 1080	 | Data_in: 2	 | Data_out: 240	 | reset: 0
+# Time: 1095	 | Data_in: 2	 | Data_out: 226	 | reset: 0
+# Time: 1105	 | Data_in: 2	 | Data_out:   0	 | reset: 0
+# Time: 1230	 | Data_in: 4	 | Data_out:   0	 | reset: 0
+# Time: 1245	 | Data_in: 4	 | Data_out:  14	 | reset: 0
+# Time: 1255	 | Data_in: 4	 | Data_out: 240	 | reset: 0
+# ** Note: $stop    : C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v(66)
+#    Time: 1380 ps  Iteration: 0  Instance: /FIR_Filter_Project1_tb
+# Break in Module FIR_Filter_Project1_tb at C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v line 66
+# Causality operation skipped due to absence of debug database file

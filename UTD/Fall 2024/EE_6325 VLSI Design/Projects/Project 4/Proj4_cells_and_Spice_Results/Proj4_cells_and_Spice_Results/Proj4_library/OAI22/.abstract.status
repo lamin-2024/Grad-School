@@ -1,0 +1,6 @@
+cUiSetViewStatus {OAI22} {layout} {1}
+cUiSetViewStatus {OAI22} {logical} {0}
+cUiSetViewStatus {OAI22} {abstract.pin} {1}
+cUiSetViewStatus {OAI22} {abstract.ext} {1}
+cUiSetViewStatus {OAI22} {abstract} {3}
+cUiSetViewStatus {OAI22} {abstract.ver} {0}

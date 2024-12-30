@@ -1,0 +1,32 @@
+module Pipeline_FIR_MAC (
+    output [word_size_out - 1:0] FIR_out,
+    input [Sample_size - 1:0] Sample_in,
+    input clock,
+    input reset
+);
+
+// Define the parameter sets for the design 
+parameter FIR_order       = 4;
+parameter Sample_size     = 6;                        // Maximum sample value is 63
+parameter weight_size     = 5;                        // Maximum value may be 31
+parameter word_size_out   = Sample_size + weight_size + 3;  // log2(2^2 * 2^5 * (order+1))
+
+// Internal signals
+wire enable;
+
+// Instantiate the DataPath module
+Pipeline_FIR_DataPath #(FIR_order, Sample_size, weight_size, word_size_out) datapath (
+    .FIR_out(FIR_out),
+    .Sample_in(Sample_in),
+    .clock(clock),
+    .reset(reset)
+);
+
+// Instantiate the Controller module
+Pipeline_FIR_Controller controller (
+    .clock(clock),
+    .reset(reset),
+    .enable(enable)
+);
+
+endmodule

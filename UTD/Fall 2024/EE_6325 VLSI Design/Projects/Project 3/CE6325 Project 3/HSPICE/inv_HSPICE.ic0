@@ -1,0 +1,49 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-2 linux64"
+* "format" "HSP"
+* "rundate" "16:58:25 10/11/2024 "
+* "netlist" "inv_HSPICE.sp "
+* "runtitle" "$ hspice setup file for proj3"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in = 800.0000m       
++ out = 539.1851u       
++ vdd! =   1.2000        
++ xi.n_gnd!_d0_noxref_pos = 146.1605n       
++ xi.n_vdd!_d0_noxref_neg =   1.2000        
++ xi.n_gnd!_c_2_p = 948.5004n       
++ xi.n_gnd!_mmn0_s =   7.3746u       
++ xi.n_in_c_113_n = 800.0000m       
++ xi.n_in_c_88_n = 800.0000m       
++ xi.n_in_c_91_n = 800.0000m       
++ xi.n_in_c_94_n = 800.0000m       
++ xi.n_in_c_97_n = 800.0000m       
++ xi.n_in_mmn0_g = 800.0000m       
++ xi.n_in_mmp0_g = 800.0000m       
++ xi.n_out_c_25_n = 538.2139u       
++ xi.n_out_c_29_n = 539.1851u       
++ xi.n_out_c_30_n = 539.1851u       
++ xi.n_out_c_35_p = 539.7672u       
++ xi.n_out_mmn0_d = 528.5748u       
++ xi.n_out_mmp0_d = 544.6173u       
++ xi.n_vdd!_c_64_n =   1.2000        
++ xi.n_vdd!_mmp0_s =   1.2000        
++ xi.x_pm_inv%gnd!.4 = 196.2108n       
++ xi.x_pm_inv%gnd!.9 = 166.0111n       
++ xi.x_pm_inv%gnd!.11 = 146.1245n       
++ xi.x_pm_inv%gnd!.16 = 178.5943n       
++ xi.x_pm_inv%out.11 = 539.8895u       
++ xi.x_pm_inv%out.24 = 539.1054u       
++ xi.x_pm_inv%out.25 = 539.2640u       
++ xi.x_pm_inv%vdd!.4 =   1.2000        
++ xi.x_pm_inv%vdd!.10 =   1.2000        
++ xi.x_pm_inv%vdd!.12 =   1.2000        
++ xi.x_pm_inv%vdd!.14 =   1.2000        
++ xi.x_pm_inv%vdd!.19 =   1.2000        
++ xi.x_pm_inv%in.3 = 800.0000m       
++ xi.x_pm_inv%in.24 = 800.0000m       
+***   END: Saved Operating Point ***                     

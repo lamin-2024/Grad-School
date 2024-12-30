@@ -1,0 +1,6 @@
+Issue I ran into during Project6:
+	Some VDD and GND pins were not deleted from the combine .lib file for the cells
+	The .lef file had a property command for each cell that need to be deleted "PROPERTY CatenaDesignType "deviceLevel" ;"
+	The synthesis verilog file and the header filer was not concatenated properly ( the synthesis should come after the herder command lines)
+	The clock port in the final synthesis file is different from the clock port name in the .lef file (CLK to clk )
+	Make sure the ports for each cell combined synthesys+header verilog file matches the corresponding pin for each cell in the lef file 

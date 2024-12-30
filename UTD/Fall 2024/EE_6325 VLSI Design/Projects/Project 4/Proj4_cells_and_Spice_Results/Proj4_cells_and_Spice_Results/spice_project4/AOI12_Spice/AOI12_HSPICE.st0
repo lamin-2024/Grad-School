@@ -1,0 +1,332 @@
+****** HSPICE -- O-2018.09-2 linux64 (Oct 18 2018) ******
+ Input File: AOI12_HSPICE.sp
+ lic:
+ lic: FLEXlm: SDK_11.6.9.6
+ lic: USER:   dal852207            HOSTNAME: engnx01a.utdallas.edu
+ lic: HOSTID: "b02628e852d1"       PID:      26965
+ lic: Using FLEXlm license file:
+ lic: 1700@engdmv.utdallas.edu
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 30-jun-2025/2023.12
+ lic: 2(in_use)/50(total) FLOATING license(s) on SERVER 1700@engdmv.utdallas.edu
+ lic:
+ init: begin read circuit files, cpu clock= 2.20E-01
+       option search = /proj/cad/synopsys/synopsys_2018/hspice_vO-2018.
+                         09-2/hspice/parts/ad
+       option runlvl
+       option post
+       option runlvl =     5.00
+ init: end read circuit files, cpu clock= 1.75E+00 peak memory=     369 mb
+ init: begin check errors, cpu clock= 1.75E+00
+ init: end check errors, cpu clock= 1.79E+00 peak memory=     372 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.79E+00
+       establish matrix -- done, cpu clock= 1.79E+00 peak memory=     372 mb
+       re-order matrix -- done, cpu clock= 1.79E+00 peak memory=     372 mb
+ init: end setup matrix, cpu clock= 1.79E+00 peak memory=     372 mb
+ dcop: begin dcop, cpu clock= 1.79E+00
+ dcop: end dcop, cpu clock= 1.81E+00 peak memory=     372 mb tot_iter=      12
+ output: AOI12_HSPICE.tr0
+ sweep: tran tran0    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.81E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.81E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.81E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.81E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.81E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.81E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.81E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.82E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.82E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.82E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.82E+00
+ sweep: tran tran0    end, cpu clock= 1.82E+00 peak memory=     372 mb
+ sweep: parameter       parameter1       begin, #sweeps =  18
+ parameter: wp              =    1.00E-07
+ dcop: begin dcop, cpu clock= 1.82E+00
+ dcop: end dcop, cpu clock= 1.82E+00 peak memory=     372 mb tot_iter=      24
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran1    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.82E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.82E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.82E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.82E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.82E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.83E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.83E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.83E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.83E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.83E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.83E+00
+ sweep: tran tran1    end, cpu clock= 1.83E+00 peak memory=     372 mb
+ parameter: wp              =    2.00E-07
+ dcop: begin dcop, cpu clock= 1.83E+00
+ dcop: end dcop, cpu clock= 1.83E+00 peak memory=     372 mb tot_iter=      36
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran2    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.83E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.83E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.84E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.84E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.84E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.84E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.84E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.84E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.84E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.85E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.85E+00
+ sweep: tran tran2    end, cpu clock= 1.85E+00 peak memory=     372 mb
+ parameter: wp              =    3.00E-07
+ dcop: begin dcop, cpu clock= 1.85E+00
+ dcop: end dcop, cpu clock= 1.85E+00 peak memory=     372 mb tot_iter=      48
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran3    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.85E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.85E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.85E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.85E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.85E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.85E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.85E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.86E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.86E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.86E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.86E+00
+ sweep: tran tran3    end, cpu clock= 1.86E+00 peak memory=     372 mb
+ parameter: wp              =    4.00E-07
+ dcop: begin dcop, cpu clock= 1.86E+00
+ dcop: end dcop, cpu clock= 1.86E+00 peak memory=     372 mb tot_iter=      60
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran4    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.86E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.86E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.86E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.86E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.86E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.87E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.87E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.87E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.87E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.87E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.87E+00
+ sweep: tran tran4    end, cpu clock= 1.87E+00 peak memory=     372 mb
+ parameter: wp              =    5.00E-07
+ dcop: begin dcop, cpu clock= 1.87E+00
+ dcop: end dcop, cpu clock= 1.87E+00 peak memory=     372 mb tot_iter=      72
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran5    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.87E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.87E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.87E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.87E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.87E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.88E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.88E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.88E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.88E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.88E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.88E+00
+ sweep: tran tran5    end, cpu clock= 1.88E+00 peak memory=     372 mb
+ parameter: wp              =    6.00E-07
+ dcop: begin dcop, cpu clock= 1.88E+00
+ dcop: end dcop, cpu clock= 1.88E+00 peak memory=     372 mb tot_iter=      84
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran6    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.88E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.88E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.88E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.89E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.89E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.89E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.89E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.89E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.89E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.90E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.90E+00
+ sweep: tran tran6    end, cpu clock= 1.90E+00 peak memory=     372 mb
+ parameter: wp              =    7.00E-07
+ dcop: begin dcop, cpu clock= 1.90E+00
+ dcop: end dcop, cpu clock= 1.90E+00 peak memory=     372 mb tot_iter=      96
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran7    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.90E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.90E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.90E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.90E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.90E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.90E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.90E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.91E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.91E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.91E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.91E+00
+ sweep: tran tran7    end, cpu clock= 1.91E+00 peak memory=     372 mb
+ parameter: wp              =    8.00E-07
+ dcop: begin dcop, cpu clock= 1.91E+00
+ dcop: end dcop, cpu clock= 1.91E+00 peak memory=     372 mb tot_iter=     108
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran8    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.91E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.91E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.91E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.91E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.91E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.92E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.92E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.92E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.92E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.92E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.92E+00
+ sweep: tran tran8    end, cpu clock= 1.92E+00 peak memory=     372 mb
+ parameter: wp              =    9.00E-07
+ dcop: begin dcop, cpu clock= 1.92E+00
+ dcop: end dcop, cpu clock= 1.92E+00 peak memory=     372 mb tot_iter=     120
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran9    begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.92E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.92E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.92E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.92E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.92E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.93E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.93E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.93E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.93E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.93E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.93E+00
+ sweep: tran tran9    end, cpu clock= 1.93E+00 peak memory=     372 mb
+ parameter: wp              =    1.00E-06
+ dcop: begin dcop, cpu clock= 1.93E+00
+ dcop: end dcop, cpu clock= 1.93E+00 peak memory=     372 mb tot_iter=     132
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran10   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.93E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.93E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.93E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.94E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.94E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.94E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.94E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.94E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.94E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.95E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.95E+00
+ sweep: tran tran10   end, cpu clock= 1.95E+00 peak memory=     372 mb
+ parameter: wp              =    1.10E-06
+ dcop: begin dcop, cpu clock= 1.95E+00
+ dcop: end dcop, cpu clock= 1.95E+00 peak memory=     372 mb tot_iter=     144
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran11   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.95E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.95E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.95E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.95E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.95E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.95E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.95E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.95E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.95E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.96E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.96E+00
+ sweep: tran tran11   end, cpu clock= 1.96E+00 peak memory=     372 mb
+ parameter: wp              =    1.20E-06
+ dcop: begin dcop, cpu clock= 1.96E+00
+ dcop: end dcop, cpu clock= 1.96E+00 peak memory=     372 mb tot_iter=     156
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran12   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.96E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.96E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.96E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.96E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.96E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.96E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.96E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.97E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.97E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.97E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.97E+00
+ sweep: tran tran12   end, cpu clock= 1.97E+00 peak memory=     372 mb
+ parameter: wp              =    1.30E-06
+ dcop: begin dcop, cpu clock= 1.97E+00
+ dcop: end dcop, cpu clock= 1.97E+00 peak memory=     372 mb tot_iter=     168
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran13   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.97E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.97E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.97E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.97E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.97E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.98E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.98E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.98E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.98E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.98E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.98E+00
+ sweep: tran tran13   end, cpu clock= 1.98E+00 peak memory=     372 mb
+ parameter: wp              =    1.40E-06
+ dcop: begin dcop, cpu clock= 1.98E+00
+ dcop: end dcop, cpu clock= 1.98E+00 peak memory=     372 mb tot_iter=     180
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran14   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.98E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.98E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.98E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 1.98E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 1.98E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 1.99E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 1.99E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 1.99E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 1.99E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 1.99E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 1.99E+00
+ sweep: tran tran14   end, cpu clock= 1.99E+00 peak memory=     372 mb
+ parameter: wp              =    1.50E-06
+ dcop: begin dcop, cpu clock= 1.99E+00
+ dcop: end dcop, cpu clock= 1.99E+00 peak memory=     372 mb tot_iter=     192
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran15   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 1.99E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 1.99E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 1.99E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 2.00E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 2.00E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 2.00E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 2.00E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 2.00E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 2.00E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 2.00E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 2.00E+00
+ sweep: tran tran15   end, cpu clock= 2.00E+00 peak memory=     372 mb
+ parameter: wp              =    1.60E-06
+ dcop: begin dcop, cpu clock= 2.00E+00
+ dcop: end dcop, cpu clock= 2.00E+00 peak memory=     372 mb tot_iter=     204
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran16   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 2.00E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 2.00E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 2.00E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 2.01E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 2.01E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 2.01E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 2.01E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 2.01E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 2.01E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 2.02E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 2.02E+00
+ sweep: tran tran16   end, cpu clock= 2.02E+00 peak memory=     372 mb
+ parameter: wp              =    1.70E-06
+ dcop: begin dcop, cpu clock= 2.02E+00
+ dcop: end dcop, cpu clock= 2.02E+00 peak memory=     372 mb tot_iter=     216
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran17   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 2.02E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 2.02E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 2.02E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 2.02E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 2.02E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 2.02E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 2.02E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 2.02E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 2.02E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 2.03E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 2.03E+00
+ sweep: tran tran17   end, cpu clock= 2.03E+00 peak memory=     372 mb
+ parameter: wp              =    1.80E-06
+ dcop: begin dcop, cpu clock= 2.03E+00
+ dcop: end dcop, cpu clock= 2.03E+00 peak memory=     372 mb tot_iter=     228
+ output: AOI12_HSPICE.mt0
+ sweep: tran tran18   begin, stop_t=  1.00E-08 #sweeps=**** cpu clock= 2.03E+00
+ tran: time= 1.4886E-09 tot_iter=      16 conv_iter=       8 cpu clock= 2.03E+00
+ tran: time= 2.0000E-09 tot_iter=      18 conv_iter=       9 cpu clock= 2.03E+00
+ tran: time= 3.3902E-09 tot_iter=      95 conv_iter=      43 cpu clock= 2.03E+00
+ tran: time= 4.0300E-09 tot_iter=      99 conv_iter=      45 cpu clock= 2.03E+00
+ tran: time= 5.0917E-09 tot_iter=     261 conv_iter=     107 cpu clock= 2.03E+00
+ tran: time= 6.0600E-09 tot_iter=     269 conv_iter=     111 cpu clock= 2.03E+00
+ tran: time= 7.0790E-09 tot_iter=     342 conv_iter=     143 cpu clock= 2.04E+00
+ tran: time= 8.0900E-09 tot_iter=     346 conv_iter=     145 cpu clock= 2.04E+00
+ tran: time= 9.0934E-09 tot_iter=     419 conv_iter=     178 cpu clock= 2.04E+00
+ tran: time= 1.0000E-08 tot_iter=     427 conv_iter=     182 cpu clock= 2.04E+00
+ sweep: tran tran18   end, cpu clock= 2.04E+00 peak memory=     372 mb
+ sweep: parameter       parameter       1 end
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

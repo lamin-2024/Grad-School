@@ -1,0 +1,22 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx01a.utdallas.edu, User: dal852207, PID: 27594 (PPID: 17424)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (201.7 GB free), 4 GB Swap (4.1 GB free)
+System load average: 1.22, 1.17, 1.40 (12124 processes)
+Directory: /home/eng/d/dal852207/cad/gf65/primelib_gf65
+Error:   Task 13 (leakage_power__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): leakage_power__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 14 (Cin__VSS__hl__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): Cin__VSS__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 15 (Cin__VSS__lh__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): Cin__VSS__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 16 (delay__A__hl__OUT__lh__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__A__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 17 (delay__A__lh__OUT__hl__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__A__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 18 (delay__B__hl__OUT__lh__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__B__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 19 (delay__B__lh__OUT__hl__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__B__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 20 (delay__C__hl__OUT__lh__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__C__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 21 (delay__C__lh__OUT__hl__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__C__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 22 (delay__D__hl__OUT__lh__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__D__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 23 (delay__D__lh__OUT__hl__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): delay__D__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 24 (Cin__VDD__hl__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): Cin__VDD__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)
+Error:   Task 25 (Cin__VDD__lh__ACQ_1 of AOI22) failed on W1 (engnx01a.utdallas.edu): Cin__VDD__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26) (CDPL-12)

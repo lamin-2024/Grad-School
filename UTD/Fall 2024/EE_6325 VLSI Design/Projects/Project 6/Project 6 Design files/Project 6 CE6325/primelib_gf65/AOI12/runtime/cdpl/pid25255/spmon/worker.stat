@@ -1,0 +1,21 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx03a.utdallas.edu, User: dal852207, PID: 25255 (PPID: 20131)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (145.4 GB free), 4 GB Swap (4.1 GB free)
+System load average: 1.82, 1.90, 2.03 (17813 processes)
+Directory: /home/eng/d/dal852207/cad/gf65/primelib_gf65
+Error:   Task 11 (delay__VA__lh__OUT__hl__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VA__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 12 (delay__VA__hl__OUT__lh__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VA__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 13 (delay__VB__lh__OUT__hl__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VB__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 14 (delay__VB__hl__OUT__lh__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VB__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 15 (delay__VC__lh__OUT__hl__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VC__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 16 (delay__VC__hl__OUT__lh__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VC__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 28 (delay__VA__lh__OUT__hl__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VA__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 29 (delay__VA__hl__OUT__lh__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VA__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 30 (delay__VB__lh__OUT__hl__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VB__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 31 (delay__VB__hl__OUT__lh__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VB__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 32 (delay__VC__lh__OUT__hl__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VC__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)
+Error:   Task 33 (delay__VC__hl__OUT__lh__ACQ_1 of AOI12) failed on W1 (engnx03a.utdallas.edu): Simulation delay__VC__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95) (CDPL-12)

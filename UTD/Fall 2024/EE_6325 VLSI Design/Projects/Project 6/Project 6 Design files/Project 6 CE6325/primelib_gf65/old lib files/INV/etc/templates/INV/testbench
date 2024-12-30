@@ -1,0 +1,21 @@
+set vectors ""
+
+## Cin__VSS__lh__ACQ_1
+append vectors " {pins { IN VDD VSS } { OUT VDD VSS }} 000xxx  001xxx  "
+
+## Cin__VSS__hl__ACQ_1
+append vectors " {pins { IN VDD VSS } { OUT VDD VSS }} 001xxx  000xxx  "
+
+## Cin__VDD__lh__ACQ_1
+append vectors " {pins { IN VDD VSS } { OUT VDD VSS }} 000xxx  010xxx  "
+
+## Cin__VDD__hl__ACQ_1
+append vectors " {pins { IN VDD VSS } { OUT VDD VSS }} 010xxx  000xxx  "
+
+## delay__IN__lh__OUT__hl__ACQ_1
+append vectors " {pins { IN VDD VSS } { OUT VDD VSS }} 0xx1xx  1xx0xx  "
+
+## delay__IN__hl__OUT__lh__ACQ_1
+append vectors " {pins { IN VDD VSS } { OUT VDD VSS }} 1xx0xx  0xx1xx  "
+
+return $vectors

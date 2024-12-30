@@ -1,0 +1,241 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx01a.utdallas.edu, User: dal852207, PID: 27848 (PPID: 27845)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (201.7 GB free), 4 GB Swap (4.1 GB free)
+System load average: 1.22, 1.17, 1.40 (12132 processes)
+Directory: /home/eng/d/dal852207/cad/gf65/primelib_gf65
+Command-line: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib -server /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI22/runtime/cdpl/pid27594/driver_27594.tcl
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI22
+Warning: Setting of obsolete parameter 'model_ecsm_cin' is ignored. (PAR-27)
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI22/etc/cell.stat.gz
+Mon Dec 02 13:33:35 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Mon Dec 02 13:33:35 CST 2024: Environment set up done (0 seconds)
+Create and link tmpdir /var/tmp/pl.engnx01a.871870.27845 -> /var/tmp/primelib.engnx01a.utdallas.edu.871870.27848 
+[CDPL] Loading settings for stage: characterization.0
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI22
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI22/etc/cell.stat.gz
+Mon Dec 02 13:33:36 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Mon Dec 02 13:33:36 CST 2024: Environment set up done (0 seconds)
+[CDPL] Done loading settings for stage: characterization.0
+Loading information for cell AOI22
+Warning: Netlist '/home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI22/netlists/AOI22.pex.sp' does not exist or is not readable. (SMSC-161)
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__A__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__A__hl__OUT__lh__ACQ_1 0.06 0.01 0.0 0.0 0 0.0634770393372 engnx01a.utdallas.edu 1733168016.13 1733168016.19 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__A__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__A__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0135109424591 engnx01a.utdallas.edu 1733168016.19 1733168016.21 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__B__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__B__hl__OUT__lh__ACQ_1 0.02 0.0 0.0 0.0 0 0.0155692100525 engnx01a.utdallas.edu 1733168016.21 1733168016.22 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__B__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__B__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0128490924835 engnx01a.utdallas.edu 1733168016.22 1733168016.24 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__C__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__C__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0129640102386 engnx01a.utdallas.edu 1733168016.24 1733168016.25 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__C__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__C__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0127809047699 engnx01a.utdallas.edu 1733168016.25 1733168016.26 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__D__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__D__hl__OUT__lh__ACQ_1 0.02 0.0 0.0 0.0 0 0.0154619216919 engnx01a.utdallas.edu 1733168016.26 1733168016.28 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__D__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__D__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0127010345459 engnx01a.utdallas.edu 1733168016.28 1733168016.29 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   leakage_power__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 leakage_power__ACQ_1 0.01 0.0 0.0 0.0 0 0.0108048915863 engnx01a.utdallas.edu 1733168016.29 1733168016.3 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VSS__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.011137008667 engnx01a.utdallas.edu 1733168016.3 1733168016.32 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VSS__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0109579563141 engnx01a.utdallas.edu 1733168016.32 1733168016.33 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VDD__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0108880996704 engnx01a.utdallas.edu 1733168016.33 1733168016.34 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VDD__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0108659267426 engnx01a.utdallas.edu 1733168016.34 1733168016.35 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   leakage_power__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 leakage_power__ACQ_1 0.01 0.0 0.0 0.0 0 0.0137209892273 engnx01a.utdallas.edu 1733168025.39 1733168025.4 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__A__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__A__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.012510061264 engnx01a.utdallas.edu 1733168025.4 1733168025.41 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__A__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__A__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0122148990631 engnx01a.utdallas.edu 1733168025.41 1733168025.43 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__B__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__B__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0123739242554 engnx01a.utdallas.edu 1733168025.43 1733168025.44 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__B__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__B__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0124549865723 engnx01a.utdallas.edu 1733168025.44 1733168025.45 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__C__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__C__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0121119022369 engnx01a.utdallas.edu 1733168025.45 1733168025.46 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__C__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__C__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0124428272247 engnx01a.utdallas.edu 1733168025.46 1733168025.48 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__D__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__D__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0121858119965 engnx01a.utdallas.edu 1733168025.48 1733168025.49 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__D__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 delay__D__lh__OUT__hl__ACQ_1 0.02 0.01 0.0 0.0 0 0.0217690467834 engnx01a.utdallas.edu 1733168025.49 1733168025.51 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VSS__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0111968517303 engnx01a.utdallas.edu 1733168025.51 1733168025.52 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VSS__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0125060081482 engnx01a.utdallas.edu 1733168025.52 1733168025.54 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__hl__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VDD__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0106899738312 engnx01a.utdallas.edu 1733168025.54 1733168025.55 1
+Loading information for cell AOI22
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__lh__ACQ_1: Subcircuit ports for cell 'AOI22' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ AOI22 Cin__VDD__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0106639862061 engnx01a.utdallas.edu 1733168025.55 1733168025.56 1
+Warning: /var/tmp/worker.871870.W1.engnx01a.utdallas.edu.27848.log: No such file or directory
+   [CDPL] Shutting down worker
+Mon Dec  2 13:36:34 2024: Program time: 179.00 seconds | 2.98 minutes | 0.05 hours
+CDPL worker exited normally.
+Reset log file
+Maximum virtual memory size: 941.738 MB

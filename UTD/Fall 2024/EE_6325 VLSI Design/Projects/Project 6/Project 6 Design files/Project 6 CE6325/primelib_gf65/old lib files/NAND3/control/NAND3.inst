@@ -1,0 +1,34 @@
+set_netlist_file [get_location]/netlists/NAND3.pex.sp
+
+## 
+## Pin definitions.
+## 
+add_pin VSS default -inout
+add_pin VDD default -inout
+add_pin VA default -input
+add_pin VB default -input
+add_pin VC default -input
+add_pin OUT default -output
+
+
+## 
+## Cell function definition.
+## 
+add_function OUT {(!(VA&VB&VC))}
+
+
+
+
+## 
+## User-specified characterization and modeling configuration options.
+## 
+
+create_parameter cut_netlist
+set_config_opt -opcond __default__ -- cut_netlist NAND3.pex.sp
+
+## add_user_stimulus
+
+define_parameters NAND3 {
+set area 18.14273e-12 
+## change the area to match your cell area and delete this comment 
+}

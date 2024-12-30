@@ -1,0 +1,161 @@
+1732981802.758961: 20583-7fa9adca40c0: cdpl_log.c:228: in cdpl_log_open(): info: @@start_of_log@@
+1732981802.758987: 20583-7fa9adca40c0: cdpl_log.c:866: in cdpl_log_dump_sysinfo(): info: time: 2024/11/30 09:50:02 CST -0600
+1732981802.758991: 20583-7fa9adca40c0: cdpl_log.c:868: in cdpl_log_dump_sysinfo(): info: version: T-2022.03 
+1732981802.758993: 20583-7fa9adca40c0: cdpl_log.c:870: in cdpl_log_dump_sysinfo(): info: system: Linux 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue May 14 11:55:25 EDT 2024
+1732981802.758994: 20583-7fa9adca40c0: cdpl_log.c:875: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1732981802.758996: 20583-7fa9adca40c0: cdpl_log.c:879: in cdpl_log_dump_sysinfo(): info: hostname: engnx03a.utdallas.edu
+1732981802.758998: 20583-7fa9adca40c0: cdpl_log.c:230: in cdpl_log_open(): debug: path: /home/eng/d/dal852207/cad/gf65/primelib_gf65/Flip_Flop/runtime/cdpl/pid20583/master.engnx03a.utdallas.edu.20583.log
+1732981802.759000: 20583-7fa9adca40c0: cdpl_log.c:231: in cdpl_log_open(): debug: dir: /home/eng/d/dal852207/cad/gf65/primelib_gf65/Flip_Flop/runtime/cdpl/pid20583
+1732981802.759007: 20583-7fa9adca40c0: cdpl_log.c:758: in cdpl_log_set_filter(): info: filter level 1
+1732981802.759024: 20583-7fa9adca40c0: cdpl_server.c:543: in cdpl_sv_init(): info: new server S1756633446
+1732981802.759033: 20583-7fa9adca40c0: cdpl_ipc.c:3030: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1732981802.759613: 20583-7fa9adca40c0: cdpl_ipc.c:800: in _selectaddrfamily(): info: selected IPv4 protocol
+1732981802.759950: 20583-7fa9adca40c0: cdpl_server.c:657: in cdpl_sv_new_master(): info: new master M1
+1732981802.759964: 20583-7fa9adca40c0: cdpl_server.c:5494: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 60 seconds
+1732981802.759966: 20583-7fa9adca40c0: cdpl_server.c:5503: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 3 heartbeats
+1732981802.759969: 20583-7fa9adca40c0: cdpl_compat_master.c:2407: in cdplInitMaster(): info: bcast dir is `/dev/null'
+1732981802.760030: 20583-7fa9adca40c0: cdpl_server.c:5394: in cdpl_sv_ctl_master(): info: farm worker timeout set to 36000
+1732981802.760032: 20583-7fa9adca40c0: cdpl_server.c:5410: in cdpl_sv_ctl_master(): info: grid worker timeout set to 36000
+1732981802.760034: 20583-7fa9adca40c0: cdpl_server.c:5438: in cdpl_sv_ctl_master(): info: farm submit command failure threshold set to 100
+1732981802.760060: 20583-7fa9adca40c0: cdpl_farm.c:2268: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1732981802.760073: 20583-7fa9adca40c0: cdpl_compat_master.c:207: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home/eng/d/dal852207/cad/gf65/primelib_gf65/Flip_Flop/runtime/cdpl/pid20583'
+1732981802.760076: 20583-7fa9adca40c0: cdpl_compat_master.c:213: in _set_farm_env(): info: exporting CDPL_TMPDIR as `/var/tmp'
+1732981802.760078: 20583-7fa9adca40c0: cdpl_compat_master.c:220: in _set_farm_env(): info: exporting CDPL_HOME as `/proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/cdpl_runtime_linux64'
+1732981802.760080: 20583-7fa9adca40c0: cdpl_compat_master.c:227: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `1700@engdmv.utdallas.edu'
+1732981802.760083: 20583-7fa9adca40c0: cdpl_compat_master.c:247: in _set_farm_env(): info: exporting CDPL_OPTIONS as `[filter][nowlogs]'
+1732981802.760085: 20583-7fa9adca40c0: cdpl_compat_master.c:254: in _set_farm_env(): info: exporting DISPLAY as `:1022'
+1732981802.760086: 20583-7fa9adca40c0: cdpl_compat_master.c:262: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `60'
+1732981802.760090: 20583-7fa9adca40c0: cdpl_compat_master.c:348: in _set_farm_env(): info: exporting SIS_MALIBU as `2'
+1732981802.760092: 20583-7fa9adca40c0: cdpl_compat_master.c:348: in _set_farm_env(): info: exporting SIS_CDPL as `5'
+1732981802.803173: 20583-7fa9adca40c0: cdpl_server.c:738: in cdpl_sv_new_job(): info: new job J1 in M1
+1732981802.803188: 20583-7fa9adca40c0: cdpl_compat_master.c:1314: in _add_worker(): info: new worker type 100, min:1, max:1, cmd:`/home/eng/d/dal852207/cad/gf65/primelib_gf65/Flip_Flop/runtime/cdpl/pid20583/run_20583.sh'
+1732981802.803197: 20583-7fa9adca40c0: cdpl_server.c:900: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1732981802.813806: 20583-7fa9adca40c0: cdpl_server.c:3116: in cdpl_sv_start_job(): info: starting job J1
+1732981802.824005: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T0 in B1 (prio -1)
+1732981802.824015: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T0 label to "initialization__ACQ_7 of Flip_Flop"
+1732981802.824093: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T1 in B1 (prio -1)
+1732981802.824153: 20583-7fa9959a8700: cdpl_server_sched.c:700: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1732981802.824177: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T1 label to "setup_hbm__D__lh__CLK__hl__ACQ_1 of Flip_Flop"
+1732981802.824182: 20583-7fa9951a7700: cdpl_farm.c:1899: in _schedule(): info: worker submit failure threshold set to 100
+1732981802.824209: 20583-7fa9951a7700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /home/eng/d/dal852207/cad/gf65/primelib_gf65/Flip_Flop/runtime/cdpl/pid20583/run_20583.sh
+1732981802.826728: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T2 in B1 (prio -1)
+1732981802.826754: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T2 label to "initialization__ACQ_6 of Flip_Flop"
+1732981802.827336: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T3 in B1 (prio -1)
+1732981802.827340: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T3 label to "setup_hbm__D__hl__CLK__hl__ACQ_1 of Flip_Flop"
+1732981802.827425: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T4 in B1 (prio -1)
+1732981802.827428: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T4 label to "initialization__ACQ_4 of Flip_Flop"
+1732981802.827502: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T5 in B1 (prio 3)
+1732981802.827506: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T5 label to "leakage_power__ACQ_1 of Flip_Flop"
+1732981802.827540: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T6 in B1 (prio 5)
+1732981802.827543: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T6 label to "Cin__D__hl__ACQ_1 of Flip_Flop"
+1732981802.827578: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T7 in B1 (prio 5)
+1732981802.827580: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T7 label to "Cin__D__lh__ACQ_1 of Flip_Flop"
+1732981802.827625: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T8 in B1 (prio 5)
+1732981802.827628: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T8 label to "Cin__VSS__hl__ACQ_1 of Flip_Flop"
+1732981802.827659: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T9 in B1 (prio 5)
+1732981802.827662: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T9 label to "Cin__VSS__lh__ACQ_1 of Flip_Flop"
+1732981802.827698: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T10 in B1 (prio -1)
+1732981802.827700: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T10 label to "initialization__ACQ_5 of Flip_Flop"
+1732981802.827752: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T11 in B1 (prio -1)
+1732981802.827755: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T11 label to "ncmpw_hbm__CLK__lh__CLK__hl__ACQ_1 of Flip_Flop"
+1732981802.827783: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T12 in B1 (prio -1)
+1732981802.827786: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T12 label to "removal_hbm__R__hl__CLK__hl__ACQ_1 of Flip_Flop"
+1732981802.827815: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T13 in B1 (prio -1)
+1732981802.827818: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T13 label to "recover_hbm__R__hl__CLK__hl__ACQ_1 of Flip_Flop"
+1732981802.827857: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T14 in B1 (prio -1)
+1732981802.827860: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T14 label to "initialization__ACQ_1 of Flip_Flop"
+1732981802.827882: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T15 in B1 (prio -1)
+1732981802.827884: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T15 label to "initialization__ACQ_2 of Flip_Flop"
+1732981802.827933: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T16 in B1 (prio -1)
+1732981802.827936: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T16 label to "cmpw_hbm__CLK__hl__CLK__lh__ACQ_1 of Flip_Flop"
+1732981802.827971: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T17 in B1 (prio -1)
+1732981802.827973: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T17 label to "cmpw_hbm__R__lh__R__hl__ACQ_1 of Flip_Flop"
+1732981802.828003: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T18 in B1 (prio -1)
+1732981802.828005: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T18 label to "initialization__ACQ_3 of Flip_Flop"
+1732981802.828040: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T19 in B1 (prio 2)
+1732981802.828043: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T19 label to "delay__CLK__hl__Q__hl__ACQ_1 of Flip_Flop"
+1732981802.828083: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T20 in B1 (prio 2)
+1732981802.828085: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T20 label to "delay__CLK__hl__Q__lh__ACQ_1 of Flip_Flop"
+1732981802.828126: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T21 in B1 (prio -1)
+1732981802.828128: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T21 label to "hold_hbm__D__lh__CLK__hl__ACQ_1 of Flip_Flop"
+1732981802.828169: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T22 in B1 (prio -1)
+1732981802.828172: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T22 label to "hold_hbm__D__hl__CLK__hl__ACQ_1 of Flip_Flop"
+1732981802.828198: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T23 in B1 (prio 5)
+1732981802.828201: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T23 label to "Cin__CLK__lh__ACQ_1 of Flip_Flop"
+1732981802.828231: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T24 in B1 (prio 5)
+1732981802.828233: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T24 label to "Cin__VDD__hl__ACQ_1 of Flip_Flop"
+1732981802.828264: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T25 in B1 (prio 5)
+1732981802.828266: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T25 label to "Cin__VDD__lh__ACQ_1 of Flip_Flop"
+1732981802.828309: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T26 in B1 (prio 2)
+1732981802.828312: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T26 label to "delay__R__lh__Q__hl__ACQ_1 of Flip_Flop"
+1732981802.828345: 20583-7fa9adca40c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T27 in B1 (prio 5)
+1732981802.828348: 20583-7fa9adca40c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T27 label to "Cin__R__hl__ACQ_1 of Flip_Flop"
+1732981803.470002: 20583-7fa9961a9700: cdpl_server_ipc.c:452: in _sv_on_hello(): info: W1 is `10.182.66.68:50090'
+1732981803.470022: 20583-7fa9961a9700: cdpl_server_ipc.c:454: in _sv_on_hello(): info: W1 log file is /dev/null
+1732981803.470031: 20583-7fa9961a9700: cdpl_server_ipc.c:481: in _sv_on_hello(): info: up to 1 alive workers in B1
+1732981803.470062: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T0 to worker W1
+1732981810.648837: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T0
+1732981810.648904: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T2 to worker W1
+1732981817.145201: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T2
+1732981817.145247: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T4 to worker W1
+1732981823.825136: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T4
+1732981823.825178: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T10 to worker W1
+1732981830.434623: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T10
+1732981830.434671: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T12 to worker W1
+1732981840.878725: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T12
+1732981840.879030: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T13 to worker W1
+1732981851.804830: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T13
+1732981851.804869: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T14 to worker W1
+1732981858.223752: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T14
+1732981858.223798: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T15 to worker W1
+1732981864.953642: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T15
+1732981864.953681: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T18 to worker W1
+1732981871.772462: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T18
+1732981871.772800: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T1 to worker W1
+1732981882.943121: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T1
+1732981882.943162: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T3 to worker W1
+1732981893.884533: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T3
+1732981893.884568: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T11 to worker W1
+1732981901.251300: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T11
+1732981901.251334: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T16 to worker W1
+1732981908.396687: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T16
+1732981908.396972: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T22 to worker W1
+1732981919.003032: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T22
+1732981919.003067: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T17 to worker W1
+1732981925.990897: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T17
+1732981925.990941: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T21 to worker W1
+1732981936.846621: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T21
+1732981936.846671: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T20 to worker W1
+1732981944.225874: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T20
+1732981944.225917: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T26 to worker W1
+1732981951.617541: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T26
+1732981951.617574: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T19 to worker W1
+1732981958.957881: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T19
+1732981958.957920: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T5 to worker W1
+1732982029.314813: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T5
+1732982029.315073: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T6 to worker W1
+1732982036.033635: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T6
+1732982036.033698: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T7 to worker W1
+1732982042.667829: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T7
+1732982042.667873: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T8 to worker W1
+1732982049.342540: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T8
+1732982049.342587: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T9 to worker W1
+1732982056.211808: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T9
+1732982056.211855: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T23 to worker W1
+1732982063.018761: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T23
+1732982063.018814: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T24 to worker W1
+1732982069.853639: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T24
+1732982069.853682: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T25 to worker W1
+1732982076.794249: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T25
+1732982076.794297: 20583-7fa9959a8700: cdpl_server_sched.c:955: in _assign(): info: assigning task T27 to worker W1
+1732982083.303668: 20583-7fa9961a9700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T27
+1732982286.307554: 20583-7fa9adca40c0: cdpl_compat_master.c:5152: in cdplMasterLogInfo(): info: [non-CDPL log entry] Ending current CDPL job
+1732982286.307775: 20583-7fa9adca40c0: cdpl_server.c:2890: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1732982286.307886: 20583-7fa9959a8700: cdpl_server_sched.c:2711: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1732982286.307945: 20583-7fa9adca40c0: cdpl_server.c:2875: in cdpl_sv_halt_job_errno(): info: killing job J1
+1732982286.307953: 20583-7fa9adca40c0: cdpl_server.c:288: in _sv_free_job(): info: freeing job J1
+1732982286.308016: 20583-7fa9adca40c0: cdpl_farm.c:2395: in cdpl_farm_free(): info: freeing farm
+1732982286.308277: 20583-7fa9adca40c0: cdpl_server.c:3011: in cdpl_sv_free(): info: freeing server S1756633446
+1732982286.308280: 20583-7fa9adca40c0: cdpl_server.c:2976: in cdpl_sv_kill_errno(): info: killing server
+1732982286.308314: 20583-7fa9adca40c0: cdpl_server.c:328: in _sv_free_master(): info: freeing master M1
+1732982286.308368: 20583-7fa9adca40c0: cdpl_log.c:371: in cdpl_log_close(): info: @@end_of_log@@

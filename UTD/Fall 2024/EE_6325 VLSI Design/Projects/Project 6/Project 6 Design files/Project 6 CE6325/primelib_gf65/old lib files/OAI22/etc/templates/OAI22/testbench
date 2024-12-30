@@ -1,0 +1,39 @@
+set vectors ""
+
+## Cin__VSS__lh__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 000000xxx  000001xxx  "
+
+## Cin__VSS__hl__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 000001xxx  000000xxx  "
+
+## Cin__VDD__lh__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 000000xxx  000010xxx  "
+
+## Cin__VDD__hl__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 000010xxx  000000xxx  "
+
+## delay__VA__lh__OUT__hl__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 0001xx1xx  1001xx0xx  "
+
+## delay__VA__hl__OUT__lh__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 1001xx0xx  0001xx1xx  "
+
+## delay__VB__lh__OUT__hl__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 0001xx1xx  0101xx0xx  "
+
+## delay__VB__hl__OUT__lh__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 0101xx0xx  0001xx1xx  "
+
+## delay__VC__lh__OUT__hl__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 0100xx1xx  0110xx0xx  "
+
+## delay__VC__hl__OUT__lh__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 0110xx0xx  0100xx1xx  "
+
+## delay__VD__lh__OUT__hl__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 0100xx1xx  0101xx0xx  "
+
+## delay__VD__hl__OUT__lh__ACQ_1
+append vectors " {pins { VA VB VC VD VDD VSS } { OUT VDD VSS }} 0101xx0xx  0100xx1xx  "
+
+return $vectors

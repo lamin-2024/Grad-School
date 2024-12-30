@@ -1,0 +1,540 @@
+Analysis & Synthesis report for FIR_Filter_Project1
+Wed Dec  4 14:05:37 2024
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |FIR_Filter_Project1
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Dec  4 14:05:37 2024          ;
+; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                   ; FIR_Filter_Project1                            ;
+; Top-level Entity Name           ; FIR_Filter_Project1                            ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 527                                            ;
+; Total pins                      ; 30                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                               ;
++---------------------------------------------------------------------------------+---------------------+---------------------+
+; Option                                                                          ; Setting             ; Default Value       ;
++---------------------------------------------------------------------------------+---------------------+---------------------+
+; Device                                                                          ; 5CSEMA5F31C6        ;                     ;
+; Top-level entity name                                                           ; FIR_Filter_Project1 ; FIR_Filter_Project1 ;
+; Family name                                                                     ; Cyclone V           ; Cyclone V           ;
+; Use smart compilation                                                           ; Off                 ; Off                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                  ; On                  ;
+; Enable compact report table                                                     ; Off                 ; Off                 ;
+; Restructure Multiplexers                                                        ; Auto                ; Auto                ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                 ; Off                 ;
+; Create Debugging Nodes for IP Cores                                             ; Off                 ; Off                 ;
+; Preserve fewer node names                                                       ; On                  ; On                  ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable              ; Enable              ;
+; Verilog Version                                                                 ; Verilog_2001        ; Verilog_2001        ;
+; VHDL Version                                                                    ; VHDL_1993           ; VHDL_1993           ;
+; State Machine Processing                                                        ; Auto                ; Auto                ;
+; Safe State Machine                                                              ; Off                 ; Off                 ;
+; Extract Verilog State Machines                                                  ; On                  ; On                  ;
+; Extract VHDL State Machines                                                     ; On                  ; On                  ;
+; Ignore Verilog initial constructs                                               ; Off                 ; Off                 ;
+; Iteration limit for constant Verilog loops                                      ; 5000                ; 5000                ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                 ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                  ; On                  ;
+; Infer RAMs from Raw Logic                                                       ; On                  ; On                  ;
+; Parallel Synthesis                                                              ; On                  ; On                  ;
+; DSP Block Balancing                                                             ; Auto                ; Auto                ;
+; NOT Gate Push-Back                                                              ; On                  ; On                  ;
+; Power-Up Don't Care                                                             ; On                  ; On                  ;
+; Remove Redundant Logic Cells                                                    ; Off                 ; Off                 ;
+; Remove Duplicate Registers                                                      ; On                  ; On                  ;
+; Ignore CARRY Buffers                                                            ; Off                 ; Off                 ;
+; Ignore CASCADE Buffers                                                          ; Off                 ; Off                 ;
+; Ignore GLOBAL Buffers                                                           ; Off                 ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                 ; Off                 ;
+; Ignore LCELL Buffers                                                            ; Off                 ; Off                 ;
+; Ignore SOFT Buffers                                                             ; On                  ; On                  ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                 ; Off                 ;
+; Optimization Technique                                                          ; Balanced            ; Balanced            ;
+; Carry Chain Length                                                              ; 70                  ; 70                  ;
+; Auto Carry Chains                                                               ; On                  ; On                  ;
+; Auto Open-Drain Pins                                                            ; On                  ; On                  ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                 ; Off                 ;
+; Auto ROM Replacement                                                            ; On                  ; On                  ;
+; Auto RAM Replacement                                                            ; On                  ; On                  ;
+; Auto DSP Block Replacement                                                      ; On                  ; On                  ;
+; Auto Shift Register Replacement                                                 ; Auto                ; Auto                ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                ; Auto                ;
+; Auto Clock Enable Replacement                                                   ; On                  ; On                  ;
+; Strict RAM Replacement                                                          ; Off                 ; Off                 ;
+; Allow Synchronous Control Signals                                               ; On                  ; On                  ;
+; Force Use of Synchronous Clear Signals                                          ; Off                 ; Off                 ;
+; Auto Resource Sharing                                                           ; Off                 ; Off                 ;
+; Allow Any RAM Size For Recognition                                              ; Off                 ; Off                 ;
+; Allow Any ROM Size For Recognition                                              ; Off                 ; Off                 ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                 ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                  ; On                  ;
+; Ignore translate_off and synthesis_off directives                               ; Off                 ; Off                 ;
+; Timing-Driven Synthesis                                                         ; On                  ; On                  ;
+; Report Parameter Settings                                                       ; On                  ; On                  ;
+; Report Source Assignments                                                       ; On                  ; On                  ;
+; Report Connectivity Checks                                                      ; On                  ; On                  ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                 ; Off                 ;
+; Synchronization Register Chain Length                                           ; 3                   ; 3                   ;
+; Power Optimization During Synthesis                                             ; Normal compilation  ; Normal compilation  ;
+; HDL message level                                                               ; Level2              ; Level2              ;
+; Suppress Register Optimization Related Messages                                 ; Off                 ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                ; 5000                ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                ; 5000                ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                 ; 100                 ;
+; Clock MUX Protection                                                            ; On                  ; On                  ;
+; Auto Gated Clock Conversion                                                     ; Off                 ; Off                 ;
+; Block Design Naming                                                             ; Auto                ; Auto                ;
+; SDC constraint protection                                                       ; Off                 ; Off                 ;
+; Synthesis Effort                                                                ; Auto                ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                  ; On                  ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                 ; Off                 ;
+; Analysis & Synthesis Message Level                                              ; Medium              ; Medium              ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                ; Auto                ;
+; Resource Aware Inference For Block RAM                                          ; On                  ; On                  ;
+; Automatic Parallel Synthesis                                                    ; On                  ; On                  ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                 ; Off                 ;
++---------------------------------------------------------------------------------+---------------------+---------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processors 5-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                  ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; FIR_Filter_Project1.v            ; yes             ; User Verilog HDL File  ; C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 264         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 342         ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 0           ;
+;     -- <=3 input functions                  ; 342         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 527         ;
+;                                             ;             ;
+; I/O pins                                    ; 30          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 527         ;
+; Total fan-out                               ; 2484        ;
+; Average fan-out                             ; 2.67        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name         ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+---------------------+--------------+
+; |FIR_Filter_Project1       ; 342 (342)           ; 527 (527)                 ; 0                 ; 0          ; 30   ; 0            ; |FIR_Filter_Project1 ; FIR_Filter_Project1 ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; PR_mul[1][0]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][1]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][2]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][11]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[1][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[2][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][0]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][1]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[3][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][0]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][1]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][10]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][11]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[4][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][0]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][1]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][2]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][11]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[6][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[7][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][0]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][1]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[8][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][0]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][1]                            ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][10]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][11]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][12]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][13]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][14]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][15]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][16]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][17]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][18]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[9][19]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][0]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][1]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][2]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][11]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][12]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][13]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][14]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][15]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][16]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][17]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][18]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[11][19]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][12]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][13]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][14]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][15]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][16]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][17]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][18]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[12][19]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][0]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][1]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][12]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][13]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][14]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][15]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][16]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][17]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][18]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[13][19]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][0]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][1]                           ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][10]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][11]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][12]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][13]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][14]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][15]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][16]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][17]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][18]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[14][19]                          ; Stuck at GND due to stuck port data_in ;
+; PR_mul[10][13]                          ; Merged with PR_mul[10][12]             ;
+; PR_mul[10][14]                          ; Merged with PR_mul[10][12]             ;
+; PR_mul[10][15]                          ; Merged with PR_mul[10][12]             ;
+; PR_mul[10][16]                          ; Merged with PR_mul[10][12]             ;
+; PR_mul[10][17]                          ; Merged with PR_mul[10][12]             ;
+; PR_mul[10][18]                          ; Merged with PR_mul[10][12]             ;
+; PR_mul[10][19]                          ; Merged with PR_mul[10][12]             ;
+; Samples[8][0]                           ; Merged with PR_mul[8][2]               ;
+; Samples[7][2]                           ; Merged with PR_mul[7][2]               ;
+; Samples[7][1]                           ; Merged with PR_mul[7][1]               ;
+; Samples[7][0]                           ; Merged with PR_mul[7][0]               ;
+; Samples[6][7]                           ; Merged with PR_mul[6][10]              ;
+; Samples[6][6]                           ; Merged with PR_mul[6][9]               ;
+; Samples[6][5]                           ; Merged with PR_mul[6][8]               ;
+; Samples[6][4]                           ; Merged with PR_mul[6][7]               ;
+; Samples[6][3]                           ; Merged with PR_mul[6][6]               ;
+; Samples[6][2]                           ; Merged with PR_mul[6][5]               ;
+; Samples[6][1]                           ; Merged with PR_mul[6][4]               ;
+; Samples[6][0]                           ; Merged with PR_mul[6][3]               ;
+; PR_mul[5][13]                           ; Merged with PR_mul[5][12]              ;
+; PR_mul[5][14]                           ; Merged with PR_mul[5][12]              ;
+; PR_mul[5][15]                           ; Merged with PR_mul[5][12]              ;
+; PR_mul[5][16]                           ; Merged with PR_mul[5][12]              ;
+; PR_mul[5][17]                           ; Merged with PR_mul[5][12]              ;
+; PR_mul[5][18]                           ; Merged with PR_mul[5][12]              ;
+; PR_mul[5][19]                           ; Merged with PR_mul[5][12]              ;
+; Samples[4][7]                           ; Merged with PR_mul[4][9]               ;
+; Samples[4][6]                           ; Merged with PR_mul[4][8]               ;
+; Samples[4][5]                           ; Merged with PR_mul[4][7]               ;
+; Samples[4][4]                           ; Merged with PR_mul[4][6]               ;
+; Samples[4][3]                           ; Merged with PR_mul[4][5]               ;
+; Samples[4][2]                           ; Merged with PR_mul[4][4]               ;
+; Samples[4][1]                           ; Merged with PR_mul[4][3]               ;
+; Samples[4][0]                           ; Merged with PR_mul[4][2]               ;
+; Samples[3][0]                           ; Merged with PR_mul[3][2]               ;
+; Samples[2][2]                           ; Merged with PR_mul[2][2]               ;
+; Samples[2][1]                           ; Merged with PR_mul[2][1]               ;
+; Samples[2][0]                           ; Merged with PR_mul[2][0]               ;
+; PR_mul[0][13]                           ; Merged with PR_mul[0][12]              ;
+; PR_mul[0][14]                           ; Merged with PR_mul[0][12]              ;
+; PR_mul[0][15]                           ; Merged with PR_mul[0][12]              ;
+; PR_mul[0][16]                           ; Merged with PR_mul[0][12]              ;
+; PR_mul[0][17]                           ; Merged with PR_mul[0][12]              ;
+; PR_mul[0][18]                           ; Merged with PR_mul[0][12]              ;
+; PR_mul[0][19]                           ; Merged with PR_mul[0][12]              ;
+; Samples[1][7]                           ; Merged with PR_mul[1][10]              ;
+; Samples[1][6]                           ; Merged with PR_mul[1][9]               ;
+; Samples[1][5]                           ; Merged with PR_mul[1][8]               ;
+; Samples[1][4]                           ; Merged with PR_mul[1][7]               ;
+; Samples[1][3]                           ; Merged with PR_mul[1][6]               ;
+; Samples[1][2]                           ; Merged with PR_mul[1][5]               ;
+; Samples[1][1]                           ; Merged with PR_mul[1][4]               ;
+; Samples[1][0]                           ; Merged with PR_mul[1][3]               ;
+; Samples[9][7]                           ; Merged with PR_mul[9][9]               ;
+; Samples[9][6]                           ; Merged with PR_mul[9][8]               ;
+; Samples[9][5]                           ; Merged with PR_mul[9][7]               ;
+; Samples[9][4]                           ; Merged with PR_mul[9][6]               ;
+; Samples[9][3]                           ; Merged with PR_mul[9][5]               ;
+; Samples[9][2]                           ; Merged with PR_mul[9][4]               ;
+; Samples[9][1]                           ; Merged with PR_mul[9][3]               ;
+; Samples[9][0]                           ; Merged with PR_mul[9][2]               ;
+; Samples[11][0]                          ; Merged with PR_mul[11][3]              ;
+; Samples[11][1]                          ; Merged with PR_mul[11][4]              ;
+; Samples[11][2]                          ; Merged with PR_mul[11][5]              ;
+; Samples[11][3]                          ; Merged with PR_mul[11][6]              ;
+; Samples[11][4]                          ; Merged with PR_mul[11][7]              ;
+; Samples[11][5]                          ; Merged with PR_mul[11][8]              ;
+; Samples[11][6]                          ; Merged with PR_mul[11][9]              ;
+; Samples[11][7]                          ; Merged with PR_mul[11][10]             ;
+; Samples[12][0]                          ; Merged with PR_mul[12][0]              ;
+; Samples[12][1]                          ; Merged with PR_mul[12][1]              ;
+; Samples[12][2]                          ; Merged with PR_mul[12][2]              ;
+; Samples[13][0]                          ; Merged with PR_mul[13][2]              ;
+; PR_add[0][14]                           ; Merged with PR_add[0][13]              ;
+; PR_add[0][15]                           ; Merged with PR_add[0][13]              ;
+; PR_add[0][16]                           ; Merged with PR_add[0][13]              ;
+; PR_add[0][17]                           ; Merged with PR_add[0][13]              ;
+; PR_add[0][18]                           ; Merged with PR_add[0][13]              ;
+; PR_add[0][19]                           ; Merged with PR_add[0][13]              ;
+; Total Number of Removed Registers = 205 ;                                        ;
++-----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 527   ;
+; Number of registers using Synchronous Clear  ; 526   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |FIR_Filter_Project1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; order          ; 15    ; Signed Integer                                             ;
+; word_size_in   ; 8     ; Signed Integer                                             ;
+; word_size_out  ; 20    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 527                         ;
+;     SCLR              ; 526                         ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 342                         ;
+;     arith             ; 302                         ;
+;         0 data inputs ; 6                           ;
+;         1 data inputs ; 106                         ;
+;         2 data inputs ; 190                         ;
+;     normal            ; 1                           ;
+;         2 data inputs ; 1                           ;
+;     shared            ; 39                          ;
+;         0 data inputs ; 6                           ;
+;         1 data inputs ; 18                          ;
+;         2 data inputs ; 15                          ;
+; boundary_port         ; 30                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.86                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Wed Dec  4 14:05:29 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FIR_Filter_Project1 -c FIR_Filter_Project1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file fir_filter_project1.v
+    Info (12023): Found entity 1: FIR_Filter_Project1 File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file fir_filter_project1_tb.v
+    Info (12023): Found entity 1: FIR_Filter_Project1_tb File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v Line: 15
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(33): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 33
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(34): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 34
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(35): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 35
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(36): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 36
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(37): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 37
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(39): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 39
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(40): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 40
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(41): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 41
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(42): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 42
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(43): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 43
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(45): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 45
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(46): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 46
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(47): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 47
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(48): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 48
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_Filter_Project1.v(49): Parameter Declaration in module "FIR_Filter_Project1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v Line: 49
+Info (12127): Elaborating entity "FIR_Filter_Project1" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 559 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 529 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4891 megabytes
+    Info: Processing ended: Wed Dec  4 14:05:37 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:09
+
+
