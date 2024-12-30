@@ -1,0 +1,93 @@
+1733169174.625736: 21851-7f5ed7d230c0: cdpl_log.c:228: in cdpl_log_open(): info: @@start_of_log@@
+1733169174.625764: 21851-7f5ed7d230c0: cdpl_log.c:866: in cdpl_log_dump_sysinfo(): info: time: 2024/12/02 13:52:54 CST -0600
+1733169174.625769: 21851-7f5ed7d230c0: cdpl_log.c:868: in cdpl_log_dump_sysinfo(): info: version: T-2022.03 
+1733169174.625771: 21851-7f5ed7d230c0: cdpl_log.c:870: in cdpl_log_dump_sysinfo(): info: system: Linux 3.10.0-1160.119.1.el7.x86_64 #1 SMP Tue May 14 11:55:25 EDT 2024
+1733169174.625772: 21851-7f5ed7d230c0: cdpl_log.c:875: in cdpl_log_dump_sysinfo(): info: processor: x86_64 64-bits
+1733169174.625774: 21851-7f5ed7d230c0: cdpl_log.c:879: in cdpl_log_dump_sysinfo(): info: hostname: engnx01a.utdallas.edu
+1733169174.625776: 21851-7f5ed7d230c0: cdpl_log.c:230: in cdpl_log_open(): debug: path: /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/runtime/cdpl/pid21851/master.engnx01a.utdallas.edu.21851.log
+1733169174.625778: 21851-7f5ed7d230c0: cdpl_log.c:231: in cdpl_log_open(): debug: dir: /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/runtime/cdpl/pid21851
+1733169174.625787: 21851-7f5ed7d230c0: cdpl_log.c:758: in cdpl_log_set_filter(): info: filter level 1
+1733169174.625806: 21851-7f5ed7d230c0: cdpl_server.c:543: in cdpl_sv_init(): info: new server S1206899373
+1733169174.625813: 21851-7f5ed7d230c0: cdpl_ipc.c:3030: in cdpl_ipc_init(): info: requesting IPv4 protocol
+1733169174.626305: 21851-7f5ed7d230c0: cdpl_ipc.c:800: in _selectaddrfamily(): info: selected IPv4 protocol
+1733169174.626596: 21851-7f5ed7d230c0: cdpl_server.c:657: in cdpl_sv_new_master(): info: new master M1
+1733169174.626607: 21851-7f5ed7d230c0: cdpl_server.c:5494: in cdpl_sv_ctl_master(): info: Setting worker heartbeat to 60 seconds
+1733169174.626609: 21851-7f5ed7d230c0: cdpl_server.c:5503: in cdpl_sv_ctl_master(): info: Setting worker heartbeat timeout to 3 heartbeats
+1733169174.626613: 21851-7f5ed7d230c0: cdpl_compat_master.c:2407: in cdplInitMaster(): info: bcast dir is `/dev/null'
+1733169174.626670: 21851-7f5ed7d230c0: cdpl_server.c:5394: in cdpl_sv_ctl_master(): info: farm worker timeout set to 36000
+1733169174.626672: 21851-7f5ed7d230c0: cdpl_server.c:5410: in cdpl_sv_ctl_master(): info: grid worker timeout set to 36000
+1733169174.626674: 21851-7f5ed7d230c0: cdpl_server.c:5438: in cdpl_sv_ctl_master(): info: farm submit command failure threshold set to 100
+1733169174.626706: 21851-7f5ed7d230c0: cdpl_farm.c:2268: in cdpl_farm_new_sh(): info: creating SH farm on localhost
+1733169174.626717: 21851-7f5ed7d230c0: cdpl_compat_master.c:207: in _set_farm_env(): info: exporting CDPL_LOGDIR as `/home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/runtime/cdpl/pid21851'
+1733169174.626720: 21851-7f5ed7d230c0: cdpl_compat_master.c:213: in _set_farm_env(): info: exporting CDPL_TMPDIR as `/var/tmp'
+1733169174.626721: 21851-7f5ed7d230c0: cdpl_compat_master.c:220: in _set_farm_env(): info: exporting CDPL_HOME as `/proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/cdpl_runtime_linux64'
+1733169174.626724: 21851-7f5ed7d230c0: cdpl_compat_master.c:227: in _set_farm_env(): info: exporting SNPSLMD_LICENSE_FILE as `1700@engdmv.utdallas.edu'
+1733169174.626726: 21851-7f5ed7d230c0: cdpl_compat_master.c:247: in _set_farm_env(): info: exporting CDPL_OPTIONS as `[filter][nowlogs]'
+1733169174.626729: 21851-7f5ed7d230c0: cdpl_compat_master.c:254: in _set_farm_env(): info: exporting DISPLAY as `:1022'
+1733169174.626730: 21851-7f5ed7d230c0: cdpl_compat_master.c:262: in _set_farm_env(): info: exporting CDPL_HEARTBEAT as `60'
+1733169174.626734: 21851-7f5ed7d230c0: cdpl_compat_master.c:348: in _set_farm_env(): info: exporting SIS_MALIBU as `2'
+1733169174.626736: 21851-7f5ed7d230c0: cdpl_compat_master.c:348: in _set_farm_env(): info: exporting SIS_CDPL as `5'
+1733169174.668025: 21851-7f5ed7d230c0: cdpl_server.c:738: in cdpl_sv_new_job(): info: new job J1 in M1
+1733169174.668041: 21851-7f5ed7d230c0: cdpl_compat_master.c:1314: in _add_worker(): info: new worker type 100, min:1, max:1, cmd:`/home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/runtime/cdpl/pid21851/run_21851.sh'
+1733169174.668049: 21851-7f5ed7d230c0: cdpl_server.c:900: in cdpl_sv_new_bin_withfarm(): info: new bin B1 in J1
+1733169174.676646: 21851-7f5ed7d230c0: cdpl_server.c:3116: in cdpl_sv_start_job(): info: starting job J1
+1733169174.686809: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T0 in B1 (prio 2)
+1733169174.686820: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T0 label to "delay__B__lh__OUT__hl__ACQ_1 of NAND3"
+1733169174.686881: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T1 in B1 (prio 2)
+1733169174.686936: 21851-7f5ebfa26700: cdpl_server_sched.c:700: in _sv_launch_worker(): info: started worker W1 (as C1) in bin B1
+1733169174.686962: 21851-7f5ebf225700: cdpl_farm.c:1899: in _schedule(): info: worker submit failure threshold set to 100
+1733169174.686973: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T1 label to "delay__B__hl__OUT__lh__ACQ_1 of NAND3"
+1733169174.686979: 21851-7f5ebf225700: cdpl_sh.c:49: in _sh_detached_submit(): info: SH : /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/runtime/cdpl/pid21851/run_21851.sh
+1733169174.689275: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T2 in B1 (prio 3)
+1733169174.689289: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T2 label to "leakage_power__ACQ_1 of NAND3"
+1733169174.689788: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T3 in B1 (prio 2)
+1733169174.689792: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T3 label to "delay__C__lh__OUT__hl__ACQ_1 of NAND3"
+1733169174.689852: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T4 in B1 (prio 2)
+1733169174.689855: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T4 label to "delay__C__hl__OUT__lh__ACQ_1 of NAND3"
+1733169174.689890: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T5 in B1 (prio 5)
+1733169174.689892: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T5 label to "Cin__VSS__lh__ACQ_1 of NAND3"
+1733169174.689929: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T6 in B1 (prio 5)
+1733169174.689932: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T6 label to "Cin__VSS__hl__ACQ_1 of NAND3"
+1733169174.689961: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T7 in B1 (prio 2)
+1733169174.689963: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T7 label to "delay__A__lh__OUT__hl__ACQ_1 of NAND3"
+1733169174.689990: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T8 in B1 (prio 2)
+1733169174.689998: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T8 label to "delay__A__hl__OUT__lh__ACQ_1 of NAND3"
+1733169174.690022: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T9 in B1 (prio 5)
+1733169174.690025: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T9 label to "Cin__VDD__lh__ACQ_1 of NAND3"
+1733169174.690065: 21851-7f5ed7d230c0: cdpl_server.c:1824: in _sv_gen_task(): info: new task T10 in B1 (prio 5)
+1733169174.690068: 21851-7f5ed7d230c0: cdpl_server.c:2558: in cdpl_sv_label_task_va(): info: setting task T10 label to "Cin__VDD__hl__ACQ_1 of NAND3"
+1733169175.330502: 21851-7f5ec0227700: cdpl_server_ipc.c:452: in _sv_on_hello(): info: W1 is `10.182.66.66:52446'
+1733169175.330523: 21851-7f5ec0227700: cdpl_server_ipc.c:454: in _sv_on_hello(): info: W1 log file is /dev/null
+1733169175.330533: 21851-7f5ec0227700: cdpl_server_ipc.c:481: in _sv_on_hello(): info: up to 1 alive workers in B1
+1733169175.330558: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T0 to worker W1
+1733169182.330479: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T0
+1733169182.330546: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T1 to worker W1
+1733169188.952758: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T1
+1733169188.952801: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T3 to worker W1
+1733169195.591242: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T3
+1733169195.591278: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T4 to worker W1
+1733169202.174910: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T4
+1733169202.174941: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T7 to worker W1
+1733169208.970409: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T7
+1733169208.970460: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T8 to worker W1
+1733169215.508312: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T8
+1733169215.508563: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T2 to worker W1
+1733169222.238399: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T2
+1733169222.238431: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T5 to worker W1
+1733169228.705749: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T5
+1733169228.705798: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T6 to worker W1
+1733169235.171145: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T6
+1733169235.171187: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T9 to worker W1
+1733169241.818327: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T9
+1733169241.818376: 21851-7f5ebfa26700: cdpl_server_sched.c:955: in _assign(): info: assigning task T10 to worker W1
+1733169248.336165: 21851-7f5ec0227700: cdpl_server_ipc.c:857: in _sv_on_finish(): info: worker W1 completed task T10
+1733169319.731468: 21851-7f5ed7d230c0: cdpl_compat_master.c:5152: in cdplMasterLogInfo(): info: [non-CDPL log entry] Ending current CDPL job
+1733169319.731776: 21851-7f5ed7d230c0: cdpl_server.c:2890: in cdpl_sv_halt_job_errno(): info: stopping job J1
+1733169319.731868: 21851-7f5ebfa26700: cdpl_server_sched.c:2711: in _sv_drop_worker(): info: down to 0 alive workers in B1
+1733169319.731921: 21851-7f5ed7d230c0: cdpl_server.c:2875: in cdpl_sv_halt_job_errno(): info: killing job J1
+1733169319.731927: 21851-7f5ed7d230c0: cdpl_server.c:288: in _sv_free_job(): info: freeing job J1
+1733169319.731982: 21851-7f5ed7d230c0: cdpl_farm.c:2395: in cdpl_farm_free(): info: freeing farm
+1733169319.732161: 21851-7f5ed7d230c0: cdpl_server.c:3011: in cdpl_sv_free(): info: freeing server S1206899373
+1733169319.732164: 21851-7f5ed7d230c0: cdpl_server.c:2976: in cdpl_sv_kill_errno(): info: killing server
+1733169319.732204: 21851-7f5ed7d230c0: cdpl_server.c:328: in _sv_free_master(): info: freeing master M1
+1733169319.732261: 21851-7f5ed7d230c0: cdpl_log.c:371: in cdpl_log_close(): info: @@end_of_log@@

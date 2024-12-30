@@ -1,0 +1,6 @@
+projects need 20 inputs and 3 outputs
+each input has a corresponding valid input
+each outputs needs a corresponding valid output
+discrete cosine transform ( use this to do video compression )
+the application needs to decide the headers and number of bits
+apply a header bit

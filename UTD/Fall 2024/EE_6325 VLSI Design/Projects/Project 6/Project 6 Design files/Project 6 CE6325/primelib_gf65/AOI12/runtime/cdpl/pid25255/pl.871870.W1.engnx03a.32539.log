@@ -1,0 +1,416 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx03a.utdallas.edu, User: dal852207, PID: 32539 (PPID: 32534)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (145.3 GB free), 4 GB Swap (4.1 GB free)
+System load average: 1.82, 1.90, 2.03 (17822 processes)
+Directory: /home/eng/d/dal852207/cad/gf65/primelib_gf65
+Command-line: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib -server /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/runtime/cdpl/pid25255/driver_25255.tcl
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12
+Warning: Setting of obsolete parameter 'model_ecsm_cin' is ignored. (PAR-27)
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/etc/cell.stat.gz
+Sat Nov 30 01:44:40 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Sat Nov 30 01:44:40 CST 2024: Environment set up done (0 seconds)
+Create and link tmpdir /var/tmp/pl.engnx03a.871870.32534 -> /var/tmp/primelib.engnx03a.utdallas.edu.871870.32539 
+[CDPL] Loading settings for stage: characterization.0
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/etc/cell.stat.gz
+Sat Nov 30 01:44:40 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Sat Nov 30 01:44:40 CST 2024: Environment set up done (0 seconds)
+[CDPL] Done loading settings for stage: characterization.0
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__lh__OUT__hl__ACQ_1 0.11 0.01 0.03 0.06 1 0.234837055206 engnx03a.utdallas.edu 1732952680.78 1732952681.02 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__hl__OUT__lh__ACQ_1 0.06 0.0 0.0 0.0 1 0.0628900527954 engnx03a.utdallas.edu 1732952681.02 1732952681.08 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__lh__OUT__hl__ACQ_1 0.05 0.0 0.0 0.0 1 0.0617988109589 engnx03a.utdallas.edu 1732952681.08 1732952681.14 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__hl__OUT__lh__ACQ_1 0.07 0.01 0.0 0.0 1 0.101900100708 engnx03a.utdallas.edu 1732952681.14 1732952681.25 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__lh__OUT__hl__ACQ_1 0.06 0.0 0.0 0.0 1 0.105864048004 engnx03a.utdallas.edu 1732952681.25 1732952681.35 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.074117898941 engnx03a.utdallas.edu 1732952681.35 1732952681.43 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 1001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 1501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 2001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 2001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 2501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 2501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 3001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 3001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 3501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 3501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 4001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 4001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 4501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 4501.0
+----------------------
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6635200977 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6640021801 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6644740105 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6649420261 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6654090881 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6658751965 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6663491726 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6668221951 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.667288065 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.44 0.06 62.57 6.78 1 69.6677479744 engnx03a.utdallas.edu 1732952681.43 1732952751.09 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__lh__OUT__hl__ACQ_1 0.05 0.0 0.0 0.0 1 0.0750069618225 engnx03a.utdallas.edu 1732952751.1 1732952751.17 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.0880160331726 engnx03a.utdallas.edu 1732952751.17 1732952751.26 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__lh__OUT__hl__ACQ_1 0.05 0.0 0.0 0.0 1 0.0592370033264 engnx03a.utdallas.edu 1732952751.26 1732952751.32 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.0719041824341 engnx03a.utdallas.edu 1732952751.32 1732952751.39 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__lh__OUT__hl__ACQ_1 0.05 0.01 0.0 0.0 1 0.0723350048065 engnx03a.utdallas.edu 1732952751.39 1732952751.46 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.0705499649048 engnx03a.utdallas.edu 1732952751.46 1732952751.53 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VSS__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VSS__lh__ACQ_1 0.04 0.0 5.77 0.66 1 6.46278190613 engnx03a.utdallas.edu 1732952751.54 1732952758.0 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VSS__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VSS__hl__ACQ_1 0.05 0.01 5.78 0.69 1 6.48069095612 engnx03a.utdallas.edu 1732952758.0 1732952764.48 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VDD__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VDD__lh__ACQ_1 0.08 0.01 5.75 0.66 1 6.46907901764 engnx03a.utdallas.edu 1732952764.48 1732952770.95 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VDD__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VDD__hl__ACQ_1 0.04 0.01 5.74 0.64 1 6.37758207321 engnx03a.utdallas.edu 1732952770.95 1732952777.33 1
+[CDPL] Loading settings for stage: characterization.1
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/etc/cell.stat.gz
+Sat Nov 30 01:47:59 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Sat Nov 30 01:47:59 CST 2024: Environment set up done (0 seconds)
+[CDPL] Done loading settings for stage: characterization.1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 1001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 1501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 1501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 2001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 2001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 2501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 2501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 3001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 3001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 3501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 3501.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 4001.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 4001.0
+Loading information for cell AOI12
+Re-running leakage_power__ACQ_1 with gate_leakage_factor set to 4501.0 ...
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+Warning: SIS_SERVER_WARN_MSGAOI12: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6)
+current gateLeakFactor for leakage_power__ACQ_1 : 4501.0
+----------------------
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4219560623 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4224529266 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4229309559 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4233899117 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4238450527 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4243118763 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4247829914 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4252450466 engnx03a.utdallas.edu 1732952879.69 1732952949.11 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4256930351 engnx03a.utdallas.edu 1732952879.69 1732952949.12 1
+__recordTaskStats__ AOI12 leakage_power__ACQ_1 0.46 0.06 62.45 6.63 1 69.4261410236 engnx03a.utdallas.edu 1732952879.69 1732952949.12 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__lh__OUT__hl__ACQ_1 0.06 0.0 0.0 0.0 1 0.0766348838806 engnx03a.utdallas.edu 1732952949.12 1732952949.19 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.0678150653839 engnx03a.utdallas.edu 1732952949.19 1732952949.26 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__lh__OUT__hl__ACQ_1 0.05 0.0 0.0 0.0 1 0.0705258846283 engnx03a.utdallas.edu 1732952949.26 1732952949.33 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.0577778816223 engnx03a.utdallas.edu 1732952949.33 1732952949.39 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__lh__OUT__hl__ACQ_1 0.05 0.01 0.0 0.0 1 0.0728800296783 engnx03a.utdallas.edu 1732952949.39 1732952949.46 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__hl__OUT__lh__ACQ_1 0.06 0.0 0.0 0.0 1 0.0687839984894 engnx03a.utdallas.edu 1732952949.47 1732952949.53 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VSS__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VSS__lh__ACQ_1 0.05 0.01 5.71 0.65 1 6.3581829071 engnx03a.utdallas.edu 1732952949.53 1732952955.89 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__lh__OUT__hl__ACQ_1 0.05 0.0 0.0 0.0 1 0.0609498023987 engnx03a.utdallas.edu 1732952955.89 1732952955.95 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VA__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VA__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VA_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VA__hl__OUT__lh__ACQ_1 0.05 0.01 0.0 0.0 1 0.0583500862122 engnx03a.utdallas.edu 1732952955.95 1732952956.01 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__lh__OUT__hl__ACQ_1 0.11 0.02 0.0 0.0 1 0.14341211319 engnx03a.utdallas.edu 1732952956.01 1732952956.16 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VB__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VB__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VB_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VB__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.0575630664825 engnx03a.utdallas.edu 1732952956.16 1732952956.21 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__lh__OUT__hl__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__lh__OUT__hl__ACQ_1 0.05 0.0 0.0 0.0 1 0.0584580898285 engnx03a.utdallas.edu 1732952956.22 1732952956.27 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/delay__VC__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Error:   Simulation delay__VC__hl__OUT__lh__ACQ_1.sif for cell AOI12 failed: Element 'VC_meter' is undefined. (SC-39) (SMSC-95)
+----------------------
+__recordTaskStats__ AOI12 delay__VC__hl__OUT__lh__ACQ_1 0.05 0.0 0.0 0.0 1 0.0570800304413 engnx03a.utdallas.edu 1732952956.27 1732952956.33 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VSS__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VSS__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VSS__hl__ACQ_1 0.04 0.0 5.62 0.65 1 6.27102613449 engnx03a.utdallas.edu 1732952956.33 1732952962.6 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VDD__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VDD__lh__ACQ_1 0.05 0.01 5.84 0.67 1 6.51798701286 engnx03a.utdallas.edu 1732952962.6 1732952969.12 1
+Loading information for cell AOI12
+work dir: '/var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.32539/AOI12/Cin__VDD__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/AOI12/results/AOI12
+Simulation AOI12::Cin__VDD__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ AOI12 Cin__VDD__hl__ACQ_1 0.04 0.01 5.76 0.65 1 6.46312403679 engnx03a.utdallas.edu 1732952969.12 1732952975.59 1
+Warning: /var/tmp/worker.871870.W1.engnx03a.utdallas.edu.32539.log: No such file or directory
+   [CDPL] Shutting down worker
+Sat Nov 30 01:53:03 2024: Program time: 503.00 seconds | 8.38 minutes | 0.14 hours
+CDPL worker exited normally.
+Reset log file
+Maximum virtual memory size: 999.656 MB

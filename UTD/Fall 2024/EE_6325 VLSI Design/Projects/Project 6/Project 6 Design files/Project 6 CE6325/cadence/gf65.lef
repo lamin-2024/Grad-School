@@ -1,0 +1,1440 @@
+NAMESCASESENSITIVE ON ;
+BUSBITCHARS "[]" ;
+
+UNITS
+  DATABASE MICRONS 1000 ;
+END UNITS
+
+MANUFACTURINGGRID 0.001 ;
+
+DIVIDERCHAR "/" ;
+
+LAYER M1
+  TYPE ROUTING ;
+  DIRECTION HORIZONTAL ;
+  PITCH 0.26 0.26 ;
+  WIDTH 0.14 ;
+  AREA 0.042 ;
+  SPACING 0.09 ;
+  SPACING 0.19 RANGE 1.76 4 ;
+  SPACING 0.29 RANGE 4 8 ;
+  SPACING 1.05 RANGE 8 25 ;
+  SPACING 1.85 RANGE 25 100000 ;
+END M1
+
+LAYER V1
+  TYPE CUT ;
+END V1
+
+LAYER M2
+  TYPE ROUTING ;
+  DIRECTION VERTICAL ;
+  PITCH 0.26 0.26 ;
+  WIDTH 0.14 ;
+  AREA 0.052 ;
+  SPACING 0.1 ;
+  SPACING 0.19 RANGE 1.76 4 ;
+  SPACING 0.29 RANGE 4 8 ;
+  SPACING 1.05 RANGE 8 25 ;
+  SPACING 1.85 RANGE 25 100000 ;
+END M2
+
+LAYER V2
+  TYPE CUT ;
+END V2
+
+LAYER M3
+  TYPE ROUTING ;
+  DIRECTION HORIZONTAL ;
+  PITCH 0.26 0.26 ;
+  WIDTH 0.14 ;
+  AREA 0.052 ;
+  SPACING 0.1 ;
+  SPACING 0.19 RANGE 1.76 4 ;
+  SPACING 0.29 RANGE 4 8 ;
+  SPACING 1.05 RANGE 8 25 ;
+  SPACING 1.85 RANGE 25 100000 ;
+END M3
+
+LAYER V3
+  TYPE CUT ;
+END V3
+
+LAYER M4
+  TYPE ROUTING ;
+  DIRECTION VERTICAL ;
+  PITCH 0.26 0.26 ;
+  WIDTH 0.14 ;
+  AREA 0.052 ;
+  SPACING 0.1 ;
+  SPACING 0.19 RANGE 1.76 4 ;
+  SPACING 0.29 RANGE 4 8 ;
+  SPACING 1.05 RANGE 8 25 ;
+  SPACING 1.85 RANGE 25 100000 ;
+END M4
+
+LAYER V4
+  TYPE CUT ;
+END V4
+
+LAYER M5
+  TYPE ROUTING ;
+  DIRECTION HORIZONTAL ;
+  PITCH 0.26 0.26 ;
+  WIDTH 0.14 ;
+  AREA 0.052 ;
+  SPACING 0.1 ;
+  SPACING 0.19 RANGE 1.76 4 ;
+  SPACING 0.29 RANGE 4 8 ;
+  SPACING 1.05 RANGE 8 25 ;
+  SPACING 1.85 RANGE 25 100000 ;
+END M5
+
+LAYER V5
+  TYPE CUT ;
+END V5
+
+LAYER M6
+  TYPE ROUTING ;
+  DIRECTION VERTICAL ;
+  PITCH 0.26 0.26 ;
+  WIDTH 0.14 ;
+  AREA 0.052 ;
+  SPACING 0.1 ;
+  SPACING 0.19 RANGE 1.76 4 ;
+  SPACING 0.29 RANGE 4 8 ;
+  SPACING 1.05 RANGE 8 25 ;
+  SPACING 1.85 RANGE 25 100000 ;
+  END M6
+
+LAYER OVERLAP
+  TYPE OVERLAP ;
+END OVERLAP
+
+SPACING
+  SAMENET M1  M1    0.09 STACK ;
+  SAMENET M2  M2    0.1 STACK ;
+  SAMENET M3  M3    0.1 STACK ;
+  SAMENET M4  M4    0.1 STACK ;
+  SAMENET M5  M5    0.1 STACK ;
+  SAMENET M6  M6    0.1 STACK ;
+  SAMENET V1  V1    0.1 ;
+  SAMENET V2  V2    0.1 ;
+  SAMENET V3  V3    0.1 ;
+  SAMENET V4  V4    0.1 ;
+  SAMENET V5  V5    0.1 ;
+  SAMENET V1  V2    0.00 STACK ;
+  SAMENET V2  V3    0.00 STACK ;
+  SAMENET V3  V4    0.00 STACK ;
+  SAMENET V4  V5    0.00 STACK ;
+  SAMENET V1  V3    0.00 STACK ;
+  SAMENET V2  V4    0.00 STACK ;
+  SAMENET V3  V5    0.00 STACK ;
+  SAMENET V1  V4    0.00 STACK ;
+  SAMENET V2  V5    0.00 STACK ;
+  SAMENET V1  V5    0.00 STACK ;
+END SPACING
+
+
+VIA via5 DEFAULT
+  LAYER M5 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+  LAYER V5 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+  LAYER M6 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+END via5
+
+VIA via4 DEFAULT
+  LAYER M4 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+  LAYER V4 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+  LAYER M5 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+END via4
+
+VIA via3 DEFAULT
+  LAYER M4 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+  LAYER V3 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+  LAYER M3 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+END via3
+
+VIA via2 DEFAULT
+  LAYER M3 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+  LAYER V2 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+  LAYER M2 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+END via2
+
+VIA via1 DEFAULT
+  LAYER M2 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+  LAYER V1 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+  LAYER M1 ;
+    RECT -0.07 -0.07 0.07 0.07 ;
+END via1
+
+
+VIARULE via1Array GENERATE
+  LAYER M1 ;
+  DIRECTION HORIZONTAL ;
+  OVERHANG 0.045 ;
+    METALOVERHANG 0 ;
+  LAYER M2 ;
+  DIRECTION VERTICAL ;
+    OVERHANG 0.045 ;
+    METALOVERHANG 0 ;
+  LAYER V1 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+    SPACING 0.2 BY 0.2 ;
+END via1Array
+
+
+VIARULE via2Array GENERATE
+  LAYER M3 ;
+    DIRECTION HORIZONTAL ;
+    OVERHANG 0.03 ;
+    METALOVERHANG 0 ;
+  LAYER M2 ;
+  DIRECTION VERTICAL ;
+    OVERHANG 0.03 ;
+    METALOVERHANG 0 ;
+  LAYER V2 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+    SPACING 0.2 BY 0.2 ;
+END via2Array
+
+
+VIARULE via3Array GENERATE
+  LAYER M3 ;
+    DIRECTION HORIZONTAL ;
+    OVERHANG 0.03 ;
+    METALOVERHANG 0 ;
+  LAYER M4 ;
+    DIRECTION VERTICAL ;
+    OVERHANG 0.03 ;
+    METALOVERHANG 0 ;
+  LAYER V3 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+    SPACING 0.2 BY 0.2 ;
+END via3Array
+
+VIARULE via4Array GENERATE
+  LAYER M5 ;
+    DIRECTION HORIZONTAL ;
+    OVERHANG 0.03 ;
+    METALOVERHANG 0 ;
+  LAYER M4 ;
+    DIRECTION VERTICAL ;
+    OVERHANG 0.03 ;
+    METALOVERHANG 0 ;
+  LAYER V4 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+    SPACING 0.2 BY 0.2 ;
+END via4Array
+
+VIARULE via5Array GENERATE
+  LAYER M5 ;
+    DIRECTION HORIZONTAL ;
+    OVERHANG 0.03 ;
+    METALOVERHANG 0 ;
+  LAYER M6 ;
+    DIRECTION VERTICAL ;
+    OVERHANG 0.045 ;
+    METALOVERHANG 0 ;
+  LAYER V5 ;
+    RECT -0.05 -0.05 0.05 0.05 ;
+    SPACING 0.2 BY 0.2 ;
+END via5Array
+
+VIARULE TURNM1 GENERATE
+  LAYER M1 ;
+    DIRECTION HORIZONTAL ;
+  LAYER M1 ;
+    DIRECTION VERTICAL ;
+END TURNM1
+
+VIARULE TURNM2 GENERATE
+  LAYER M2 ;
+    DIRECTION HORIZONTAL ;
+  LAYER M2 ;
+    DIRECTION VERTICAL ;
+END TURNM2
+
+VIARULE TURNM3 GENERATE
+  LAYER M3 ;
+    DIRECTION HORIZONTAL ;
+  LAYER M3 ;
+    DIRECTION VERTICAL ;
+END TURNM3
+
+VIARULE TURNM4 GENERATE
+  LAYER M4 ;
+    DIRECTION HORIZONTAL ;
+  LAYER M4 ;
+    DIRECTION VERTICAL ;
+END TURNM4
+
+VIARULE TURNM5 GENERATE
+  LAYER M5 ;
+    DIRECTION HORIZONTAL ;
+  LAYER M5 ;
+    DIRECTION VERTICAL ;
+END TURNM5
+
+VIARULE TURNM6 GENERATE
+  LAYER M6 ;
+    DIRECTION HORIZONTAL ;
+  LAYER M6 ;
+    DIRECTION VERTICAL ;
+END TURNM6
+
+
+SITE  CoreSite
+    CLASS       CORE ;
+    SYMMETRY    Y ;
+    SYMMETRY    X ;
+    SIZE        0.260 BY 7.209 ;
+END  CoreSite
+
+SITE  TDCoverSite
+    CLASS       CORE ;
+    SIZE        0.0500 BY 0.0500 ;
+END  TDCoverSite
+
+SITE  SBlockSite
+    CLASS       CORE ;
+    SIZE        0.0500 BY 0.0500 ;
+END  SBlockSite
+
+SITE  PortCellSite
+    CLASS       PAD ;
+    SIZE        0.0500 BY 0.0500 ;
+END  PortCellSite
+
+SITE  Core
+    CLASS       CORE ;
+    SYMMETRY    Y ;
+    SYMMETRY    X ;
+    SIZE        0.260 BY 7.209 ;
+END  Core
+
+MACRO AOI12
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN AOI12 0.153 -3.533 ;
+  SIZE 2.861 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.773 -0.204 1.913 0.196 ;
+      LAYER M2 ;
+        RECT 1.773 -0.204 1.913 0.196 ;
+      LAYER V1 ;
+        RECT 1.795 -0.05 1.895 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.253 -0.204 1.393 0.196 ;
+      LAYER M2 ;
+        RECT 1.253 -0.204 1.393 0.196 ;
+      LAYER V1 ;
+        RECT 1.274 -0.05 1.374 0.05 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.204 0.873 0.196 ;
+      LAYER M2 ;
+        RECT 0.733 -0.204 0.873 0.196 ;
+      LAYER V1 ;
+        RECT 0.754 -0.05 0.854 0.05 ;
+    END
+  END C
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.307 -0.856 2.421 2.562 ;
+        RECT 1.644 -0.856 2.421 -0.766 ;
+        RECT 1.644 -2.646 1.734 -0.766 ;
+      LAYER M2 ;
+        RECT 2.294 -0.204 2.434 0.196 ;
+      LAYER V1 ;
+        RECT 2.315 -0.05 2.415 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 3.014 -3.333 ;
+        RECT 2.305 -3.533 2.411 -0.946 ;
+        RECT 0.601 -3.533 0.691 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 3.014 3.676 ;
+        RECT 1.124 0.762 1.214 3.676 ;
+    END
+  END VDD!
+  OBS
+    LAYER M1 ;
+      RECT 0.601 0.58 0.691 2.562 ;
+      RECT 1.644 0.58 1.734 2.561 ;
+      RECT 0.601 0.58 1.734 0.67 ;
+  END
+END AOI12
+
+MACRO AOI22
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN AOI22 0.153 -3.533 ;
+  SIZE 3.381 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER M2 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER V1 ;
+        RECT 1.274 -0.05 1.374 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER M2 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER V1 ;
+        RECT 0.753 -0.05 0.853 0.05 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.774 -0.2 1.914 0.2 ;
+      LAYER M2 ;
+        RECT 1.774 -0.2 1.914 0.2 ;
+      LAYER V1 ;
+        RECT 1.795 -0.05 1.895 0.05 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.814 -0.2 2.954 0.2 ;
+      LAYER M2 ;
+        RECT 2.814 -0.2 2.954 0.2 ;
+      LAYER V1 ;
+        RECT 2.834 -0.05 2.934 0.05 ;
+    END
+  END D
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.294 -0.856 2.434 2.562 ;
+        RECT 1.644 -0.856 2.434 -0.766 ;
+        RECT 1.644 -2.646 1.734 -0.766 ;
+      LAYER M2 ;
+        RECT 2.294 -0.2 2.434 0.2 ;
+      LAYER V1 ;
+        RECT 2.314 -0.05 2.414 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 3.534 -3.333 ;
+        RECT 2.993 -3.533 3.083 -0.946 ;
+        RECT 0.601 -3.533 0.691 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 3.534 3.676 ;
+        RECT 1.124 0.762 1.214 3.676 ;
+    END
+  END VDD!
+  OBS
+    LAYER M1 ;
+      RECT 1.643 2.652 3.084 2.742 ;
+      RECT 2.994 0.762 3.084 2.742 ;
+      RECT 1.643 0.582 1.733 2.742 ;
+      RECT 0.601 0.582 0.691 2.562 ;
+      RECT 0.601 0.582 1.733 0.672 ;
+  END
+END AOI22
+
+MACRO Filler_cell
+  CLASS CORE ;
+  ORIGIN -0.163 3.481 ;
+  FOREIGN Filler_cell 0.163 -3.481 ;
+  SIZE 0.26 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER M1 ;
+        RECT 0.111 3.528 0.47 3.728 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER M1 ;
+        RECT 0.111 -3.481 0.47 -3.281 ;
+    END
+  END VSS
+END Filler_cell
+
+MACRO Flip_Flop
+  CLASS CORE ;
+  ORIGIN 1.129 3.533 ;
+  FOREIGN Flip_Flop -1.129 -3.533 ;
+  SIZE 11.44 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN CLK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT -0.809 -0.201 -0.669 0.199 ;
+      LAYER M2 ;
+        RECT -0.809 -0.201 -0.669 0.199 ;
+      LAYER V1 ;
+        RECT -0.775 -0.051 -0.675 0.049 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.227 -0.201 1.455 0.2 ;
+      LAYER M2 ;
+        RECT 1.227 -0.201 1.455 0.2 ;
+      LAYER V1 ;
+        RECT 1.294 -0.051 1.394 0.049 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 9.946 -2.646 10.046 2.563 ;
+        RECT 9.861 -0.221 10.046 0.219 ;
+      LAYER M2 ;
+        RECT 9.861 -0.221 9.981 0.219 ;
+      LAYER V1 ;
+        RECT 9.874 -0.051 9.974 0.049 ;
+    END
+  END Q
+  PIN R
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 7.507 -0.606 8.721 -0.506 ;
+        RECT 8.599 -0.606 8.717 -0.193 ;
+        RECT 7.507 -3.214 7.607 -0.506 ;
+        RECT 6.207 -3.214 7.607 -3.114 ;
+        RECT 5.21 -0.828 6.307 -0.659 ;
+        RECT 6.207 -3.214 6.307 -0.659 ;
+        RECT 4.141 2.874 5.363 3.022 ;
+        RECT 4.087 -0.201 4.315 0.2 ;
+        RECT 4.141 -0.201 4.263 3.022 ;
+      LAYER M2 ;
+        RECT 5.21 -0.828 5.363 3.022 ;
+        RECT 4.087 -0.201 4.315 0.2 ;
+      LAYER V1 ;
+        RECT 4.153 -0.051 4.253 0.049 ;
+        RECT 5.239 2.895 5.339 2.995 ;
+        RECT 5.239 -0.795 5.339 -0.695 ;
+    END
+  END R
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT -1.129 -3.533 10.311 -3.333 ;
+        RECT 9.526 -3.533 9.626 -0.946 ;
+        RECT 8.858 -3.533 8.958 -0.946 ;
+        RECT 7.957 -3.533 8.057 -0.946 ;
+        RECT 5.845 -3.533 5.945 -0.946 ;
+        RECT 4.678 -3.533 4.778 -0.946 ;
+        RECT 3.302 -3.533 3.402 -0.946 ;
+        RECT 1.255 -3.533 1.355 -0.946 ;
+        RECT 0.079 -3.533 0.177 -0.946 ;
+        RECT -0.875 -3.533 -0.777 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT -1.129 3.476 10.311 3.676 ;
+        RECT 9.538 0.762 9.638 3.676 ;
+        RECT 7.958 0.762 8.058 3.676 ;
+        RECT 5.845 0.762 5.945 3.676 ;
+        RECT 3.302 0.762 3.402 3.676 ;
+        RECT 1.255 0.762 1.355 3.676 ;
+        RECT 0.064 0.762 0.162 3.676 ;
+        RECT -0.866 0.762 -0.768 3.676 ;
+    END
+  END VDD!
+  OBS
+    LAYER M1 ;
+      RECT 8.409 2.858 9.309 2.958 ;
+      RECT 9.209 0.438 9.309 2.958 ;
+      RECT 8.409 0.438 8.509 2.958 ;
+      RECT 6.733 -2.646 6.832 2.563 ;
+      RECT 9.209 0.438 9.711 0.538 ;
+      RECT 8.038 0.438 8.509 0.538 ;
+      RECT 9.591 -0.166 9.709 0.538 ;
+      RECT 8.038 -0.075 8.156 0.538 ;
+      RECT 6.733 0 8.156 0.098 ;
+      RECT 8.919 -0.821 9.019 2.563 ;
+      RECT 8.861 -0.166 9.019 0.25 ;
+      RECT 8.304 -0.019 9.019 0.081 ;
+      RECT 8.304 -0.31 8.404 0.081 ;
+      RECT 7.586 -0.402 7.704 -0.099 ;
+      RECT 7.586 -0.31 8.404 -0.21 ;
+      RECT 8.322 -0.821 9.019 -0.721 ;
+      RECT 8.322 -2.646 8.422 -0.721 ;
+      RECT 5.505 0.408 5.605 3.307 ;
+      RECT 3.864 0.424 3.964 3.306 ;
+      RECT 3.864 3.184 5.605 3.305 ;
+      RECT 6.427 2.843 7.302 2.943 ;
+      RECT 7.115 0.424 7.302 2.943 ;
+      RECT 6.427 0.408 6.571 2.943 ;
+      RECT 2.474 0.354 2.709 0.657 ;
+      RECT 2.474 0.424 3.964 0.602 ;
+      RECT 5.505 0.408 6.571 0.57 ;
+      RECT 5.011 -0.453 6.571 -0.353 ;
+      RECT 6.453 -0.705 6.571 -0.353 ;
+      RECT 5.011 -0.828 5.111 -0.353 ;
+      RECT 2.474 -0.874 2.709 -0.571 ;
+      RECT 4.441 -0.828 5.111 -0.728 ;
+      RECT 2.474 -0.856 3.602 -0.756 ;
+      RECT 3.502 -3.214 3.602 -0.756 ;
+      RECT 4.441 -3.214 4.541 -0.728 ;
+      RECT 2.882 -3.136 2.982 -0.756 ;
+      RECT 1.61 -3.136 2.982 -2.984 ;
+      RECT 3.502 -3.214 4.545 -3.091 ;
+      RECT 4.671 -0.569 4.771 2.563 ;
+      RECT 3.024 0.158 3.964 0.248 ;
+      RECT 3.864 -0.57 3.964 0.248 ;
+      RECT 3.024 -0.079 3.142 0.248 ;
+      RECT 4.671 -0.1 6.047 0.092 ;
+      RECT 3.864 -0.569 4.771 -0.469 ;
+      RECT 3.964 -2.646 4.064 -0.469 ;
+      RECT 2.212 -2.646 2.311 2.563 ;
+      RECT 3.58 -0.276 3.698 0.03 ;
+      RECT 2.212 -0.276 3.698 -0.186 ;
+      RECT 0.561 -2.646 0.661 2.563 ;
+      RECT 0.561 -0.602 2.05 -0.478 ;
+      RECT 0.281 2.819 0.973 2.919 ;
+      RECT 0.873 0.395 0.973 2.919 ;
+      RECT 0.281 -0.166 0.399 2.919 ;
+      RECT -0.514 -2.646 -0.396 2.562 ;
+      RECT 1.932 0.369 2.05 0.672 ;
+      RECT 0.873 0.395 2.05 0.526 ;
+      RECT -0.514 -0.08 0.399 0.079 ;
+      RECT 6.995 -0.744 7.302 -0.441 ;
+    LAYER V1 ;
+      RECT 7.158 -0.649 7.258 -0.549 ;
+      RECT 7.158 0.46 7.258 0.56 ;
+      RECT 2.538 -0.778 2.638 -0.678 ;
+      RECT 2.538 0.45 2.638 0.55 ;
+      RECT 1.639 -3.113 1.739 -3.013 ;
+      RECT 1.639 0.41 1.739 0.51 ;
+    LAYER M2 ;
+      RECT 7.115 -0.744 7.302 0.602 ;
+      RECT 2.474 -0.874 2.709 -0.571 ;
+      RECT 2.474 0.354 2.709 0.657 ;
+      RECT 1.61 -3.136 1.763 0.526 ;
+  END
+END Flip_Flop
+
+MACRO INV
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN INV 0.153 -3.533 ;
+  SIZE 1.82 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN IN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER M2 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER V1 ;
+        RECT 0.753 -0.05 0.853 0.05 ;
+    END
+  END IN
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.305 -2.646 1.395 2.562 ;
+        RECT 1.253 -0.2 1.395 0.2 ;
+      LAYER M2 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER V1 ;
+        RECT 1.273 -0.05 1.373 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 1.973 -3.333 ;
+        RECT 0.601 -3.533 0.691 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 1.973 3.676 ;
+        RECT 0.602 0.762 0.692 3.676 ;
+    END
+  END VDD!
+END INV
+
+MACRO NAND2
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN NAND2 0.153 -3.533 ;
+  SIZE 2.34 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER M2 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER V1 ;
+        RECT 0.753 -0.05 0.853 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.773 -0.2 1.913 0.2 ;
+      LAYER M2 ;
+        RECT 1.773 -0.2 1.913 0.2 ;
+      LAYER V1 ;
+        RECT 1.794 -0.05 1.894 0.05 ;
+    END
+  END B
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.253 -0.856 1.393 2.562 ;
+        RECT 0.602 -0.856 1.393 -0.766 ;
+        RECT 0.602 -2.646 0.692 -0.766 ;
+      LAYER M2 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER V1 ;
+        RECT 1.274 -0.05 1.374 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 2.493 -3.333 ;
+        RECT 1.955 -3.533 2.045 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 2.493 3.676 ;
+        RECT 1.955 0.762 2.045 3.676 ;
+        RECT 0.601 0.762 0.691 3.676 ;
+    END
+  END VDD!
+END NAND2
+
+MACRO NAND3
+  CLASS CORE ;
+  ORIGIN -0.163 3.533 ;
+  FOREIGN NAND3 0.163 -3.533 ;
+  SIZE 3.12 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.263 -0.2 1.403 0.2 ;
+      LAYER M2 ;
+        RECT 1.263 -0.2 1.403 0.2 ;
+      LAYER V1 ;
+        RECT 1.284 -0.05 1.384 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.783 -0.2 1.923 0.2 ;
+      LAYER M2 ;
+        RECT 1.783 -0.2 1.923 0.2 ;
+      LAYER V1 ;
+        RECT 1.804 -0.05 1.904 0.05 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.563 -0.2 2.703 0.2 ;
+      LAYER M2 ;
+        RECT 2.563 -0.2 2.703 0.2 ;
+      LAYER V1 ;
+        RECT 2.587 -0.05 2.687 0.05 ;
+    END
+  END C
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.103 -0.856 2.193 2.562 ;
+        RECT 0.765 -0.856 2.193 -0.766 ;
+        RECT 0.743 -0.2 0.883 0.2 ;
+        RECT 0.765 -2.646 0.855 2.562 ;
+      LAYER M2 ;
+        RECT 0.743 -0.2 0.883 0.2 ;
+      LAYER V1 ;
+        RECT 0.757 -0.05 0.857 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.163 -3.533 3.283 -3.333 ;
+        RECT 2.746 -3.533 2.836 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.163 3.476 3.283 3.676 ;
+        RECT 2.746 0.762 2.836 3.676 ;
+        RECT 1.433 0.762 1.523 3.676 ;
+    END
+  END VDD!
+END NAND3
+
+MACRO NAND4
+  CLASS CORE ;
+  ORIGIN -0.24 3.533 ;
+  FOREIGN NAND4 0.24 -3.533 ;
+  SIZE 3.38 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.34 -0.2 1.48 0.2 ;
+      LAYER M2 ;
+        RECT 1.34 -0.2 1.48 0.2 ;
+      LAYER V1 ;
+        RECT 1.361 -0.05 1.461 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.86 -0.2 2 0.2 ;
+      LAYER M2 ;
+        RECT 1.86 -0.2 2 0.2 ;
+      LAYER V1 ;
+        RECT 1.881 -0.05 1.981 0.05 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.38 -0.2 2.52 0.2 ;
+      LAYER M2 ;
+        RECT 2.38 -0.2 2.52 0.2 ;
+      LAYER V1 ;
+        RECT 2.401 -0.05 2.501 0.05 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.9 -0.199 3.04 0.2 ;
+      LAYER M2 ;
+        RECT 2.9 -0.2 3.04 0.2 ;
+      LAYER V1 ;
+        RECT 2.924 -0.05 3.024 0.05 ;
+    END
+  END D
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 3.131 -0.856 3.221 2.562 ;
+        RECT 0.82 -0.856 3.221 -0.766 ;
+        RECT 2.122 -0.856 2.212 2.562 ;
+        RECT 0.82 -2.646 0.96 2.562 ;
+      LAYER M2 ;
+        RECT 0.82 -0.2 0.96 0.2 ;
+      LAYER V1 ;
+        RECT 0.834 -0.05 0.934 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.24 -3.533 3.62 -3.333 ;
+        RECT 3.083 -3.533 3.173 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.24 3.476 3.62 3.676 ;
+        RECT 2.561 0.762 2.651 3.676 ;
+        RECT 1.539 0.762 1.629 3.676 ;
+    END
+  END VDD!
+END NAND4
+
+MACRO NOR2
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN NOR2 0.153 -3.533 ;
+  SIZE 2.34 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER M2 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER V1 ;
+        RECT 0.753 -0.05 0.853 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER M2 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER V1 ;
+        RECT 1.274 -0.05 1.374 0.05 ;
+    END
+  END B
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.913 -0.856 2.014 2.562 ;
+        RECT 1.773 -0.2 2.014 0.2 ;
+        RECT 1.125 -0.856 2.014 -0.766 ;
+        RECT 1.125 -2.646 1.215 -0.766 ;
+      LAYER M2 ;
+        RECT 1.773 -0.2 1.913 0.2 ;
+      LAYER V1 ;
+        RECT 1.794 -0.05 1.894 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 2.493 -3.333 ;
+        RECT 1.952 -3.533 2.042 -0.946 ;
+        RECT 0.61 -3.533 0.7 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 2.493 3.676 ;
+        RECT 0.601 0.762 0.691 3.676 ;
+    END
+  END VDD!
+END NOR2
+
+MACRO NOR3
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN NOR3 0.153 -3.533 ;
+  SIZE 2.863 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER M2 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER V1 ;
+        RECT 0.753 -0.05 0.853 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.253 -0.204 1.393 0.196 ;
+      LAYER M2 ;
+        RECT 1.253 -0.204 1.393 0.196 ;
+      LAYER V1 ;
+        RECT 1.274 -0.054 1.374 0.046 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.773 -0.204 1.913 0.196 ;
+      LAYER M2 ;
+        RECT 1.773 -0.204 1.913 0.196 ;
+      LAYER V1 ;
+        RECT 1.794 -0.054 1.894 0.046 ;
+    END
+  END C
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.296 -0.204 2.436 0.196 ;
+        RECT 2.318 -0.86 2.408 2.558 ;
+        RECT 0.61 -0.856 2.408 -0.766 ;
+        RECT 1.634 -2.65 1.724 -0.766 ;
+        RECT 0.61 -2.646 0.7 -0.766 ;
+      LAYER M2 ;
+        RECT 2.296 -0.204 2.436 0.196 ;
+      LAYER V1 ;
+        RECT 2.317 -0.054 2.417 0.046 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 3.016 -3.333 ;
+        RECT 2.346 -3.537 2.436 -0.95 ;
+        RECT 1.124 -3.533 1.214 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 3.016 3.676 ;
+        RECT 0.601 0.762 0.691 3.676 ;
+    END
+  END VDD!
+END NOR3
+
+MACRO OAI12
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN OAI12 0.153 -3.533 ;
+  SIZE 2.863 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER M2 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER V1 ;
+        RECT 0.753 -0.05 0.853 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.296 -0.2 2.436 0.2 ;
+      LAYER M2 ;
+        RECT 2.296 -0.2 2.436 0.2 ;
+      LAYER V1 ;
+        RECT 2.317 -0.05 2.417 0.05 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.776 -0.2 1.916 0.2 ;
+      LAYER M2 ;
+        RECT 1.776 -0.2 1.916 0.2 ;
+      LAYER V1 ;
+        RECT 1.797 -0.05 1.897 0.05 ;
+    END
+  END C
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.256 -0.2 1.396 0.2 ;
+        RECT 1.256 -0.856 1.395 2.562 ;
+        RECT 0.601 -0.856 1.395 -0.766 ;
+        RECT 0.601 -2.646 0.691 -0.766 ;
+      LAYER M2 ;
+        RECT 1.256 -0.2 1.396 0.2 ;
+      LAYER V1 ;
+        RECT 1.277 -0.05 1.377 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 3.016 -3.333 ;
+        RECT 1.956 -3.533 2.046 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 3.016 3.676 ;
+        RECT 2.477 0.762 2.567 3.676 ;
+        RECT 0.601 0.762 0.691 3.676 ;
+    END
+  END VDD!
+  OBS
+    LAYER M1 ;
+      RECT 1.467 -0.856 2.566 -0.766 ;
+      RECT 2.476 -2.646 2.566 -0.766 ;
+      RECT 1.467 -2.646 1.557 -0.766 ;
+  END
+END OAI12
+
+MACRO OAI22
+  CLASS CORE ;
+  ORIGIN -0.153 3.533 ;
+  FOREIGN OAI22 0.153 -3.533 ;
+  SIZE 3.38 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER M2 ;
+        RECT 0.733 -0.2 0.873 0.2 ;
+      LAYER V1 ;
+        RECT 0.753 -0.05 0.853 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER M2 ;
+        RECT 1.253 -0.2 1.393 0.2 ;
+      LAYER V1 ;
+        RECT 1.274 -0.05 1.374 0.05 ;
+    END
+  END B
+  PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.813 -0.2 2.953 0.2 ;
+      LAYER M2 ;
+        RECT 2.813 -0.2 2.953 0.2 ;
+      LAYER V1 ;
+        RECT 2.832 -0.05 2.932 0.05 ;
+    END
+  END C
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.293 -0.2 2.433 0.2 ;
+      LAYER M2 ;
+        RECT 2.293 -0.2 2.433 0.2 ;
+      LAYER V1 ;
+        RECT 2.314 -0.05 2.414 0.05 ;
+    END
+  END D
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.773 -0.2 1.913 0.2 ;
+        RECT 1.795 -0.856 1.885 2.562 ;
+        RECT 1.123 -0.856 1.885 -0.766 ;
+        RECT 1.123 -2.646 1.213 -0.766 ;
+      LAYER M2 ;
+        RECT 1.773 -0.2 1.913 0.2 ;
+      LAYER V1 ;
+        RECT 1.794 -0.05 1.894 0.05 ;
+    END
+  END OUT
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 -3.533 3.533 -3.333 ;
+        RECT 2.48 -3.533 2.57 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.153 3.476 3.533 3.676 ;
+        RECT 2.994 0.762 3.084 3.676 ;
+        RECT 0.601 0.762 0.691 3.676 ;
+    END
+  END VDD!
+  OBS
+    LAYER M1 ;
+      RECT 1.986 -0.856 3.082 -0.766 ;
+      RECT 2.992 -2.645 3.082 -0.766 ;
+      RECT 1.986 -2.826 2.076 -0.766 ;
+      RECT 0.601 -2.826 0.691 -0.946 ;
+      RECT 0.601 -2.826 2.076 -2.736 ;
+  END
+END OAI22
+
+MACRO XOR2
+  CLASS CORE ;
+  ORIGIN -0.769 3.533 ;
+  FOREIGN XOR2 0.769 -3.533 ;
+  SIZE 3.9 BY 7.209 ;
+  SYMMETRY X Y ;
+  SITE CoreSite ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.909 -0.2 3.049 0.2 ;
+      LAYER M2 ;
+        RECT 2.909 -0.2 3.049 0.2 ;
+      LAYER V1 ;
+        RECT 2.93 -0.05 3.03 0.05 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.609 -0.2 1.749 0.2 ;
+      LAYER M2 ;
+        RECT 1.609 -0.2 1.749 0.2 ;
+      LAYER V1 ;
+        RECT 1.63 -0.05 1.73 0.05 ;
+    END
+  END B
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 3.429 -0.856 3.569 2.562 ;
+        RECT 2.77 -0.856 3.569 -0.766 ;
+        RECT 2.77 -2.646 2.86 -0.766 ;
+      LAYER M2 ;
+        RECT 3.429 -0.2 3.569 0.2 ;
+      LAYER V1 ;
+        RECT 3.442 -0.05 3.542 0.05 ;
+    END
+  END OUT
+  PIN Z
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.389 -0.856 2.529 0.2 ;
+        RECT 1.219 -0.856 2.529 -0.766 ;
+        RECT 1.774 -2.646 1.864 -0.766 ;
+        RECT 1.219 -0.856 1.309 2.562 ;
+      LAYER M2 ;
+        RECT 2.389 -0.856 2.529 0.2 ;
+      LAYER V1 ;
+        RECT 2.41 -0.05 2.51 0.05 ;
+    END
+  END Z
+  PIN GND!
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.769 -3.533 4.669 -3.333 ;
+        RECT 4.129 -3.533 4.219 -0.946 ;
+        RECT 2.268 -3.533 2.358 -0.946 ;
+        RECT 1.219 -3.533 1.309 -0.946 ;
+    END
+  END GND!
+  PIN VDD!
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT 0.769 3.476 4.669 3.676 ;
+        RECT 2.259 0.762 2.349 3.676 ;
+    END
+  END VDD!
+  OBS
+    LAYER M1 ;
+      RECT 2.77 2.652 4.219 2.742 ;
+      RECT 4.129 0.762 4.219 2.742 ;
+      RECT 2.77 0.762 2.86 2.742 ;
+  END
+END XOR2
+
+END LIBRARY

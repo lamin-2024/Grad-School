@@ -1,0 +1,21 @@
+setting up NoMachine for CE5325 FPGA Design class
+
+1) Download the NoMachine
+2) setup account and login
+	if you are home use the UTD VPN first before connecting to NoMachine
+3) Open the terminal
+4) To connect to the class use the comman
+		source /home/cad/ee5325/bin/init_modules
+5)check the available modules for the class using command
+	module avail 
+6) to know what a command is doing use cat instead of source before ethe command example 
+	cat /home/cad/ee5325/bin/init_modules
+7) to know more about specific module use the command help example to know more about amd/fpgatools
+	module help amd/fpgatoos
+		the command also shows the different sub modules amd/fpgatools have the following 
+			vivado, vitis, vitis_HLS, ans Model Composer
+			it also tells you how to launch them
+8) to add the module to the current shell use add comman example 
+	module add amd/fpgatools 
+9) after add the module launch the diiferent applications in the module example	
+	vitis

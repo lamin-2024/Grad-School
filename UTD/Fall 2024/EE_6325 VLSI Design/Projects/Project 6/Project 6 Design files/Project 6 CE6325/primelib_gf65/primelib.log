@@ -1,0 +1,98 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx01a.utdallas.edu, User: dal852207, PID: 28235 (PPID: 17424)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (201.0 GB free), 4 GB Swap (4.1 GB free)
+System load average: 2.30, 2.17, 2.01 (12319 processes)
+Directory: /home/eng/d/dal852207/cad/gf65/primelib_gf65
+Malibu mode 2 activated
+Mon Dec  2 14:14:14 2024: Establishing connection to license server
+Mon Dec  2 14:14:14 2024: Testing server connection using feature PrimeLib_CHAR
+Mon Dec  2 14:14:14 2024: License server connection established
+Mon Dec  2 14:14:15 2024: Checked out license FEATURE PrimeLib_CHAR v2023.12 on PORT 1700@engdmv.utdallas.edu
+Command-line: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/XOR2
+Warning: Setting of obsolete parameter 'model_ecsm_cin' is ignored. (PAR-27)
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/XOR2/etc/cell.stat.gz
+===================================================
+Mon Dec 02 14:14:35 CST 2024: Begin configure stage
+Optimizing dispatch of 1 cells for efficiency
+Reading instance file for cell XOR2
+Warning: Port VSS in cell XOR2 has no associated function
+Warning: Port VDD in cell XOR2 has no associated function
+Generating timing tests.
+Generating power tests.
+Generating template at Mon Dec  2 14:14:35 2024 
+Done generating template at Mon Dec  2 14:14:35 2024
+Generate Templates: Maximum virtual memory size: 761.441 MB
+Cell XOR2 configured for characterization.
+Mon Dec 02 14:14:35 CST 2024: Done configure stage (Elapsed: 0 seconds | 0.00 hours  Memory: 761.44MB)
+======================================================================================================
+======================================================
+Mon Dec 02 14:14:43 CST 2024: Begin characterize stage
+Simulator used is hspice HSPICE O-2018.09-2
+Simulator command is /proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/bin/hspice
+[CDPL] Initialized with 1 standalone slot
+[CDPL] Master initialized (0 seconds)
+Start generating characterization tasks
+Mon Dec  2 14:14:43 2024: Checked out license FEATURE PrimeLib_CORE v2023.12(1) on PORT 1700@engdmv.utdallas.edu
+Mon Dec  2 14:14:43 2024: Elapsed time of checked out license: 0.00 seconds | 0.00 minutes
+Mon Dec  2 14:14:43 2024: Checked out license FEATURE PrimeLib_SIM_CORE v2023.12(1) on PORT 1700@engdmv.utdallas.edu
+Mon Dec  2 14:14:43 2024: Elapsed time of checked out license: 0.00 seconds | 0.00 minutes
+Library has standard-cells
+XOR2: generated 13 tasks (13 total)
+Using 1 standalone slots
+[CDPL] Tasks: 0/13, (0.0%, 0 Cached, 0 Failed); Active Workers: 0, Pending Workers: 1, Elapsed: 0m00s
+[CDPL] Tasks: 1/13, (7.7%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 0m10s
+[CDPL] Tasks: 2/13, (15.4%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 0m20s
+[CDPL] Tasks: 4/13, (30.8%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 0m30s
+[CDPL] Tasks: 5/13, (38.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 0m40s
+[CDPL] Tasks: 7/13, (53.8%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 0m50s
+[CDPL] Tasks: 8/13, (61.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 1m00s
+[CDPL] Tasks: 8/13, (61.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 1m10s
+[CDPL] Tasks: 8/13, (61.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 1m20s
+[CDPL] Tasks: 8/13, (61.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 1m30s
+[CDPL] Tasks: 8/13, (61.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 1m40s
+[CDPL] Tasks: 8/13, (61.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 1m50s
+[CDPL] Tasks: 8/13, (61.5%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 2m00s
+Warning: XOR2: leakage_power__ACQ_1 state: none: leakage current does not sum to 0 (tolerance 1.0e-6) 
+[CDPL] Tasks: 9/13, (69.2%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 2m10s
+[CDPL] Tasks: 11/13, (84.6%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 2m20s
+[CDPL] Tasks: 12/13, (92.3%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 2m30s
+[CDPL] Tasks: 13/13, (100.0%, 0 Cached, 0 Failed); Active Workers: 1, Pending Workers: 0, Elapsed: 2m40s
+Long task: XOR2::leakage_power__ACQ_1 70.00 seconds
+[CDPL] Summary: 
+  All tasks finished successfully.
+Mon Dec  2 14:17:33 2024: Released license FEATURE PrimeLib_CORE(all)
+Mon Dec  2 14:17:33 2024: Released license FEATURE PrimeLib_SIM_CORE(all)
+Peak worker count: 1
+Mon Dec 02 14:17:33 CST 2024: Done characterize stage (Elapsed: 170 seconds | 0.05 hours  Memory: 1049.48MB)
+============================================================================================================
+===============================================
+Mon Dec 02 14:18:11 CST 2024: Begin model stage
+Creating new libraries.
+Warning: ground supply has not been properly defined
+info: order {ntin nvolt} ntin {1.0 2.0 3.0 4.0 5.0}
+info: order {ntin nvolt} ntin {1.0 2.0 3.0 4.0 5.0} nvolt {1.0 2.0}
+=================================================
+Mon Dec 02 14:18:11 CST 2024: Begin write library
+Creating Liberty file "/home/eng/d/dal852207/cad/gf65/primelib_gf65/XOR2/models/liberty/cells/XOR2_op_cond.lib".
+Mon Dec 02 14:18:11 CST 2024: Done write library (Elapsed: 0 seconds | 0.00 hours  Memory: 1053.44MB)
+=====================================================================================================
+Merging cell level models...
+===============================================
+Mon Dec 02 14:18:11 CST 2024: Begin merge stage
+Merging 1 cell models in /home/eng/d/dal852207/cad/gf65/primelib_gf65/XOR2/models/liberty/cells
+Merged Liberty model created /home/eng/d/dal852207/cad/gf65/primelib_gf65/XOR2/models/liberty/liberty_op_cond.lib.
+Mon Dec 02 14:18:11 CST 2024: Done merge stage (Elapsed: 0 seconds | 0.00 hours  Memory: 1054.18MB)
+===================================================================================================
+Mon Dec 02 14:18:11 CST 2024: Done model stage (Elapsed: 0 seconds | 0.00 hours  Memory: 1054.18MB)
+===================================================================================================
+Shutting down modules
+[CDPL] Shutting down CDPL master.
+Mon Dec  2 14:56:46 2024: Released license FEATURE PrimeLib_CHAR
+Mon Dec  2 14:56:46 2024: Program time: 2552.00 seconds | 42.53 minutes | 0.71 hours
+Maximum virtual memory size: 1054.16 MB

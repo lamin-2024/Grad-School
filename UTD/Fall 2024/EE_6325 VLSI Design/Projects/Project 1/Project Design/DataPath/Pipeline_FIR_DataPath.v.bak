@@ -1,0 +1,83 @@
+module Pipeline_FIR_DataPath (
+    output reg [word_size_out - 1:0] FIR_out,
+    input [Sample_size - 1:0] Sample_in,
+    input clock,
+    input reset
+);
+
+// Define the parameter sets for the design 
+parameter FIR_order       = 4;
+parameter Sample_size     = 6;                        // Maximum sample value is 63
+parameter weight_size     = 5;                        // Maximum value may be 31
+parameter word_size_out   = Sample_size + weight_size + 3;  // log2(2^2 * 2^5 * (order+1))
+
+// Define the filter coefficients
+parameter b0 = 5'd3;
+parameter b1 = 5'd7;
+parameter b2 = 5'd20;
+parameter b3 = 5'd7;
+parameter b4 = 5'd3;
+
+reg [Sample_size - 1:0] Sample_Array [0:FIR_order];  // Sample array
+integer k;
+
+// Define PR0 to PR3 as registers 
+reg [word_size_out - 1:0] PR0 [0:FIR_order];
+reg [word_size_out - 1:0] PR1 [0:FIR_order];
+reg [word_size_out - 1:0] PR2 [0:FIR_order];
+reg [word_size_out - 1:0] PR3 [0:FIR_order];
+
+// Define the transition logic 
+always @ (posedge clock) begin
+    if (reset == 1) begin
+        // The input shift register 
+        for (k = 0; k <= FIR_order; k = k + 1)
+            Sample_Array[k] <= 0;
+                
+        // The pipeline register 
+        for (k = 0; k <= FIR_order; k = k + 1)
+            PR0[k] <= 0;
+        for (k = 0; k <= FIR_order; k = k + 1)
+            PR1[k] <= 0;
+        for (k = 0; k <= FIR_order; k = k + 1)
+            PR2[k] <= 0;
+        for (k = 0; k <= FIR_order; k = k + 1)
+            PR3[k] <= 0;
+                
+        // The output register 
+        FIR_out <= 0;
+    end
+    else begin
+        // The input shift register 
+        Sample_Array[0] <= Sample_in;
+        for (k = 1; k <= FIR_order; k = k + 1)
+            Sample_Array[k] <= Sample_Array[k-1];
+            
+        // The pipeline register at PR0 
+        PR0[0] <= b0 * Sample_Array[0];
+        PR0[1] <= b1 * Sample_Array[1];
+        PR0[2] <= b2 * Sample_Array[2];
+        PR0[3] <= b3 * Sample_Array[3];
+        PR0[4] <= b4 * Sample_Array[4];
+         
+        // The pipeline register at PR1 
+        PR1[1] <= b1 * Sample_Array[1] + PR0[1];
+        PR1[2] <= b2 * Sample_Array[2];
+        PR1[3] <= b3 * Sample_Array[3];
+        PR1[4] <= b4 * Sample_Array[4];
+         
+        // The pipeline register at PR2 
+        PR2[2] <= b2 * Sample_Array[2] + PR1[2];
+        PR2[3] <= b3 * Sample_Array[3];
+        PR2[4] <= b4 * Sample_Array[4];
+         
+        // The pipeline register at PR3 
+        PR3[3] <= b3 * Sample_Array[3] + PR2[3];
+        PR3[4] <= b4 * Sample_Array[4];
+            
+        // The output register 
+        FIR_out <= PR3[3] + PR3[4];
+    end
+end
+
+endmodule

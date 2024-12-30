@@ -1,0 +1,82 @@
+Download SystemC in Nomachine 
+	Open firefox Browser and search for SystemC 
+	select accellera.org to download systemC 
+	under Download select SystemC latest (includes TLM) with the tar.gz exgension
+
+Install SystemC
+	Open a new terminal
+	check yor Downloads folder using the command
+		to get to the Download folder:   							 ~/Downloads/
+		to get the list of contents in the Downloads folder in ltr form or long time reverse (ltr) form:		  ls -ltr
+		to know the function of a comman use man (command): man ls
+		to make a directory for systemC: mkdir ~/systemC
+		to go to the directory: cd ~/systemC
+			cd = change directory 
+			~  = takes you to the home directory
+		Note install systemC as a module
+		to unzip the download file for systemC: gzip -d -c ~/Downloads/systemC-3.0.0.tar.gz | tar xvf
+			-d = decompress
+			-c = standard out
+****************************to extract files from archive tarred and comppressed usinf gzip.******************
+use any of the following commands 
+gzip -d -c <archived filename> | tar xvf -
+tar xvfz <archived filename>
+
+note:	tar = archive
+		x   = extract
+		v   = to visualize the process
+		f   = file
+*******************
+
+eg1: gzip -d -c ~/Downloads/systemc-3.0.0.tar.gz | tar xvf -
+eg2: tar xvfz ~/Downloads/systemc-3.0.0.tar.gz
+****************************************************************************************************************
+		to check to see if you have the extracted file: ls
+		to get to the home directory: cat /home 
+		while in home directory
+			to get to the file you extrated use the following commands
+				cd ~/systemC/
+				then: cd ~/systemC-3.0.0/
+				list the content: ls
+				
+			to get to the configuration: ./configure --help
+			to check the available modules: modules available
+			
+			to add a module: module add module name
+			in our case: module add compiler/gcc/v7.3.0
+			
+			to check if the module is added: modules list
+			currently loaded Modules: will show
+			
+			to check the version of the module: gcc --version
+			to delete a module: module delete module name
+			
+**************************************to source the files and modules for a class*******************************
+first edit the user config file of bash in a text_editor: gedit ~/.bashrc
+	where rc = remote config (equvalent to the register or regit in windows)
+in the gedit file that open source the modues and files for the class: source /home/cad/ee5325/bin/init_modules
+save at the top left corner 
+***************************************************************************************************************
+to check what is in the module: cat /home/cad/ee5325/bin/init_modules
+to know your current work directory: pwd
+	pwd = print working directory
+
+
+
+to cofigure: ./configure --prefix=/home.eng/d/dal/systemc/runtime
+to all what configure can do use the command: vi configure.ac 
+make sure you are in the right directory for systemC-3.0.0 then use the make comman to see if the compiler works: make
+if there is an error make a new compiler 
+			
+	
+***********************************accessing the examples in systemC*******************************************
+goto the example folder: ~/systemc/examples/sysc
+check the list in the folder: ls
+chnage directory to the example: cd fir
+to move up by one directory: cd ..
+to open the example file in text editor: vi filename.file_extension eg(vi fifo_simple.cpp)
+to clelan every to start fresh used the command: make clean
+now get to the example yoou want in the example folder: cd fir 
+use make command to compile:make
+list the content: ls
+     

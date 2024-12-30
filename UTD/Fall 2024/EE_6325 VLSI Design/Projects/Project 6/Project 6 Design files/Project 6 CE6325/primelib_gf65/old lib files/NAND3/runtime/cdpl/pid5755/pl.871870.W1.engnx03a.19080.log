@@ -1,0 +1,295 @@
+----------------------------------------------------------------------
+PrimeLib version T-2022.03-SP1 (Malibu 2)
+Build date: Apr 12, 2022 13:01:04
+Path: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib
+Host: engnx03a.utdallas.edu, User: dal852207, PID: 19080 (PPID: 19067)
+CPU: 32 x 3693 MHz, AMD EPYC 7F32 8-Core Processor (2 socket, 16 core)
+Memory: 257 GB RAM (129.4 GB free), 4 GB Swap (4.1 GB free)
+System load average: 2.10, 2.15, 2.39 (26427 processes)
+Directory: /home/eng/d/dal852207/cad/gf65/primelib_gf65
+Command-line: /proj/cad/synopsys/synopsys_2021/primelib/T-2022.03-SP1/linux64/bin/primelib -server /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/runtime/cdpl/pid5755/driver_5755.tcl
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3
+Warning: Setting of obsolete parameter 'model_ecsm_cin' is ignored. (PAR-27)
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/etc/cell.stat.gz
+Sat Nov 09 19:38:48 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Sat Nov 09 19:38:48 CST 2024: Environment set up done (0 seconds)
+Create and link tmpdir /var/tmp/pl.engnx03a.871870.19067 -> /var/tmp/primelib.engnx03a.utdallas.edu.871870.19080 
+[CDPL] Loading settings for stage: characterization.4
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/etc/cell.stat.gz
+Sat Nov 09 19:38:49 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Sat Nov 09 19:38:49 CST 2024: Environment set up done (0 seconds)
+[CDPL] Done loading settings for stage: characterization.4
+Loading information for cell NAND3
+Warning: Netlist '/home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/netlists/NAND3.pex.sp' does not exist or is not readable. (SMSC-161)
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VA__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VA__lh__OUT__hl__ACQ_1 0.05 0.0 0.0 0.0 0 0.0504369735718 engnx03a.utdallas.edu 1731202729.12 1731202729.17 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VA__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VA__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0131487846375 engnx03a.utdallas.edu 1731202729.17 1731202729.18 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VB__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VB__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0150611400604 engnx03a.utdallas.edu 1731202729.19 1731202729.2 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VB__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VB__hl__OUT__lh__ACQ_1 0.02 0.0 0.0 0.0 0 0.0130898952484 engnx03a.utdallas.edu 1731202729.2 1731202729.21 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VC__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VC__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0127639770508 engnx03a.utdallas.edu 1731202729.21 1731202729.23 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VC__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VC__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0129358768463 engnx03a.utdallas.edu 1731202729.23 1731202729.24 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   leakage_power__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 leakage_power__ACQ_1 0.01 0.0 0.0 0.0 0 0.0109968185425 engnx03a.utdallas.edu 1731202729.24 1731202729.25 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VSS__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0110590457916 engnx03a.utdallas.edu 1731202729.25 1731202729.26 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VSS__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0108661651611 engnx03a.utdallas.edu 1731202729.26 1731202729.27 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VDD__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0109281539917 engnx03a.utdallas.edu 1731202729.27 1731202729.29 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VDD__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0108208656311 engnx03a.utdallas.edu 1731202729.29 1731202729.3 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   leakage_power__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 leakage_power__ACQ_1 0.01 0.0 0.0 0.0 0 0.0137729644775 engnx03a.utdallas.edu 1731202738.37 1731202738.39 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VA__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VA__lh__OUT__hl__ACQ_1 0.02 0.0 0.0 0.0 0 0.0125620365143 engnx03a.utdallas.edu 1731202738.39 1731202738.4 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VA__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VA__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0130839347839 engnx03a.utdallas.edu 1731202738.4 1731202738.41 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VB__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VB__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0125739574432 engnx03a.utdallas.edu 1731202738.41 1731202738.42 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VB__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VB__hl__OUT__lh__ACQ_1 0.02 0.0 0.0 0.0 0 0.0165410041809 engnx03a.utdallas.edu 1731202738.43 1731202738.44 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VC__lh__OUT__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VC__lh__OUT__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0124478340149 engnx03a.utdallas.edu 1731202738.44 1731202738.45 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   delay__VC__hl__OUT__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 delay__VC__hl__OUT__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.012353181839 engnx03a.utdallas.edu 1731202738.46 1731202738.47 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VSS__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0102918148041 engnx03a.utdallas.edu 1731202738.47 1731202738.48 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VSS__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VSS__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0104510784149 engnx03a.utdallas.edu 1731202738.48 1731202738.49 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__lh__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VDD__lh__ACQ_1 0.01 0.0 0.0 0.0 0 0.0103659629822 engnx03a.utdallas.edu 1731202738.49 1731202738.5 1
+Loading information for cell NAND3
+Error:   Unknown Exception occured at line 2818 of ncutils.cpp
+Warning: error getting subckt ports
+Trying alternative parsing method
+Error:   Error reading SPICE netlist: error getting subckt ports (SMSC-79)
+Error:   Cin__VDD__hl__ACQ_1: Subcircuit ports for cell 'NAND3' could not be determined, use 'set_subckt_ports' in the cell's instance files to set the subcircuit port names (SMSC-26)
+----------------------
+__recordTaskStats__ NAND3 Cin__VDD__hl__ACQ_1 0.01 0.0 0.0 0.0 0 0.0104568004608 engnx03a.utdallas.edu 1731202738.5 1731202738.51 1
+[CDPL] Loading settings for stage: characterization.5
+The char directory is /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3
+Warning: 2003.12 is no longer supported as a valid value for liberty_flavor. Setting it to 2007.03.
+Loading /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/etc/cell.stat.gz
+Sat Nov 09 19:41:52 CST 2024: Sourcing environment settings
+Warning: Operating condition 'op_cond' already exists, skipped.
+Sat Nov 09 19:41:53 CST 2024: Environment set up done (1 seconds)
+[CDPL] Done loading settings for stage: characterization.5
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/leakage_power__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/leakage_power__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::leakage_power__ACQ_1.sif completed successfully.
+Warning: ground supply has not been properly defined
+----------------------
+__recordTaskStats__ NAND3 leakage_power__ACQ_1 0.09 0.01 5.75 0.68 1 6.57683682442 engnx03a.utdallas.edu 1731202913.04 1731202919.62 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VA__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VA__lh__OUT__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::delay__VA__lh__OUT__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 delay__VA__lh__OUT__hl__ACQ_1 0.08 0.02 5.95 0.66 1 6.65864300728 engnx03a.utdallas.edu 1731202919.62 1731202926.28 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VA__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VA__hl__OUT__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::delay__VA__hl__OUT__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 delay__VA__hl__OUT__lh__ACQ_1 0.07 0.01 6.01 0.68 1 6.71968889236 engnx03a.utdallas.edu 1731202926.28 1731202933.0 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VB__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VB__lh__OUT__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::delay__VB__lh__OUT__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 delay__VB__lh__OUT__hl__ACQ_1 0.06 0.01 5.98 0.67 1 6.65068697929 engnx03a.utdallas.edu 1731202933.0 1731202939.65 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VB__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VB__hl__OUT__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::delay__VB__hl__OUT__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 delay__VB__hl__OUT__lh__ACQ_1 0.06 0.0 6.03 0.73 1 6.77848577499 engnx03a.utdallas.edu 1731202939.65 1731202946.43 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VC__lh__OUT__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VC__lh__OUT__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::delay__VC__lh__OUT__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 delay__VC__lh__OUT__hl__ACQ_1 0.06 0.01 6.01 0.7 1 6.72723889351 engnx03a.utdallas.edu 1731202946.43 1731202953.16 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VC__hl__OUT__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/delay__VC__hl__OUT__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::delay__VC__hl__OUT__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 delay__VC__hl__OUT__lh__ACQ_1 0.06 0.0 5.92 0.66 1 6.59207010269 engnx03a.utdallas.edu 1731202953.16 1731202959.75 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VSS__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VSS__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::Cin__VSS__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 Cin__VSS__lh__ACQ_1 0.06 0.01 5.8 0.66 1 6.46290206909 engnx03a.utdallas.edu 1731202959.75 1731202966.21 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VSS__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VSS__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::Cin__VSS__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 Cin__VSS__hl__ACQ_1 0.04 0.01 6.05 0.66 1 6.71431493759 engnx03a.utdallas.edu 1731202966.22 1731202972.93 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VDD__lh__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VDD__lh__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::Cin__VDD__lh__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 Cin__VDD__lh__ACQ_1 0.05 0.0 5.9 0.67 1 6.56648588181 engnx03a.utdallas.edu 1731202972.93 1731202979.5 1
+Loading information for cell NAND3
+work dir: '/var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VDD__hl__ACQ_1.sif_0' (SIM-69)
+Executing 'hspice deck.cir -o deck' (SIM-30)
+moving /var/tmp/primelib.engnx03a.871870.19080/NAND3/Cin__VDD__hl__ACQ_1.sof.gz to /home/eng/d/dal852207/cad/gf65/primelib_gf65/NAND3/results/NAND3
+Simulation NAND3::Cin__VDD__hl__ACQ_1.sif completed successfully.
+----------------------
+__recordTaskStats__ NAND3 Cin__VDD__hl__ACQ_1 0.04 0.01 5.94 0.68 1 6.63061213493 engnx03a.utdallas.edu 1731202979.5 1731202986.13 1
+Warning: /var/tmp/worker.871870.W1.engnx03a.utdallas.edu.19080.log: No such file or directory
+   [CDPL] Shutting down worker
+Sat Nov  9 19:50:56 2024: Program time: 728.00 seconds | 12.13 minutes | 0.20 hours
+CDPL worker exited normally.
+Reset log file
+Maximum virtual memory size: 952.73 MB

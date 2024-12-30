@@ -1,0 +1,101 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 1/simulation/questa
+T_opt
+!s110 1725243397
+VLQ0KzffhUSZLL0^oz;IKJ0
+Z2 04 22 4 work FIR_Filter_Project1_tb fast 0
+=1-0000000002b5-66d52005-100-563c
+Z3 !s124 OEM10U2 
+Z4 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1726195518
+VIA;=<HY?K_@n2zHX`BQi02
+R2
+=1-0000000002b5-66e3a73d-2-7210
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+T_opt2
+!s110 1726332818
+VYJXaZofQ?o>FR`z<zYR3M2
+R2
+=1-0000000002b5-66e5bf8f-7e-6d0c
+R3
+R4
+R5
+n@_opt2
+R6
+vFIR_Filter_Project1
+Z7 !s110 1726332811
+!i10b 1
+!s100 gR]XL_Tdf4bdfjkTXTNL81
+I]nYbODT4z55LW7Z:S2U[J1
+Z8 dC:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/simulation/questa
+w1725848073
+8C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v
+FC:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v
+!i122 0
+L0 14 94
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z11 !s108 1726332811.000000
+!s107 C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design|C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1.v|
+!i113 0
+Z12 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -vlog01compat -work work {+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@f@i@r_@filter_@project1
+vFIR_Filter_Project1_tb
+R7
+!i10b 1
+!s100 i;g2AboS=jhIZTmYJY2<V3
+ImbHA`V5AQaDLm>F8]IGA:2
+R8
+w1725848074
+8C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v
+FC:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v
+!i122 1
+L0 15 61
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design|C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Fall 2024/EEDG 6325/Projects/Project 2/Project Design/FIR_Filter_Project1_tb.v|
+!i113 0
+R12
+R13
+R5
+n@f@i@r_@filter_@project1_tb

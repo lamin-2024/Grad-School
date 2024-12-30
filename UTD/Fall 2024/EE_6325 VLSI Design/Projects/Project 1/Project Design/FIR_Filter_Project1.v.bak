@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------------------
+Name:		Lamin Jammeh	
+CLass:	CE6325 Fall_2024 
+Project:	1
+Project Description: this is a Finite Impulse Response (FIR) filter design using Verilog HDL
+The design follows the concepts below
+**The filter order is selected and parameterized so the design can be scaled in the fututre
+**The filter cooefficents are pre-determined
+**Data_in samples will be provided in the testbench to determine the filter behavior 
+**The Data_in sample is Multiplied and accumalated through the diffrent filter stages/taps
+**The Data_out word_size = word_in + coeff_size + [log2[N]]  where N= # of taps in the filter
+ 
+----------------------------------------------------------------------------*/
+module FIR_Filter_Project1	#(parameter order = 8,										//filter order [pre-determined]
+									  parameter word_size_in = 8;								//size of data_in [pre-determined]
+									  parameter word_size_out = 2 * word_size_in + 2	//word_size = word_in + coeff_size + [log2[N]] N=8, & coeff=word_in
+							  
+							      //Filter Coefficients
+									parameter b0 = 8'd7,
+									parameter b1 = 8'd17,
+									parameter b2 = 8'd32,
+									parameter b3 = 8'd46,
+									parameter b4 = 8'd52,
+									parameter b5 = 8'd46,
+									parameter b6 = 8'd32,
+									parameter b7 = 8'd17,
+									parameter b8 = 8'd17)
+							  
+									//declare inputs and outputs
+									(
+									output	[word_size_out - 1:0]	Data_out,
+									input		[word_size_in - 1:0]		Data_in,
+									input										clock, reset
+									);
+									
+reg		[word_size_in -1:0]		Samples[1:order];		//temp storage for input samples (x(n))
+integer	k;
+
+//define the formula for the output
+assign 	Data_out =   b0*Data_in 
+						  + b1*Samples[1] 
+						  + b2*Samples[2] 
+				        + b3*Samples[3] 
+				        + b4*Samples[4]
+				        + b5*Samples[5] 
+				        + b6*Samples[6] 
+				        + b7*Samples[7] 
+				        + b8*Samples[8];
+
+always @(posedge clock)
+	if (reset == 1)						
+	//when reset is high and clock is rising samples[k] = 0 regardless of k value
+		begin
+			for (k = 1;	k <= order;	k = k+1)
+			Samples[k] <= 0;
+		end
+		else 
+		//when reset is low and clock is rising compute Samples with data_in to get Data_out
+			begin
+				Samples[1] <= Data_in;						//@ k=1 Samples[1] <= Data_in
+				for (k = 2; k <= order;	k = k + 1)			// from k=2 to k=order Samples[k] <=Samples[k-1]
+					Samples[k] <= Samples[k - 1];
+			end
+endmodule

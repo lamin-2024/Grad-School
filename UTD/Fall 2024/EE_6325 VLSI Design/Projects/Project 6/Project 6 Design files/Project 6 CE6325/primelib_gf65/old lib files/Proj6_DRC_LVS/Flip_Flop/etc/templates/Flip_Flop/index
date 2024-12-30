@@ -1,0 +1,363 @@
+Cin__CLK__lh__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__CLK__lh
+  } 
+  template Cin__CLK__lh__ACQ_1.t
+  test Cin__CLK__lh
+  when {1}
+} 
+Cin__D__hl__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__D__hl
+  } 
+  template Cin__D__hl__ACQ_1.t
+  test Cin__D__hl
+  when {1}
+} 
+Cin__D__lh__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__D__lh
+  } 
+  template Cin__D__lh__ACQ_1.t
+  test Cin__D__lh
+  when {1}
+} 
+Cin__R__hl__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__R__hl
+  } 
+  template Cin__R__hl__ACQ_1.t
+  test Cin__R__hl
+  when {1}
+} 
+Cin__VDD__hl__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__VDD__hl
+  } 
+  template Cin__VDD__hl__ACQ_1.t
+  test Cin__VDD__hl
+  when {1}
+} 
+Cin__VDD__lh__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__VDD__lh
+  } 
+  template Cin__VDD__lh__ACQ_1.t
+  test Cin__VDD__lh
+  when {1}
+} 
+Cin__VSS__hl__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__VSS__hl
+  } 
+  template Cin__VSS__hl__ACQ_1.t
+  test Cin__VSS__hl
+  when {1}
+} 
+Cin__VSS__lh__ACQ_1 {
+  measType Cin
+  pred {
+  } 
+  targets {
+    Cin__VSS__lh
+  } 
+  template Cin__VSS__lh__ACQ_1.t
+  test Cin__VSS__lh
+  when {1}
+} 
+cmpw_hbm__CLK__hl__CLK__lh__ACQ_1 {
+  measType cmpw_hbm
+  pred {
+    initialization__ACQ_1 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    cmpw_hbm__CLK__hl__CLK__lh
+  } 
+  template cmpw_hbm__CLK__hl__CLK__lh__ACQ_1.t
+  test cmpw_hbm__CLK__hl__CLK__lh
+  when {1}
+} 
+cmpw_hbm__R__lh__R__hl__ACQ_1 {
+  measType cmpw_hbm
+  pred {
+    initialization__ACQ_2 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    cmpw_hbm__R__lh__R__hl
+  } 
+  template cmpw_hbm__R__lh__R__hl__ACQ_1.t
+  test cmpw_hbm__R__lh__R__hl
+  when {1}
+} 
+delay__CLK__hl__Q__hl__ACQ_1 {
+  measType delay
+  pred {
+    initialization__ACQ_3 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    delay__CLK__hl__Q__hl
+    Cin__CLK__hl
+    Tout__Q__hl
+    energy1__CLK__hl__Q__hl__VDD
+    energy__CLK__hl__Q__hl
+    leakage_power1__VDD
+    leakage_power2__VDD
+    cap_energy__Q__hl
+  } 
+  template delay__CLK__hl__Q__hl__ACQ_1.t
+  test delay__CLK__hl__Q__hl
+  when {1}
+} 
+delay__CLK__hl__Q__lh__ACQ_1 {
+  measType delay
+  pred {
+    initialization__ACQ_1 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    delay__CLK__hl__Q__lh
+    Cin__CLK__hl
+    Tout__Q__lh
+    energy1__CLK__hl__Q__lh__VDD
+    energy__CLK__hl__Q__lh
+    leakage_power1__VDD
+    leakage_power2__VDD
+    cap_energy__Q__lh
+  } 
+  template delay__CLK__hl__Q__lh__ACQ_1.t
+  test delay__CLK__hl__Q__lh
+  when {1}
+} 
+delay__R__lh__Q__hl__ACQ_1 {
+  measType delay
+  pred {
+    initialization__ACQ_2 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    delay__R__lh__Q__hl
+    Cin__R__lh
+    Tout__Q__hl
+    energy1__R__lh__Q__hl__VDD
+    energy__R__lh__Q__hl
+    leakage_power1__VDD
+    leakage_power2__VDD
+    cap_energy__Q__hl
+  } 
+  template delay__R__lh__Q__hl__ACQ_1.t
+  test delay__R__lh__Q__hl
+  when {1}
+} 
+hold_hbm__D__hl__CLK__hl__ACQ_1 {
+  measType hold_hbm
+  pred {
+    initialization__ACQ_1 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    hold_hbm__D__hl__CLK__hl
+  } 
+  template hold_hbm__D__hl__CLK__hl__ACQ_1.t
+  test hold_hbm__D__hl__CLK__hl
+  when {1}
+} 
+hold_hbm__D__lh__CLK__hl__ACQ_1 {
+  measType hold_hbm
+  pred {
+    initialization__ACQ_3 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    hold_hbm__D__lh__CLK__hl
+  } 
+  template hold_hbm__D__lh__CLK__hl__ACQ_1.t
+  test hold_hbm__D__lh__CLK__hl
+  when {1}
+} 
+initialization__ACQ_1 {
+  measType initialization
+  pred {
+  } 
+  targets {
+    initialization
+  } 
+  template initialization__ACQ_1.t
+  test initialization
+  when {1}
+} 
+initialization__ACQ_2 {
+  measType initialization
+  pred {
+  } 
+  targets {
+    initialization
+  } 
+  template initialization__ACQ_2.t
+  test initialization
+  when {1}
+} 
+initialization__ACQ_3 {
+  measType initialization
+  pred {
+  } 
+  targets {
+    initialization
+  } 
+  template initialization__ACQ_3.t
+  test initialization
+  when {1}
+} 
+initialization__ACQ_4 {
+  measType initialization
+  pred {
+  } 
+  targets {
+    initialization
+  } 
+  template initialization__ACQ_4.t
+  test initialization
+  when {1}
+} 
+initialization__ACQ_5 {
+  measType initialization
+  pred {
+  } 
+  targets {
+    initialization
+  } 
+  template initialization__ACQ_5.t
+  test initialization
+  when {1}
+} 
+initialization__ACQ_6 {
+  measType initialization
+  pred {
+  } 
+  targets {
+    initialization
+  } 
+  template initialization__ACQ_6.t
+  test initialization
+  when {1}
+} 
+initialization__ACQ_7 {
+  measType initialization
+  pred {
+  } 
+  targets {
+    initialization
+  } 
+  template initialization__ACQ_7.t
+  test initialization
+  when {1}
+} 
+leakage_power__ACQ_1 {
+  measType leakage_power
+  pred {
+    initialization__ACQ_4 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    leakage_power
+  } 
+  template leakage_power__ACQ_1.t
+  test leakage_power
+  when {1}
+} 
+ncmpw_hbm__CLK__lh__CLK__hl__ACQ_1 {
+  measType ncmpw_hbm
+  pred {
+    initialization__ACQ_5 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    ncmpw_hbm__CLK__lh__CLK__hl
+  } 
+  template ncmpw_hbm__CLK__lh__CLK__hl__ACQ_1.t
+  test ncmpw_hbm__CLK__lh__CLK__hl
+  when {1}
+} 
+recover_hbm__R__hl__CLK__hl__ACQ_1 {
+  measType recover_hbm
+  pred {
+  } 
+  targets {
+    recover_hbm__R__hl__CLK__hl
+  } 
+  template recover_hbm__R__hl__CLK__hl__ACQ_1.t
+  test recover_hbm__R__hl__CLK__hl
+  when {1}
+} 
+removal_hbm__R__hl__CLK__hl__ACQ_1 {
+  measType removal_hbm
+  pred {
+  } 
+  targets {
+    removal_hbm__R__hl__CLK__hl
+  } 
+  template removal_hbm__R__hl__CLK__hl__ACQ_1.t
+  test removal_hbm__R__hl__CLK__hl
+  when {1}
+} 
+setup_hbm__D__hl__CLK__hl__ACQ_1 {
+  measType setup_hbm
+  pred {
+    initialization__ACQ_6 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    setup_hbm__D__hl__CLK__hl
+  } 
+  template setup_hbm__D__hl__CLK__hl__ACQ_1.t
+  test setup_hbm__D__hl__CLK__hl
+  when {1}
+} 
+setup_hbm__D__lh__CLK__hl__ACQ_1 {
+  measType setup_hbm
+  pred {
+    initialization__ACQ_7 {
+      initialization_file initialization_file
+    } 
+  } 
+  targets {
+    setup_hbm__D__lh__CLK__hl
+  } 
+  template setup_hbm__D__lh__CLK__hl__ACQ_1.t
+  test setup_hbm__D__lh__CLK__hl
+  when {1}
+} 
+

@@ -1,0 +1,36 @@
+set vectors ""
+
+## Cin__CLK__lh__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 00000xxx  10000xxx  "
+
+## Cin__R__hl__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 00100xxx  00000xxx  "
+
+## Cin__D__lh__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 00000xxx  01000xxx  "
+
+## Cin__D__hl__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 01000xxx  00000xxx  "
+
+## Cin__VSS__lh__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 00000xxx  00001xxx  "
+
+## Cin__VSS__hl__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 00001xxx  00000xxx  "
+
+## Cin__VDD__lh__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 00000xxx  00010xxx  "
+
+## Cin__VDD__hl__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 00010xxx  00000xxx  "
+
+## delay__CLK__hl__Q__lh__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 111xx0xx  110xx0xx  010xx1xx  "
+
+## delay__CLK__hl__Q__hl__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 110xxxxx  010xx1xx  110xx1xx  100xx1xx  000xx0xx  "
+
+## delay__R__lh__Q__hl__ACQ_1
+append vectors " {pins { CLK D R VDD VSS } { Q VDD VSS }} 110xxxxx  010xx1xx  000xx1xx  001xx0xx  "
+
+return $vectors

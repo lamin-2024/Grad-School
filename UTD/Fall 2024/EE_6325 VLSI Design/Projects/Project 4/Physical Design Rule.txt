@@ -1,0 +1,7 @@
+Physical Design Rule for Project 4
+	Poly length 62nm
+	PMOS RX rectangle should accomondate 4 contacts
+	NMOS RX rectangle should accomondate 3 contacts
+	M1 for VDD and GND have the same size
+	Use the same M2 size at both Input and Output
+	

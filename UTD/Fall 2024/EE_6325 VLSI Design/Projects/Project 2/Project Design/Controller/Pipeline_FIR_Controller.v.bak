@@ -1,0 +1,16 @@
+module Pipeline_FIR_Controller (
+    input clock,
+    input reset,
+    output reg enable
+);
+
+// Control logic for the FIR filter
+always @ (posedge clock or posedge reset) begin
+    if (reset) begin
+        enable <= 0;
+    end else begin
+        enable <= 1;
+    end
+end
+
+endmodule

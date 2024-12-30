@@ -1,0 +1,159 @@
+
+*pvaI* current limit stacksize=8388608, set new limit stacksize=62914560
+ --------------------------------------------------------
+|                                                        |
+|             Synopsys Unified Verilog-A (pVA)           |
+|                                                        |
+|           Machine Name: engnx01a.utdallas.edu          |
+| Copyright (c) 2015 Synopsys Inc., All Rights Reserved. |
+|                                                        |
+ --------------------------------------------------------
+
+libepva built by pvamgr synmake_pva_build  on Thu Sep 27 15:54:02 PDT 2018 - p4:5232807
+HSP_HOME:   /proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice
+HSP_ARCH:   linux64
+HSP_GCC :   /proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/GNU/linux64/gcc/bin/gcc -m64 
+HSP_GCC_VER:   6.2.0
+Working-Dir: /home/eng/d/dal852207/cad/spice_project4/NAND2_Spice
+Args:        -p hsp -t spi -f NAND2_HSPICE.pvadir/pvaHDL.lis -o NAND2_HSPICE.pvadir 
+
+### optimize mode ###
+
+Begin of pVA compiling on Thu Nov  7 21:36:44 2024	GTM/In-use: 0.6250/0.5384 MB
+
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./hacap.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./esd_modules.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_rcline.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_cpw.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_rcline.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+Parsing '/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_cpw.va'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/constants.vams'
+Parsing include file '/proj/cad/synopsys/synopsys_2018/hspice_vO-2018.09-2/hspice/include/disciplines.vams'
+
+End of pVA compiling on Thu Nov  7 21:36:44 2024	GTM/In-use: 33.6250/33.4631 MB
+
+
+End of build pVA DB on Thu Nov  7 21:36:45 2024	GTM/In-use: 46.1250/46.0357 MB
+
+*pvaI* Module (mosvarcap): 2 unexpanded port, 0 init, 85 behav, 5 contrib, 53/76 expr(s)
+*pvaI*        No DIS, 0/0 afCount, 0 MT, dlg, IO(0/0/0/0)
+*pvaI*        0 gmdIsThreadSafe 
+*pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaW*        variable 'fs_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:83)
+*pvaW*                   To relax this rule, use 'setenv PVA_KEEP_VARS 1' to keep variables for probing.
+*pvaW*        variable 'fp_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:159)
+*pvaW*        variable 'ilast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:149)
+*pvaW*        variable 'jlast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./ncap.va:204)
+*pvaI*        generated 3 flow node(s) during compilation.
+*pvaI* Module (dgmosvarcap): 2 unexpanded port, 0 init, 84 behav, 4 contrib, 53/76 expr(s)
+*pvaI*        No DIS, 0/0 afCount, 0 MT, dlg, IO(0/0/0/0)
+*pvaI*        0 gmdIsThreadSafe 
+*pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaW*        variable 'fs_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:83)
+*pvaW*        variable 'fp_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:159)
+*pvaW*        variable 'ilast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:149)
+*pvaW*        variable 'jlast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:204)
+*pvaW*        variable 'leak' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./dgncap.va:74)
+*pvaI*        generated 3 flow node(s) during compilation.
+*pvaI* Module (veripcap): 2 unexpanded port, 0 init, 86 behav, 5 contrib, 53/77 expr(s)
+*pvaI*        No DIS, 0/0 afCount, 0 MT, dlg, IO(0/0/0/0)
+*pvaI*        0 gmdIsThreadSafe 
+*pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaW*        variable 'fs_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:87)
+*pvaW*        variable 'fp_init' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:163)
+*pvaW*        variable 'ilast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:153)
+*pvaW*        variable 'jlast' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/./pcap.va:208)
+*pvaI*        generated 3 flow node(s) during compilation.
+*pvaI* Module (havarcap): 2 unexpanded port, 0 init, 41 behav, 1 contrib, 28/38 expr(s)
+*pvaI*        Has DIS(DT), 0/0 afCount, 0 MT, dlg, IO(0/0/1/0)
+*pvaI*        0 gmdIsThreadSafe (DT)
+*pvaI*        1 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaI*        generated 0 flow node(s) during compilation.
+*pvaI* Module (It2_monitor): 2 unexpanded port, 0 init, 5 behav, 1 contrib, 22/1 expr(s)
+*pvaI*        Has DIS(SB), 0/0 afCount, 0 MT, dlg, IO(0/1/1/1)
+*pvaI*        0 gmdIsThreadSafe (SB)
+*pvaI*        0 const-G and 0 const-C, Has switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaI*        generated 0 flow node(s) during compilation.
+*pvaI* Module (single_rcline): 3 unexpanded port, 0 init, 1473 behav, 5 contrib, 47/1727 expr(s)
+*pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_rcline.va:1044)
+*pvaI*        Has DIS(DT ST), 3/11 afCount, 0 MT, dlg, IO(0/0/1/0)
+*pvaI*        0 gmdIsThreadSafe (DT ST)
+*pvaI*        3 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaI*        generated 0 flow node(s) during compilation.
+*pvaI* Module (single_cpw): 3 unexpanded port, 0 init, 1795 behav, 40 contrib, 72/2265 expr(s)
+*pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_cpw.va:1130)
+*pvaI*        Has DIS(DT IT ST), 17/40 afCount, 0 MT, dlg, IO(0/0/1/0)
+*pvaI*        0 gmdIsThreadSafe (DT IT ST)
+*pvaI*        0 const-G and 0 const-C, No switchBranch, 0 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaW*        variable 'Coxo_None' declared but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/single_cpw.va:178)
+*pvaI*        generated 3 flow node(s) during compilation.
+*pvaI* Module (coupled_rcline): 5 unexpanded port, 0 init, 1778 behav, 13 contrib, 65/2017 expr(s)
+*pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_rcline.va:1094)
+*pvaI*        Has DIS(ST), 5/10 afCount, 0 MT, dlg, IO(0/0/1/0)
+*pvaI*        0 gmdIsThreadSafe (ST)
+*pvaI*        0 const-G and 0 const-C, No switchBranch, 22 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaI*        generated 0 flow node(s) during compilation.
+*pvaI* Module (coupled_cpw): 5 unexpanded port, 0 init, 2364 behav, 90 contrib, 70/2827 expr(s)
+*pvaI* p.89 (LRM 2.2) parameter 'th' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_cpw.va:1205)
+*pvaI* p.89 (LRM 2.2) parameter 'd' used inside analog function (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_cpw.va:1918)
+*pvaI*        Has DIS(DT IT ST), 14/31 afCount, 0 MT, dlg, IO(0/0/1/0)
+*pvaI*        0 gmdIsThreadSafe (DT IT ST)
+*pvaI*        0 const-G and 0 const-C, No switchBranch, 0 bypassOpt, 0 bus2scalar, 0 vwb
+*pvaI*        set_va_exp = 80 [80.0, 704.0] set by default
+*pvaW*        variable 'M0' initialized but not used in RHS, deleted (/proj/cad/library/mosis/GF65_LPe/cmos10lpe_CDS_oa_dl064_11_20160415/models/YI-SM00030/Hspice/models/coupled_cpw.va:2344)
+*pvaI*        generated 6 flow node(s) during compilation.
+
+End of pVA genC on Thu Nov  7 21:36:51 2024	GTM/In-use: 61.0000/60.2322 MB
+
+*pvaI* #### Total 4247 line-size(s), 463/9104 expr(s), 164 contr(s), 0 init(s), 7711 behav(s), 26 port(s)
+
+NAND2_HSPICE.pvadir/pvaRTL_linux64.so is reused
+
+End of pVA elaboration on Thu Nov  7 21:36:51 2024	GTM/In-use: 61.0000/59.8564 MB
+
+End of pVA setup    on Thu Nov  7 21:36:51 2024	GTM/In-use: 61.0000/49.9860 MB
+
+
+End of pVA simulation reached at time 0 on Thu Nov  7 21:36:51 2024	GTM/In-use: 61.0000/49.6116 MB
+
+
+			pVA malloc          4.840 Mbytes       100792 times
+			pVA calloc         79.545 Mbytes       547191 times
+			pVA realloc         3.622 Mbytes         1826 times
+			pVA valloc          0.000 Mbytes            0 times
+			pVA alloca          0.000 Mbytes            0 times
+
+			pVA TOT-MEM        88.006 Mbytes       649809 times
+			pVA free                               132695 times
+			pVA strdup          0.000 Mbytes            0 times
+
+
+pVA concluded on Thu Nov  7 21:36:51 2024	GTM/In-use: 61.0000/49.6116 MB
+

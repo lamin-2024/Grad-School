@@ -1,0 +1,6 @@
+cUiSetViewStatus {fall2024combine} {layout} {1}
+cUiSetViewStatus {fall2024combine} {logical} {0}
+cUiSetViewStatus {fall2024combine} {abstract.pin} {0}
+cUiSetViewStatus {fall2024combine} {abstract.ext} {0}
+cUiSetViewStatus {fall2024combine} {abstract} {0}
+cUiSetViewStatus {fall2024combine} {abstract.ver} {0}

@@ -1,0 +1,89 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-2 linux64"
+* "format" "HSP"
+* "rundate" "20:36:28 11/07/2024 "
+* "netlist" "NAND3_HSPICE.sp "
+* "runtitle" "$ hspice setup file for 3 input cells"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ out =   1.2000        
++ va = 200.0000m       
++ vb = 200.0000m       
++ vc = 200.0000m       
++ vdd! =   1.2000        
++ xi.n_gnd!_d0_noxref_pos = 414.5666p       
++ xi.n_vdd!_d0_noxref_neg =   1.2000        
++ xi.n_gnd!_c_77_n = 332.9708p       
++ xi.n_gnd!_c_78_p =   2.1769n       
++ xi.n_gnd!_mmn2_s =  16.7489n       
++ xi.n_out_c_10_p =   1.2000        
++ xi.n_out_c_13_p =   1.2000        
++ xi.n_out_c_15_p =   1.2000        
++ xi.n_out_c_1_p =   1.2000        
++ xi.n_out_c_3_p =   1.2000        
++ xi.n_out_c_5_p =   1.2000        
++ xi.n_out_c_6_p =   1.2000        
++ xi.n_out_c_7_p =   1.2000        
++ xi.n_out_c_8_p =   1.2000        
++ xi.n_out_mmn0_d =   1.2000        
++ xi.n_out_mmp0_d =   1.2000        
++ xi.n_out_mmp1_d =   1.2000        
++ xi.n_va_c_148_n = 200.0000m       
++ xi.n_va_c_149_n = 200.0000m       
++ xi.n_va_c_151_n = 200.0000m       
++ xi.n_va_c_154_n = 200.0000m       
++ xi.n_va_c_159_n = 200.0000m       
++ xi.n_va_c_166_n = 200.0000m       
++ xi.n_va_mmn0_g = 200.0000m       
++ xi.n_va_mmp0_g = 200.0000m       
++ xi.n_vb_c_200_n = 200.0000m       
++ xi.n_vb_c_201_n = 200.0000m       
++ xi.n_vb_c_203_n = 200.0000m       
++ xi.n_vb_c_205_n = 200.0000m       
++ xi.n_vb_c_208_n = 200.0000m       
++ xi.n_vb_c_219_n = 200.0000m       
++ xi.n_vb_mmn1_g = 200.0000m       
++ xi.n_vb_mmp1_g = 200.0000m       
++ xi.n_vc_c_247_n = 200.0000m       
++ xi.n_vc_c_250_n = 200.0000m       
++ xi.n_vc_c_252_n = 200.0000m       
++ xi.n_vc_c_253_n = 200.0000m       
++ xi.n_vc_c_264_n = 200.0000m       
++ xi.n_vc_c_265_n = 200.0000m       
++ xi.n_vc_mmn2_g = 200.0000m       
++ xi.n_vc_mmp4_g = 200.0000m       
++ xi.n_vdd!_c_110_n =   1.2000        
++ xi.n_vdd!_c_113_n =   1.2000        
++ xi.n_vdd!_c_114_n =   1.2000        
++ xi.n_vdd!_c_115_n =   1.2000        
++ xi.n_vdd!_mmp0_s =   1.2000        
++ xi.n_vdd!_mmp4_s =   1.2000        
++ xi.net015 =  25.5133m       
++ xi.net12 = 119.4032m       
++ xi.x_pm_nand3%out.1 =   1.2000        
++ xi.x_pm_nand3%out.6 =   1.2000        
++ xi.x_pm_nand3%out.13 =   1.2000        
++ xi.x_pm_nand3%out.17 =   1.2000        
++ xi.x_pm_nand3%out.18 =   1.2000        
++ xi.x_pm_nand3%out.23 =   1.2000        
++ xi.x_pm_nand3%out.28 =   1.2000        
++ xi.x_pm_nand3%gnd!.4 = 377.5735p       
++ xi.x_pm_nand3%gnd!.9 = 307.3665p       
++ xi.x_pm_nand3%vdd!.4 =   1.2000        
++ xi.x_pm_nand3%vdd!.10 =   1.2000        
++ xi.x_pm_nand3%vdd!.13 =   1.2000        
++ xi.x_pm_nand3%vdd!.14 =   1.2000        
++ xi.x_pm_nand3%vdd!.20 =   1.2000        
++ xi.x_pm_nand3%vdd!.22 =   1.2000        
++ xi.x_pm_nand3%vdd!.28 =   1.2000        
++ xi.x_pm_nand3%va.3 = 200.0000m       
++ xi.x_pm_nand3%va.11 = 200.0000m       
++ xi.x_pm_nand3%vb.3 = 200.0000m       
++ xi.x_pm_nand3%vb.11 = 200.0000m       
++ xi.x_pm_nand3%vc.3 = 200.0000m       
++ xi.x_pm_nand3%vc.11 = 200.0000m       
+***   END: Saved Operating Point ***                     
