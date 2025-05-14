@@ -1,0 +1,256 @@
+$date
+	Tue Mar 25 17:53:05 2025
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2024.3
+$end
+$timescale
+	1ps
+$end
+
+$scope module RJ_Memory_tb $end
+$var reg 1 ! CLK $end
+$var reg 1 " CLEAR $end
+$var reg 1 # LOAD $end
+$var reg 16 $ PDATA_IN [15:0] $end
+$var reg 4 % WRITE_ADDRESS [3:0] $end
+$var reg 1 & WRITE_EN $end
+$var reg 4 ' READ_ADDRESS [3:0] $end
+$var wire 1 ( DATAOUT [7] $end
+$var wire 1 ) DATAOUT [6] $end
+$var wire 1 * DATAOUT [5] $end
+$var wire 1 + DATAOUT [4] $end
+$var wire 1 , DATAOUT [3] $end
+$var wire 1 - DATAOUT [2] $end
+$var wire 1 . DATAOUT [1] $end
+$var wire 1 / DATAOUT [0] $end
+
+$scope module uut $end
+$var wire 1 0 CLK $end
+$var wire 1 1 CLEAR $end
+$var wire 1 2 LOAD $end
+$var wire 1 3 PDATA_IN [15] $end
+$var wire 1 4 PDATA_IN [14] $end
+$var wire 1 5 PDATA_IN [13] $end
+$var wire 1 6 PDATA_IN [12] $end
+$var wire 1 7 PDATA_IN [11] $end
+$var wire 1 8 PDATA_IN [10] $end
+$var wire 1 9 PDATA_IN [9] $end
+$var wire 1 : PDATA_IN [8] $end
+$var wire 1 ; PDATA_IN [7] $end
+$var wire 1 < PDATA_IN [6] $end
+$var wire 1 = PDATA_IN [5] $end
+$var wire 1 > PDATA_IN [4] $end
+$var wire 1 ? PDATA_IN [3] $end
+$var wire 1 @ PDATA_IN [2] $end
+$var wire 1 A PDATA_IN [1] $end
+$var wire 1 B PDATA_IN [0] $end
+$var wire 1 C WRITE_ADDRESS [3] $end
+$var wire 1 D WRITE_ADDRESS [2] $end
+$var wire 1 E WRITE_ADDRESS [1] $end
+$var wire 1 F WRITE_ADDRESS [0] $end
+$var wire 1 G WRITE_EN $end
+$var wire 1 H READ_ADDRESS [3] $end
+$var wire 1 I READ_ADDRESS [2] $end
+$var wire 1 J READ_ADDRESS [1] $end
+$var wire 1 K READ_ADDRESS [0] $end
+$var wire 1 ( DATAOUT [7] $end
+$var wire 1 ) DATAOUT [6] $end
+$var wire 1 * DATAOUT [5] $end
+$var wire 1 + DATAOUT [4] $end
+$var wire 1 , DATAOUT [3] $end
+$var wire 1 - DATAOUT [2] $end
+$var wire 1 . DATAOUT [1] $end
+$var wire 1 / DATAOUT [0] $end
+$var integer 32 L i $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+b0 $
+b0 %
+0&
+b0 '
+bx L
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+$end
+#2000
+1"
+11
+#636000
+1!
+10
+b0 L
+b1 L
+b10 L
+b11 L
+b100 L
+b101 L
+b110 L
+b111 L
+b1000 L
+b1001 L
+b1010 L
+b1011 L
+b1100 L
+b1101 L
+b1110 L
+b1111 L
+b10000 L
+0"
+01
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+#1272000
+0!
+00
+#1908000
+1!
+10
+1&
+b11 %
+b10100101 $
+1G
+1B
+1@
+1=
+1;
+1F
+1E
+#2544000
+0!
+00
+#3180000
+1!
+10
+0&
+0G
+#3190000
+b11 '
+1K
+1J
+1/
+1-
+1*
+1(
+#3816000
+0!
+00
+#4452000
+1!
+10
+1&
+b100 %
+b111100 $
+1G
+0B
+1?
+1>
+0;
+0F
+0E
+1D
+#5088000
+0!
+00
+#5724000
+1!
+10
+0&
+0G
+#5734000
+b100 '
+0K
+0J
+1I
+0/
+1,
+1+
+0(
+#6360000
+0!
+00
+#6996000
+1!
+10
+1"
+11
+#7632000
+0!
+00
+#8268000
+1!
+10
+b0 L
+b1 L
+b10 L
+b11 L
+b100 L
+b101 L
+b110 L
+b111 L
+b1000 L
+b1001 L
+b1010 L
+b1011 L
+b1100 L
+b1101 L
+b1110 L
+b1111 L
+b10000 L
+0"
+01
+0-
+0,
+0+
+0*
+#8278000
+b11 '
+1K
+1J
+0I

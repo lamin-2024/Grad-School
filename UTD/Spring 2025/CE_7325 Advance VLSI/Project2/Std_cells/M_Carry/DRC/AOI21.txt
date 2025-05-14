@@ -1,0 +1,22 @@
+//  Runset file generated on Mon Mar 24 21:34:19 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_DRC_rules"
+drc.runDir.value = "/home/eng/m/mxi240020/7325/asap7/Std_cells/AOI22/DRC"
+drc.layout.layoutFile.value = "NAND2.calibre.db"
+cmn.layout.defFiles.value = [ "NAND2.def" ]
+drc.layout.topCellLibrary.value = "Std_cells"
+cmn.layout.topCellLibraryFDI.value = "Std_cells"
+drc.layout.topCell.value = "NAND2"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "NAND2.drc.results"
+drc.reports.drcSummaryReport.value = "NAND2.drc.summary"
+drc.rhdb.fileName.value = "NAND2.rhdb"
+drc.dfmDefaults.resultsFile.value = "NAND2.dfmDefaults.db"
+
+cmn.miscPrefs.overwriteLayoutPref.value = false

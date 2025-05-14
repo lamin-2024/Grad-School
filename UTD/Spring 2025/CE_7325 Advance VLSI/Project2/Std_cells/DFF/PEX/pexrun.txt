@@ -1,0 +1,31 @@
+//  Runset file generated on Thu Mar 27 17:03:43 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+xrc.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_RCX_rules"
+xrc.runDir.value = "/home/eng/m/mxi240020/7325/asap7/Std_cells/DFF/PEX"
+xrc.layout.layoutFile.value = "DFF.calibre.db"
+cmn.layout.defFiles.value = [ "DFF.def" ]
+xrc.layout.topCellLibrary.value = "Std_cells"
+cmn.layout.topCellLibraryFDI.value = "Std_cells"
+xrc.layout.topCell.value = "DFF"
+xrc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+xrc.source.sourceFile.value = "DFF.src.net"
+xrc.source.topCellLibrary.value = "Std_cells"
+xrc.source.topCellLibraryFDI.value = "Std_cells"
+xrc.source.topCell.value = "DFF"
+xrc.source.topCellFDI.value = "DFF"
+xrc.source.topCellView.value = "schematic"
+xrc.source.topCellViewFDI.value = "schematic"
+xrc.pexNetlist.netlistFile.value = "DFF.pex.netlist"
+xrc.pexNetlist.netlistFormat.value = "HSPICE"
+xrc.reports.lvsReport.value = "DFF.lvs.report"
+xrc.reports.pexReport.value = "DFF.pex.report"
+
+xrc.blockExtraction.setADMSNetlistOutputFiles("{DFF DFF.pex.netlist} ")
+xrc.blockExtraction.setADMSNetlistOutputVerilogModules("{DFF DFF} ")
+

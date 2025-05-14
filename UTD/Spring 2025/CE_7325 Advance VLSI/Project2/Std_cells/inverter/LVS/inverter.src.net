@@ -1,0 +1,32 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  mark_std_cells
+* Top Cell Name: inverter
+* View Name:     schematic
+* Netlisted on:  Mar 18 23:01:50 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: mark_std_cells
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter A OUT
+*.PININFO A:I OUT:O
+MM2 OUT A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM5 OUT A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+

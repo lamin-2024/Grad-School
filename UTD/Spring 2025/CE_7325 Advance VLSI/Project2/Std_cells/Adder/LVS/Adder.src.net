@@ -1,0 +1,101 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Std_cells
+* Top Cell Name: Adder
+* View Name:     schematic
+* Netlisted on:  Apr 13 11:12:43 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    M_Carry
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT M_Carry A B C OUT
+*.PININFO A:I B:I C:I OUT:O
+MM4 net3 A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM3 OUT C net3 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM2 net3 B vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM1 OUT A net1 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM0 net1 B vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM9 net7 B gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM8 net7 A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM7 OUT C net7 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM6 net2 B gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM5 OUT A net2 gnd! nmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    M_Sum
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT M_Sum A B C D OUT
+*.PININFO A:I B:I C:I D:I OUT:O
+MM10 net4 A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM12 net3 A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM4 net3 C vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM3 OUT D net3 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM2 net3 B vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM1 OUT C net1 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM0 net1 B net4 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM13 net7 A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM11 net5 A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM9 net7 B gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM8 net7 C gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM7 OUT D net7 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM6 net2 B net5 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM5 OUT C net2 gnd! nmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    INV
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT INV A OUT
+*.PININFO A:I OUT:O
+MM2 OUT A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM5 OUT A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    Adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Adder A0 A1 A2 A3 B0 B1 B2 B3 C_IN C_OUT OUT0 OUT1 OUT2 OUT3
+*.PININFO A0:I A1:I A2:I A3:I B0:I B1:I B2:I B3:I C_IN:I C_OUT:O OUT0:O OUT1:O 
+*.PININFO OUT2:O OUT3:O
+XI11 net2 net5 net3 C_OUT / M_Carry
+XI6 A2 B2 net8 net3 / M_Carry
+XI5 net7 net6 net4 net8 / M_Carry
+XI0 A0 B0 C_IN net4 / M_Carry
+XI10 net2 net5 net3 C_OUT OUT3 / M_Sum
+XI7 A2 B2 net8 net3 net9 / M_Sum
+XI4 net7 net6 net4 net8 OUT1 / M_Sum
+XI1 A0 B0 C_IN net4 net1 / M_Sum
+XI14 B3 net5 / INV
+XI12 A1 net7 / INV
+XI8 net9 OUT2 / INV
+XI13 B1 net6 / INV
+XI15 A3 net2 / INV
+XI2 net1 OUT0 / INV
+.ENDS
+

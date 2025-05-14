@@ -1,0 +1,11 @@
+CADENCE IHNL11149
+
+Std_cells M_Carry schematic cds0
+Std_cells M_Sum schematic cds1
+Std_cells INV schematic cds2
+Std_cells Adder schematic cds3
+Std_cells MUX2_1 schematic cds4
+Std_cells Carry_sel schematic cds5
+Std_cells NOR2 schematic cds6
+Std_cells NAND2 schematic cds7
+Std_cells CSA schematic cds8

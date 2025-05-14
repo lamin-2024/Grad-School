@@ -1,0 +1,25 @@
+//
+//  Rule file generated on Sun Apr 27 11:38:58 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "12_BIT_CSA.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "12_BIT_CSA"
+
+SOURCE PATH "12_BIT_CSA.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "12_BIT_CSA"
+
+PEX NETLIST "12_BIT_CSA.pex.netlist" HSPICE SOURCENAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "12_BIT_CSA.lvs.report"
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_RCX_rules"

@@ -1,0 +1,10 @@
+//Loading PDBs.
+//PDB loading of cell: NOR2
+//Making the stats.
+GID                       totalC    totalCC    ratioCC     Cell    Layout   Source
+1                        1.18e-17   7.89e-19   6.70e-02    NOR2    GND!     GND!  
+2                        2.98e-17   1.19e-17   3.99e-01    NOR2    VDD!     VDD!  
+3                        2.03e-18   0.00e+00   0.00e+00    NOR2    A        A  
+4                        1.46e-17   1.19e-17   8.15e-01    NOR2    B        B  
+5                        9.56e-18   7.89e-19   8.25e-02    NOR2    OUT      OUT  
+6                        4.35e-18   0.00e+00   0.00e+00    NOR2    6        NET1  

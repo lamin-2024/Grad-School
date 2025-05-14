@@ -1,0 +1,18 @@
+CADENCE IHNL11140
+$model
+Std_cells/INV/schematic INV
+Std_cells/M_Sum/schematic M_Sum
+Std_cells/Adder/schematic Adder
+Std_cells/NAND2/schematic NAND2
+Std_cells/MUX2_1/schematic MUX2_1
+Std_cells/Carry_sel/schematic Carry_sel
+Std_cells/M_Carry/schematic M_Carry
+Std_cells/12_BIT_CSA/schematic 12_BIT_CSA
+Std_cells/NOR2/schematic NOR2
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

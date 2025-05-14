@@ -1,0 +1,32 @@
+* File: AOI21.pex.netlist
+* Created: Thu Mar 27 20:07:57 2025
+* Program "Calibre xRC"
+* Version "v2024.4_12.9"
+* 
+.include "AOI21.pex.netlist.pex"
+.subckt AOI21  GND! VDD! C B A OUT
+* 
+* OUT	OUT
+* A	A
+* B	B
+* C	C
+* VDD!	VDD!
+* GND!	GND!
+MM5 N_OUT_MM5_d N_C_MM5_g N_GND!_MM5_s N_GND!_MM5_b NMOS_RVT L=2e-08 W=1.08e-07
++ NFIN=4
+MM3 N_OUT_MM3_d N_B_MM3_g N_NET3_MM3_s N_GND!_MM5_b NMOS_RVT L=2e-08 W=1.08e-07
++ NFIN=4
+MM4 N_NET3_MM4_d N_A_MM4_g N_GND!_MM4_s N_GND!_MM5_b NMOS_RVT L=2e-08 W=1.08e-07
++ NFIN=4
+MM6 N_NET2_MM6_d N_C_MM6_g N_VDD!_MM6_s N_VDD!_MM6_b PMOS_RVT L=2e-08 W=1.08e-07
++ NFIN=4
+MM0 N_OUT_MM0_d N_B_MM0_g N_NET2_MM0_s N_VDD!_MM6_b PMOS_RVT L=2e-08 W=1.08e-07
++ NFIN=4
+MM1 N_OUT_MM1_d N_A_MM1_g N_NET2_MM1_s N_VDD!_MM6_b PMOS_RVT L=2e-08 W=1.08e-07
++ NFIN=4
+*
+.include "AOI21.pex.netlist.AOI21.pxi"
+*
+.ends
+*
+*

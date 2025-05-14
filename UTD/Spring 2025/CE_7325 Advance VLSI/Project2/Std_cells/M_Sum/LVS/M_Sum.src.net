@@ -1,0 +1,44 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Std_cells
+* Top Cell Name: M_Sum
+* View Name:     schematic
+* Netlisted on:  Apr 13 00:50:14 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    M_Sum
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT M_Sum A B C D OUT
+*.PININFO A:I B:I C:I D:I OUT:O
+MM10 net4 A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM12 net3 A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM4 net3 C vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM3 OUT D net3 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM2 net3 B vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM1 OUT C net1 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM0 net1 B net4 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM13 net7 A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM11 net5 A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM9 net7 B gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM8 net7 C gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM7 OUT D net7 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM6 net2 B net5 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM5 OUT C net2 gnd! nmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+

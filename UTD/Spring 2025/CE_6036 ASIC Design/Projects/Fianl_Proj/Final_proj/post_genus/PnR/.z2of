@@ -1,0 +1,21 @@
+Data_mem_L/mem_0_0, R0, R180, MX, MY
+Co_mem_L/mem_0_0, R0
+R_mem_L/mem_0_0, R0, R180, MX, MY
+Data_mem_L/mem_0_0
+	Macro2Core 0
+	UserSpacingL 1824
+	UserSpacingB 864
+	UserSpacingR 0
+	UserSpacingT 0
+Co_mem_L/mem_0_0
+	Macro2Core 0
+	UserSpacingL 2496
+	UserSpacingB 864
+	UserSpacingR 0
+	UserSpacingT 0
+R_mem_L/mem_0_0
+	Macro2Core 0
+	UserSpacingL 3744
+	UserSpacingB 864
+	UserSpacingR 0
+	UserSpacingT 0

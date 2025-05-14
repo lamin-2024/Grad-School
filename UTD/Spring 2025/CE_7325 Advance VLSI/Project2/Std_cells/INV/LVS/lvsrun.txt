@@ -1,0 +1,37 @@
+//  Runset file generated on Thu Mar 27 20:30:50 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+lvs.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_LVS_rules"
+lvs.runDir.value = "/home/eng/m/mxi240020/7325/asap7/Std_cells/INV/LVS"
+lvs.layout.layoutFile.value = "INV.calibre.db"
+cmn.layout.defFiles.value = [ "INV.def" ]
+lvs.layout.topCellLibrary.value = "Std_cells"
+cmn.layout.topCellLibraryFDI.value = "Std_cells"
+lvs.layout.topCell.value = "INV"
+lvs.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+lvs.layout.layoutNetlist.value = "INV.sp"
+lvs.source2.sourceFile.value = "INV.sp"
+lvs.source2.topCellLibrary.value = "Std_cells"
+lvs.source2.topCellLibraryFDI.value = "Std_cells"
+lvs.source2.topCell.value = "INV"
+lvs.source2.topCellFDI.value = "INV"
+lvs.source2.topCellView.value = "schematic"
+lvs.source2.topCellViewFDI.value = "schematic"
+lvs.source.sourceFile.value = "INV.src.net"
+lvs.source.topCellLibrary.value = "Std_cells"
+lvs.source.topCellLibraryFDI.value = "Std_cells"
+lvs.source.topCell.value = "INV"
+lvs.source.topCellFDI.value = "INV"
+lvs.source.topCellView.value = "schematic"
+lvs.source.topCellViewFDI.value = "schematic"
+lvs.reports.lvsReport.value = "INV.lvs.report"
+lvs.ercdb.resultsFile.value = "INV.erc.results"
+lvs.ercSummaryReport.report.value = "INV.erc.summary"
+
+cmn.miscPrefs.overwriteLayoutPref.value = false
+cmn.miscPrefs.overwriteSourcePref.value = false

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      mxi240020
+HostName                       engnx05a.utdallas.edu
+ProcessIdentifier              1899764
+ProcessCreationTime_UTC        1745768428
+ProcessCreationTime_Readable   Sun Apr 27 10:40:28 2025 CDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/eng/m/mxi240020/7325/asap7/Std_cells/CSA/layout/layout.oa.cdslck
+TimeEditLocked                 Sun Apr 27 12:40:06 2025 CDT

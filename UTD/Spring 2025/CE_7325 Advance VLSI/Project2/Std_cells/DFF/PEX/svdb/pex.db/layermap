@@ -1,0 +1,84 @@
+OK
+VERSION          2
+TIME_NUMBER 5992633579
+LAYER_COUNT         67
+VIACOR_COUNT         10
+FIELD_NAMES drc_layer_nb layer_name
+         1 LIG
+         4 V0LIG
+         6 LISD
+         7 V0LISD
+         9 SDT
+        12 DIFF2SDT
+        22 Gate
+        23 Gate_1
+        48 N_src_drn
+        49 P_src_drn
+        52 well
+        53 nsub
+        54 psub
+        55 mp_cont
+        56 mn_cont
+        59 n_cont_1
+        60 p_cont_1
+        62 XCALIBRATE__Active
+        65 XCALIBRATE__Gate
+        68 XCALIBRATE__FGATE
+        71 XCALIBRATE__Activesd
+        74 XCALIBRATE__SDT
+        77 XCALIBRATE__LIG
+        80 XCALIBRATE__LISD
+        83 XCALIBRATE__M1
+        86 XCALIBRATE__M2
+        89 XCALIBRATE__M3
+        92 XCALIBRATE__M4
+        95 XCALIBRATE__M5
+        98 XCALIBRATE__M6
+       101 XCALIBRATE__M7
+       104 XCALIBRATE__M8
+       107 XCALIBRATE__M9
+       472 M1
+       478 M2
+       484 M3
+       490 M4
+       496 M5
+       502 M6
+       508 M7
+       514 M8
+       520 M9
+       526 pad
+       544 V1
+       548 V2
+       552 V3
+       556 V4
+       560 V5
+       564 V6
+       568 V7
+       572 V8
+       576 V9
+       608 FGATE
+       612 fin
+       620 XCALIBRATE__fin
+       624 XCALIBRATE__WELL
+       626 XCALIBRATE__DIFF2SDT
+       632 XCALIBRATE__V0LISD
+       634 XCALIBRATE__V0LIG
+       636 XCALIBRATE__V1
+       638 XCALIBRATE__V2
+       640 XCALIBRATE__V3
+       642 XCALIBRATE__V4
+       644 XCALIBRATE__V5
+       646 XCALIBRATE__V6
+       648 XCALIBRATE__V7
+       650 XCALIBRATE__V8
+VIACOR_FIELD_NAMES VIA_drc_layer_nb LAYER1_drc_layer_nb LAYER2_drc_layer_nb CONNECT_RULE_nb
+4  1  472  0
+7  6  472  1
+544  472  478  2
+548  478  484  3
+552  484  490  4
+556  490  496  5
+560  496  502  6
+564  502  508  7
+568  508  514  8
+572  514  520  9

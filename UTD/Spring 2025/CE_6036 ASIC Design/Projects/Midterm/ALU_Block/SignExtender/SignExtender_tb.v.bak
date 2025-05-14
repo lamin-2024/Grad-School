@@ -1,0 +1,45 @@
+`timescale 1ns / 1ps
+
+module SignExtender_tb;
+
+  reg  [31:0] datain;
+  wire [23:0] sign_out_L;
+  wire [23:0] sign_out_R;
+
+  // Instantiate the DUT
+  SignExtender UUT (
+    .datain(datain),
+    .sign_out_L(sign_out_L),
+    .sign_out_R(sign_out_R)
+  );
+
+  integer file, r;
+  reg [15:0] InputL, InputR;
+  reg [8*32:1] line;
+
+  initial begin
+    $display("Starting SignExtender Testbench...");
+    $monitor("Time: %0t | datain: 0x%h | sign_out_L: 0x%h | sign_out_R: 0x%h", 
+              $time, datain, sign_out_L, sign_out_R);
+
+    file = $fopen("datain.txt", "r");
+    if (file == 0) begin
+      $display("ERROR: Could not open datain.txt");
+      $finish;
+    end
+
+    // Skip header line
+    r = $fgets(line, file);
+
+    while (!$feof(file)) begin
+      r = $fscanf(file, "%h %h", InputL, InputR);
+      datain = {InputL, InputR};
+      #10; // Wait 10 ns between inputs
+    end
+
+    $fclose(file);
+    $display("Test complete.");
+    #20 $finish;
+  end
+
+endmodule

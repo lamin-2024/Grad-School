@@ -1,0 +1,25 @@
+//
+//  Rule file generated on Thu Mar 27 17:02:26 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "DFF.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "DFF"
+
+SOURCE PATH "DFF.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "DFF"
+
+PEX NETLIST "DFF.pex.netlist" HSPICE SOURCENAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "DFF.lvs.report"
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_RCX_rules"

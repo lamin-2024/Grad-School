@@ -1,0 +1,123 @@
+module SERIAL_2_PARALLEL(
+  input Dclk, uni_reset_n, //en,
+  input Frame, InputL, InputR,
+  output in_data_ready, all_zero,
+  output [15:0] in_data_L, in_data_R
+);
+  reg [15:0] data_L, data_R;
+  reg [3:0] cnt;
+  reg state, next_state;
+  
+  always@(cnt, Frame, state) begin
+    case(state)
+      0: begin
+        next_state = Frame;
+      end
+      1: begin
+        next_state = ~( (cnt == 14) & ~Frame);
+      end
+    endcase
+  end
+  
+  always@(negedge Dclk or negedge uni_reset_n) begin
+    if(~uni_reset_n) 
+      state <= 0;
+    else
+      state <= next_state;
+  end
+  
+  always@(negedge Dclk or negedge uni_reset_n) begin
+    if(~uni_reset_n) 
+      cnt <= 0;
+    else if(Frame)
+      cnt <= 0;
+    else if(1 == state)
+      cnt <= cnt + 1;
+  end
+  
+  always@(negedge Dclk or negedge uni_reset_n) begin
+    if(~uni_reset_n) begin
+      data_L <=0; 
+      data_R <=0;
+    end
+    else begin
+      data_L <= {InputL,data_L[15:1]}; 
+      data_R <= {InputR,data_R[15:1]};
+    end
+  end
+  
+  assign in_data_ready = (cnt == 15);
+  assign all_zero = (data_L == 0) & (data_R == 0);
+  assign in_data_L = data_L;
+  assign in_data_R = data_R;
+endmodule
+//====================================================
+module PARALLEL_2_SERIAL(
+  input Sclk, uni_reset_n,
+  input ALU_finish_L, ALU_finish_R,
+  input [39:0] ALU_out_L, ALU_out_R,
+  output reg OutReady, OutputL, OutputR
+);
+  reg state, next_state;
+  reg loaded_L, loaded_R;
+  reg [39:0] data_L, data_R;
+  reg [5:0] cnt;
+  
+  // State Register
+  always@(posedge Sclk, negedge uni_reset_n) begin
+    if(~uni_reset_n) 
+      state <= 0;
+    else
+      state <= next_state;
+  end
+  //
+  always@(state, loaded_L, loaded_R, data_L, data_R, cnt) begin
+    case(state)
+      0: begin
+        OutReady = 0;
+        OutputL = 0; OutputR = 0;
+        next_state = (loaded_L && loaded_R);
+      end
+      1: begin
+        OutReady = 1;
+        OutputL = data_L[0]; OutputR = data_R[0];
+        next_state = ~(cnt == 39);
+      end
+    endcase
+  end
+  //
+  always@(posedge Sclk, negedge uni_reset_n) begin
+    if(~uni_reset_n) begin
+      data_L <=0;
+      data_R <=0;
+      loaded_L <= 0;
+      loaded_R <= 0;
+    end
+    else if(0 == state) begin
+      if(ALU_finish_L) begin
+        data_L <= ALU_out_L;
+        loaded_L <= 1;
+      end
+      if(ALU_finish_R) begin
+        data_R <= ALU_out_R;
+        loaded_R <= 1;
+      end
+    end
+    else if(1 == state) begin
+      data_L <= {1'b0,data_L[39:1]};
+      data_R <= {1'b0,data_R[39:1]};
+      loaded_L <= 0;
+      loaded_R <= 0;
+    end
+  end
+  // Counter
+  always@(posedge Sclk, negedge uni_reset_n) begin
+    if(~uni_reset_n) begin
+      cnt<=0;
+    end
+    else if(0==state)
+      cnt<=0;
+    else 
+      cnt<= cnt+1;
+  end
+endmodule

@@ -1,0 +1,37 @@
+//  Runset file generated on Wed Mar 26 00:09:06 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+lvs.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_LVS_rules"
+lvs.runDir.value = "/home/eng/m/mxi240020/7325/asap7/Std_cells/NAND2/LVS"
+lvs.layout.layoutFile.value = "NAND2.calibre.db"
+cmn.layout.defFiles.value = [ "NAND2.def" ]
+lvs.layout.topCellLibrary.value = "Std_cells"
+cmn.layout.topCellLibraryFDI.value = "Std_cells"
+lvs.layout.topCell.value = "NAND2"
+lvs.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+lvs.layout.layoutNetlist.value = "NAND2.sp"
+lvs.source2.sourceFile.value = "NAND2.sp"
+lvs.source2.topCellLibrary.value = "Std_cells"
+lvs.source2.topCellLibraryFDI.value = "Std_cells"
+lvs.source2.topCell.value = "NAND2"
+lvs.source2.topCellFDI.value = "NAND2"
+lvs.source2.topCellView.value = "schematic"
+lvs.source2.topCellViewFDI.value = "schematic"
+lvs.source.sourceFile.value = "NAND2.src.net"
+lvs.source.topCellLibrary.value = "Std_cells"
+lvs.source.topCellLibraryFDI.value = "Std_cells"
+lvs.source.topCell.value = "NAND2"
+lvs.source.topCellFDI.value = "NAND2"
+lvs.source.topCellView.value = "schematic"
+lvs.source.topCellViewFDI.value = "schematic"
+lvs.reports.lvsReport.value = "NAND2.lvs.report"
+lvs.ercdb.resultsFile.value = "NAND2.erc.results"
+lvs.ercSummaryReport.report.value = "NAND2.erc.summary"
+
+cmn.miscPrefs.overwriteLayoutPref.value = false
+cmn.miscPrefs.overwriteSourcePref.value = false

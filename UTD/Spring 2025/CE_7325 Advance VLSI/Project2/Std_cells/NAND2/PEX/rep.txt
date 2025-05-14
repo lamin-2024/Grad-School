@@ -1,0 +1,10 @@
+//Loading PDBs.
+//PDB loading of cell: NAND2
+//Making the stats.
+GID                       totalC    totalCC    ratioCC     Cell    Layout   Source
+1                        1.92e-17   1.19e-17   6.20e-01    NAND2   GND!     GND!  
+2                        1.09e-17   7.89e-19   7.25e-02    NAND2   VDD!     VDD!  
+3                        2.03e-18   0.00e+00   0.00e+00    NAND2   A        A  
+4                        1.46e-17   1.19e-17   8.15e-01    NAND2   B        B  
+5                        9.56e-18   7.89e-19   8.25e-02    NAND2   OUT      OUT  
+6                        4.35e-18   0.00e+00   0.00e+00    NAND2   6        NET1  

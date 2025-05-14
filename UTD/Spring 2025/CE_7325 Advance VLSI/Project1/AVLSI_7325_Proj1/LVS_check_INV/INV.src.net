@@ -1,0 +1,32 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  std_cell
+* Top Cell Name: INV
+* View Name:     schematic
+* Netlisted on:  Mar 24 01:41:07 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: std_cell
+* Cell Name:    INV
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT INV IN OUT
+*.PININFO IN:I OUT:O
+MM0 OUT IN gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM1 OUT IN vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+

@@ -1,0 +1,22 @@
+//  Runset file generated on Tue Mar 18 23:00:46 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_DRC_rules"
+drc.runDir.value = "/home/eng/m/mxi240020/7325/asap7/mark_std_cells/inverter/DRC"
+drc.layout.layoutFile.value = "inverter.calibre.db"
+cmn.layout.defFiles.value = [ "inverter.def" ]
+drc.layout.topCellLibrary.value = "mark_std_cells"
+cmn.layout.topCellLibraryFDI.value = "mark_std_cells"
+drc.layout.topCell.value = "inverter"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "inverter.drc.results"
+drc.reports.drcSummaryReport.value = "inverter.drc.summary"
+drc.rhdb.fileName.value = "inverter.rhdb"
+drc.dfmDefaults.resultsFile.value = "inverter.dfmDefaults.db"
+
+cmn.runsetPrefs.saveOnClose.value = "AUTOSAVE"

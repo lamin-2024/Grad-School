@@ -1,0 +1,7 @@
+* File: INV.pex.netlist.INV.pxi
+* Created: Mon Mar 24 01:50:42 2025
+* 
+x_PM_INV%GND! N_GND!_MM0_s N_GND!_MM0_b GND! PM_INV%GND!
+x_PM_INV%VDD! N_VDD!_MM1_s N_VDD!_MM1_b VDD! PM_INV%VDD!
+x_PM_INV%IN N_IN_MM1_g N_IN_MM0_g IN PM_INV%IN
+x_PM_INV%OUT N_OUT_MM0_d N_OUT_MM1_d OUT PM_INV%OUT

@@ -1,0 +1,166 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/simulation/questa
+T_opt
+!s110 1743051073
+V0Za:al:`7PLQhH?3E_Y832
+04 6 4 work ALU_tb fast 0
+=1-0000000002b5-67e4d941-2c-5ec4
+!s124 OEM10U6 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vAdder
+Z2 !s110 1743051072
+!i10b 1
+!s100 h7D52G4L7DX^MNRlBUo2X2
+ImVd0`GaUVUgM>GECjkoi`0
+R0
+Z3 w1743050724
+Z4 8C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU.v
+Z5 FC:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU.v
+!i122 0
+L0 272 16
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z8 !s108 1743051072.000000
+Z9 !s107 C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module|C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU.v|
+!i113 0
+Z11 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -vlog01compat -work work {+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@adder
+vALU
+R2
+!i10b 1
+!s100 faL6dIDhJ=^^OOzc=^Yn^3
+I^4GoNdd;@EW=7g@?;=2IV1
+R0
+R3
+R4
+R5
+!i122 0
+L0 3 80
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@a@l@u
+vALU_Controller
+R2
+!i10b 1
+!s100 HLO`EO>V_h08=KQR8GXTQ1
+IASWR8T:Ckg9`d@maDm>WY0
+R0
+R3
+R4
+R5
+!i122 0
+L0 84 171
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@a@l@u_@controller
+vALU_tb
+R2
+!i10b 1
+!s100 oL4:f^0OPYBz[THUh1[jV1
+IChcz[P:T1<d`dP@lz3d0<0
+R0
+w1743050763
+8C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU_tb.v
+FC:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU_tb.v
+!i122 1
+L0 3 55
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module|C:/Users/lmnjm/OneDrive/Documents/Grad School/UTD/Spring 2025/CE 6306 ASIC Design/Projects/Midterm/ALU_Block/ALU_Top_Module/ALU_tb.v|
+!i113 0
+R11
+R12
+R1
+n@a@l@u_tb
+vShiftRightRegister
+R2
+!i10b 1
+!s100 NV5ZzCe<=hc<Z]j[ENCVJ0
+IE4cB2Og0z;OA8Z`dF4ZeZ0
+R0
+R3
+R4
+R5
+!i122 0
+L0 291 45
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@shift@right@register
+vSignExtender
+R2
+!i10b 1
+!s100 zZcE:LaAF2O<T_aHmg6I:1
+I9dk^C6io@H0oTD`_9clcC2
+R0
+R3
+R4
+R5
+!i122 0
+L0 258 11
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R1
+n@sign@extender

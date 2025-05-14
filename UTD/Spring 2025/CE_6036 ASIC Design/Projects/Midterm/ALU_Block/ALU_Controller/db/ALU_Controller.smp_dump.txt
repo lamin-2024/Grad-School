@@ -1,0 +1,11 @@
+
+State Machine - |ALU_Controller|state
+Name state.DONE state.INCREMENT state.WAIT_SHIFT_DONE state.SHIFT_DATA state.CALC_INDEX state.LOAD_COEFF state.LOAD_RJ state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.LOAD_RJ 0 0 0 0 0 0 1 1 
+state.LOAD_COEFF 0 0 0 0 0 1 0 1 
+state.CALC_INDEX 0 0 0 0 1 0 0 1 
+state.SHIFT_DATA 0 0 0 1 0 0 0 1 
+state.WAIT_SHIFT_DONE 0 0 1 0 0 0 0 1 
+state.INCREMENT 0 1 0 0 0 0 0 1 
+state.DONE 1 0 0 0 0 0 0 1 

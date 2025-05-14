@@ -1,0 +1,337 @@
+m255
+K4
+z2
+!s11f vlog 2022.1 2022.01, Jan 29 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim
+vALU
+Z1 !s110 1745554025
+!i10b 1
+!s100 :MzGkRQSV4kP[AY:OTVR80
+IAii2nFzj>;SXh<EO8Bb]k3
+R0
+w1716080281
+8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/ALU.v
+F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/ALU.v
+!i122 57
+L0 1 154
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OP;L;2022.1;75
+r1
+!s85 0
+31
+Z4 !s108 1745554025.000000
+!s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/ALU.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@l@u
+vCO_MEM
+Z7 !s110 1745554026
+!i10b 1
+!s100 O8J4]NJV8=lDClT^?7`;@3
+IdH^IV5[5eN`f7OF:ChTGz0
+R0
+Z8 w1741315856
+Z9 8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/RAM.v
+Z10 F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/RAM.v
+!i122 62
+L0 71 78
+R2
+R3
+r1
+!s85 0
+31
+Z11 !s108 1745554026.000000
+Z12 !s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/RAM.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/RAM.v|
+!i113 1
+R5
+R6
+n@c@o_@m@e@m
+vDATA_MEM
+R7
+!i10b 1
+!s100 dJB2G;Qjb8jUMd`L7_Q?o2
+IcHBW^I?HUTEzEb`UIQbnP0
+R0
+R8
+R9
+R10
+!i122 62
+L0 151 54
+R2
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
+n@d@a@t@a_@m@e@m
+vMAIN_CTRL
+R1
+!i10b 1
+!s100 R=MURROEGYcKhN[ce[X272
+IDlUB3[APKEHZDOnL8^<Gk2
+R0
+w1715898702
+8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/main_control.v
+F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/main_control.v
+!i122 59
+L0 1 216
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/main_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/main_control.v|
+!i113 1
+R5
+R6
+n@m@a@i@n_@c@t@r@l
+vMSDAP
+R7
+!i10b 1
+!s100 BTF_27A>dBCgJ7JSEMA=b2
+I?iE2?`HbACmhj6BG6TDQk2
+R0
+w1716076958
+8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP.v
+F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP.v
+!i122 60
+L0 1 83
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP.v|
+!i113 1
+R5
+R6
+n@m@s@d@a@p
+vMSDAP_TB
+Z14 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R7
+!i10b 1
+!s100 ;@Xa8BiWS;Co@9j3NF01m0
+IbnP]RXJ>j:GJYI@ZhSLj01
+S1
+R0
+w1745554016
+Z15 8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP_tb.sv
+Z16 F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP_tb.sv
+!i122 61
+L0 3 145
+R2
+R3
+r1
+!s85 0
+31
+R11
+Z17 !s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP_tb.sv|
+Z18 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP_tb.sv|
+!i113 1
+Z19 o-work work -sv
+R6
+n@m@s@d@a@p_@t@b
+vMSDAP_tb
+R14
+!s110 1745379953
+!i10b 1
+!s100 2j=oP?[`m1cS7m34>?^_63
+IocK]e4nH^=W2I_kHM0W0E0
+S1
+R0
+w1745379928
+R15
+R16
+!i122 41
+L0 3 109
+R2
+R3
+r1
+!s85 0
+31
+!s108 1745379953.000000
+R17
+R18
+!i113 1
+R19
+R6
+n@m@s@d@a@p_tb
+vPARALLEL_2_SERIAL
+R1
+!i10b 1
+!s100 8b@n]2z@6R:D]4=Pfd;O50
+Io>NFc0EOcj>BUbm?0o4]j1
+R0
+Z20 w1715898704
+Z21 8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/IO_converters.v
+Z22 F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/IO_converters.v
+!i122 58
+L0 55 69
+R2
+R3
+r1
+!s85 0
+31
+R4
+Z23 !s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/IO_converters.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/IO_converters.v|
+!i113 1
+R5
+R6
+n@p@a@r@a@l@l@e@l_2_@s@e@r@i@a@l
+vR_MEM
+R7
+!i10b 1
+!s100 6mlMOOFDgU7CZ]>6JUc8I0
+Ij]D]Ld[D^H8g1HV0Ig6m61
+R0
+R8
+R9
+R10
+!i122 62
+L0 1 52
+R2
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
+n@r_@m@e@m
+vSERIAL_2_PARALLEL
+R1
+!i10b 1
+!s100 YW3D=RmboDUn4fTgZ=zj:1
+ICLbVjmFN7XC?Y<cgAg?j<2
+R0
+R20
+R21
+R22
+!i122 58
+L0 1 53
+R2
+R3
+r1
+!s85 0
+31
+R4
+R23
+R24
+!i113 1
+R5
+R6
+n@s@e@r@i@a@l_2_@p@a@r@a@l@l@e@l
+vSRAM1RW128x12
+R7
+!i10b 1
+!s100 JERaiH9BY_<?AdL?H^]GY0
+IeCVXZ3^=llOjGTDo^Lza?1
+R0
+w1744953037
+8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW128x12.v
+F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW128x12.v
+!i122 64
+L0 3 86
+R2
+R3
+r1
+!s85 0
+31
+R11
+!s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW128x12.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW128x12.v|
+!i113 1
+R5
+R6
+n@s@r@a@m1@r@w128x12
+vSRAM1RW256x8
+R7
+!i10b 1
+!s100 j<k@e^Y9jYZk3zNYbP5WP0
+I>D3JzB9k<><ff]:5;Z]aY3
+R0
+w1744953057
+8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW256x8.v
+F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW256x8.v
+!i122 65
+L0 3 76
+R2
+R3
+r1
+!s85 0
+31
+R11
+!s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW256x8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW256x8.v|
+!i113 1
+R5
+R6
+n@s@r@a@m1@r@w256x8
+vSRAM2RW16x8
+R7
+!i10b 1
+!s100 YIV3TP_D?ZPbNhhFY6@Sz0
+I_;[d4`PCSAB673gS<HCSb1
+R0
+w1744953076
+8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM2RW16x8.v
+F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM2RW16x8.v
+!i122 66
+L0 3 121
+R2
+R3
+r1
+!s85 0
+31
+R11
+!s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM2RW16x8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM2RW16x8.v|
+!i113 1
+R5
+R6
+n@s@r@a@m2@r@w16x8
+vSYNC
+R7
+!i10b 1
+!s100 nml6Ff=:DMj[2JWfn^YOR1
+IRFB@BhLYj6`ZL8^Wlz@zD3
+R0
+w1715548792
+8/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/synchronizer.v
+F/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/synchronizer.v
+!i122 63
+L0 1 18
+R2
+R3
+r1
+!s85 0
+31
+R11
+!s107 /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/synchronizer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/synchronizer.v|
+!i113 1
+R5
+R6
+n@s@y@n@c

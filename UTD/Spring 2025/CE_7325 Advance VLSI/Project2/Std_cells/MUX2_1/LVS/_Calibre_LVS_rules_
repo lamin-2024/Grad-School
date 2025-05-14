@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Tue Mar 25 22:47:39 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "MUX2_1.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "MUX2_1"
+
+SOURCE PATH "MUX2_1.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "MUX2_1"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "MUX2_1.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "MUX2_1.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_LVS_rules"

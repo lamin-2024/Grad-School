@@ -1,0 +1,146 @@
+`timescale 1ns / 1ps
+
+module Main_Controller_tb;
+
+    // Inputs to DUT (driven by testbench)
+    reg SCLK;
+    reg DCLK;
+    reg RESET_N;
+    reg START;
+    reg FRAME;
+    reg ZERO_DETECTED_L;
+    reg ZERO_DETECTED_R;
+    reg SIPO_DATA_READY_L;
+    reg SIPO_DATA_READY_R;
+
+    // Outputs from DUT (monitored by testbench)
+    wire INREADY;
+    wire OUTREADY;
+
+    wire RJ_MEM_CLEAR_L;
+    wire [3:0] RJ_WRITE_ADDRESS_L;
+    wire RJ_WRITE_EN_L;
+
+    wire RJ_MEM_CLEAR_R;
+    wire [3:0] RJ_WRITE_ADDRESS_R;
+    wire RJ_WRITE_EN_R;
+
+    wire COEFF_MEM_CLEAR_L;
+    wire [8:0] COEFF_WRITE_ADDRESS_L;
+    wire COEFF_WRITE_EN_L;
+
+    wire COEFF_MEM_CLEAR_R;
+    wire [8:0] COEFF_WRITE_ADDRESS_R;
+    wire COEFF_WRITE_EN_R;
+
+    wire DATA_MEM_CLEAR_L;
+    wire [7:0] DATA_WRITE_ADDRESS_L;
+    wire DATA_WRITE_EN_L;
+
+    wire DATA_MEM_CLEAR_R;
+    wire [7:0] DATA_WRITE_ADDRESS_R;
+    wire DATA_WRITE_EN_R;
+
+    wire SIPO_CLEAR_L;
+    wire SIPO_EN_L;
+
+    wire SIPO_CLEAR_R;
+    wire SIPO_EN_R;
+
+    // Instantiate the DUT
+    Main_Controller uut (
+        .SCLK(SCLK),
+        .DCLK(DCLK),
+        .RESET_N(RESET_N),
+        .START(START),
+        .FRAME(FRAME),
+        .INREADY(INREADY),
+        .OUTREADY(OUTREADY),
+
+        .RJ_MEM_CLEAR_L(RJ_MEM_CLEAR_L),
+        .RJ_WRITE_ADDRESS_L(RJ_WRITE_ADDRESS_L),
+        .RJ_WRITE_EN_L(RJ_WRITE_EN_L),
+
+        .RJ_MEM_CLEAR_R(RJ_MEM_CLEAR_R),
+        .RJ_WRITE_ADDRESS_R(RJ_WRITE_ADDRESS_R),
+        .RJ_WRITE_EN_R(RJ_WRITE_EN_R),
+
+        .COEFF_MEM_CLEAR_L(COEFF_MEM_CLEAR_L),
+        .COEFF_WRITE_ADDRESS_L(COEFF_WRITE_ADDRESS_L),
+        .COEFF_WRITE_EN_L(COEFF_WRITE_EN_L),
+
+        .COEFF_MEM_CLEAR_R(COEFF_MEM_CLEAR_R),
+        .COEFF_WRITE_ADDRESS_R(COEFF_WRITE_ADDRESS_R),
+        .COEFF_WRITE_EN_R(COEFF_WRITE_EN_R),
+
+        .DATA_MEM_CLEAR_L(DATA_MEM_CLEAR_L),
+        .DATA_WRITE_ADDRESS_L(DATA_WRITE_ADDRESS_L),
+        .DATA_WRITE_EN_L(DATA_WRITE_EN_L),
+        .ZERO_DETECTED_L(ZERO_DETECTED_L),
+
+        .DATA_MEM_CLEAR_R(DATA_MEM_CLEAR_R),
+        .DATA_WRITE_ADDRESS_R(DATA_WRITE_ADDRESS_R),
+        .DATA_WRITE_EN_R(DATA_WRITE_EN_R),
+        .ZERO_DETECTED_R(ZERO_DETECTED_R),
+
+        .SIPO_CLEAR_L(SIPO_CLEAR_L),
+        .SIPO_EN_L(SIPO_EN_L),
+        .SIPO_DATA_READY_L(SIPO_DATA_READY_L),
+
+        .SIPO_CLEAR_R(SIPO_CLEAR_R),
+        .SIPO_EN_R(SIPO_EN_R),
+        .SIPO_DATA_READY_R(SIPO_DATA_READY_R)
+    );
+
+    // Clock generation
+    initial DCLK = 0;
+    always #(1272/2) DCLK = ~DCLK; // 786 kHz
+
+    initial SCLK = 0;
+    always #(37/2) SCLK = ~SCLK;   // 26.88 MHz
+
+	//Counter Registers.
+	reg[3:0] frame_counter;
+
+    // Initial stimulus
+    initial begin
+        $display("[%0t ns] Starting testbench", $time);
+        RESET_N = 0;
+        START = 0;
+        FRAME = 0;
+        ZERO_DETECTED_L = 0;
+        ZERO_DETECTED_R = 0;
+        SIPO_DATA_READY_L = 0;
+        SIPO_DATA_READY_R = 0;
+	frame_counter = 0;
+
+        #2000;
+        RESET_N = 1;
+        #1000;
+        START = 1;
+	#50;
+        START = 0;
+    end
+
+	always@(posedge DCLK) begin
+		if(INREADY) begin
+			if(frame_counter == 0) begin
+				FRAME <= 1;
+				frame_counter <= frame_counter + 1;
+				//SIPO_DATA_READY_L <= 0;
+				//SIPO_DATA_READY_R <= 0;
+			end
+			else if (frame_counter == 15) begin
+				FRAME <= 0;
+				frame_counter <= 0;
+				//SIPO_DATA_READY_L <= 1;
+				//SIPO_DATA_READY_R <= 1;
+			end
+			else begin
+				frame_counter <= frame_counter + 1;
+				FRAME <= 0;
+			end
+		end
+	end
+
+endmodule

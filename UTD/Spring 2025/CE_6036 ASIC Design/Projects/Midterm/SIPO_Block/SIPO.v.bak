@@ -1,0 +1,56 @@
+module SIPO_Block (
+    input wire DCLK,           // Data clock (used to sample serial input)
+    input wire CLK,            // System clock (used to reset if needed)
+    input wire start,          // Start signal
+    input wire frame,          // Frame signal (e.g., start of data frame)
+    input wire EN,             // Enable signal
+    input wire DATA_IN,        // Serial input (1-bit at a time)
+    output reg [15:0] PDATA_IN_L, // Parallel output Left
+    output reg [15:0] PDATA_IN_R  // Parallel output Right
+);
+
+    reg [7:0] shift_reg;       // Temporary register to collect 8 bits
+    reg [3:0] bit_count = 0;   // Count bits received
+    reg [15:0] temp_data = 0;  // Temporary storage for full 16 bits
+    reg byte_done = 0;         // Flag when 8 bits are collected
+
+    always @(posedge DCLK or posedge CLK) begin
+        if (CLK) begin
+            // Asynchronous clear/reset
+            bit_count <= 0;
+            temp_data <= 0;
+            PDATA_IN_L <= 0;
+            PDATA_IN_R <= 0;
+            shift_reg <= 0;
+            byte_done <= 0;
+        end else if (EN && start && frame) begin
+            // Shift in serial data bit-by-bit
+            shift_reg <= {shift_reg[6:0], DATA_IN};
+            bit_count <= bit_count + 1;
+
+            if (bit_count == 7) begin
+                byte_done <= 1;
+            end else begin
+                byte_done <= 0;
+            end
+        end
+    end
+
+    // Handle when a full byte is received
+    reg byte_phase = 0; // 0 for left, 1 for right
+
+    always @(posedge DCLK) begin
+        if (byte_done) begin
+            if (byte_phase == 0) begin
+                PDATA_IN_L <= {8'b0, shift_reg};  // Store first byte to left
+                byte_phase <= 1;
+            end else begin
+                PDATA_IN_R <= {8'b0, shift_reg};  // Store second byte to right
+                byte_phase <= 0;
+            end
+            bit_count <= 0;
+            shift_reg <= 0;
+        end
+    end
+
+endmodule

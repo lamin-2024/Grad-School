@@ -1,0 +1,77 @@
+/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM2RW16x8.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM2RW16x8.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module SRAM2RW16x8
+
+Top level modules:
+	SRAM2RW16x8
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module MSDAP
+
+Top level modules:
+	MSDAP
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/main_control.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/main_control.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module MAIN_CTRL
+
+Top level modules:
+	MAIN_CTRL
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP_tb.sv {1 {vlog -work work -sv -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/MSDAP_tb.sv
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module MSDAP_TB
+
+Top level modules:
+	MSDAP_TB
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW256x8.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW256x8.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module SRAM1RW256x8
+
+Top level modules:
+	SRAM1RW256x8
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/synchronizer.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/synchronizer.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module SYNC
+
+Top level modules:
+	SYNC
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/IO_converters.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/IO_converters.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module SERIAL_2_PARALLEL
+-- Compiling module PARALLEL_2_SERIAL
+
+Top level modules:
+	SERIAL_2_PARALLEL
+	PARALLEL_2_SERIAL
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/ALU.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/ALU.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW128x12.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/SRAM1RW128x12.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module SRAM1RW128x12
+
+Top level modules:
+	SRAM1RW128x12
+
+} {} {}} /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/RAM.v {1 {vlog -work work -stats=none /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/pre_macro_sim/RAM.v
+Model Technology ModelSim DE vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module R_MEM
+-- Compiling module CO_MEM
+-- Compiling module DATA_MEM
+
+Top level modules:
+	R_MEM
+	CO_MEM
+	DATA_MEM
+
+} {} {}}

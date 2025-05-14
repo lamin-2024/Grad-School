@@ -1,0 +1,9 @@
+module ADDER (
+  input  wire [23:0] X1,
+  input  wire [23:0] X2,
+  input  wire ADDSUBTRACT, 	// 0: add, 1: subtract
+  output wire [23:0] Y
+);
+    assign Y = ADDSUBTRACT ? (X2 - X1) : (X2 + X1);
+endmodule
+

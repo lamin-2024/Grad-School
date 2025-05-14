@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Sun Apr 13 00:50:14 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "M_Sum.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "M_Sum"
+
+SOURCE PATH "M_Sum.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "M_Sum"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "M_Sum.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "M_Sum.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_LVS_rules"

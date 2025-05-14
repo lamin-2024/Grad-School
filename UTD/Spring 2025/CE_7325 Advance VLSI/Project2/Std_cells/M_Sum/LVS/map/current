@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "M_Sum"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/eng/m/mxi240020/7325/asap7/Std_cells/M_Sum/LVS"
+ )
+( model
+( "Std_cells/M_Sum/schematic" "M_Sum" )
+ )
+( "M_Sum" "ihnl/cds0/map" )
+ )

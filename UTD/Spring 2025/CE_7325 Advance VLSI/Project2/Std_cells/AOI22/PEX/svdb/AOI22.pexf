@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/eng/m/mxi240020/7325/asap7/Std_cells/AOI22/PEX
+pex_PexParam LAYOUT_PRIMARY AOI22
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {AOI22 "" AOI22.pdb "" } } 

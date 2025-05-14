@@ -1,0 +1,21 @@
+//  Runset file generated on Tue Mar 18 22:27:15 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_DRC_rules"
+drc.runDir.value = "/home/eng/m/mxi240020/7325/asap7/mark_std_cells/AOI21/DRC"
+drc.layout.layoutFile.value = "AOI21.calibre.db"
+cmn.layout.defFiles.value = [ "AOI21.def" ]
+drc.layout.topCellLibrary.value = "mark_std_cells"
+cmn.layout.topCellLibraryFDI.value = "mark_std_cells"
+drc.layout.topCell.value = "AOI21"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "AOI21.drc.results"
+drc.reports.drcSummaryReport.value = "AOI21.drc.summary"
+drc.rhdb.fileName.value = "AOI21.rhdb"
+drc.dfmDefaults.resultsFile.value = "AOI21.dfmDefaults.db"
+

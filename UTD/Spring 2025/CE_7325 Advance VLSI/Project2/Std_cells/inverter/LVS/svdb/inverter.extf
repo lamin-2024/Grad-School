@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1742356912 1742356912
+lvs_ExtOutFile RUNDIR /home/eng/m/mxi240020/7325/asap7/mark_std_cells/inverter/LVS
+lvs_ExtOutFile RULES_FILE _Calibre_LVS_rules_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST inverter.sp
+lvs_ExtOutFile EXTRACTION_REPORT inverter.lvs.report.ext

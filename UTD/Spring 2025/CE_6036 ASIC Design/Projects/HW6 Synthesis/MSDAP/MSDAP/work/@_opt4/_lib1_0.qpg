@@ -1,0 +1,822 @@
+m255
+K4
+z2
+Z0 !s12c _opt4
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt3
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+Z3 !s12c _opt2
+R1
+R3
+R1
+R2
+R1
+R3
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R3
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+Z4 !s12c _opt
+R1
+R4
+R1
+R4
+R1
+R4
+R1
+R4
+R1
+R4
+R1
+R4
+R1
+R4
+R1
+R2
+R1
+R2
+R1
+R3
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R4
+R1
+R4
+R1
+R3
+R1
+R3
+R1
+R2
+R1
+R4
+R1
+R2
+R1
+R2
+R1
+R4
+R1
+R4
+R1
+R4
+R1
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z5 dC:/Users/TheMe/AppData/Local/quartus
+T_opt
+!s110 1742964688
+VjC>DN<AdoQd5OJA7VU88:0
+Z6 04 18 4 work Main_Controller_tb fast 0
+=1-d45d64557668-67e387d0-b-2804
+R1
+Z7 !s12f OEM100
+Z8 !s12b OEM100
+Z9 !s124 OEM10U2 
+Z10 !s135 nogc
+Z11 o-quiet -auto_acc_if_foreign -work work +acc
+Z12 tCvgOpt 0
+n@_opt
+Z13 OL;O;2024.3;79
+R5
+T_opt2
+!s110 1743056070
+V>=]5kzMc`NQ]Jj[5Q3YiT0
+R6
+=1-d45d64557668-67e4ecc6-a7-18d0
+R1
+R7
+R8
+R9
+R10
+R11
+R12
+n@_opt2
+R13
+R5
+T_opt4
+!s110 1743995092
+VoYI]:T>Q32l4eOiDN5MLY1
+R6
+=1-d45d64557668-67f340d3-215-4b6c
+R1
+R7
+R8
+R9
+R10
+R11
+R12
+n@_opt4
+R13
+vADDER
+2C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\ADDER.v
+Z14 !s110 1743989264
+!i10b 1
+!s100 lc3_h@2[eFOCaj[V3h<561
+I`iLY<W6C1VHCT_M[0R5_`2
+Z15 dC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP
+w1743971719
+8C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\ADDER.v
+FC:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\ADDER.v
+!i122 596
+L0 1 8
+Z16 VDg1SIo80bB@j0V0VzS_@n1
+Z17 OL;L;2024.3;79
+r1
+!s85 0
+31
+!i113 0
+Z18 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R12
+n@a@d@d@e@r
+vADDER_TB
+2C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\ADDER_TB.v
+Z19 !s110 1743989265
+!i10b 1
+!s100 0?[hYS^;c8W2fD`ZP`:[K2
+I5Y794hLz1kN^I`z?4@nIk2
+R15
+w1743972055
+8C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\ADDER_TB.v
+FC:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\ADDER_TB.v
+!i122 597
+L0 3 60
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@a@d@d@e@r_@t@b
+vCoefficient_Memory
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v
+Z20 !s110 1743989262
+!i10b 1
+!s100 =Fe@A>?]n^5NODPIMmK2:1
+If>omEOm6`U0ffoI_z?g733
+R15
+w1743283956
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v
+!i122 584
+Z21 L0 1 30
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@coefficient_@memory
+vCoefficient_Memory_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v
+R20
+!i10b 1
+!s100 05G>lJORie>_bJgiH92QU3
+IRlAlzWZ?XUoBBIli]]FzE2
+R15
+w1743055719
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v
+!i122 585
+Z22 L0 3 102
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@coefficient_@memory_tb
+vData_Memory
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v
+R20
+!i10b 1
+!s100 >]b4^i1lOJdL1]m6XbgH^0
+I^jh<P30a9fO0C3jm1VFQ`0
+R15
+w1743369428
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v
+!i122 586
+L0 1 39
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@data_@memory
+vData_Memory_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v
+Z23 !s110 1743989263
+!i10b 1
+!s100 9`]<@c@=glR;1R2ZB:`DV2
+I];kP=AZON?BnX5I<ONJgO2
+R15
+w1743387155
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v
+!i122 587
+L0 3 107
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@data_@memory_tb
+vMain_Controller
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v
+R23
+!i10b 1
+!s100 Zm>1XSoBU>OA=74h7YfAL1
+IFoTn@FCSJ]XT0kRU6?i4_0
+R15
+w1743369137
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v
+!i122 589
+L0 1 301
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@main_@controller
+vMain_Controller_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v
+R23
+!i10b 1
+!s100 noLci=>aSiD[lMN9m?NF;3
+I;^CS>]]gJm1DDGJj3<YAl0
+R15
+w1743381543
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v
+!i122 591
+L0 3 166
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@main_@controller_tb
+vMSDAP
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v
+R14
+!i10b 1
+!s100 ^@C33lUmg13Q7ZG3fMcZo0
+I3HJDa;=RcLd6CW2bd_Kl?0
+R15
+w1743309593
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v
+!i122 592
+L0 2 225
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@m@s@d@a@p
+vPISO
+2C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\PISO.v
+R14
+!i10b 1
+!s100 Vg0>LNF9oTCc4BPK62d]B3
+I^[6cOTO2ngNa6mVDi>=Q]0
+R15
+w1743970981
+8C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\PISO.v
+FC:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\PISO.v
+!i122 594
+L0 1 24
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@p@i@s@o
+vPISO_tb
+2C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\PISO_TB.v
+R14
+!i10b 1
+!s100 :F6AVX5@@`z1MT^zJbL>G1
+IR]lJoLnXZT5@bco?4m2@P2
+R15
+w1743970729
+8C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\PISO_TB.v
+FC:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\PISO_TB.v
+!i122 595
+L0 3 81
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@p@i@s@o_tb
+vRJ_Memory
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v
+R20
+!i10b 1
+!s100 fijJ=5M?Y^H5DDZS9=7Oz1
+I^:=<UZALIi3Bi2MHHNYMW3
+R15
+w1743055533
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v
+!i122 582
+R21
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@r@j_@memory
+vRJ_Memory_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v
+R20
+!i10b 1
+!s100 RAoRMHTG?KBk9b?;[NzXz0
+IPjB[V_:AL7>LEo3TNTNkA3
+R15
+w1743055637
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v
+!i122 583
+R22
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@r@j_@memory_tb
+vSHIFT_RIGHT_REGISTER
+2C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\SHIFT_RIGHT_REGISTER.v
+R19
+!i10b 1
+!s100 MGCTnfLa=XQJ<6=1;o5H`1
+IEzWP<n6@J>[N^W>eHNc_50
+R15
+w1743988752
+8C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\SHIFT_RIGHT_REGISTER.v
+FC:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\SHIFT_RIGHT_REGISTER.v
+!i122 600
+L0 1 25
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@s@h@i@f@t_@r@i@g@h@t_@r@e@g@i@s@t@e@r
+vSHIFT_RIGHT_REGISTER_tb
+2C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\SHIFT_RIGHT_REGISTER_TB.v
+!s110 1743989711
+!i10b 1
+!s100 YH`HX^RPVMl_kH_Q[eH2<0
+IN2f:]JRI6>CbdTFXbQe=C3
+R15
+w1743989704
+8C:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\SHIFT_RIGHT_REGISTER_TB.v
+FC:\Users\TheMe\Desktop\UT Dallas\EEDG_6306\Midterm\MSDAP\SHIFT_RIGHT_REGISTER_TB.v
+!i122 602
+L0 3 69
+R16
+R17
+r1
+!s85 0
+31
+!i113 0
+R18
+R12
+n@s@h

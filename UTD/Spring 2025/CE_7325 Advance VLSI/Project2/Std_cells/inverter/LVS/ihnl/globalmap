@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+mark_std_cells/inverter/schematic inverter
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

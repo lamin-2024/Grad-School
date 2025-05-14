@@ -1,0 +1,2044 @@
+# PPCMD 1 
+# setViaGenMode -reset -use_fgc
+# 146 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# setViaGenMode -reset -use_cce
+# 145 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# setViaGenMode -reset -optimize_cross_via
+# 144 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# setViaGenMode -reset -keep_existing_via
+# 143 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+
+# PPCMD 5 
+# setViaGenMode -reset -disable_via_merging
+# 142 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 5 
+
+# PPCMD 6 
+# setAddStripeMode -reset -use_pthread
+# 141 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 6 
+
+# PPCMD 7 
+# setAddStripeMode -reset -use_fgc
+# 140 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 7 
+
+# PPCMD 8 
+# setAddStripeMode -reset -use_exact_spacing
+# 139 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 8 
+
+# PPCMD 9 
+# setAddStripeMode -reset -preventive_color_opt
+# 138 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 9 
+
+# PPCMD 10 
+# setAddStripeMode -reset -area_based_stripe
+# 137 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 10 
+
+# PPCMD 11 
+# addStripe -create_pins 0 -block_ring_bottom_layer_limit M7 -block_ring_top_layer_limit M6 -direction vertical -layer M7 -nets {VSS VDD} -padcore_ring_bottom_layer_limit M6 -set_to_set_distance 14.336 -spacing 0.288 -switch_layer_over_obs 0 -width 1.152 -area {{0.0 0.0 236.88 180.288}} -start 2.976 -stacked_via_bottom_layer M6 -stacked_via_top_layer M7
+# 136 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 11 
+
+# PPCMD 12 
+# setAddStripeMode -preventive_color_opt false
+# 135 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 12 
+
+# PPCMD 13 
+# setViaGenMode -keep_existing_via 1
+# 134 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 13 
+
+# PPCMD 14 
+# setViaGenMode -disable_via_merging true
+# 133 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 14 
+
+# PPCMD 15 
+# setViaGenMode -optimize_cross_via true
+# 132 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 15 
+
+# PPCMD 16 
+# setViaGenMode -use_cce 1
+# 131 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 16 
+
+# PPCMD 17 
+# setAddStripeMode -use_fgc 1
+# 130 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 17 
+
+# PPCMD 18 
+# setViaGenMode -use_fgc 1
+# 129 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 18 
+
+# PPCMD 19 
+# setAddStripeMode -spacing_from_block 0.0
+# 128 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 19 
+
+# PPCMD 20 
+# setAddStripeMode -trim_antenna_back_to_shape stripe
+# 127 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 20 
+
+# PPCMD 21 
+# setAddStripeMode -stacked_via_bottom_layer M6
+# 126 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 21 
+
+# PPCMD 22 
+# setAddStripeMode -stacked_via_top_layer M7
+# 125 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 22 
+
+# PPCMD 23 
+# setAddStripeMode -reset -trim_antenna_back_to_shape
+# 124 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 23 
+
+# PPCMD 24 
+# setAddStripeMode -reset -stacked_via_top_layer
+# 123 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 24 
+
+# PPCMD 25 
+# setAddStripeMode -reset -stacked_via_bottom_layer
+# 122 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 25 
+
+# PPCMD 26 
+# setViaGenMode -reset -use_fgc
+# 121 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 26 
+
+# PPCMD 27 
+# setViaGenMode -reset -use_cce
+# 120 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 27 
+
+# PPCMD 28 
+# setViaGenMode -reset -optimize_cross_via
+# 119 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 28 
+
+# PPCMD 29 
+# setViaGenMode -reset -keep_existing_via
+# 118 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 29 
+
+# PPCMD 30 
+# setViaGenMode -reset -disable_via_merging
+# 117 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 30 
+
+# PPCMD 31 
+# setAddStripeMode -reset -use_pthread
+# 116 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 31 
+
+# PPCMD 32 
+# setAddStripeMode -reset -use_fgc
+# 115 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 32 
+
+# PPCMD 33 
+# setAddStripeMode -reset -use_exact_spacing
+# 114 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 33 
+
+# PPCMD 34 
+# setAddStripeMode -reset -preventive_color_opt
+# 113 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 34 
+
+# PPCMD 35 
+# setAddStripeMode -reset -area_based_stripe
+# 112 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 35 
+
+# PPCMD 36 
+# addStripe -create_pins 0 -block_ring_bottom_layer_limit M6 -block_ring_top_layer_limit M5 -direction horizontal -layer M6 -nets {VSS VDD} -padcore_ring_bottom_layer_limit M5 -set_to_set_distance 14.336 -spacing 0.288 -switch_layer_over_obs 0 -width 1.152 -area {{0.0 0.0 236.88 180.288}} -start 2.976 -stacked_via_bottom_layer M5 -stacked_via_top_layer M6
+# 111 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 36 
+
+# PPCMD 37 
+# setAddStripeMode -preventive_color_opt false
+# 110 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 37 
+
+# PPCMD 38 
+# setViaGenMode -keep_existing_via 1
+# 109 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 38 
+
+# PPCMD 39 
+# setViaGenMode -disable_via_merging true
+# 108 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 39 
+
+# PPCMD 40 
+# setViaGenMode -optimize_cross_via true
+# 107 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 40 
+
+# PPCMD 41 
+# setViaGenMode -use_cce 1
+# 106 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 41 
+
+# PPCMD 42 
+# setAddStripeMode -use_fgc 1
+# 105 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 42 
+
+# PPCMD 43 
+# setViaGenMode -use_fgc 1
+# 104 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 43 
+
+# PPCMD 44 
+# setAddStripeMode -spacing_from_block 0.0
+# 103 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 44 
+
+# PPCMD 45 
+# setAddStripeMode -trim_antenna_back_to_shape stripe
+# 102 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 45 
+
+# PPCMD 46 
+# setAddStripeMode -stacked_via_bottom_layer M5
+# 101 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 46 
+
+# PPCMD 47 
+# setAddStripeMode -stacked_via_top_layer M6
+# 100 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 47 
+
+# PPCMD 48 
+# setAddStripeMode -reset -trim_antenna_back_to_shape
+# 99 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 48 
+
+# PPCMD 49 
+# setAddStripeMode -reset -stacked_via_top_layer
+# 98 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 49 
+
+# PPCMD 50 
+# setAddStripeMode -reset -stacked_via_bottom_layer
+# 97 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 50 
+
+# PPCMD 51 
+# setViaGenMode -reset -use_fgc
+# 96 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 51 
+
+# PPCMD 52 
+# setViaGenMode -reset -use_cce
+# 95 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 52 
+
+# PPCMD 53 
+# setViaGenMode -reset -optimize_cross_via
+# 94 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 53 
+
+# PPCMD 54 
+# setViaGenMode -reset -keep_existing_via
+# 93 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 54 
+
+# PPCMD 55 
+# setViaGenMode -reset -disable_via_merging
+# 92 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 55 
+
+# PPCMD 56 
+# setAddStripeMode -reset -use_pthread
+# 91 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 56 
+
+# PPCMD 57 
+# setAddStripeMode -reset -use_fgc
+# 90 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 57 
+
+# PPCMD 58 
+# setAddStripeMode -reset -use_exact_spacing
+# 89 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 58 
+
+# PPCMD 59 
+# setAddStripeMode -reset -preventive_color_opt
+# 88 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 59 
+
+# PPCMD 60 
+# setAddStripeMode -reset -area_based_stripe
+# 87 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 60 
+
+# PPCMD 61 
+# addStripe -create_pins 0 -block_ring_bottom_layer_limit M5 -block_ring_top_layer_limit M4 -direction vertical -layer M5 -nets {VSS VDD} -padcore_ring_bottom_layer_limit M4 -set_to_set_distance 10.752 -spacing 0.288 -switch_layer_over_obs 0 -width 0.864 -area {{0.0 0.0 236.88 180.288}} -start 2.304 -stacked_via_bottom_layer M4 -stacked_via_top_layer M5
+# 86 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 61 
+
+# PPCMD 62 
+# setAddStripeMode -preventive_color_opt false
+# 85 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 62 
+
+# PPCMD 63 
+# setViaGenMode -keep_existing_via 1
+# 84 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 63 
+
+# PPCMD 64 
+# setViaGenMode -disable_via_merging true
+# 83 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 64 
+
+# PPCMD 65 
+# setViaGenMode -optimize_cross_via true
+# 82 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 65 
+
+# PPCMD 66 
+# setViaGenMode -use_cce 1
+# 81 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 66 
+
+# PPCMD 67 
+# setAddStripeMode -use_fgc 1
+# 80 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 67 
+
+# PPCMD 68 
+# setViaGenMode -use_fgc 1
+# 79 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 68 
+
+# PPCMD 69 
+# setAddStripeMode -spacing_from_block 0.0
+# 78 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 69 
+
+# PPCMD 70 
+# setAddStripeMode -trim_antenna_back_to_shape stripe
+# 77 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 70 
+
+# PPCMD 71 
+# setAddStripeMode -stacked_via_bottom_layer M4
+# 76 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 71 
+
+# PPCMD 72 
+# setAddStripeMode -stacked_via_top_layer M5
+# 75 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 72 
+
+# PPCMD 73 
+# setAddStripeMode -reset -trim_antenna_back_to_shape
+# 74 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 73 
+
+# PPCMD 74 
+# setAddStripeMode -reset -stacked_via_top_layer
+# 73 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 74 
+
+# PPCMD 75 
+# setAddStripeMode -reset -stacked_via_bottom_layer
+# 72 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 75 
+
+# PPCMD 76 
+# setViaGenMode -reset -use_fgc
+# 71 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 76 
+
+# PPCMD 77 
+# setViaGenMode -reset -use_cce
+# 70 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 77 
+
+# PPCMD 78 
+# setViaGenMode -reset -optimize_cross_via
+# 69 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 78 
+
+# PPCMD 79 
+# setViaGenMode -reset -keep_existing_via
+# 68 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 79 
+
+# PPCMD 80 
+# setViaGenMode -reset -disable_via_merging
+# 67 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 80 
+
+# PPCMD 81 
+# setAddStripeMode -reset -use_pthread
+# 66 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 81 
+
+# PPCMD 82 
+# setAddStripeMode -reset -use_fgc
+# 65 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 82 
+
+# PPCMD 83 
+# setAddStripeMode -reset -use_exact_spacing
+# 64 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 83 
+
+# PPCMD 84 
+# setAddStripeMode -reset -preventive_color_opt
+# 63 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 84 
+
+# PPCMD 85 
+# setAddStripeMode -reset -area_based_stripe
+# 62 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 85 
+
+# PPCMD 86 
+# addStripe -create_pins 0 -block_ring_bottom_layer_limit M4 -block_ring_top_layer_limit M3 -direction horizontal -layer M4 -nets {VSS VDD} -padcore_ring_bottom_layer_limit M3 -set_to_set_distance 10.752 -spacing 0.288 -switch_layer_over_obs 0 -width 0.864 -area {{0.0 0.0 236.88 180.288}} -start 2.304 -stacked_via_bottom_layer M3 -stacked_via_top_layer M4
+# 61 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 86 
+
+# PPCMD 87 
+# setAddStripeMode -preventive_color_opt false
+# 60 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 87 
+
+# PPCMD 88 
+# setViaGenMode -keep_existing_via 1
+# 59 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 88 
+
+# PPCMD 89 
+# setViaGenMode -disable_via_merging true
+# 58 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 89 
+
+# PPCMD 90 
+# setViaGenMode -optimize_cross_via true
+# 57 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 90 
+
+# PPCMD 91 
+# setViaGenMode -use_cce 1
+# 56 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 91 
+
+# PPCMD 92 
+# setAddStripeMode -use_fgc 1
+# 55 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 92 
+
+# PPCMD 93 
+# setViaGenMode -use_fgc 1
+# 54 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 93 
+
+# PPCMD 94 
+# setAddStripeMode -spacing_from_block 0.0
+# 53 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 94 
+
+# PPCMD 95 
+# setAddStripeMode -trim_antenna_back_to_shape stripe
+# 52 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 95 
+
+# PPCMD 96 
+# setAddStripeMode -stacked_via_bottom_layer M3
+# 51 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 96 
+
+# PPCMD 97 
+# setAddStripeMode -stacked_via_top_layer M4
+# 50 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 97 
+
+# PPCMD 98 
+# setAddStripeMode -reset -trim_antenna_back_to_shape
+# 49 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 98 
+
+# PPCMD 99 
+# setAddStripeMode -reset -stacked_via_top_layer
+# 48 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 99 
+
+# PPCMD 100 
+# setAddStripeMode -reset -stacked_via_bottom_layer
+# 47 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 100 
+
+# PPCMD 101 
+# setViaGenMode -reset -use_fgc
+# 46 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 101 
+
+# PPCMD 102 
+# setViaGenMode -reset -use_cce
+# 45 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 102 
+
+# PPCMD 103 
+# setViaGenMode -reset -optimize_cross_via
+# 44 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 103 
+
+# PPCMD 104 
+# setViaGenMode -reset -keep_existing_via
+# 43 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 104 
+
+# PPCMD 105 
+# setViaGenMode -reset -disable_via_merging
+# 42 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 105 
+
+# PPCMD 106 
+# setAddStripeMode -reset -use_pthread
+# 41 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 106 
+
+# PPCMD 107 
+# setAddStripeMode -reset -use_fgc
+# 40 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 107 
+
+# PPCMD 108 
+# setAddStripeMode -reset -use_exact_spacing
+# 39 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 108 
+
+# PPCMD 109 
+# setAddStripeMode -reset -preventive_color_opt
+# 38 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 109 
+
+# PPCMD 110 
+# setAddStripeMode -reset -area_based_stripe
+# 37 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 110 
+
+# PPCMD 111 
+# addStripe -create_pins 0 -block_ring_bottom_layer_limit M3 -block_ring_top_layer_limit M1 -direction vertical -layer M3 -nets {VSS VDD} -padcore_ring_bottom_layer_limit M1 -set_to_set_distance 10.080 -spacing 4.104 -switch_layer_over_obs 0 -width 0.936 -area {{0.0 0.0 236.88 180.288}} -start 1.548 -stacked_via_bottom_layer M1 -stacked_via_top_layer M3
+# 36 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 111 
+
+# PPCMD 112 
+# setAddStripeMode -preventive_color_opt false
+# 35 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 112 
+
+# PPCMD 113 
+# setViaGenMode -keep_existing_via 1
+# 34 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 113 
+
+# PPCMD 114 
+# setViaGenMode -disable_via_merging true
+# 33 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 114 
+
+# PPCMD 115 
+# setViaGenMode -optimize_cross_via true
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 115 
+
+# PPCMD 116 
+# setViaGenMode -use_cce 1
+# 31 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 116 
+
+# PPCMD 117 
+# setAddStripeMode -use_fgc 1
+# 30 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 117 
+
+# PPCMD 118 
+# setViaGenMode -use_fgc 1
+# 29 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 118 
+
+# PPCMD 119 
+# setAddStripeMode -spacing_from_block 0.0
+# 28 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 119 
+
+# PPCMD 120 
+# setAddStripeMode -trim_antenna_back_to_shape stripe
+# 27 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 120 
+
+# PPCMD 121 
+# setAddStripeMode -stacked_via_bottom_layer M1
+# 26 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 121 
+
+# PPCMD 122 
+# setAddStripeMode -stacked_via_top_layer M3
+# 25 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 122 
+
+# PPCMD 123 
+# setAddStripeMode -reset -stacked_via_top_layer
+# 24 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 123 
+
+# PPCMD 124 
+# setAddStripeMode -reset -stacked_via_bottom_layer
+# 23 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 124 
+
+# PPCMD 125 
+# setViaGenMode -reset -use_fgc
+# 22 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 125 
+
+# PPCMD 126 
+# setViaGenMode -reset -use_cce
+# 21 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 126 
+
+# PPCMD 127 
+# setViaGenMode -reset -optimize_cross_via
+# 20 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 127 
+
+# PPCMD 128 
+# setViaGenMode -reset -keep_existing_via
+# 19 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 128 
+
+# PPCMD 129 
+# setViaGenMode -reset -disable_via_merging
+# 18 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 129 
+
+# PPCMD 130 
+# setAddStripeMode -reset -use_pthread
+# 17 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 130 
+
+# PPCMD 131 
+# setAddStripeMode -reset -use_fgc
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 131 
+
+# PPCMD 132 
+# setAddStripeMode -reset -use_exact_spacing
+# 15 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 132 
+
+# PPCMD 133 
+# setAddStripeMode -reset -preventive_color_opt
+# 14 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 133 
+
+# PPCMD 134 
+# setAddStripeMode -reset -area_based_stripe
+# 13 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 134 
+
+# PPCMD 135 
+# addStripe -pin_layer M1 -layer M1 -over_pins 1 -master {{TAPCELL*}} -block_ring_bottom_layer_limit M1 -block_ring_top_layer_limit M1 -padcore_ring_bottom_layer_limit M1 -padcore_ring_top_layer_limit M1 -direction horizontal -width pin_width -nets { VSS VDD } -stacked_via_bottom_layer M1 -stacked_via_top_layer M1
+# 12 
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 135 
+
+# PPCMD 136 
+# setAddStripeMode -preventive_color_opt false
+# 11 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 136 
+
+# PPCMD 137 
+# setViaGenMode -keep_existing_via 1
+# 10 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 137 
+
+# PPCMD 138 
+# setViaGenMode -disable_via_merging true
+# 9 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 138 
+
+# PPCMD 139 
+# setViaGenMode -optimize_cross_via true
+# 8 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 139 
+
+# PPCMD 140 
+# setViaGenMode -use_cce 1
+# 7 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 140 
+
+# PPCMD 141 
+# setAddStripeMode -use_fgc 1
+# 6 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 141 
+
+# PPCMD 142 
+# setViaGenMode -use_fgc 1
+# 5 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 142 
+
+# PPCMD 143 
+# setAddStripeMode -spacing_from_block 0.0
+# 4 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 143 
+
+# PPCMD 144 
+# setAddStripeMode -stacked_via_top_layer M1
+# 3 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 144 
+
+# PPCMD 145 
+# setAddStripeMode -stacked_via_bottom_layer M1
+# 2 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 145 
+
+# PPCMD 146 
+# setViaGenMode -viarule_preference { M7_M6widePWR1p152 M6_M5widePWR1p152 M5_M4widePWR0p864 M4_M3widePWR0p864 M3_M2widePWR0p936 }
+# 1 
+# 0 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 146 
+

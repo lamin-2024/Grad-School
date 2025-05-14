@@ -1,0 +1,593 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "adder_outL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[5]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[7]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[8]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[9]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[10]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[11]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[12]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[13]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[14]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[15]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[16]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[17]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[18]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[19]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[20]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[21]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[22]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outL[23]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[12]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[13]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[14]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[15]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[16]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[17]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[18]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[19]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[20]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[21]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[22]",
+					"strict" : false
+				},
+				{
+					"name" : "adder_outR[23]",
+					"strict" : false
+				},
+				{
+					"name" : "add_sub_L",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[0]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[1]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[2]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[3]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[4]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[5]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[6]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[7]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[8]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[9]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[10]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[11]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[12]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[13]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[14]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[15]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[16]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[16]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[17]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[17]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[18]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[18]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[19]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[19]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[20]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[20]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[21]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[21]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[22]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[22]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_L[23]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outL[23]",
+					"strict" : false
+				},
+				{
+					"name" : "add_sub_R",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[7]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[8]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[9]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[10]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[11]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[12]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[13]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[14]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[15]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[16]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[16]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[17]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[17]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[18]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[18]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[19]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[19]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[20]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[20]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[21]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[21]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[22]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[22]",
+					"strict" : false
+				},
+				{
+					"name" : "dataout_R[23]",
+					"strict" : false
+				},
+				{
+					"name" : "shift_outR[23]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

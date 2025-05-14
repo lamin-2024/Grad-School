@@ -1,0 +1,122 @@
+# Loading project post_syn_simulation
+# Compile of MSDAP_mapped.v was successful with warnings.
+# Compile of MSDAP_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim MSDAP_tb
+# vsim MSDAP_tb 
+# Start time: 17:50:29 on May 07,2025
+# //  ModelSim DE 2022.1 Jan 29 2022 Linux 4.18.0-553.46.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.MSDAP_tb
+# Loading work.MSDAP
+# Loading work.ALU
+# Loading work.add_signed
+# Loading work.XOR2xp5_ASAP7_75t_SL
+# Loading work.MAJIxp5_ASAP7_75t_SL
+# Loading work.INVx1_ASAP7_75t_SL
+# Loading work.XNOR2xp5_ASAP7_75t_SL
+# Loading work.NAND2xp5_ASAP7_75t_SL
+# Loading work.sub_signed
+# Loading work.MAJx2_ASAP7_75t_SL
+# Loading work.OAI21xp5_ASAP7_75t_SL
+# Loading work.INVx1_ASAP7_75t_L
+# Loading work.AND2x2_ASAP7_75t_SL
+# Loading work.ASYNC_DFFHx1_ASAP7_75t_SL
+# Loading work.OR5x1_ASAP7_75t_SL
+# Loading work.OR4x1_ASAP7_75t_SL
+# Loading work.INVxp67_ASAP7_75t_SL
+# Loading work.A2O1A1Ixp33_ASAP7_75t_SL
+# Loading work.NOR2xp33_ASAP7_75t_SL
+# Loading work.AOI222xp33_ASAP7_75t_SL
+# Loading work.AOI221xp5_ASAP7_75t_SL
+# Loading work.AOI21xp5_ASAP7_75t_SL
+# Loading work.AOI22xp5_ASAP7_75t_SL
+# Loading work.AOI33xp33_ASAP7_75t_SL
+# Loading work.OA21x2_ASAP7_75t_SL
+# Loading work.AO22x1_ASAP7_75t_SL
+# Loading work.OAI22xp5_ASAP7_75t_SL
+# Loading work.NAND2x1_ASAP7_75t_L
+# Loading work.INVx2_ASAP7_75t_SL
+# Loading work.NOR2x1_ASAP7_75t_SL
+# Loading work.NOR5xp2_ASAP7_75t_SL
+# Loading work.OR2x2_ASAP7_75t_SL
+# Loading work.AO32x1_ASAP7_75t_SL
+# Loading work.NOR4xp25_ASAP7_75t_SL
+# Loading work.NAND4xp25_ASAP7_75t_SL
+# Loading work.NAND2x2_ASAP7_75t_SL
+# Loading work.INVx3_ASAP7_75t_SL
+# Loading work.ALU_499
+# Loading work.add_signed_515
+# Loading work.sub_signed_524
+# Loading work.CO_MEM
+# Loading work.SRAM1RW128x12
+# Loading work.DFFHQNx1_ASAP7_75t_SL
+# Loading work.SDFHx1_ASAP7_75t_SL
+# Loading work.NAND5xp2_ASAP7_75t_SL
+# Loading work.AND5x1_ASAP7_75t_SL
+# Loading work.AND4x2_ASAP7_75t_SL
+# Loading work.NOR2x1_ASAP7_75t_L
+# Loading work.NOR2x1p5_ASAP7_75t_SL
+# Loading work.INVx6_ASAP7_75t_SL
+# Loading work.HB1xp67_ASAP7_75t_L
+# Loading work.HB1xp67_ASAP7_75t_SL
+# Loading work.DLLx1_ASAP7_75t_SL
+# Loading work.NAND2xp33_ASAP7_75t_SL
+# Loading work.AOI22xp33_ASAP7_75t_SL
+# Loading work.DFFHQNx1_ASAP7_75t_L
+# Loading work.DATA_MEM
+# Loading work.SRAM1RW256x8
+# Loading work.AO222x2_ASAP7_75t_SL
+# Loading work.AND2x6_ASAP7_75t_SL
+# Loading work.INVx13_ASAP7_75t_SL
+# Loading work.SYNC
+# Loading work.R_MEM
+# Loading work.SRAM2RW16x8
+# Loading work.DFFHQx4_ASAP7_75t_SL
+# Loading work.AOI21xp33_ASAP7_75t_L
+# Loading work.NAND4xp25_ASAP7_75t_R
+# Loading work.AOI22xp33_ASAP7_75t_L
+# Loading work.AND2x2_ASAP7_75t_R
+# Loading work.SYNC_514
+# Loading work.MAIN_CTRL
+# Loading work.OR3x1_ASAP7_75t_SL
+# Loading work.NAND3xp33_ASAP7_75t_SL
+# Loading work.NOR3xp33_ASAP7_75t_SL
+# Loading work.OAI211xp5_ASAP7_75t_SL
+# Loading work.O2A1O1Ixp33_ASAP7_75t_SL
+# Loading work.AOI22xp5_ASAP7_75t_L
+# Loading work.AOI211x1_ASAP7_75t_SL
+# Loading work.INVxp33_ASAP7_75t_SRAM
+# Loading work.PARALLEL_2_SERIAL
+# Loading work.AOI31xp33_ASAP7_75t_SL
+# Loading work.INVx8_ASAP7_75t_SL
+# Loading work.SERIAL_2_PARALLEL
+# Loading work.NOR5xp2_ASAP7_75t_R
+# Loading work.OR5x1_ASAP7_75t_R
+# Loading work.OR4x1_ASAP7_75t_L
+# Loading work.ASYNC_DFFHx1_ASAP7_75t_L
+# Loading work.AND4x2_ASAP7_75t_L
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'InputL'. The port definition is at: /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/sim/MSDAP_mapped.v(94117).
+#    Time: 0 ps  Iteration: 0  Instance: /MSDAP_tb/UUT File: /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/sim/MSDAP_tb.v Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (16) for port 'InputR'. The port definition is at: /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/sim/MSDAP_mapped.v(94117).
+#    Time: 0 ps  Iteration: 0  Instance: /MSDAP_tb/UUT File: /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/sim/MSDAP_tb.v Line: 18
+# Loading work.altos_dff_sr_err
+# Loading work.altos_dff_sr_1
+# Loading work.altos_dff_err
+# Loading work.altos_dff
+# Loading work.altos_latch
+add wave -position insertpoint sim:/MSDAP_tb/*
+run
+# End time: 18:01:15 on May 07,2025, Elapsed time: 0:10:46
+# Errors: 0, Warnings: 4

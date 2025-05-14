@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Std_cells/MUX2_1/schematic MUX2_1
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

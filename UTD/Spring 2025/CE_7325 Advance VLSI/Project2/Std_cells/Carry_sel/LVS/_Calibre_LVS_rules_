@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Sun Apr 13 13:27:10 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "Carry_sel.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "Carry_sel"
+
+SOURCE PATH "Carry_sel.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "Carry_sel"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "Carry_sel.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "Carry_sel.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_LVS_rules"

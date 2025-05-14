@@ -1,0 +1,26 @@
+//Loading PDBs.
+//PDB loading of cell: DFF
+//Making the stats.
+GID                       totalC    totalCC    ratioCC     Cell    Layout   Source
+1                        1.83e-16   1.04e-16   5.69e-01    DFF     GND!     GND!  
+2                        2.21e-16   1.25e-16   5.69e-01    DFF     VDD!     VDD!  
+3                        1.76e-18   0.00e+00   0.00e+00    DFF     D        D  
+4                        1.45e-16   1.22e-16   8.42e-01    DFF     4        NET2  
+5                        1.42e-16   1.25e-16   8.82e-01    DFF     5        NET1  
+6                        3.54e-17   1.95e-17   5.50e-01    DFF     6        NET19  
+7                        3.39e-17   1.91e-17   5.63e-01    DFF     7        NET9  
+8                        3.73e-17   3.35e-17   8.99e-01    DFF     R        R  
+9                        1.91e-18   0.00e+00   0.00e+00    DFF     CLK      CLK  
+10                       3.82e-17   2.37e-17   6.19e-01    DFF     10       NET17  
+11                       2.01e-17   6.51e-18   3.25e-01    DFF     11       NET24  
+12                       8.41e-18   0.00e+00   0.00e+00    DFF     OUT      OUT  
+13                       1.56e-17   8.98e-18   5.76e-01    DFF     13       NET13  
+14                       5.13e-18   7.89e-19   1.54e-01    DFF     14       NET6  
+15                       1.01e-17   3.49e-18   3.44e-01    DFF     15       NET20  
+16                       5.92e-18   1.58e-18   2.66e-01    DFF     16       NET18  
+17                       4.34e-18   0.00e+00   0.00e+00    DFF     17       NET26  
+18                       4.34e-18   0.00e+00   0.00e+00    DFF     18       NET27  
+19                       1.56e-17   8.98e-18   5.76e-01    DFF     19       NET25  
+20                       5.92e-18   1.58e-18   2.66e-01    DFF     20       NET23  
+21                       1.66e-17   9.98e-18   6.02e-01    DFF     21       NET22  
+22                       5.13e-18   7.89e-19   1.54e-01    DFF     22       NET21  

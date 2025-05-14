@@ -1,0 +1,305 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "clear_reg",
+					"strict" : false
+				},
+				{
+					"name" : "load_adder",
+					"strict" : false
+				},
+				{
+					"name" : "load_shift",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[4]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[5]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[6]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_L[7]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_data_R[7]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_L[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_L[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_L[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_L[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_rj_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_L[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_L[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_L[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_L[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_L[4]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "read_addr_coeff_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "en_fir",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "done_shifting",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_L_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "coeff_R_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_L_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rj_R_data[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

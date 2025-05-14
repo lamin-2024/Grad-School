@@ -1,0 +1,31 @@
+//  Runset file generated on Thu Mar 27 20:15:00 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+xrc.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_RCX_rules"
+xrc.runDir.value = "/home/eng/m/mxi240020/7325/asap7/Std_cells/NOR2/PEX"
+xrc.layout.layoutFile.value = "NOR2.calibre.db"
+cmn.layout.defFiles.value = [ "NOR2.def" ]
+xrc.layout.topCellLibrary.value = "Std_cells"
+cmn.layout.topCellLibraryFDI.value = "Std_cells"
+xrc.layout.topCell.value = "NOR2"
+xrc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+xrc.source.sourceFile.value = "NOR2.src.net"
+xrc.source.topCellLibrary.value = "Std_cells"
+xrc.source.topCellLibraryFDI.value = "Std_cells"
+xrc.source.topCell.value = "NOR2"
+xrc.source.topCellFDI.value = "NOR2"
+xrc.source.topCellView.value = "schematic"
+xrc.source.topCellViewFDI.value = "schematic"
+xrc.pexNetlist.netlistFile.value = "NOR2.pex.netlist"
+xrc.pexNetlist.netlistFormat.value = "HSPICE"
+xrc.reports.lvsReport.value = "NOR2.lvs.report"
+xrc.reports.pexReport.value = "NOR2.pex.report"
+
+xrc.blockExtraction.setADMSNetlistOutputFiles("{NOR2 NOR2.pex.netlist} ")
+xrc.blockExtraction.setADMSNetlistOutputVerilogModules("{NOR2 NOR2} ")
+

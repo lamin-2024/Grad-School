@@ -1,0 +1,12 @@
+//Loading PDBs.
+//PDB loading of cell: AOI21
+//Making the stats.
+GID                       totalC    totalCC    ratioCC     Cell    Layout   Source
+1                        2.23e-17   1.27e-17   5.70e-01    AOI21   GND!     GND!  
+2                        4.14e-17   2.38e-17   5.74e-01    AOI21   VDD!     VDD!  
+3                        2.11e-18   0.00e+00   0.00e+00    AOI21   C        C  
+4                        2.65e-17   2.38e-17   8.99e-01    AOI21   B        B  
+5                        1.47e-17   1.19e-17   8.09e-01    AOI21   A        A  
+6                        9.34e-18   1.60e-18   1.71e-01    AOI21   6        NET2  
+7                        1.31e-17   3.18e-18   2.42e-01    AOI21   OUT      OUT  
+8                        5.13e-18   7.89e-19   1.54e-01    AOI21   8        NET3  

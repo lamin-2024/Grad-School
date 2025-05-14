@@ -1,0 +1,15 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/PnR
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {5 2 5 0}
+lvs_SourceCase NO
+lvs_LayoutCase NO
+lvs_PowerName vdd!
+lvs_PowerName VDD!
+lvs_GroundName VSS!
+lvs_GroundName vss!
+lvs_LvsOutFile LVS_REPORT MSDAP.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/PnR/MSDAP_genus.sp
+lvs_LvsOutFile RULES_FILE /home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/PnR/_lvsRules_calibre_asap7.rul_
+lvs_LvsRunTimes 1746503956 1746503962

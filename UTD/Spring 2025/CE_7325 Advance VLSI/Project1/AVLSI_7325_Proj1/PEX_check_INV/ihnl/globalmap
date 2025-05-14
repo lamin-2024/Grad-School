@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+std_cell/INV/schematic INV
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

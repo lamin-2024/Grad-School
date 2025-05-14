@@ -1,0 +1,83 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version ICADVM20.1-64b 01/25/2022 18:32 (cpgbld01) $
+          : sub-version  ICADVM20.1-64b.500.23 
+Started at: 18-Mar-2025  22:59:43
+User Name : mxi240020
+Host Name : engnx05a.utdallas.edu
+Directory : /home/eng/m/mxi240020/7325/asap7
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.layermap
+WARNING (XSTRM-25): The layer map file '/proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.layermap' contains an invalid record at line number '1' and will be ignored. This is because the format of the mapping entry in the layer map file '/proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.layermap' is invalid. The valid mapping entry format is: <layerName  purposeName  strmLayer strmType [Material [MaskNumber]] [Qualifier] [PhotomaskColor ColorState]>, where 'PhotomaskColor' and 'ColorState' are valid only when the '-enableColoring' option is set and the permissible range for strmLayer and strmType is 0 - 32767. Now, update the mapping entry and then translate again.
+INFO (XSTRM-217): Reading the object map file, /proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.objectmap
+WARNING (XSTRM-140): The object map file '/proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.objectmap' contains an invalid record at line number '1' and will be ignored. This is because the format of the mapping entry in the object map file '/proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.objectmap' is invalid. The valid mapping entry format is: <objectType  objectSubType  [oaLayer] strmLayer strmType [PhotomaskColor]>, where 'PhotomaskColor' is valid only when the '-enableColoring' option is set. Now, update the mapping entry and then translate again.
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 mark_std_cells
+strmFile                                /home/eng/m/mxi240020/7325/asap7/mark_std_cells/inverter/DRC/inverter.calibre.db
+topCell                                 inverter
+view                                    layout
+runDir                                  /home/eng/m/mxi240020/7325/asap7/mark_std_cells/inverter/DRC/
+logFile                                 PIPO.LOG.inverter
+summaryFile                             PIPO.SUM.inverter
+layerMap                                /proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.layermap
+objectMap                                /proj/cad/library/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_TechLib.objectmap
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating cellView mark_std_cells/inverter/layout as STRUCTURE inverter.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Gate:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'fin:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'BOUNDARY:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'well:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'GCut:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Active:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'SDT:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'LISD:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'LIG:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'V0:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'M1:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Nselect:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'Pselect:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'M2:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'V1:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'M2:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'M3:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'M3:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'V2:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+WARNING (XSTRM-154): The object map file does not contain any mapping for the OpenAccess object 'Marker' and the sub-object 'annotation'. Therefore, these objects in the design will not be translated. To enable the translation of these objects in the Stream file, provide a valid mapping in the object map file.
+WARNING (XSTRM-399): The STRUCT 'inverter' generated for 'mark_std_cells/inverter/layout' in GDS is empty because either the design is empty or no shape or object was translated.
+
+Summary of Objects Translated:
+	Scalar Instances:                       0
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             0
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Stitch:                                 0
+	Standard Vias                           0
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   0
+	TextDisplay:                            0
+	Cells:                                  1
+
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 2680KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '23' warning(s) found.

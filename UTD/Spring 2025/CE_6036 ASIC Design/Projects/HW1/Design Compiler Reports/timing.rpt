@@ -1,0 +1,33 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : full_adder
+Version: O-2018.06-SP1
+Date   : Fri Jan 31 04:39:02 2025
+****************************************
+
+Operating Conditions: ss_1v62_125c   Library: ss_1v62_125c
+Wire Load Model Mode: top
+
+  Startpoint: B (input port)
+  Endpoint: C_out (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  B (in)                                   0.00       0.00 f
+  U6/Y (XOR2X1M)                           0.21       0.21 f
+  U5/Y (AO22X1M)                           0.38       0.59 f
+  C_out (out)                              0.00       0.59 f
+  data arrival time                                   0.59
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

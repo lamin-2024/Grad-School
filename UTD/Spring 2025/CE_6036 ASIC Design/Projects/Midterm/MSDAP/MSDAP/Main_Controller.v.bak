@@ -1,0 +1,302 @@
+module Main_Controller (
+    	input wire SCLK,
+	input wire DCLK,
+    	input wire RESET_N,
+    	input wire START,
+    	input wire FRAME,
+    	output reg INREADY,
+    	output reg OUTREADY, 
+
+    	// RJ_MEM_L CONNECTIONS
+    	output reg RJ_MEM_CLEAR_L,
+    	output reg [3:0] RJ_WRITE_ADDRESS_L,
+    	output reg RJ_WRITE_EN_L,
+
+    	// RJ_MEM_R CONNECTIONS
+    	output reg RJ_MEM_CLEAR_R,
+    	output reg [3:0] RJ_WRITE_ADDRESS_R,
+    	output reg RJ_WRITE_EN_R,
+
+    	// COEFF_MEM_L CONNECTIONS
+    	output reg COEFF_MEM_CLEAR_L,
+    	output reg [8:0] COEFF_WRITE_ADDRESS_L,
+    	output reg COEFF_WRITE_EN_L,
+
+    	// COEFF_MEM_R CONNECTIONSxx
+    	output reg COEFF_MEM_CLEAR_R,
+    	output reg [8:0] COEFF_WRITE_ADDRESS_R,
+    	output reg COEFF_WRITE_EN_R,
+
+    	// DATA_MEM_L CONNECTIONS
+    	output reg DATA_MEM_CLEAR_L,
+    	output reg [7:0] DATA_WRITE_ADDRESS_L,
+    	output reg DATA_WRITE_EN_L,
+    	input wire ZERO_DETECTED_L,
+
+    	// DATA_MEM_R CONNECTIONS
+    	output reg DATA_MEM_CLEAR_R,
+    	output reg [7:0] DATA_WRITE_ADDRESS_R,
+    	output reg DATA_WRITE_EN_R,
+    	input wire ZERO_DETECTED_R,
+
+    	// SIPO_L CONNECTIONS
+    	output reg SIPO_CLEAR_L,
+    	output reg SIPO_EN_L,
+	input wire SIPO_DATA_READY_L,
+
+   	// SIPO_R CONNECTIONS
+    	output reg SIPO_CLEAR_R,
+    	output reg SIPO_EN_R,
+	input wire SIPO_DATA_READY_R
+);
+
+    	// State encoding
+    	localparam IDLE           = 4'd0;
+    	localparam INIT           = 4'd1;
+    	localparam WAIT_RJ_RECEIVE  = 4'd2;
+    	localparam READ_RJ           = 4'd3;
+    	localparam WAIT_COEFF_RECEIVE = 4'd4;
+    	localparam READ_COEFF = 4'd5;
+    	localparam WAIT_DATA_RECEIVE = 4'd6;
+    	localparam WORKING_MODE = 4'd7;
+    	localparam CLEARING_MODE = 4'd8;
+    	localparam SLEEPING_MODE = 4'd9;
+
+    	// Local Variables
+    	reg [3:0] curr_state, next_state;
+    	reg [3:0] RJ_counter;
+    	reg [8:0] COEFF_counter;
+    	reg [7:0] DATA_counter;
+    	reg [10:0] SLEEP_L_counter;
+	reg [10:0] SLEEP_R_counter;
+	reg LAST_SLEEP_L;
+	reg LAST_SLEEP_R;
+
+    	// State register
+	always @(posedge DCLK) begin
+		curr_state <= next_state;
+
+	end
+
+
+    	// NEXT STATE LOGIC (COMBINATIONAL ALWAYS BLOCK)
+    	always @(*) begin
+
+        	case (curr_state)
+            		IDLE: begin
+				if(START)
+					next_state = INIT;
+           	 	end
+
+            		INIT: begin
+				next_state = WAIT_RJ_RECEIVE;
+            		end
+
+            		WAIT_RJ_RECEIVE: begin
+                		if (FRAME)
+					next_state = READ_RJ;
+            		end
+
+			READ_RJ: begin
+				if(SIPO_DATA_READY_L && SIPO_DATA_READY_R)
+					next_state = (RJ_counter == 15) ? WAIT_COEFF_RECEIVE : WAIT_RJ_RECEIVE;
+			end
+
+            		WAIT_COEFF_RECEIVE: begin
+                		if (FRAME)
+                    			next_state = READ_COEFF;
+            		end
+
+            		READ_COEFF: begin
+				if(SIPO_DATA_READY_L && SIPO_DATA_READY_R)
+					next_state = (COEFF_counter == 511) ? WAIT_DATA_RECEIVE : WAIT_COEFF_RECEIVE;
+            		end
+
+			WAIT_DATA_RECEIVE: begin
+				if(!RESET_N)
+					next_state = CLEARING_MODE;
+				else if(FRAME)
+					next_state = WORKING_MODE;
+
+			end
+			
+			WORKING_MODE: begin
+				if(!RESET_N)
+					next_state = CLEARING_MODE;
+				else if((SLEEP_L_counter >= 800) && (SLEEP_R_counter >= 800))
+					next_state = SLEEPING_MODE;
+				else if(SIPO_DATA_READY_L && SIPO_DATA_READY_R)
+					next_state = WAIT_DATA_RECEIVE; 	
+			end
+
+			SLEEPING_MODE: begin
+				if(!RESET_N)
+					next_state = CLEARING_MODE;
+				if(!ZERO_DETECTED_L || !ZERO_DETECTED_R)
+					next_state = WORKING_MODE;
+			end
+
+			CLEARING_MODE: begin
+				if(!RESET_N)
+					next_state = CLEARING_MODE;
+				else if (!ZERO_DETECTED_L || !ZERO_DETECTED_R)
+					next_state = WORKING_MODE;
+			end
+            		default: next_state = IDLE;
+        	endcase
+    	end
+
+    	always @(*) begin
+		case (curr_state)
+			INIT: begin
+                		RJ_MEM_CLEAR_L <= 1;
+               			RJ_MEM_CLEAR_R <= 1;
+                		COEFF_MEM_CLEAR_L <= 1;
+                		COEFF_MEM_CLEAR_R <= 1;
+                		DATA_MEM_CLEAR_L <= 1;
+                		DATA_MEM_CLEAR_R <= 1;
+                		SIPO_CLEAR_L <= 1;
+                		SIPO_CLEAR_R <= 1;
+				INREADY <= 0;
+				SIPO_EN_L <= 0;
+				SIPO_EN_R <= 0;
+				RJ_counter <= 0;
+				COEFF_counter <= 0;
+				DATA_counter <= 0;
+				SLEEP_L_counter <= 0;
+				SLEEP_R_counter <= 0;
+				LAST_SLEEP_L <= 0;
+				LAST_SLEEP_R <= 0;
+			
+           		end
+			WAIT_RJ_RECEIVE: begin
+				//Bringing high values low.
+                		RJ_MEM_CLEAR_L <= 0;
+                		RJ_MEM_CLEAR_R <= 0;
+                		COEFF_MEM_CLEAR_L <= 0;
+                		COEFF_MEM_CLEAR_R <= 0;
+                		DATA_MEM_CLEAR_L <= 0;
+                		DATA_MEM_CLEAR_R <= 0;
+                		SIPO_CLEAR_L <= 0;
+                		SIPO_CLEAR_R <= 0;
+				//State specific.
+				SIPO_EN_L <= 1;
+				SIPO_EN_R <= 1;
+            		end
+			READ_RJ: begin
+
+			end
+			WAIT_COEFF_RECEIVE: begin
+				
+			end
+			READ_COEFF: begin
+
+			end
+			WAIT_DATA_RECEIVE: begin
+
+			end
+			WORKING_MODE: begin
+
+			end
+			SLEEPING_MODE: begin
+				OUTREADY <= 0;
+
+			end
+		endcase
+    	end
+	
+	//INREADY SHOULD ALWAYS UPDATE ON POS EDGE OF SCLK.
+	always @(posedge SCLK) begin
+		case (curr_state)
+			WAIT_RJ_RECEIVE: begin
+				INREADY <= 1;
+			end
+			READ_RJ: begin
+				INREADY <= 1;
+			end
+			WAIT_COEFF_RECEIVE: begin
+				INREADY <= 1;
+			end
+			COEFF_READ: begin
+				INREADY <= 1;
+			end
+			WAIT_DATA_RECEIVE: begin
+				INREADY <= 1;
+			end
+			WORKING_MODE: begin
+				INREADY <= 1;
+			end
+			SLEEPING_MODE: begin
+				INREADY <= 1;
+			end
+			CLEARING_MODE: begin
+				INREADY <= 0;
+			end
+		endcase
+	end
+
+	//UPDATE COUNTERS IN SEQUENTIAL LOGIC
+	always @(posedge DCLK) begin
+//		RJ_WRITE_EN_L     <= 0;
+//		RJ_WRITE_EN_R     <= 0;
+//		COEFF_WRITE_EN_L  <= 0;
+//		COEFF_WRITE_EN_R  <= 0;
+//		DATA_WRITE_EN_L   <= 0;
+//		DATA_WRITE_EN_R   <= 0;
+//
+		if ((curr_state == READ_RJ) && SIPO_DATA_READY_L && SIPO_DATA_READY_R) begin
+			RJ_counter <= RJ_counter + 1;
+        		RJ_WRITE_EN_L <= 1;
+			RJ_WRITE_EN_R <= 1;
+			RJ_WRITE_ADDRESS_L <= RJ_counter;
+			RJ_WRITE_ADDRESS_R <= RJ_counter;
+		end else begin
+			RJ_WRITE_EN_L <= 0;
+			RJ_WRITE_EN_R <= 0;
+		end
+
+		if ((curr_state == READ_COEFF) && SIPO_DATA_READY_L && SIPO_DATA_READY_R) begin
+			COEFF_counter <= COEFF_counter + 1;
+        		COEFF_WRITE_EN_L <= 1;
+			COEFF_WRITE_EN_R <= 1;
+			COEFF_WRITE_ADDRESS_L <= COEFF_counter;
+			COEFF_WRITE_ADDRESS_R <= COEFF_counter;
+		end else begin
+			COEFF_WRITE_EN_L <= 0;
+			COEFF_WRITE_EN_R <= 0;
+		end
+
+		if ((curr_state == WORKING_MODE || curr_state == SLEEPING_MODE) && SIPO_DATA_READY_L && SIPO_DATA_READY_R) begin
+			DATA_counter <= DATA_counter + 1;
+			DATA_WRITE_EN_L <= 1;
+			DATA_WRITE_EN_R <= 1;
+			DATA_WRITE_ADDRESS_L <= DATA_counter;
+			DATA_WRITE_ADDRESS_R <= DATA_counter;
+		end else begin
+			DATA_WRITE_EN_L <= 0;
+			DATA_WRITE_EN_R <= 0;
+		end
+	end
+
+	always@(posedge FRAME) begin
+		if (curr_state == WORKING_MODE) begin
+			if (ZERO_DETECTED_L) begin
+			SLEEP_L_counter <= SLEEP_L_counter + 1;
+			end else begin
+			SLEEP_L_counter <= 0;
+			end
+		end
+		if (curr_state == WORKING_MODE) begin
+			if (ZERO_DETECTED_R) begin
+			SLEEP_R_counter <= SLEEP_R_counter + 1;
+			end else begin
+			SLEEP_R_counter <= 0;
+			end
+		end
+		if (curr_state == SLEEPING_MODE) begin
+			OUTREADY <= 0;
+		end
+	end
+
+endmodule
+

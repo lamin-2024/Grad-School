@@ -1,0 +1,15 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/eng/m/mxi240020/7325/asap7/Std_cells/NAND2/LVS
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_SourceCase NO
+lvs_LayoutCase NO
+lvs_PowerName vdd!
+lvs_PowerName VDD!
+lvs_GroundName VSS!
+lvs_GroundName vss!
+lvs_LvsOutFile LVS_REPORT NAND2.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST NAND2.src.net
+lvs_LvsOutFile RULES_FILE _Calibre_LVS_rules_
+lvs_LvsRunTimes 1742965730 1742965730

@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Carry_sel.dv
+dv_start matched                                  
+dv_cell {Carry_sel} {Carry_sel} matched
+dv_obj_count -transformed_nets {89 89} -transformed_inst {125 125} -transformed_port {16 16}
+dv_end

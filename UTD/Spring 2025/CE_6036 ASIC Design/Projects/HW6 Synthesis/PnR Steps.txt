@@ -1,0 +1,11 @@
+To Perform PnR
+Step1: Obtain the synthesizabe Verilog from your synthesizer (dc or genus etc)
+Step2: define a lef file 
+Step3: define your power rails and connection
+Step4: define your clock constrains
+Stept5: define a floorplan for your design
+Step6: run your PnR using a tcl script or run directly with a GUI
+
+HW6: run pre syn 
+	 run post syn and campare the result
+	 do PnR and reduce DRC errors as much as possible 

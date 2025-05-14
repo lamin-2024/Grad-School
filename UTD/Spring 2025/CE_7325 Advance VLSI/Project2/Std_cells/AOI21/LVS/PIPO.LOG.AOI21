@@ -1,0 +1,61 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 09/28/2022 10:57 (cpgsrv12) $
+          : sub-version  IC6.1.8-64b.500.28 
+Started at: 25-Mar-2025  23:54:27
+User Name : mxi240020
+Host Name : engnx05a.utdallas.edu
+Directory : /home/eng/m/mxi240020/7325/asap7
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/eng/m/mxi240020/7325/asap7/Std_cells/AOI21/LVS/AOI21.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /home/eng/v/vks160030/Desktop/ASAP7_PDKandLIB_v1p5/asap7PDK_r1p5/cdslib/asap7_TechLib_08/asap7_TechLib.layermap
+INFO (XSTRM-217): Reading the object map file, /home/eng/v/vks160030/Desktop/ASAP7_PDKandLIB_v1p5/asap7PDK_r1p5/cdslib/asap7_TechLib_08/asap7_TechLib.objectmap
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 Std_cells
+strmFile                                /home/eng/m/mxi240020/7325/asap7/Std_cells/AOI21/LVS/AOI21.calibre.db
+topCell                                 AOI21
+view                                    layout
+runDir                                  /home/eng/m/mxi240020/7325/asap7/Std_cells/AOI21/LVS/
+logFile                                 PIPO.LOG.AOI21
+summaryFile                             PIPO.SUM.AOI21
+layerMap                                /home/eng/v/vks160030/Desktop/ASAP7_PDKandLIB_v1p5/asap7PDK_r1p5/cdslib/asap7_TechLib_08/asap7_TechLib.layermap
+objectMap                                /home/eng/v/vks160030/Desktop/ASAP7_PDKandLIB_v1p5/asap7PDK_r1p5/cdslib/asap7_TechLib_08/asap7_TechLib.objectmap
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating cellView Std_cells/AOI21/layout as STRUCTURE AOI21.
+WARNING (XSTRM-154): The object map file does not contain any mapping for the OpenAccess object 'Marker' and the sub-object 'annotation'. Therefore, these objects in the design will not be translated. To enable the translation of these objects in the Stream file, provide a valid mapping in the object map file.
+
+Summary of Objects Translated:
+	Scalar Instances:                       0
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             130
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           0
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               5
+	Text:                                   12
+	TextDisplay:                            0
+	Cells:                                  1
+
+Elapsed Time: 0.4s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 2668KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

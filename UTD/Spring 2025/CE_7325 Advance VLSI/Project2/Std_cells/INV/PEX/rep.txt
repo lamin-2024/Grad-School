@@ -1,0 +1,8 @@
+//Loading PDBs.
+//PDB loading of cell: INV
+//Making the stats.
+GID                       totalC    totalCC    ratioCC     Cell    Layout   Source
+1                        7.47e-18   0.00e+00   0.00e+00    INV     GND!     GND!  
+2                        1.79e-17   0.00e+00   0.00e+00    INV     VDD!     VDD!  
+3                        2.08e-18   0.00e+00   0.00e+00    INV     A        A  
+4                        7.65e-18   0.00e+00   0.00e+00    INV     OUT      OUT  

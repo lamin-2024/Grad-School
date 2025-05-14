@@ -1,0 +1,13 @@
+//Loading PDBs.
+//PDB loading of cell: XOR
+//Making the stats.
+GID                       totalC    totalCC    ratioCC     Cell    Layout   Source
+1                        2.94e-17   1.51e-17   5.12e-01    XOR     GND!     GND!  
+2                        6.68e-17   3.65e-17   5.46e-01    XOR     VDD!     VDD!  
+3                        3.09e-17   2.70e-17   8.76e-01    XOR     A        A  
+4                        2.92e-17   2.54e-17   8.69e-01    XOR     B        B  
+5                        1.34e-17   3.20e-18   2.38e-01    XOR     5        NET2  
+6                        9.29e-18   1.59e-18   1.71e-01    XOR     6        NET3  
+7                        1.45e-17   4.79e-18   3.29e-01    XOR     OUT      OUT  
+8                        5.13e-18   7.89e-19   1.54e-01    XOR     8        NET1  
+9                        5.93e-18   1.58e-18   2.66e-01    XOR     9        NET7  

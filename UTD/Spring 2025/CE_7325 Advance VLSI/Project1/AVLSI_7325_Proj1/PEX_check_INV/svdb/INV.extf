@@ -1,0 +1,10 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1742799032 1742799034
+lvs_ExtOutFile RUNDIR /home/eng/i/dal852207/asap7/PEX_check_INV
+lvs_ExtOutFile RULES_FILE _Calibre_RCX_rules_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST svdb/INV.sp
+lvs_ExtOutFile EXTRACTION_REPORT INV.lvs.report.ext
+lvs_ExtOutFile LAYOUT_PDSP {  svdb/INV.pdsp }

@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "M_Carry"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/eng/m/mxi240020/7325/asap7/Std_cells/M_Carry/LVS"
+ )
+( model
+( "Std_cells/M_Carry/schematic" "M_Carry" )
+ )
+( "M_Carry" "ihnl/cds0/map" )
+ )

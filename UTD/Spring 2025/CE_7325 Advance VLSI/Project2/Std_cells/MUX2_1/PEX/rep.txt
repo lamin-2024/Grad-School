@@ -1,0 +1,16 @@
+//Loading PDBs.
+//PDB loading of cell: MUX2_1
+//Making the stats.
+GID                       totalC    totalCC    ratioCC     Cell    Layout   Source
+1                        8.41e-17   4.92e-17   5.85e-01    MUX2_1  GND!     GND!  
+2                        8.41e-17   4.92e-17   5.85e-01    MUX2_1  VDD!     VDD!  
+3                        6.47e-17   5.91e-17   9.15e-01    MUX2_1  S        S  
+4                        2.33e-18   0.00e+00   0.00e+00    MUX2_1  A        A  
+5                        7.17e-17   6.09e-17   8.50e-01    MUX2_1  5        NET1  
+6                        1.75e-18   0.00e+00   0.00e+00    MUX2_1  B        B  
+7                        3.11e-17   1.75e-17   5.64e-01    MUX2_1  7        NET3  
+8                        7.71e-18   0.00e+00   0.00e+00    MUX2_1  OUT      OUT  
+9                        1.30e-17   6.43e-18   4.93e-01    MUX2_1  9        NET7  
+10                       5.13e-18   7.89e-19   1.54e-01    MUX2_1  10       NET6  
+11                       1.27e-17   6.06e-18   4.79e-01    MUX2_1  11       NET2  
+12                       5.13e-18   7.89e-19   1.54e-01    MUX2_1  12       NET5  

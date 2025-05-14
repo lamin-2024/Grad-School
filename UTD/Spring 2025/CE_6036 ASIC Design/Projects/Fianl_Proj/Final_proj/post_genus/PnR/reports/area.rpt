@@ -1,0 +1,20 @@
+    Hinst Name        Module Name          Inst Count           Total Area
+-----------------------------------------------------------------------
+MSDAP                                            2931            25378.718
+ ALU_L                ALU                         862             1691.513
+  ALU_L/add_150_16    add_signed                   93              151.865
+  ALU_L/sub_148_16    sub_signed                   90              154.198
+ ALU_R                ALU_499                     875             1717.874
+  ALU_R/add_150_16    add_signed_515               92              150.932
+  ALU_R/sub_148_16    sub_signed_524               91              155.598
+ Co_mem_L             CO_MEM                       80             6001.687
+ Co_mem_R             CO_MEM_500                   80             6001.454
+ Data_mem_L           DATA_MEM                     14             3743.116
+ Data_mem_R           DATA_MEM_501                 14             3744.049
+ Frame_sync_u         SYNC                          8               19.129
+ R_mem_L              R_MEM                         3              173.656
+ R_mem_R              R_MEM_502                     3              176.455
+ in_data_ready_sync_u SYNC_514                      6               16.563
+ main_control         MAIN_CTRL                   244              427.602
+ p2s                  PARALLEL_2_SERIAL           402             1040.429
+ s2p                  SERIAL_2_PARALLEL           178              405.441

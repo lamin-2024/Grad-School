@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/12_BIT_CSA.dv
+dv_start matched                                  
+dv_cell {12_BIT_CSA} {12_BIT_CSA} matched
+dv_obj_count -transformed_nets {377 377} -transformed_inst {678 678} -transformed_port {40 40}
+dv_end

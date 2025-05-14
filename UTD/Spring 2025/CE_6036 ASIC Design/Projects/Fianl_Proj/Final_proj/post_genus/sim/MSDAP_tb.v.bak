@@ -1,0 +1,175 @@
+`timescale 1ns/1ps
+
+module MSDAP_tb;
+
+    // Testbench -> DUT signals
+    reg Dclk = 0;
+    reg Sclk = 0;
+    reg Reset_n = 0;
+    reg Frame = 0;
+    reg Start = 0;
+    reg [15:0] InputL = 0;
+    reg [15:0] InputR = 0;
+
+    // DUT -> Testbench signals
+    wire InReady;
+    wire OutReady;
+    wire regSerialOutputL;
+    wire regSerialOutputR;
+
+    // Instantiate DUT
+    MSDAP UUT (
+        .Dclk(Dclk),
+        .Sclk(Sclk),
+        .Reset_n(Reset_n),
+        .Frame(Frame),
+        .Start(Start),
+        .InputL(InputL),
+        .InputR(InputR),
+        .InReady(InReady),
+        .OutReady(OutReady),
+        .OutputL(regSerialOutputL),
+        .OutputR(regSerialOutputR)
+    );
+
+    // Clock generation
+    always #636 Dclk = ~Dclk;   // 786 kHz
+    always #19 Sclk = ~Sclk;    // ~26 MHz
+
+    // File and internal variables
+    integer dataindex = 0;
+    integer input_bitpos = 15;
+    integer outputrowcount = 0;
+    integer outputL_bitpos = 40;
+    integer outputR_bitpos = 40;
+    integer output_file;
+
+    reg [39:0] reg_OutL = 40'b0;
+    reg [39:0] reg_OutR = 40'b0;
+    reg reg_resetflag = 1'b0;
+
+    reg [15:0] OutputL, OutputR;
+    integer status;
+    reg [15:0] next_LEFT, next_RIGHT;
+
+    integer infile;
+
+    initial begin
+        // Open files
+        infile = $fopen("/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/sim/data.in", "r");
+        if (!infile) begin
+            $display("ERROR: Cannot open data.in");
+            $finish;
+        end
+
+        output_file = $fopen("/home/eng/i/dal852207/cad_ASIC/genius_syn/Final_proj/post_genus/sim/data.out", "w");
+        if (!output_file) begin
+            $display("ERROR: Cannot open data1.out");
+            $finish;
+        end
+
+        // Start after some delay
+        #1000;
+        Start = 1;
+        #50;
+        Start = 0;
+
+        read_next_line();
+        OutputL = next_LEFT;
+        OutputR = next_RIGHT;
+
+        @(posedge Dclk);
+        Reset_n = 1;
+    end
+
+    // Input shifting logic
+    always @(posedge Dclk) begin
+        if (InReady) begin
+            // FRAME high for MSB
+            Frame = 1;
+            InputL = OutputL[15];
+            InputR = OutputR[15];
+
+            $display("[%0t] Sending LEFT=%h RIGHT=%h", $time, OutputL, OutputR);
+
+            // Shift remaining bits
+            for (input_bitpos = 14; input_bitpos >= 0; input_bitpos = input_bitpos - 1) begin
+                @(posedge Dclk);
+                Frame = 0;
+                InputL = OutputL[input_bitpos];
+                InputR = OutputR[input_bitpos];
+            end
+
+            // Load next data
+            read_next_line();
+            OutputL = next_LEFT;
+            OutputR = next_RIGHT;
+            dataindex = dataindex + 2;
+
+            // Handle RESET if needed
+            if (next_LEFT == 16'hFFFF && next_RIGHT == 16'hFFFF && !reg_resetflag) begin
+                $display("[%0t] RESET Detected!", $time);
+                Reset_n = 0;
+                @(posedge Dclk);
+                Reset_n = 1;
+                reg_resetflag = 1;
+            end else begin
+                reg_resetflag = 0;
+            end
+        end
+    end
+
+    // Output capture logic
+    always @(negedge Sclk) begin
+        if (OutReady) begin
+            reg_OutL = {reg_OutL[38:0], regSerialOutputL};
+            reg_OutR = {reg_OutR[38:0], regSerialOutputR};
+
+            outputL_bitpos = outputL_bitpos - 1;
+            outputR_bitpos = outputR_bitpos - 1;
+
+            if (outputL_bitpos == 0) begin
+                $fwrite(output_file, "%H %H\n", reg_OutL, reg_OutR);
+                $display("[%0t] Output #%0d L=%h R=%h", $time, outputrowcount, reg_OutL, reg_OutR);
+                outputrowcount = outputrowcount + 1;
+
+                // Reset shift counters
+                outputL_bitpos = 40;
+                outputR_bitpos = 40;
+                reg_OutL = 0;
+                reg_OutR = 0;
+
+                // Stop when done (optional - remove if you want to just stop when EOF hits)
+                if (outputrowcount >= 6400) begin
+                    $display("[%0t] DONE. Closing files.", $time);
+                    $fclose(output_file);
+                    $fclose(infile);
+                    $finish;
+                end
+            end
+        end
+    end
+
+    // File read task using Verilog-only syntax
+    task read_next_line;
+        reg [255:0] comment;
+        begin
+            while (1) begin
+                status = $readmemh(infile, "%h %h //%s", next_LEFT, next_RIGHT, comment);
+
+                if (status == -1) begin
+                    // EOF reached
+                    next_LEFT = 16'h0000;
+                    next_RIGHT = 16'h0000;
+                    disable read_next_line;
+                end
+                else if (status >= 2) begin
+                    // Valid data read
+                    disable read_next_line;
+                end
+            end
+        end
+    endtask
+
+endmodule
+

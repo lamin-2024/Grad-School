@@ -1,0 +1,25 @@
+//
+//  Rule file generated on Thu Mar 27 20:07:41 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "AOI21.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "AOI21"
+
+SOURCE PATH "AOI21.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "AOI21"
+
+PEX NETLIST "AOI21.pex.netlist" HSPICE SOURCENAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "AOI21.lvs.report"
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_RCX_rules"

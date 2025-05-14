@@ -1,0 +1,413 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         MC.lvs.report
+LAYOUT NAME:              MC.sp ('MC')
+SOURCE NAME:              MC.src.net ('MC')
+RULE FILE:                _Calibre_LVS_rules_
+RULE FILE TITLE:          LVS Rule File for ASAP7 PDK
+CREATION TIME:            Sun Apr 13 00:06:33 2025
+CURRENT DIRECTORY:        /home/eng/m/mxi240020/7325/asap7/Std_cells/MC/LVS
+USER NAME:                mxi240020
+CALIBRE VERSION:          v2024.4_12.9    Tue Oct 1 20:34:12 PDT 2024
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of ports.
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+  Error:    Layout names missing in source.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      MC                            MC
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "vdd!" "VDD!"
+   LVS GROUND NAME                        "VSS!" "vss!"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    NONE
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS RELAX INITIAL CPOINTS              NONE
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   // LVS SPICE IGNORE PARAMETER
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     100
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   LVS REPORT OPTION                      N
+   LVS REPORT UNITS                       YES
+   LVS SWAPPABLE HCELL PINS               GENERAL
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+   LVS EXPAND AMBIGUOUSLY HIGH SHORTED HCELLS NO
+   LVS AUGMENT HCELLS                     NONE
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES SEMI ALSO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmos_rvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_rvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_rvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_rvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_rvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_rvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_sram)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_sram)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_sram)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_sram)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_sram)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_sram)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_lvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_lvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_lvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_lvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_lvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_lvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_slvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_slvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_slvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_slvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_slvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_slvt)  nfin nfin 0 ABSOLUTE
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of ports (see below).
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+  Error:    Layout names missing in source.
+
+LAYOUT CELL NAME:         MC
+SOURCE CELL NAME:         MC
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         6    *
+
+ Nets:              13        10    *
+
+ Instances:          7         5    *    MN (4 pins)
+                     7         5    *    MP (4 pins)
+                ------    ------
+ Total Inst:        14        10
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              7         6    *
+
+ Nets:               9         8    *
+
+ Instances:          3         2    *    MN (4 pins)
+                     3         2    *    MP (4 pins)
+                     1         1         _invb (6 pins)
+                     0         1    *    _smn2v (4 pins)
+                     1         0    *    _smn3v (5 pins)
+                     0         1    *    _sup2v (4 pins)
+                     1         0    *    _sup3v (5 pins)
+                ------    ------
+ Total Inst:         9         7
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net C                                                     C
+       --- 5 Connections On This Net ---                         --- 2 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_smn3v):in3                                              ** missing connection **
+         M4(0.2870,0.0360):g
+       
+       
+       (_sup3v):in3                                              ** missing connection **
+         M11(0.2870,0.1980):g
+       
+       
+       M9(0.1790,0.1980):g                                       ** missing connection **
+       M2(0.1790,0.0360):g                                       ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_invb):in
+                                                                   MM7:g
+                                                                   MM3:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net D                                                     ** missing net **
+
+
+**************************************************************************************************************
+                                   INCORRECT PORTS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  3    D on net: D                                               ** missing port **
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  4    M2(0.1790,0.0360)  MN(NMOS_RVT)                           ** missing instance **
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    M9(0.1790,0.1980)  MP(PMOS_RVT)                           ** missing instance **
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    (_sup3v)                                                  ** missing injected instance **
+
+       Devices: 
+         M13(0.3950,0.1980)  MP(PMOS_RVT)
+         M12(0.3410,0.1980)  MP(PMOS_RVT)
+         M11(0.2870,0.1980)  MP(PMOS_RVT)
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    (_smn3v)                                                  ** missing injected instance **
+
+       Devices: 
+         M6(0.3950,0.0360)  MN(NMOS_RVT)
+         M5(0.3410,0.0360)  MN(NMOS_RVT)
+         M4(0.2870,0.0360)  MN(NMOS_RVT)
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    ** missing injected instance **                           (_sup2v)
+
+                                                                 Devices: 
+                                                                   MM0  MP(PMOS_RVT)
+                                                                   MM1  MP(PMOS_RVT)
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    ** missing injected instance **                           (_smn2v)
+
+                                                                 Devices: 
+                                                                   MM6  MN(NMOS_RVT)
+                                                                   MM5  MN(NMOS_RVT)
+
+
+
+**************************************************************************************************************
+                                      PORT NAME ERRORS
+
+DISC#   LAYOUT NAME                                              SOURCE NAME
+**************************************************************************************************************
+ 10     D                                                        ** missing name **
+
+
+
+
+**************************************************************************************************************
+                                      NET NAME ERRORS
+
+DISC#   LAYOUT NAME                                              SOURCE NAME
+**************************************************************************************************************
+ 11     D                                                        ** missing name **
+
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               6          6            1            0
+
+   Nets:                8          8            1            0
+
+   Instances:           2          2            1            0    MN(NMOS_RVT)
+                        2          2            1            0    MP(PMOS_RVT)
+                        1          1            0            0    _invb
+                        0          0            0            1    _smn2v
+                        0          0            1            0    _smn3v
+                        0          0            0            1    _sup2v
+                        0          0            1            0    _sup3v
+                  -------    -------    ---------    ---------
+   Total Inst:          5          5            4            2
+
+
+o Initial Correspondence Points:
+
+   Ports:        vdd! GND! A B C OUT
+
+
+**************************************************************************************************************
+                             DETAILED INSTANCE CONNECTIONS
+
+       LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+          (This section contains detailed information about connections of
+           matched instances that are involved in net discrepancies).
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_invb)                                                   (_invb)
+         out: OUT                                                  out: OUT
+         sup1: 8                                                   sup1: net3
+         sup2: 7                                                   sup2: net7
+         in: D                                                     ** missing net **
+         ** C **                                                   in: C
+
+       Devices: 
+         M10(0.2330,0.1980)  MP(PMOS_RVT)                          MM3  MP(PMOS_RVT) 
+         M3(0.2330,0.0360)  MN(NMOS_RVT)                           MM7  MN(NMOS_RVT) 
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

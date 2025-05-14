@@ -1,0 +1,22 @@
+//  Runset file generated on Tue Mar 25 23:48:20 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_DRC_rules"
+drc.runDir.value = "/home/eng/m/mxi240020/7325/asap7/Std_cells/AOI21/DRC"
+drc.layout.layoutFile.value = "MUX2_1.calibre.db"
+cmn.layout.defFiles.value = [ "MUX2_1.def" ]
+drc.layout.topCellLibrary.value = "Std_cells"
+cmn.layout.topCellLibraryFDI.value = "Std_cells"
+drc.layout.topCell.value = "MUX2_1"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "MUX2_1.drc.results"
+drc.reports.drcSummaryReport.value = "MUX2_1.drc.summary"
+drc.rhdb.fileName.value = "MUX2_1.rhdb"
+drc.dfmDefaults.resultsFile.value = "MUX2_1.dfmDefaults.db"
+
+cmn.miscPrefs.overwriteLayoutPref.value = false

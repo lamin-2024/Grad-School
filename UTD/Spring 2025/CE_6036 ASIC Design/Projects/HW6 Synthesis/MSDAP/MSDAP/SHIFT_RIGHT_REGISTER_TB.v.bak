@@ -1,0 +1,65 @@
+`timescale 1ns / 1ps
+
+module SHIFT_RIGHT_REGISTER_tb;
+
+    // Testbench signals
+    reg SCLK;
+    reg CLEAR;
+    reg LOAD;
+    reg SHIFT;
+    reg [23:0] DATAIN;
+    wire [39:0] DATAOUT;
+
+    // Instantiate the module under test
+    SHIFT_RIGHT_REGISTER uut (
+        .SCLK(SCLK),
+        .CLEAR(CLEAR),
+        .LOAD(LOAD),
+        .SHIFT(SHIFT),
+        .DATAIN(DATAIN),
+        .DATAOUT(DATAOUT)
+    );
+
+    // Generate 26.88 MHz clock (Period ~37.24ns)
+    initial SCLK = 0;
+    always #18.62 SCLK = ~SCLK;  // Half-period for 26.88 MHz
+
+    integer i;
+
+    initial begin
+        $display("Starting SHIFT_RIGHT_REGISTER Testbench...");
+
+        // Initial state
+        CLEAR = 1;
+        LOAD = 0;
+        SHIFT = 0;
+        DATAIN = 24'hABCDE0;
+
+        #40 CLEAR = 0;  // Deassert reset
+
+        // Load DATAIN into bits [39:16]
+        #20 LOAD = 1;
+        #37.24;         // Wait one clock cycle
+        LOAD = 0;
+
+        $display("After LOAD:");
+        $display("DATAOUT = %h", DATAOUT);
+
+        // Set LSBs manually to test preservation (optional)
+        // This line can be added to modify bits 15:0 if you add write logic
+
+        // Start shifting
+        SHIFT = 1;
+        $display("Beginning SHIFT:");
+        for (i = 0; i < 10; i = i + 1) begin
+            @(posedge SCLK);
+            $display("Cycle %0d: DATAOUT = %h", i, DATAOUT);
+        end
+        SHIFT = 0;
+
+        $display("Test complete.");
+        $finish;
+    end
+
+endmodule
+

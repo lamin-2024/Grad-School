@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Std_cells/AOI21/schematic AOI21
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

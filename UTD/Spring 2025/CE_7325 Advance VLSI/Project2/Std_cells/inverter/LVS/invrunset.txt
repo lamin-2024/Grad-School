@@ -1,0 +1,38 @@
+//  Runset file generated on Tue Mar 18 23:06:25 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+lvs.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_LVS_rules"
+lvs.runDir.value = "/home/eng/m/mxi240020/7325/asap7/mark_std_cells/inverter/LVS"
+lvs.layout.layoutFile.value = "inverter.calibre.db"
+cmn.layout.defFiles.value = [ "inverter.def" ]
+lvs.layout.topCellLibrary.value = "mark_std_cells"
+cmn.layout.topCellLibraryFDI.value = "mark_std_cells"
+lvs.layout.topCell.value = "inverter"
+lvs.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+lvs.layout.layoutNetlist.value = "inverter.sp"
+lvs.source2.sourceFile.value = "inverter.sp"
+lvs.source2.topCellLibrary.value = "mark_std_cells"
+lvs.source2.topCellLibraryFDI.value = "mark_std_cells"
+lvs.source2.topCell.value = "inverter"
+lvs.source2.topCellFDI.value = "inverter"
+lvs.source2.topCellView.value = "schematic"
+lvs.source2.topCellViewFDI.value = "schematic"
+lvs.source.sourceFile.value = "inverter.src.net"
+lvs.source.topCellLibrary.value = "mark_std_cells"
+lvs.source.topCellLibraryFDI.value = "mark_std_cells"
+lvs.source.topCell.value = "inverter"
+lvs.source.topCellFDI.value = "inverter"
+lvs.source.topCellView.value = "schematic"
+lvs.source.topCellViewFDI.value = "schematic"
+lvs.reports.lvsReport.value = "inverter.lvs.report"
+lvs.ercdb.resultsFile.value = "inverter.erc.results"
+lvs.ercSummaryReport.report.value = "inverter.erc.summary"
+
+cmn.runsetPrefs.saveOnClose.value = "AUTOSAVE"
+cmn.miscPrefs.overwriteLayoutPref.value = false
+cmn.miscPrefs.overwriteSourcePref.value = false

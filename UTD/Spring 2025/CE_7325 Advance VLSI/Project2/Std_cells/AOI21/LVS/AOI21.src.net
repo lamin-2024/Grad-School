@@ -1,0 +1,36 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Std_cells
+* Top Cell Name: AOI21
+* View Name:     schematic
+* Netlisted on:  Mar 25 23:54:28 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    AOI21
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT AOI21 A B C OUT
+*.PININFO A:I B:I C:I OUT:O
+MM6 net2 C vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM1 OUT A net2 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM0 OUT B net2 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM5 OUT C gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM4 net3 A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM3 OUT B net3 gnd! nmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+

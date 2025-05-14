@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Std_cells/OAI22/schematic OAI22
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

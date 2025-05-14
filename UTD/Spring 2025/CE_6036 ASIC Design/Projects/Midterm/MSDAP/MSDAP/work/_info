@@ -1,0 +1,705 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt2
+R1
+R2
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z3 !s12c _opt
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R0
+R1
+R0
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R3
+R1
+R3
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+R3
+R1
+R0
+R1
+R0
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z4 dC:/Users/TheMe/AppData/Local/quartus
+T_opt
+!s110 1742964688
+VjC>DN<AdoQd5OJA7VU88:0
+Z5 04 18 4 work Main_Controller_tb fast 0
+=1-d45d64557668-67e387d0-b-2804
+R1
+Z6 !s12f OEM100
+Z7 !s12b OEM100
+Z8 !s124 OEM10U2 
+Z9 !s135 nogc
+Z10 o-quiet -auto_acc_if_foreign -work work +acc
+Z11 tCvgOpt 0
+n@_opt
+Z12 OL;O;2024.3;79
+R4
+T_opt1
+!s110 1743370130
+VULb=YTZNP4^5CTzMU>=lo1
+R5
+=1-d45d64557668-67e9b791-2f7-b14
+R1
+R6
+R7
+R8
+R9
+R10
+R11
+n@_opt1
+R12
+T_opt2
+!s110 1743056070
+V>=]5kzMc`NQ]Jj[5Q3YiT0
+R5
+=1-d45d64557668-67e4ecc6-a7-18d0
+R1
+R6
+R7
+R8
+R9
+R10
+R11
+n@_opt2
+R12
+R4
+vCoefficient_Memory
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v
+Z13 !s110 1743369612
+!i10b 1
+!s100 =Fe@A>?]n^5NODPIMmK2:1
+If>omEOm6`U0ffoI_z?g733
+Z14 dC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP
+w1743283956
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v
+!i122 493
+Z15 L0 1 30
+Z16 VDg1SIo80bB@j0V0VzS_@n1
+Z17 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z18 !s108 1743369612.000000
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory.v|
+!i113 0
+Z19 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R11
+n@coefficient_@memory
+vCoefficient_Memory_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v
+R13
+!i10b 1
+!s100 05G>lJORie>_bJgiH92QU3
+IRlAlzWZ?XUoBBIli]]FzE2
+R14
+w1743055719
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v
+!i122 494
+Z20 L0 3 102
+R16
+R17
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Coefficient_Memory_TB.v|
+!i113 0
+R19
+R11
+n@coefficient_@memory_tb
+vData_Memory
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v
+Z21 !s110 1743369613
+!i10b 1
+!s100 >]b4^i1lOJdL1]m6XbgH^0
+I^jh<P30a9fO0C3jm1VFQ`0
+R14
+w1743369428
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v
+!i122 495
+L0 1 39
+R16
+R17
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory.v|
+!i113 0
+R19
+R11
+n@data_@memory
+vData_Memory_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v
+R21
+!i10b 1
+!s100 FT@;Vom`bW2>`E8VJ]?Ga2
+I1ig4zYbf:N<m^m33kPVHS0
+R14
+w1743055739
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v
+!i122 496
+L0 3 104
+R16
+R17
+r1
+!s85 0
+31
+Z22 !s108 1743369613.000000
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Data_Memory_TB.v|
+!i113 0
+R19
+R11
+n@data_@memory_tb
+vMain_Controller
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v
+R21
+!i10b 1
+!s100 Zm>1XSoBU>OA=74h7YfAL1
+IFoTn@FCSJ]XT0kRU6?i4_0
+R14
+w1743369137
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v
+!i122 498
+L0 1 301
+R16
+R17
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller.v|
+!i113 0
+R19
+R11
+n@main_@controller
+vMain_Controller_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v
+!s110 1743369930
+!i10b 1
+!s100 `O[6PP5oHmPX:dU3=8L_M3
+IV=R?6GJXDbPMJMz3^MkHT0
+R14
+w1743223717
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v
+!i122 503
+L0 3 144
+R16
+R17
+r1
+!s85 0
+31
+!s108 1743369930.000000
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/Main_Controller_TB.v|
+!i113 0
+R19
+R11
+n@main_@controller_tb
+vMSDAP
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v
+Z23 !s110 1743369614
+!i10b 1
+!s100 ^@C33lUmg13Q7ZG3fMcZo0
+I3HJDa;=RcLd6CW2bd_Kl?0
+R14
+w1743309593
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v
+!i122 501
+L0 2 225
+R16
+R17
+r1
+!s85 0
+31
+Z24 !s108 1743369614.000000
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP.v|
+!i113 0
+R19
+R11
+n@m@s@d@a@p
+vRJ_Memory
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v
+R13
+!i10b 1
+!s100 fijJ=5M?Y^H5DDZS9=7Oz1
+I^:=<UZALIi3Bi2MHHNYMW3
+R14
+w1743055533
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v
+!i122 491
+R15
+R16
+R17
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory.v|
+!i113 0
+R19
+R11
+n@r@j_@memory
+vRJ_Memory_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v
+R13
+!i10b 1
+!s100 RAoRMHTG?KBk9b?;[NzXz0
+IPjB[V_:AL7>LEo3TNTNkA3
+R14
+w1743055637
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v
+!i122 492
+R20
+R16
+R17
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/RJ_Memory_TB.v|
+!i113 0
+R19
+R11
+n@r@j_@memory_tb
+vSIPO_Module
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO.v
+R21
+!i10b 1
+!s100 Hic0^BGgGmO>fDg[Z6`BR0
+I>aIc;1<=:cM=@f[8E0fBR3
+R14
+w1743310017
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO.v
+!i122 497
+L0 1 46
+R16
+R17
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO.v|
+!i113 0
+R19
+R11
+n@s@i@p@o_@module
+vSIPO_Module_tb
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO_TB.v
+R21
+!i10b 1
+!s100 @7^K<mKg4YXRGQK=HoXeQ0
+IO_0nW`3iZ6T]Uj7VU:07=0
+R14
+w1743308158
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO_TB.v
+!i122 499
+L0 3 112
+R16
+R17
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/SIPO_TB.v|
+!i113 0
+R19
+R11
+n@s@i@p@o_@module_tb
+vtb_MSDAP
+2C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP_TB.v
+R23
+!i10b 1
+!s100 3PNNYS_SSGP^]XnkDIB>:2
+Im>Od[Wa>gWKHChh^BEV6k2
+R14
+w1743369587
+8C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP_TB.v
+FC:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP_TB.v
+!i122 502
+L0 3 126
+R16
+R17
+r1
+!s85 0
+31
+R24
+!s107 C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP_TB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/TheMe/Desktop/UT Dallas/EEDG_6306/Midterm/MSDAP/MSDAP_TB.v|
+!i113 0
+R19
+R11
+ntb_@m@s@d@a@p

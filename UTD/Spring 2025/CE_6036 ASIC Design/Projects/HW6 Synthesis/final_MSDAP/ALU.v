@@ -1,0 +1,179 @@
+module ALU (
+
+	//ALU INPUTS
+	input wire SCLK,
+	input wire CLEAR,
+
+	input wire [7:0] RJ_DATA_R,
+	output wire [3:0] RJ_READ_ADDRESS_R,
+	output wire RJ_READ_EN_R,
+	
+	input wire [7:0] RJ_DATA_L,
+	output wire [3:0] RJ_READ_ADDRESS_L,
+	output wire RJ_READ_EN_L,
+	
+	input wire [8:0] COEFF_DATA_R,
+	output wire [8:0] COEFF_READ_ADDRESS_R,
+	output wire COEFF_READ_EN_R,
+	
+	input wire [8:0] COEFF_DATA_L,
+	output wire [8:0] COEFF_READ_ADDRESS_L,
+	output wire COEFF_READ_EN_L,
+
+	input wire [15:0] DATA_DATA_R,
+	output wire [7:0] DATA_READ_ADDRESS_R,
+	output wire DATA_READ_EN_R,
+
+	input wire [15:0] DATA_DATA_L,
+	output wire [7:0] DATA_READ_ADDRESS_L,
+	output wire DATA_READ_EN_L,
+
+	input wire EN_FIR,
+	
+	output wire DATAOUT_L,
+	output wire DATAOUT_R
+);
+	//GLOBAL SIGNALS
+	wire SHIFT_L;
+	wire SHIFT_R;
+	
+	wire ADDSUBTRACT_L;
+	wire ADDSUBTRACT_R;
+	
+	wire CLEAR_SHIFT_REG_L;
+	wire CLEAR_SHIFT_REG_R;
+
+	wire LOAD_SHIFT_REG_L;
+	wire LOAD_SHIFT_REG_R;
+
+	wire [23:0] X1_L;
+	wire [23:0] X1_R;
+
+	wire [39:0] X2_L;
+	wire [39:0] X2_R;
+
+	wire [23:0] Y_L;
+	wire [23:0] Y_R;
+
+	wire CLEAR_PISO_L;
+	wire CLEAR_PISO_R;
+
+	wire LOAD_PISO_L;
+	wire LOAD_PISO_R;
+
+	wire PISO_EN_L;
+	wire PISO_EN_R;
+
+	//ALU Controller Instantiation
+	ALU_CONTROLLER ALU_Ctrl (
+		.SCLK(SCLK),
+		.CLEAR(CLEAR),
+		.EN_FIR(EN_FIR),
+		
+		.RJ_DATA_L(RJ_DATA_L),
+		.RJ_READ_ADDRESS_L(RJ_READ_ADDRESS_L),
+		.RJ_READ_EN_L(RJ_READ_EN_L),
+		
+		.RJ_DATA_R(RJ_DATA_R),
+		.RJ_READ_ADDRESS_R(RJ_READ_ADDRESS_R),
+		.RJ_READ_EN_R(RJ_READ_EN_R),
+		
+		.COEFF_DATA_L(COEFF_DATA_L),
+		.COEFF_READ_ADDRESS_L(COEFF_READ_ADDRESS_L),
+		.COEFF_READ_EN_L(COEFF_READ_EN_L),
+
+		.COEFF_DATA_R(COEFF_DATA_R),
+		.COEFF_READ_ADDRESS_R(COEFF_READ_ADDRESS_R),
+		.COEFF_READ_EN_R(COEFF_READ_EN_R),
+
+		.DATA_READ_ADDRESS_L(DATA_READ_ADDRESS_L),
+		.DATA_READ_EN_L(DATA_READ_EN_L),
+		
+		.DATA_READ_ADDRESS_R(DATA_READ_ADDRESS_R),
+		.DATA_READ_EN_R(DATA_READ_EN_R),
+
+		.ADDSUBTRACT_L(ADDSUBTRACT_L),
+		.ADDSUBTRACT_R(ADDSUBTRACT_R),
+
+		.CLEAR_SHIFT_REG_L(CLEAR_SHIFT_REG_L),
+		.CLEAR_SHIFT_REG_R(CLEAR_SHIFT_REG_R),
+
+		.LOAD_SHIFT_REG_L(LOAD_SHIFT_REG_L),
+		.LOAD_SHIFT_REG_R(LOAD_SHIFT_REG_R),
+
+		.SHIFT_L(SHIFT_L),
+		.SHIFT_R(SHIFT_R),
+
+	 	.CLEAR_PISO_L(CLEAR_PISO_L),
+	 	.CLEAR_PISO_R(CLEAR_PISO_R),
+
+	 	.LOAD_PISO_L(LOAD_PISO_L),
+	 	.LOAD_PISO_R(LOAD_PISO_R),
+
+	 	.PISO_EN_L(PISO_EN_L),
+	 	.PISO_EN_R(PISO_EN_R)
+
+	);
+
+	SignExtender SIGN_EXTENDER_L (
+		.DATAIN(DATA_DATA_L),
+		.DATAOUT(X1_L)
+	);
+
+	SignExtender SIGN_EXTENDER_R (
+		.DATAIN(DATA_DATA_R),
+		.DATAOUT(X1_R)
+	);
+
+	ADDER ADDER_L (
+		.X1(X1_L),
+		.X2(X2_L[39:16]),
+		.Y(Y_L),
+		.ADDSUBTRACT(ADDSUBTRACT_L)
+	);
+	
+	ADDER ADDER_R (
+		.X1(X1_R),
+		.X2(X2_R[39:16]),
+		.Y(Y_R),
+		.ADDSUBTRACT(ADDSUBTRACT_R)
+	);
+
+	SHIFT_RIGHT_REGISTER SHIFT_RIGHT_REGISTER_L (
+		.SCLK(SCLK),
+		.CLEAR(CLEAR_SHIFT_REG_L),
+		.LOAD(LOAD_SHIFT_REG_L),
+		.SHIFT(SHIFT_L),
+		.DATAIN(Y_L),
+		.DATAOUT(X2_L)
+	);
+		
+	SHIFT_RIGHT_REGISTER SHIFT_RIGHT_REGISTER_R (
+		.SCLK(SCLK),
+		.CLEAR(CLEAR_SHIFT_REG_R),
+		.LOAD(LOAD_SHIFT_REG_R),
+		.SHIFT(SHIFT_R),
+		.DATAIN(Y_R),
+		.DATAOUT(X2_R)
+	);
+	
+	PISO PISO_L (
+		.SCLK(SCLK),
+		.CLR(CLEAR_PISO_L),
+		.LOAD(LOAD_PISO_L),
+		.EN(PISO_EN_L),
+		.PDATA_IN(X2_L),
+		.SERIAL_OUT(DATAOUT_L)
+	);
+	
+	PISO PISO_R (
+		.SCLK(SCLK),
+		.CLR(CLEAR_PISO_R),
+		.LOAD(LOAD_PISO_R),
+		.EN(PISO_EN_R),
+		.PDATA_IN(X2_R),
+		.SERIAL_OUT(DATAOUT_R)
+	);
+	
+endmodule
+

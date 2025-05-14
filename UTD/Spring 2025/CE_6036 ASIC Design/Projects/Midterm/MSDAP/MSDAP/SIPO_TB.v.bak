@@ -1,0 +1,115 @@
+`timescale 1ns / 1ps
+
+module SIPO_Module_tb;
+
+    reg CLK;
+    reg CLEAR;
+    reg FRAME;
+    reg EN;
+    reg DATA_IN;
+    wire [15:0] PDATA_IN;
+    wire DATA_READY;
+
+    // Instantiate the SIPO module
+    SIPO_Module uut (
+        .CLK(CLK),
+        .CLEAR(CLEAR),
+        .EN(EN),
+        .FRAME(FRAME),
+        .DATA_IN(DATA_IN),
+        .PDATA_IN(PDATA_IN),
+	.DATA_READY(DATA_READY)
+    );
+
+    // Clock generation (786kHz ? 1272ns period)
+    initial CLK = 0;
+    always #(1272/2) CLK = ~CLK;
+
+    // Test sequence
+    reg [15:0] test_data;
+    integer i;
+
+    initial begin
+        $display("========== Starting SIPO_Module Testbench ==========");
+
+        // Initial reset and idle
+        CLEAR = 1;
+        FRAME = 0;
+        EN = 0;
+        DATA_IN = 0;
+        @(posedge CLK);
+
+        CLEAR = 0;
+
+        // Test 1: Attempt shift with EN=0 (should do nothing)
+        test_data = 16'b1010101010101010;
+    @(posedge DCLK);
+
+    // Output FRAME and bit 15
+    FRAME  = 1;
+    DATA_IN = test_data[15];
+
+    // Shift remaining bits
+    for (i = 14; i >= 0; i = i - 1) begin
+	@(posedge CLK);
+        FRAME = 0;
+	DATA_IN = test_data[i];
+        
+    end
+        $display("[%0t ns] Test 1: Attempted shift with EN=0, PDATA_IN = %b", $time, PDATA_IN);
+
+        // Test 2: Valid shift with EN=1 and FRAME
+	test_data = 16'b1100110011110000;
+	EN = 1;
+    @(posedge CLK);
+
+    // Output FRAME and bit 15
+    FRAME  = 1;
+    DATA_IN = test_data[15];
+
+    // Shift remaining bits
+    for (i = 14; i >= 0; i = i - 1) begin
+	@(posedge CLK);
+        FRAME = 0;
+	DATA_IN = test_data[i];
+    end
+	// Test 3: Valid shift with EN=1 and FRAME
+	test_data = 16'b1111111111111111;
+	EN = 1;
+	    @(posedge CLK);
+
+    // Output FRAME and bit 15
+    FRAME  = 1;
+    DATA_IN = test_data[15];
+
+    // Shift remaining bits
+    for (i = 14; i >= 0; i = i - 1) begin
+	@(posedge CLK);
+        FRAME = 0;
+	DATA_IN = test_data[i];
+   end
+	
+
+        #10;
+	$display("[%0t ns] PDATA_IN = %b, data_ready = %b", $time, PDATA_IN, DATA_READY);
+	if (PDATA_IN === test_data && DATA_READY)
+    	$display("PASS: Correct output and data_ready asserted");
+	else
+    	$display("FAIL: Incorrect output or data_ready not asserted");
+
+        // Test 3: Clear the output
+        CLEAR = 1;
+        #1272;
+        CLEAR = 0;
+
+        if (PDATA_IN == 16'b0)
+            $display("PASS: Output cleared correctly");
+        else
+            $display("FAIL: Output did not clear");
+
+        $display("========== SIPO_Module Testbench Completed ==========");
+        $finish;
+    end
+
+endmodule
+

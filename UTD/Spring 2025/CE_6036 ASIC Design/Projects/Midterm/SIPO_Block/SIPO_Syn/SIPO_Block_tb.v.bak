@@ -1,0 +1,53 @@
+`timescale 1ns / 1ps
+
+module SIPO_Block_tb;
+
+    // Inputs
+    reg DCLK = 0;
+    reg CLR = 1;
+    reg EN = 0;
+    reg DATA_IN;
+
+    // Outputs
+    wire [15:0] PDATA_IN_L;
+    wire [15:0] PDATA_IN_R;
+
+    // Instantiate the DUT
+    SIPO_Block dut (
+        .DCLK(DCLK),
+        .CLR(CLR),
+        .EN(EN),
+        .DATA_IN(DATA_IN),
+        .PDATA_IN_L(PDATA_IN_L),
+        .PDATA_IN_R(PDATA_IN_R)
+    );
+
+    // Clock generation
+    always #5 DCLK = ~DCLK;  // 10ns clock period
+
+    // File reading
+    integer file, r;
+    initial begin
+        // Initial reset
+        #10 CLR = 0;
+        EN = 1;
+
+        file = $fopen("data_input.txt", "r");
+        if (file == 0) begin
+            $display("Failed to open input file.");
+            $finish;
+        end
+
+        while (!$feof(file)) begin
+            r = $fscanf(file, "%b\n", DATA_IN);
+            @(posedge DCLK);
+        end
+
+        $fclose(file);
+        #50;
+        $display("PDATA_IN_L = %b", PDATA_IN_L);
+        $display("PDATA_IN_R = %b", PDATA_IN_R);
+        $finish;
+    end
+
+endmodule

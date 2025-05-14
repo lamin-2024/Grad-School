@@ -1,0 +1,261 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         Carry_sel.lvs.report
+LAYOUT NAME:              Carry_sel.sp ('Carry_sel')
+SOURCE NAME:              Carry_sel.src.net ('Carry_sel')
+RULE FILE:                _Calibre_LVS_rules_
+RULE FILE TITLE:          LVS Rule File for ASAP7 PDK
+CREATION TIME:            Sun Apr 13 13:27:12 2025
+CURRENT DIRECTORY:        /home/eng/m/mxi240020/7325/asap7/Std_cells/Carry_sel/LVS
+USER NAME:                mxi240020
+CALIBRE VERSION:          v2024.4_12.9    Tue Oct 1 20:34:12 PDT 2024
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        Carry_sel                     Carry_sel
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "vdd!" "VDD!"
+   LVS GROUND NAME                        "VSS!" "vss!"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    NONE
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS RELAX INITIAL CPOINTS              NONE
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   // LVS SPICE IGNORE PARAMETER
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     100
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   LVS REPORT OPTION                      N
+   LVS REPORT UNITS                       YES
+   LVS SWAPPABLE HCELL PINS               GENERAL
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+   LVS EXPAND AMBIGUOUSLY HIGH SHORTED HCELLS NO
+   LVS AUGMENT HCELLS                     NONE
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES SEMI ALSO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmos_rvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_rvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_rvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_rvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_rvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_rvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_sram)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_sram)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_sram)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_sram)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_sram)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_sram)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_lvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_lvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_lvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_lvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_lvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_lvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_slvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_slvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_slvt)  nfin nfin 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_slvt)  l l 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_slvt)  w w 0 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_slvt)  nfin nfin 0 ABSOLUTE
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         Carry_sel
+SOURCE CELL NAME:         Carry_sel
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             16        16
+
+ Nets:             157       157
+
+ Instances:        141       141         MN (4 pins)
+                   141       141         MP (4 pins)
+                ------    ------
+ Total Inst:       282       282
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             16        16
+
+ Nets:              89        89
+
+ Instances:         16        16         _invb (6 pins)
+                    25        25         _invv (4 pins)
+                     8         8         _pmn2v (4 pins)
+                     8         8         _pmn3v (5 pins)
+                     8         8         _pup2v (4 pins)
+                     8         8         _pup3v (5 pins)
+                    18        18         _smn2v (4 pins)
+                     8         8         _smn3v (5 pins)
+                    18        18         _sup2v (4 pins)
+                     8         8         _sup3v (5 pins)
+                ------    ------
+ Total Inst:       125       125
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              16         16            0            0
+
+   Nets:               89         89            0            0
+
+   Instances:          16         16            0            0    _invb
+                       25         25            0            0    _invv
+                        8          8            0            0    _pmn2v
+                        8          8            0            0    _pmn3v
+                        8          8            0            0    _pup2v
+                        8          8            0            0    _pup3v
+                       18         18            0            0    _smn2v
+                        8          8            0            0    _smn3v
+                       18         18            0            0    _sup2v
+                        8          8            0            0    _sup3v
+                  -------    -------    ---------    ---------
+   Total Inst:        125        125            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        vdd! GND! B0 A0 B1 A1 B2 A2 C_IN B3 A3 OUT0 OUT1 OUT2 C_OUT OUT3
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

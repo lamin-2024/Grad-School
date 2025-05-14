@@ -1,0 +1,90 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/MC.dv
+dv_start unmatched                                
+dv_cell {MC} {MC} unmatched
+dv_obj_count -transformed_nets {9 8} -transformed_inst {9 7} -transformed_port {7 6}
+dv_discrep 1 {Incorrect Nets} -inst_count { 5 2}
+dv_discrep_line {Net } -lnet {C} {                                                     } -snet {C} {}
+dv_discrep_line {--- 5 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(_smn3v):}  {in3} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {M4} {} -lloc {(0.2870,0.0360)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(_sup3v):}  {in3} {                                              ** missing connection **}
+dv_discrep_line {  } -ldev {M11} {} -lloc {(0.2870,0.1980)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {M9} {} -lloc {(0.1790,0.1980)} {:}  {g} {                                       ** missing connection **}
+dv_discrep_line {} -ldev {M2} {} -lloc {(0.1790,0.0360)} {:}  {g} {                                       ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (_invb):}  {in} {}
+dv_discrep_line {                                                            } -sdev {MM7} {:}  {g} {}
+dv_discrep_line {                                                            } -sdev {MM3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 2 0}
+dv_discrep_line {Net } -lnet {D} {                                                     ** missing net **}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Ports}
+dv_discrep_line {} -lport {D} { on net: } -lnet {D} {                                               ** missing port **}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Instances}
+dv_discrep_line {} -ldev {M2} {} -lloc {(0.1790,0.0360)} {  MN(NMOS_RVT)                           ** missing instance **}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Instances}
+dv_discrep_line {} -ldev {M9} {} -lloc {(0.1790,0.1980)} {  MP(PMOS_RVT)                           ** missing instance **}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Instances}
+dv_discrep_line {(_sup3v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {M13} {} -lloc {(0.3950,0.1980)} {  MP(PMOS_RVT)}
+dv_discrep_line {  } -ldev {M12} {} -lloc {(0.3410,0.1980)} {  MP(PMOS_RVT)}
+dv_discrep_line {  } -ldev {M11} {} -lloc {(0.2870,0.1980)} {  MP(PMOS_RVT)}
+dv_discrep_line {}
+dv_discrep 7 {Incorrect Instances}
+dv_discrep_line {(_smn3v)                                                  ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {M6} {} -lloc {(0.3950,0.0360)} {  MN(NMOS_RVT)}
+dv_discrep_line {  } -ldev {M5} {} -lloc {(0.3410,0.0360)} {  MN(NMOS_RVT)}
+dv_discrep_line {  } -ldev {M4} {} -lloc {(0.2870,0.0360)} {  MN(NMOS_RVT)}
+dv_discrep_line {}
+dv_discrep 8 {Incorrect Instances}
+dv_discrep_line {** missing injected instance **                           (_sup2v)}
+dv_discrep_line {}
+dv_discrep_line {                                                          Devices: }
+dv_discrep_line {                                                            } -sdev {MM0} {  MP(PMOS_RVT)}
+dv_discrep_line {                                                            } -sdev {MM1} {  MP(PMOS_RVT)}
+dv_discrep_line {}
+dv_discrep 9 {Incorrect Instances}
+dv_discrep_line {** missing injected instance **                           (_smn2v)}
+dv_discrep_line {}
+dv_discrep_line {                                                          Devices: }
+dv_discrep_line {                                                            } -sdev {MM6} {  MN(NMOS_RVT)}
+dv_discrep_line {                                                            } -sdev {MM5} {  MN(NMOS_RVT)}
+dv_discrep_line {}
+dv_discrep 10 {Port Name Errors}
+dv_discrep_line {} -lnet {D} {                                                         ** missing name **}
+dv_discrep_line {}
+dv_discrep 11 {Net Name Errors}
+dv_discrep_line {} -lnet {D} {                                                         ** missing name **}
+dv_discrep_line {}
+dv_discrep -1 {Detailed Instance Connections}
+dv_discrep_line {}
+dv_discrep_line {(_invb)                                                   (_invb)}
+dv_discrep_line {  } -lport {out} {: } -lnet {OUT} {                                                  } -sport {out} {: } -snet {OUT} {}
+dv_discrep_line {  } -lport {sup1} {: } -lnet {8} {                                                   } -sport {sup1} {: } -snet {net3} {}
+dv_discrep_line {  } -lport {sup2} {: } -lnet {7} {                                                   } -sport {sup2} {: } -snet {net7} {}
+dv_discrep_line {  } -lport {in} {: } -lnet {D} {                                                     ** missing net **}
+dv_discrep_line {  ** } -lnet {C} { **                                                   } -sport {in} {: } -snet {C} {}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {M10} {} -lloc {(0.2330,0.1980)} {  MP(PMOS_RVT)                          } -sdev {MM3} {  MP(PMOS_RVT) }
+dv_discrep_line {  } -ldev {M3} {} -lloc {(0.2330,0.0360)} {  MN(NMOS_RVT)                           } -sdev {MM7} {  MN(NMOS_RVT) }
+dv_discrep_line {}
+dv_end

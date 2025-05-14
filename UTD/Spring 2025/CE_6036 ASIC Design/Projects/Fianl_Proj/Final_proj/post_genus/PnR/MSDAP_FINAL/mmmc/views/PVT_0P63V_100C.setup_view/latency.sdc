@@ -1,0 +1,16 @@
+set_clock_latency -source -early -min -rise  -32.353 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -early -min -fall  -31.1149 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -early -max -rise  -32.353 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -early -max -fall  -31.1149 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -late -min -rise  -32.353 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -late -min -fall  -31.1149 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -late -max -rise  -32.353 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -late -max -fall  -31.1149 [get_ports {Dclk}] -clock Dclk 
+set_clock_latency -source -early -min -rise  -78.0816 [get_ports {Sclk}] -clock Sclk 
+set_clock_latency -source -early -min -fall  -83.7508 [get_ports {Sclk}] -clock Sclk 
+set_clock_latency -source -early -max -rise  -78.0816 [get_ports {Sclk}] -clock Sclk 
+set_clock_latency -source -early -max -fall  -83.7508 [get_ports {Sclk}] -clock Sclk 
+set_clock_latency -source -late -min -rise  -78.0816 [get_ports {Sclk}] -clock Sclk 
+set_clock_latency -source -late -min -fall  -83.7508 [get_ports {Sclk}] -clock Sclk 
+set_clock_latency -source -late -max -rise  -78.0816 [get_ports {Sclk}] -clock Sclk 
+set_clock_latency -source -late -max -fall  -83.7508 [get_ports {Sclk}] -clock Sclk 

@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : cell
+Design : full_adder
+Version: O-2018.06-SP1
+Date   : Fri Jan 31 04:39:37 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U4                        XOR2X1M         ss_1v62_125c    19.756800 
+U5                        AO22X1M         ss_1v62_125c    17.561600 
+U6                        XOR2X1M         ss_1v62_125c    19.756800 
+--------------------------------------------------------------------------------
+Total 3 cells                                             57.075199
+1

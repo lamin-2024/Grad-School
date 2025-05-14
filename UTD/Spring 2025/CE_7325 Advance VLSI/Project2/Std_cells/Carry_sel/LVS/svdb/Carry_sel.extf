@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1744568832 1744568832
+lvs_ExtOutFile RUNDIR /home/eng/m/mxi240020/7325/asap7/Std_cells/Carry_sel/LVS
+lvs_ExtOutFile RULES_FILE _Calibre_LVS_rules_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST Carry_sel.sp
+lvs_ExtOutFile EXTRACTION_REPORT Carry_sel.lvs.report.ext

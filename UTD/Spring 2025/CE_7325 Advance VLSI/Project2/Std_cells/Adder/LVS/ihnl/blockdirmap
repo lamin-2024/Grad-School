@@ -1,0 +1,6 @@
+CADENCE IHNL11144
+
+Std_cells M_Carry schematic cds0
+Std_cells M_Sum schematic cds1
+Std_cells INV schematic cds2
+Std_cells Adder schematic cds3

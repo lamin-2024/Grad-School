@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/eng/m/mxi240020/7325/asap7/Std_cells/12_BIT_CSA/PEX
+pex_PexParam LAYOUT_PRIMARY 12_BIT_CSA
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {12_BIT_CSA "" 12_BIT_CSA.pdb "" } } 

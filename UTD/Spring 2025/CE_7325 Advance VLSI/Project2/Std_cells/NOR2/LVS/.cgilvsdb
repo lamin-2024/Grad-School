@@ -1,0 +1,38 @@
+//  Runset file generated on Tue Mar 18 23:07:26 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+lvs.rulesFile.value = "/home/eng/m/mxi240020/7325/asap7/Calibre_LVS_rules"
+lvs.runDir.value = "/home/eng/m/mxi240020/7325/asap7/mark_std_cells/AOI21/LVS"
+lvs.layout.layoutFile.value = "AOI21.calibre.db"
+cmn.layout.defFiles.value = [ "AOI21.def" ]
+lvs.layout.topCellLibrary.value = "mark_std_cells"
+cmn.layout.topCellLibraryFDI.value = "mark_std_cells"
+lvs.layout.topCell.value = "AOI21"
+lvs.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+lvs.layout.layoutNetlist.value = "AOI21.sp"
+lvs.source2.sourceFile.value = "AOI21.sp"
+lvs.source2.topCellLibrary.value = "mark_std_cells"
+lvs.source2.topCellLibraryFDI.value = "mark_std_cells"
+lvs.source2.topCell.value = "AOI21"
+lvs.source2.topCellFDI.value = "AOI21"
+lvs.source2.topCellView.value = "schematic"
+lvs.source2.topCellViewFDI.value = "schematic"
+lvs.source.sourceFile.value = "AOI21.src.net"
+lvs.source.topCellLibrary.value = "mark_std_cells"
+lvs.source.topCellLibraryFDI.value = "mark_std_cells"
+lvs.source.topCell.value = "AOI21"
+lvs.source.topCellFDI.value = "AOI21"
+lvs.source.topCellView.value = "schematic"
+lvs.source.topCellViewFDI.value = "schematic"
+lvs.reports.lvsReport.value = "AOI21.lvs.report"
+lvs.ercdb.resultsFile.value = "AOI21.erc.results"
+lvs.ercSummaryReport.report.value = "AOI21.erc.summary"
+
+cmn.runsetPrefs.saveOnClose.value = "AUTOSAVE"
+cmn.miscPrefs.overwriteLayoutPref.value = false
+cmn.miscPrefs.overwriteSourcePref.value = false

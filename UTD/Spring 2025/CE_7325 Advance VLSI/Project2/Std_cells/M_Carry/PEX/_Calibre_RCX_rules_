@@ -1,0 +1,25 @@
+//
+//  Rule file generated on Thu Mar 27 20:18:36 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "XOR.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "XOR"
+
+SOURCE PATH "XOR.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "XOR"
+
+PEX NETLIST "XOR.pex.netlist" HSPICE SOURCENAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "XOR.lvs.report"
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_RCX_rules"

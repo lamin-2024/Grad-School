@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Std_cells/M_Sum/schematic M_Sum
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

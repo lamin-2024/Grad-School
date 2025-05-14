@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+Std_cells/M_Carry/schematic M_Carry
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

@@ -1,0 +1,25 @@
+//
+//  Rule file generated on Thu Mar 27 20:13:25 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "NAND2.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "NAND2"
+
+SOURCE PATH "NAND2.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "NAND2"
+
+PEX NETLIST "NAND2.pex.netlist" HSPICE SOURCENAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "NAND2.lvs.report"
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_RCX_rules"

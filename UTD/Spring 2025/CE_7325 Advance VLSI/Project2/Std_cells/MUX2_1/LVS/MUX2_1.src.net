@@ -1,0 +1,42 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Std_cells
+* Top Cell Name: MUX2_1
+* View Name:     schematic
+* Netlisted on:  Mar 25 22:47:39 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    MUX2_1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT MUX2_1 A B OUT S
+*.PININFO A:I B:I S:I OUT:O
+MM11 OUT net3 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM4 net6 A vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM3 net3 S net6 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM2 net3 net1 net5 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM1 net5 B vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM0 net1 S vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM10 OUT net3 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM9 net1 S gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM8 net7 A gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM7 net2 B gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM6 net3 net1 net7 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM5 net3 S net2 gnd! nmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+

@@ -1,0 +1,60 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Std_cells
+* Top Cell Name: DFF
+* View Name:     schematic
+* Netlisted on:  Mar 27 02:42:25 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: Std_cells
+* Cell Name:    DFF
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DFF CLK D OUT R
+*.PININFO CLK:I D:I R:I OUT:O
+MM27 net24 R net27 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM26 net27 net17 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM23 net19 R net26 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM22 net26 net9 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM19 net17 net2 net23 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM18 net23 net24 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM15 net17 net1 net21 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM14 net21 net19 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM11 net9 net1 net18 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM10 net18 net19 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM9 OUT net17 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM3 net9 net2 net6 vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM2 net6 D vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM1 net2 net1 vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM0 net1 CLK vdd! vdd! pmos_rvt w=108.00n l=20n nfin=4
+MM29 net24 R gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM28 net24 net17 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM25 net19 R gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM24 net19 net9 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM21 net25 net24 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM20 net17 net1 net25 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM17 net22 net19 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM16 net17 net2 net22 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM13 net20 net19 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM12 net9 net2 net20 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM8 OUT net17 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM7 net13 D gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM6 net9 net1 net13 gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM5 net2 net1 gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+MM4 net1 CLK gnd! gnd! nmos_rvt w=108.00n l=20n nfin=4
+.ENDS
+

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : full_adder
+Version: O-2018.06-SP1
+Date   : Fri Jan 31 04:39:21 2025
+****************************************
+
+Library(s) Used:
+
+    ss_1v62_125c (File: /home/eng/x/xxw122030/synopsys/ss_1v62_125c.db)
+
+Number of ports:                            5
+Number of nets:                             6
+Number of cells:                            3
+Number of combinational cells:              3
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:                 57.075199
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    57.075199
+Total area:                 undefined
+1

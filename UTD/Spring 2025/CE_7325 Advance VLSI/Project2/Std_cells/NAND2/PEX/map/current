@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NAND2"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/eng/m/mxi240020/7325/asap7/Std_cells/NAND2/PEX"
+ )
+( model
+( "Std_cells/NAND2/schematic" "NAND2" )
+ )
+( "NAND2" "ihnl/cds0/map" )
+ )

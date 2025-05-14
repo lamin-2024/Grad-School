@@ -1,0 +1,31 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "CSA"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/eng/m/mxi240020/7325/asap7/Std_cells/CSA/newPEX"
+ )
+( model
+( "Std_cells/NOR2/schematic" "NOR2" )
+( "Std_cells/INV/schematic" "INV" )
+( "Std_cells/CSA/schematic" "CSA" )
+( "Std_cells/MUX2_1/schematic" "MUX2_1" )
+( "Std_cells/NAND2/schematic" "NAND2" )
+( "Std_cells/Adder/schematic" "Adder" )
+( "Std_cells/M_Sum/schematic" "M_Sum" )
+( "Std_cells/Carry_sel/schematic" "Carry_sel" )
+( "Std_cells/M_Carry/schematic" "M_Carry" )
+ )
+( "M_Carry" "ihnl/cds0/map" )
+( "MUX2_1" "ihnl/cds4/map" )
+( "NAND2" "ihnl/cds7/map" )
+( "NOR2" "ihnl/cds6/map" )
+( "Carry_sel" "ihnl/cds5/map" )
+( "CSA" "ihnl/cds8/map" )
+( "M_Sum" "ihnl/cds1/map" )
+( "INV" "ihnl/cds2/map" )
+( "Adder" "ihnl/cds3/map" )
+ )

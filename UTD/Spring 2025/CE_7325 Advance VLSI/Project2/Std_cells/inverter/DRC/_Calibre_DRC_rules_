@@ -1,0 +1,24 @@
+//
+//  Rule file generated on Tue Mar 18 22:59:44 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "inverter.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "inverter"
+
+DRC RESULTS DATABASE "inverter.drc.results" ASCII
+DRC CELL NAME YES CELL SPACE XFORM
+
+DRC SUMMARY REPORT "inverter.drc.summary" REPLACE HIER
+
+DRC MAXIMUM RESULTS 1000
+
+DRC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+INCLUDE "/home/eng/m/mxi240020/7325/asap7/Calibre_DRC_rules"
